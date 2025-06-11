@@ -1,48 +1,49 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Navigation } from "swiper/modules";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 const JobOpenings = () => {
   const jobPositions = [
     {
       department: "Deveops",
-      position: "AWS developer",
+      position: "AWS Developer",
       location: "Gurgaon",
       experience: "3+ years",
-      description: "Job Description",
+      description: "Responsible for managing cloud infrastructure and deployment pipelines.",
     },
     {
       department: "Designing",
       position: "Video Writer",
       location: "Gurgaon",
       experience: "Fresher",
-      description: "Job Description",
+      description: "Create compelling scripts for visual storytelling and marketing videos.",
     },
     {
       department: "Developer",
       position: "Software Developer",
       location: "Gurgaon",
-      experience: "2 to 5 year",
-      description: "Job Description",
+      experience: "2 to 5 years",
+      description: "Develop scalable web applications using modern frameworks.",
     },
     {
       department: "Sales",
       position: "Sales Executive",
       location: "Gurgaon",
       experience: "Fresher to 1 year",
-      description: "Job Description",
+      description: "Engage clients, generate leads and close sales effectively.",
     },
   ];
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+
+  const [modalContent, setModalContent] = useState(null); // null | {type: "description" | "apply", job: object}
 
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
@@ -51,19 +52,18 @@ const JobOpenings = () => {
           Number of Openings
         </h1>
 
+        {/* Navigation Arrows */}
         <div className="px-4 relative">
-          {/* Custom navigation buttons with responsive positioning */}
           <button
             ref={prevRef}
-            className="absolute sm:-left-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto left-1/4 sm:left-auto z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
+            className="absolute sm:-left-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto left-1/4 z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
             aria-label="Previous Slide"
           >
             <ChevronLeft size={24} />
           </button>
-
           <button
             ref={nextRef}
-            className="absolute sm:-right-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto right-1/4 sm:right-auto z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
+            className="absolute sm:-right-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto right-1/4 z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
             aria-label="Next Slide"
           >
             <ChevronRight size={24} />
@@ -83,12 +83,9 @@ const JobOpenings = () => {
               nextEl: nextRef.current,
             }}
             onBeforeInit={(swiper) => {
-              // @ts-ignore
               swiper.params.navigation.prevEl = prevRef.current;
-              // @ts-ignore
               swiper.params.navigation.nextEl = nextRef.current;
             }}
-            pagination={{ clickable: true }}
             loop={true}
             className="pb-12"
           >
@@ -115,10 +112,16 @@ const JobOpenings = () => {
                   </div>
 
                   <div className="flex gap-4 mt-auto">
-                    <button className="bg-[#335D95] text-white text-sm rounded-sm w-full py-2">
+                    <button
+                      onClick={() => setModalContent({ type: "description", job })}
+                      className="bg-[#335D95] text-white text-sm rounded-sm w-full py-2"
+                    >
                       Job Description
                     </button>
-                    <button className="bg-[#335D95] text-white text-sm font-medium rounded w-full py-2">
+                    <button
+                      onClick={() => setModalContent({ type: "apply", job })}
+                      className="bg-[#335D95] text-white text-sm font-medium rounded w-full py-2"
+                    >
                       Apply Now
                     </button>
                   </div>
@@ -128,6 +131,69 @@ const JobOpenings = () => {
           </Swiper>
         </div>
       </div>
+
+      {/* Modal */}
+      {modalContent && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
+          <div className="bg-white rounded-lg max-w-md w-full p-6 relative">
+            <button
+              onClick={() => setModalContent(null)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+            >
+              <X />
+            </button>
+
+            <h3 className="text-xl font-semibold text-[#00357A] mb-4">
+              {modalContent.job.position}
+            </h3>
+
+            {modalContent.type === "description" ? (
+              <p className="text-gray-700">{modalContent.job.description}</p>
+            ) : (
+              <form className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full border border-gray-300 rounded px-3 py-2"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full border border-gray-300 rounded px-3 py-2"
+                  required
+                />
+                <textarea
+                  placeholder="Why are you a good fit?"
+                  className="w-full border border-gray-300 rounded px-3 py-2"
+                  rows="4"
+                  required
+                ></textarea>
+
+                {/* Resume Upload */}
+                <div>
+                  <label className="block mb-1 text-sm font-medium text-gray-700">
+                    Upload Resume (PDF, DOC, DOCX)
+                  </label>
+                  <input
+                    type="file"
+                    accept=".pdf,.doc,.docx"
+                    className="w-full border border-gray-300 rounded px-3 py-2 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-[#335D95] file:text-white"
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-[#335D95] text-white py-2 rounded"
+                >
+                  Submit Application
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   );
 };

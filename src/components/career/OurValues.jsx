@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Matter from "matter-js";
 import {
   FaUsers,
@@ -22,6 +22,24 @@ export default function OurValues() {
   const engine = useRef(Matter.Engine.create());
   const iconRefs = useRef([]);
   const canvasRef = useRef(null);
+  const [dimensions, setDimensions] = useState({ 
+    width: typeof window !== 'undefined' ? window.innerWidth : 0,
+    height: 200 
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: Math.min(200, window.innerWidth * 0.5) // Adjust height based on screen width
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initialize dimensions
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const { Engine, Runner, Bodies, Composite, Events, Body, Mouse, MouseConstraint } = Matter;
@@ -34,8 +52,11 @@ export default function OurValues() {
     const runner = Runner.create();
     Runner.run(runner, engineInstance);
 
-    const boundsWidth = window.innerWidth;
-    const boundsHeight = canvasRef.current?.offsetHeight || 500; // fixed height
+    const boundsWidth = dimensions.width;
+    const boundsHeight = dimensions.height;
+
+    // Clear existing bodies
+    Composite.clear(world, false);
 
     // Walls
     const walls = [
@@ -50,13 +71,15 @@ export default function OurValues() {
     iconRefs.current.forEach((ref, index) => {
       if (!ref) return;
 
-      const x = Math.random() * (boundsWidth - 150) + 75; // avoid spawning too close to edges
-      const body = Bodies.rectangle(x, 100, 128, 128, {
+      const size = Math.min(128, boundsWidth * 0.15); // Responsive size
+      const x = Math.random() * (boundsWidth - size * 1.5) + size * 0.75;
+      const body = Bodies.rectangle(x, 100, size, size, {
         frictionAir: icons[index].frictionAir,
         restitution: 0.8,
       });
 
       body.element = ref;
+      body.size = size;
       Composite.add(world, body);
 
       Body.setVelocity(body, {
@@ -90,10 +113,13 @@ export default function OurValues() {
     // Sync DOM to physics bodies
     Events.on(engineInstance, "afterUpdate", () => {
       Composite.allBodies(world).forEach((body) => {
-        if (body.element) {
-          const x = body.position.x - 64;
-          const y = body.position.y - 64;
+        if (body.element && body.size) {
+          const halfSize = body.size / 2;
+          const x = body.position.x - halfSize;
+          const y = body.position.y - halfSize;
           body.element.style.transform = `translate(${x}px, ${y}px) rotate(${body.angle}rad)`;
+          body.element.style.width = `${body.size}px`;
+          body.element.style.height = `${body.size}px`;
         }
       });
     });
@@ -103,25 +129,24 @@ export default function OurValues() {
       Composite.clear(world, false);
       Engine.clear(engineInstance);
     };
-  }, []);
+  }, [dimensions]);
 
   return (
-    <section className="relative bg-white py-20">
-      <div className="text-center mb-10 z-10 relative">
-        <h2 className="text-4xl font-bold text-[#335D95]">Our Values</h2>
+    <section className="relative bg-white py-10 md:py-20 overflow-hidden">
+      <div className="text-center mb-6 md:mb-10 z-10 relative px-4">
+        <h2 className="text-2xl md:text-4xl font-bold text-[#335D95]">Our Values</h2>
       </div>
 
-      {/* Fixed height container */}
       <div
         ref={canvasRef}
-        className="relative mx-auto max-w-7xl "
-        style={{ height: "200px" }}
+        className="relative mx-auto w-full px-4"
+        style={{ height: `${dimensions.height}px` }}
       >
         {icons.map(({ icon: Icon, label }, index) => (
           <div
             key={index}
             ref={(el) => (iconRefs.current[index] = el)}
-            className="w-32 h-32 text-[#335D95] flex flex-col items-center justify-center text-center font-semibold"
+            className="text-[#335D95] flex flex-col items-center justify-center text-center font-semibold"
             style={{
               position: "absolute",
               top: 0,
@@ -131,10 +156,12 @@ export default function OurValues() {
               userSelect: "none",
               cursor: "grab",
               pointerEvents: "auto",
+              width: `${Math.min(128, dimensions.width * 0.15)}px`,
+              height: `${Math.min(128, dimensions.width * 0.15)}px`,
             }}
           >
-            <Icon className="text-4xl mb-2" />
-            <span className="text-base">{label}</span>
+            <Icon className="text-2xl md:text-4xl mb-1 md:mb-2" />
+            <span className="text-xs md:text-base">{label}</span>
           </div>
         ))}
       </div>

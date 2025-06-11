@@ -31,7 +31,7 @@ const HiringSection = () => {
         <div className="text-center mt-16">
           <h3 className="text-2xl md:text-3xl font-bold text-[#00357A]">Meet Our Team</h3>
           <div className="mt-8 flex justify-center">
-            <div className="grid grid-cols-3 gap-6 justify-center">
+            <div className="flex flex-col md:flex-row gap-6 justify-center">
               {teamImages.map(({ id, src, alt }) => (
                 <div key={id} className="rounded-lg overflow-hidden h-80 w-90 relative">
                   <Image

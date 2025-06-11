@@ -32,7 +32,6 @@ const JobOpenings = () => {
       experience: "2 to 5 year",
       description: "Job Description",
     },
-
     {
       department: "Sales",
       position: "Sales Executive",
@@ -40,25 +39,23 @@ const JobOpenings = () => {
       experience: "Fresher to 1 year",
       description: "Job Description",
     },
-
   ];
 
-  // refs for navigation buttons
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-8xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#00357A] mb-12 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-[#00357A] mb-6 text-center">
           Number of Openings
         </h1>
 
         <div className="px-4 relative">
-          {/* Custom navigation buttons with Lucide icons */}
+          {/* Custom navigation buttons with responsive positioning */}
           <button
             ref={prevRef}
-            className="absolute -left-10 top-1/2 z-10 -translate-y-1/2 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
+            className="absolute sm:-left-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto left-1/4 sm:left-auto z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
             aria-label="Previous Slide"
           >
             <ChevronLeft size={24} />
@@ -66,7 +63,7 @@ const JobOpenings = () => {
 
           <button
             ref={nextRef}
-            className="absolute -right-10 top-1/2 z-10 -translate-y-1/2 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
+            className="absolute sm:-right-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto right-1/4 sm:right-auto z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
             aria-label="Next Slide"
           >
             <ChevronRight size={24} />
@@ -105,26 +102,26 @@ const JobOpenings = () => {
                   <div className="grid grid-cols-1 gap-6 my-4">
                     <div className="flex">
                       <p className="text-[#6F6F6F] text-xl">Position:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl">{job.position}</p>
+                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">{job.position}</p>
                     </div>
                     <div className="flex">
                       <p className="text-[#6F6F6F] text-xl">Location:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ">{job.location}</p>
+                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">{job.location}</p>
                     </div>
                     <div className="flex">
                       <p className="text-[#6F6F6F] text-xl">Experience:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl">{job.experience}</p>
+                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">{job.experience}</p>
                     </div>
                   </div>
-                  <div className="flex gap-4">
-  <button className=" bg-[#335D95]  text-white text-sm  rounded-sm w-full">
-                    Job Description
-                  </button>
-                  <button className="mt-auto bg-[#335D95]  text-white text-sm font-medium py-2  rounded w-full">
-                    Apply Now
-                  </button>
-                  </div>
 
+                  <div className="flex gap-4 mt-auto">
+                    <button className="bg-[#335D95] text-white text-sm rounded-sm w-full py-2">
+                      Job Description
+                    </button>
+                    <button className="bg-[#335D95] text-white text-sm font-medium rounded w-full py-2">
+                      Apply Now
+                    </button>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

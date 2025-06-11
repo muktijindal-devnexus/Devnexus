@@ -17,7 +17,7 @@ const stats = [
 export default function DesignProcess() {
   return (
     <section className="bg-[#002169] py-16 px-4">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-60">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:gap-60 gap-10">
         {stats.map((stat, index) => (
           <div key={index} className="relative w-60 h-60">
             {/* Circular Text */}

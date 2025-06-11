@@ -157,7 +157,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="bg-[#4D77AF] text-white text-sm px-4 py-2 rounded-md"
+            className="bg-[#4D77AF] text-white text-sm px-4 py-2 rounded-md hidden md:block"
           >
             Free Consultation
           </Link>
@@ -169,16 +169,19 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white px-4 py-4 space-y-3">
-          <Link href="/" className="block hover:text-blue-400">Home</Link>
+        <nav className="md:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white p-7 space-y-3">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="block hover:text-blue-400 text-xl">
+            Home
+          </Link>
 
           <div className="space-y-1">
-            <p className="font-semibold">About</p>
+            <p className="font-semibold text-xl">About</p>
             {aboutDropdown.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
-                className="block pl-4 text-sm hover:text-blue-400"
+                onClick={() => setMenuOpen(false)}
+                className="block text-lg hover:text-blue-400"
               >
                 {item.name}
               </Link>
@@ -186,12 +189,13 @@ export const Navbar = () => {
           </div>
 
           <div className="space-y-1">
-            <p className="font-semibold">Services</p>
+            <p className="font-semibold text-xl">Services</p>
             {servicesDropdown.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
-                className="block pl-4 text-sm hover:text-blue-400"
+                onClick={() => setMenuOpen(false)}
+                className="block text-lg hover:text-blue-400"
               >
                 {item.name}
               </Link>
@@ -202,7 +206,8 @@ export const Navbar = () => {
             <Link
               key={i}
               href={`/${item.toLowerCase()}`}
-              className="block hover:text-blue-400"
+              onClick={() => setMenuOpen(false)}
+              className="block hover:text-blue-400 text-xl"
             >
               {item}
             </Link>
@@ -210,7 +215,8 @@ export const Navbar = () => {
 
           <Link
             href="/contact"
-            className="block bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-md"
+            onClick={() => setMenuOpen(false)}
+            className="block bg-[#00357A] text-white text-lg px-4 py-4 rounded-md"
           >
             Free Consultation
           </Link>

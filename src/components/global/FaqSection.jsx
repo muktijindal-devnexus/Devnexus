@@ -1,8 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-
-import Faq from '../../../public/images/FAQs.svg'
+import Faq from '../../../public/images/FAQs.svg';
 import Image from 'next/image';
 
 const FaqSection = ({ faqs = [], title, subtitle }) => {
@@ -13,40 +12,69 @@ const FaqSection = ({ faqs = [], title, subtitle }) => {
   };
 
   return (
-    <section className="px-6 md:px-16 py-12 space-y-8 flex">
-      <div className="text-center">
-        
-        <Image src={Faq} width={800} height={300} className='' alt='faq' />
-        
-        {/* <h2 className="text-2xl md:text-3xl font-bold text-[#00357A]">
-          {title || 'Frequently Asked Questions (FAQs)'}
+    <section className="px-4 sm:px-8 md:px-16 py-8 md:py-12 lg:py-16 flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
+      {/* FAQ Image/Header Section */}
+      <div className="w-full lg:w-[40%] text-center lg:text-left">
+        <div className="max-w-[500px] mx-auto lg:mx-0">
+          <Image 
+            src={Faq} 
+            width={800} 
+            height={300} 
+            alt='faq' 
+            className="w-full h-auto"
+            priority
+          />
+        </div>
+        {/* Optional: Uncomment if you want to use text headers instead */}
+        {/* 
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#00357A]">
+          {title || 'Frequently Asked Questions'}
         </h2>
         {subtitle && (
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-600 mt-2 md:mt-4 text-base md:text-lg">
             {subtitle.split(' – ')[0]}
             <br className="md:hidden" />
             <span className="font-medium">{subtitle.split(' – ')[1]}</span>
           </p>
-        )} */}
+        )}
+        */}
       </div>
 
-      <div className="space-y-3 w-[70%]">
+      {/* FAQ Items */}
+      <div className="w-full lg:w-[60%] space-y-3 md:space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={`border rounded-md transition-all duration-300 ${
-              openIndex === index ? 'bg-[#00357A] text-white' : 'bg-white'
+            className={`border rounded-lg transition-all duration-300 ${
+              openIndex === index 
+                ? 'bg-[#00357A] text-white shadow-lg' 
+                : 'bg-white hover:bg-gray-50 border-gray-200'
             }`}
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full text-left px-5 py-4 flex justify-between items-center"
+              className="w-full text-left px-4 py-3 md:px-5 md:py-4 flex justify-between items-center"
+              aria-expanded={openIndex === index}
+              aria-controls={`faq-answer-${index}`}
             >
-              <span className="font-medium">{faq.question}</span>
-              {openIndex === index ? <FaMinus /> : <FaPlus />}
+              <span className={`font-medium text-sm md:text-base ${
+                openIndex === index ? 'text-white' : 'text-gray-800'
+              }`}>
+                {faq.question}
+              </span>
+              {openIndex === index ? (
+                <FaMinus className="text-white" />
+              ) : (
+                <FaPlus className="text-[#00357A]" />
+              )}
             </button>
             {openIndex === index && (
-              <div className="px-5 pb-5 text-sm text-white">{faq.answer}</div>
+              <div 
+                id={`faq-answer-${index}`}
+                className="px-4 pb-4 md:px-5 md:pb-5 text-sm md:text-base text-white"
+              >
+                {faq.answer}
+              </div>
             )}
           </div>
         ))}

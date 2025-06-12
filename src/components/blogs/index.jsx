@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import UnderConstruction from "../../../public/images/UnderConstruction.png";
+import BlogSection from "./BlogSection";
 
 export const Blogs = () => {
   return (
-    
+    // <BlogSection />
+
     <section className="flex flex-col justify-center items-center">
       <div className="relative w-[250px] h-[250px]">
         <Image

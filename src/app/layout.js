@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import { Navbar } from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
 import { ContactForm } from "@/components/global/ContactForm";

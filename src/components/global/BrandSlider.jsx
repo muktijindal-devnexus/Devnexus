@@ -12,7 +12,7 @@ import Brand7 from '../../../public/images/brandslogo/DCI.svg';
 import Brand10 from '../../../public/images/brandslogo/SRE.svg';
 import Brand11 from '../../../public/images/brandslogo/KG.svg';
 import Brand12 from '../../../public/images/brandslogo/nano.svg';
-import Brand13 from '../../../public/images/brandslogo/cafe.svg';
+// import Brand13 from '../../../public/images/brandslogo/cafe.svg';
 import Brand14 from '../../../public/images/brandslogo/vize.svg';
 import Brand1 from '../../../public/images/brandslogo/AJP.svg';
 import Brand2 from '../../../public/images/brandslogo/cervano.svg';
@@ -36,7 +36,7 @@ const brand2 = [
   Brand10.src,
   Brand11.src,
   Brand12.src,
-  Brand13.src,
+  // Brand13.src,
   Brand14.src,
 ];
 

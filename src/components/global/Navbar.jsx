@@ -18,7 +18,6 @@ export const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const aboutDropdown = [
-    { name: "About", href: "/about" },
     { name: "Our Team", href: "/ourteam" },
   ];
 
@@ -73,7 +72,7 @@ export const Navbar = () => {
                 }}
                 className="hover:text-blue-400"
               >
-                About
+                About Us
               </button>
               <button
                 onClick={(e) => {
@@ -142,7 +141,7 @@ export const Navbar = () => {
             )}
           </div>
 
-          {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
+          {["Project", "Career", "Blogs", "Contact Us"].map((item, i) => (
             <Link
               key={i}
               href={`/${item.toLowerCase()}`}
@@ -175,7 +174,7 @@ export const Navbar = () => {
           </Link>
 
           <div className="space-y-1">
-            <p className="font-semibold text-xl">About</p>
+            <p className="font-semibold text-xl">About Us</p>
             {aboutDropdown.map((item, index) => (
               <Link
                 key={index}

@@ -17,6 +17,7 @@ import Brand11 from '../../../public/images/brandslogo/KG.svg';
 import Brand12 from '../../../public/images/brandslogo/nano.svg';
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';
 import Brand14 from '../../../public/images/brandslogo/vize.svg';
+import { DigitalMarketingServices } from "../digitalmarketing/DigitalMarketingServices ";
 
 const faqData = [
   {
@@ -63,6 +64,59 @@ const brandLogos = [
   Brand14.src,
 ];
 
+const services = [
+  {
+    title: 'Search Engine Optimization (SEO)',
+    description:'We provide comprehensive Search Engine Optimization services, our tailor-made strategies are perfect for your brand. It contains a range of services like keyword research, on-page optimization, technical SEO,etc. Does not matter if you are a start-up or a business, we have the solutions for all your business needs.',
+    points: [
+      'Keyword Research & Strategy',
+      'Link Building & Authority Growth',
+      'On-Page & Technical SEO',
+      'Local & Enterprise SEO',
+    ],
+  },
+    {
+    title: 'PPC',
+    description: 'DevNexus Solutions is providing expert PPC services designed to maximize your online advertising ROI.  Our PPC experts focus on strategic keyword targeting, compelling ad creation, and advanced campaign management skills.  We are helping the business to reach its desired audience. Whether you want to boost website traffic, generate leads, or increase ROI, DevNexus Solutions is making sure that your PPC campaigns are cost-effective.',
+    points: [
+  
+    ],
+  },
+  {
+    title: 'Social Media Marketing (SMM)',
+    description: 'DexNexus Solutions delivers expert Social Media Marketing services that help businesses build a strong online presence and engage effectively with their potential audience. From strategy development and campaign management, tracking insights for performance. We have a tailor-made system for all the brand types.',
+    points: [
+      'Content Creation & Scheduling',
+      'Audience Engagement',
+      'Performance Analytics',
+    ],
+  },
+  {
+    title: 'Meta Ads',
+    description:
+      'Maximize your ROI with Meta Ads. We design, manage, and optimize ad campaigns across Meta’s network for precise targeting and better conversion rates.',
+    points: ['Ad Campaign Setup', 'Audience Targeting', 'A/B Testing'],
+  },
+  {
+    title: 'Email Marketing',
+    description:
+      'We help you craft effective email campaigns that nurture leads and retain customers with engaging content and automated flows.',
+    points: ['Newsletter Design', 'Automation Workflows', 'Performance Tracking'],
+  },
+  {
+    title: 'Content Marketing',
+    description:
+      'We deliver high-quality, SEO-optimized content to boost your visibility and establish authority in your niche.',
+    points: ['Blog Writing', 'SEO Copywriting', 'Content Strategy'],
+  },
+  {
+    title: 'Conversion Rate Optimization (CRO)',
+    description:
+      'We analyze user behavior and optimize your website layout, CTAs, and funnel to convert more visitors into customers.',
+    points: ['A/B Testing', 'Heatmaps & Analytics', 'Landing Page Optimization'],
+  },
+];
+
 export const Fullstack = () => {
   return (
     <div>
@@ -74,7 +128,8 @@ export const Fullstack = () => {
       />
       <StatusCard />
       <WhyChooseUs />
-      <ExecutionSection />
+      {/* <ExecutionSection /> */}
+       <DigitalMarketingServices />
          <Slider
       title="Driving Growth To The Brands."
       subtitle="We deliver Global IT Services to brands of all sizes"

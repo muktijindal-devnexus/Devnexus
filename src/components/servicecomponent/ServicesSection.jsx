@@ -8,7 +8,7 @@ const services = [
     title: "Full Stack Development",
     description:
       "Creating seamless, high-performing websites that engage users and drive results",
-    icon: "/images/services/image155.svg",
+    icon: "/images/image155.svg",
     active: true,
     href: "/web-design-development-services",
   },
@@ -16,35 +16,35 @@ const services = [
     title: "UI/UX Design",
     description:
       "Elevate user engagement through intuitive design and seamless digital experiences.",
-    icon: "/images/services/image157.svg",
+    icon: "/images/image157.svg",
     href: "/uiux",
   },
   {
     title: "Mobile Development",
     description:
       "Transforming ideas into high-performing Android & iOS applications",
-    icon: "/images/services/image156.svg",
+    icon: "/images/image156.svg",
     href: "/mobile-development-services",
   },
   {
     title: "Digital Marketing",
     description:
       "Let the Right Digital Marketing Company Uplift Your Web Traffic, Generate More Leads and Sales for Your Business.",
-    icon: "/images/services/digital.svg",
+    icon: "/images/digital.svg",
     href: "/digital-marketing-services",
   },
   {
     title: "Blockchain Development",
     description:
       "We build next-gen systems that redefine trust, resilience, and innovation for the world of tomorrow.",
-    icon: "/images/services/blockchain.svg",
+    icon: "/images/blockchain.svg",
     href: "/blockchain-development-services",
   },
   {
     title: "AI Technologies",
     description:
       "Unleashing the power of AI to drive growth, streamline operations, and create scalable solutions for the digital age.",
-    icon: "/images/services/ai.svg",
+    icon: "/images/ai.svg",
     href: "/ai-tech-services",
   },
 ];

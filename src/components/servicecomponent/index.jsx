@@ -8,7 +8,7 @@ export const ServiceComponent = () => {
   return (
     <div>
       <Banners
-        image='/images/Portfolio/PortfolioHeroSection.jpeg'
+        image='/images/services/newherosection.jpg'
         overlayImage
         heading="Our Services"
         description="At DevNexus Solutions, we are offering a full

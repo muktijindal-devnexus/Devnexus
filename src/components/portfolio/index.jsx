@@ -13,7 +13,7 @@ const caseStudies = [
     imageIcons: ["/brick-icon.png", "/code-icon.png"],
     mainImage: "/images/project/cervinoportfolio.png",
     websiteUrl: "https://cervinoceramix.com",
-    pdfPath: "/images/case study/cervino ceramix case study.pdf",
+    pdfPath: "/images/cervino ceramix case study.pdf",
     companyName: "Cervino Ceramix",
   },
   {
@@ -24,7 +24,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/begarmot.png",
     websiteUrl: "https://bergamotbeaute.com/",
-    pdfPath: "/images/case study/Bergamot case study.pdf",
+    pdfPath: "/images/Bergamot case study.pdf",
     companyName: "XYZ Startup",
   },
   {
@@ -35,7 +35,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/vize.png",
     websiteUrl: "https://www.vizecare.com/",
-    pdfPath: "/images/case study/Vize Health case study.pdf",
+    pdfPath: "/images/Vize Health case study.pdf",
     companyName: "XYZ Startup",
   },
   {
@@ -46,7 +46,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/ajp.png",
     websiteUrl: "https://agprojects.otherlogicbeta.com/",
-    pdfPath: "/images/case study/AGPCaseStudy.pdf",
+    pdfPath: "/images/AGPCaseStudy.pdf",
     companyName: "XYZ Startup",
   },
   {
@@ -57,7 +57,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/iowit case study.png",
     websiteUrl: "https://iowit.com/",
-    pdfPath: "/images/case study/iowit case study.pdf",
+    pdfPath: "/images/iowit case study.pdf",
     companyName: "XYZ Startup",
   },
     {
@@ -68,7 +68,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/la osteria case study.png",
     websiteUrl: "https://laosteria.in/",
-    pdfPath: "/images/case study/la osteria case study.pdf",
+    pdfPath: "/images/la osteria case study.pdf",
     companyName: "XYZ Startup",
   },
    {
@@ -79,7 +79,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/Sre  india realty case study.png",
     websiteUrl: "https://sreindiarealty.com/",
-    pdfPath: "/images/case study/Sre india realty case study.pdf",
+    pdfPath: "/images/Sre india realty case study.pdf",
     companyName: "XYZ Startup",
   },
 
@@ -91,7 +91,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/peace.png",
     websiteUrl: "https://peaceofmind.tv/",
-    pdfPath: "/images/case study/peace of mind-case study.pdf",
+    pdfPath: "/images/peace of mind-case study.pdf",
     companyName: "XYZ Startup",
   },
        {
@@ -102,7 +102,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/XRD Nano Case Study.png",
     websiteUrl: "https://www.xrdnano.com/",
-    pdfPath: "/images/case study/XRD Nano case study.pdf",
+    pdfPath: "/images/XRD Nano case study.pdf",
     companyName: "XYZ Startup",
   },
   {
@@ -113,7 +113,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/medklair portfolio.png",
     websiteUrl: "https://medklaire.com/",
-    pdfPath: "/images/case study/medklair case study.pdf",
+    pdfPath: "/images/medklair case study.pdf",
     companyName: "XYZ Startup",
   },
 ];

@@ -8,7 +8,7 @@ const services = [
     title: "Full Stack Development",
     description:
       "Creating seamless, high-performing websites that engage users and drive results",
-    icon: "/images/services/image 155.svg",
+    icon: "/images/services/image155.svg",
     active: true,
     href: "/web-design-development-services",
   },
@@ -16,14 +16,14 @@ const services = [
     title: "UI/UX Design",
     description:
       "Elevate user engagement through intuitive design and seamless digital experiences.",
-    icon: "/images/services/image 157.svg",
+    icon: "/images/services/image157.svg",
     href: "/uiux",
   },
   {
     title: "Mobile Development",
     description:
       "Transforming ideas into high-performing Android & iOS applications",
-    icon: "/images/services/image 156.svg",
+    icon: "/images/services/image156.svg",
     href: "/mobile-development-services",
   },
   {

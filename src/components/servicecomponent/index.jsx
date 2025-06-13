@@ -3,7 +3,7 @@ import { Banners } from "../global/NavBanners";
 import OurProcess from "./Process";
 import ServicesSection from "./ServicesSection";
 
-import BannerImage from '../../../public//images/services/newherosection.jpg'
+import BannerImage from '../../../public/images/services/newherosection.jpg'
 
 export const ServiceComponent = () => {
   return (

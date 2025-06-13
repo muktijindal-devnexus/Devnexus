@@ -46,7 +46,7 @@ const caseStudies = [
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/images/project/ajp.png",
     websiteUrl: "https://agprojects.otherlogicbeta.com/",
-    pdfPath: "/images/case study/AJP case study.pdf",
+    pdfPath: "/images/case study/AGPCaseStudy.pdf",
     companyName: "XYZ Startup",
   },
   {

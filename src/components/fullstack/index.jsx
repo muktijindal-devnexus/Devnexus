@@ -17,7 +17,8 @@ import Brand11 from '../../../public/images/brandslogo/KG.svg';
 import Brand12 from '../../../public/images/brandslogo/nano.svg';
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';
 import Brand14 from '../../../public/images/brandslogo/vize.svg';
-import { DigitalMarketingServices } from "../digitalmarketing/DigitalMarketingServices ";
+import ProcessSteps from "./ProcessSteps";
+import { FullStackServices } from "./fullstackservices";
 
 const faqData = [
   {
@@ -129,13 +130,14 @@ export const Fullstack = () => {
       <StatusCard />
       <WhyChooseUs />
       {/* <ExecutionSection /> */}
-       <DigitalMarketingServices />
+      <FullStackServices      />
          <Slider
       title="Driving Growth To The Brands."
       subtitle="We deliver Global IT Services to brands of all sizes"
       brands={brandLogos}
     />
-      <ProcessWeFollow />
+    <ProcessSteps />
+     
       <FaqSection
         faqs={faqData}
         title="  Frequently Asked Questions (FAQs)"

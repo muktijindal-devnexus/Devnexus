@@ -3,9 +3,53 @@ import React, { useState } from 'react';
 
 const services = [
   {
-    title: 'Frontend Development',
+    title: 'Responsive Web Design',
     description:
-      'We craft visually stunning and user-friendly interfaces using modern frameworks like React, Vue, and Angular. Our team ensures responsive design, accessibility, and seamless performance across all devices.',
+      'We are creating websites that look stunning and function seamlessly across all devices, which ensures that the audience enjoys a better experience whether on Desktop, tablet, or mobile.',
+    points: [
+      'Mobile-First & Cross-Browser Compatibility',
+      'Modern, Clean & Interactive UI/UX',
+      'High-Speed Performance Optimization',
+      'Brand-Consistent Visual Design',
+    ],
+  },
+  {
+    title: 'E-commerce Development',
+    description:
+      'At DevNexus Solutions, we are building powerful, secure and user-friendly e-commerce websites customized according to your business requirements. From listings of products and shopping carts to integration of a payment gateway, our solutions are designed to deliver the best website that performs and converts. ',
+    points: [
+      'Shopify, WooCommerce, Magento & Custom Solutions',
+      'Product Catalogue & Shopping Cart Integration',
+      'Secure Payment Gateway Setup',
+      'Mobile-Optimized & Fast-Loading Storefronts',
+    ],
+  },
+  {
+    title: 'CMS Development (WordPress, Webflow & More)',
+    description:
+      'We specialize in creating dynamic and easy-to-navigate websites using powerful Content management systems like wordpress, Joomla, etc. Our CMS solutions empower you to update the content, images without much hassle and technical skills. Whether you need a website, a blog, custom portal, DevNexus Solutions is ready to deliver the best scalable, SEO friendly website which are tailored to your business goals.',
+    points: [
+      'Custom WordPress Development',
+      'Drag-and-Drop Page Builders (Webflow, Elementor, etc.)',
+      'Content Structuring & Blog Setup',
+      'Training & Ongoing Support',
+    ],
+  },
+  {
+    title: 'Custom Web Application Development',
+    description:
+      'We are offering tailor-made Website development Services built from the ground up to match your unique business requirements. Whether you need a complex application, a portal for business, or a multi-feature platform, our team of experts is developing scalable, secure and high-performing websites. At DevNexus Solution, we are focusing on functionality, user experience and long-term growth for your brand.',
+    points: [
+      'Custom-Coded Websites (HTML, CSS, JavaScript, PHP, Python, etc.)',
+      'Web App Development',
+      'Database & API Integrations',
+      'Scalable & Secure Architecture',
+    ],
+  },
+  {
+    title: 'Front End Development',
+    description:
+      'Our front-end team will bring your vision to life with clean, responsive, and interactive design. Using the latest technology like HTML5, CSS3, JavaScript, React, etc. We are developing a user-centric design that delivers a seamless experience across all types of devices. At DevNexus Solutions, we focus on performance, accessibility to ensure your websites functionality.',
     points: [
       'Responsive & Adaptive UI Design',
       'React, Vue, Angular Development',
@@ -16,56 +60,12 @@ const services = [
   {
     title: 'Backend Development',
     description:
-      'Our backend developers build secure, scalable, and high-performing server-side applications using Node.js, Django, Laravel, and more. We ensure clean architecture and efficient database design to support your business logic.',
+      'At DevNexus Solutions, we are providing a robust, secure and scalable backend system that gives power to your application. From database architecture and development of API our backend team ensures optimal performance and reliability.',
     points: [
-      'API Development & Integration',
+      'API Development & Integrations',
       'Database Design (SQL & NoSQL)',
       'Authentication & Authorization',
       'Server-side Optimization',
-    ],
-  },
-  {
-    title: 'Content Management System (CMS)',
-    description:
-      'We provide custom CMS solutions using WordPress, Strapi, Sanity, and Headless CMS for businesses that require flexibility and easy content updates without technical overhead.',
-    points: [
-      'Custom WordPress Development',
-      'Headless CMS Integration',
-      'Content Modeling & Management',
-      'Admin Panel Customization',
-    ],
-  },
-  {
-    title: 'Full Stack Development',
-    description:
-      'Our full stack developers manage both frontend and backend seamlessly to deliver complete web solutions. From designing elegant UIs to building robust APIs and managing databases — we handle it all.',
-    points: [
-      'End-to-End Web App Development',
-      'MERN / MEVN / LAMP Stacks',
-      'Cloud & DevOps Integration',
-      'Scalability & Maintenance',
-    ],
-  },
-  {
-    title: 'Email Integration & Automation',
-    description:
-      'We help you integrate email services for user authentication, notifications, and marketing automation. Enhance user engagement through personalized and automated communication workflows.',
-    points: [
-      'Transactional Email Integration',
-      'Newsletter Subscription Setup',
-      'Email Automation Workflows',
-      'Third-party Tools (SendGrid, Mailchimp)',
-    ],
-  },
-  {
-    title: 'Technical SEO & Performance',
-    description:
-      'Improve your site’s visibility and performance with our technical SEO services. We ensure your website is crawlable, fast, and optimized for search engines and users alike.',
-    points: [
-      'Schema Markup & Meta Tags',
-      'Page Speed Optimization',
-      'Mobile-Friendly Enhancements',
-      'SEO Audit & Reporting',
     ],
   },
   {
@@ -114,7 +114,7 @@ export const FullStackServices = () => {
       {/* Right side */}
       <div className="md:w-2/3 space-y-4">
         <p className="text-[18px] text-gray-700 font-medium">
-          As a leading Digital Marketing Company, we provide a wide range of Digital Marketing Services according to your business goals.
+          As a Leading Web Design and Web Development Service provide,r we are providinga  range of website development services-
         </p>
 
         <div className="p-18 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white">

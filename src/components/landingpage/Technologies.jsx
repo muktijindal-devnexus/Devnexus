@@ -38,45 +38,45 @@ const techData = {
     { name: "REACT NATIVE", icon: NativeIcon },
   ],
   Backend: [
-    { name: "Node.js", icon: '/images/technology/nodejs.png' },
-    { name: "Express.js", icon: '/images/technology/expressjs.svg' },
-    { name: "Nest.js", icon: '/images/technology/Nest.svg' },
-    { name: "Python", icon: '/images/technology/python.svg' },
-    { name: "Django", icon: '/images/technology/Django.svg' },
-    { name: "Flask", icon: '/images/technology/flask.svg' },
+    { name: "Node.js", icon: '/images/nodejs.png' },
+    { name: "Express.js", icon: '/images/expressjs.svg' },
+    { name: "Nest.js", icon: '/images/Nest.svg' },
+    { name: "Python", icon: '/images/python.svg' },
+    { name: "Django", icon: '/images/Django.svg' },
+    { name: "Flask", icon: '/images/flask.svg' },
 
 
-    { name: "Java", icon: '/images/technology/java.svg' },
-    { name: "Spring Boot", icon: '/images/technology/spring.svg' },
+    { name: "Java", icon: '/images/java.svg' },
+    { name: "Spring Boot", icon: '/images/spring.svg' },
 
-    { name: "Graph QL", icon: '/images/technology/graphql.svg' },
+    { name: "Graph QL", icon: '/images/graphql.svg' },
   ],
   Database: [
-    { name: "MongoDB", icon: '/images/technology/mongodb.svg' },
-    { name: "MySQL", icon: '/images/technology/Mysql.svg' },
-    { name: "PostgreSQL", icon: '/images/technology/postsql.svg' },
-    { name: "FireBase", icon: '/images/technology/firebase.svg' },
+    { name: "MongoDB", icon: '/images/mongodb.svg' },
+    { name: "MySQL", icon: '/images/Mysql.svg' },
+    { name: "PostgreSQL", icon: '/images/postsql.svg' },
+    { name: "FireBase", icon: '/images/firebase.svg' },
   ],
   "UI/UX": [
-    { name: "Figma", icon: '/images/technology/figma.svg' },
-    { name: "Adobe XD", icon: '/images/technology/XD.svg' },
-    { name: "Adobe Illustrator", icon: '/images/technology/illustrator.svg' },
-    { name: "Adobe Photoshop", icon: '/images/technology/photoshop.svg' },
-    { name: "Canva  ", icon: '/images/technology/canva.svg' },
+    { name: "Figma", icon: '/images/figma.svg' },
+    { name: "Adobe XD", icon: '/images/XD.svg' },
+    { name: "Adobe Illustrator", icon: '/images/illustrator.svg' },
+    { name: "Adobe Photoshop", icon: '/images/photoshop.svg' },
+    { name: "Canva  ", icon: '/images/canva.svg' },
 
 
   ],
   CMS: [
-    { name: "WordPress", icon: '/images/technology/Wordpress.svg'  },
-    { name: "Shopify", icon: '/images/technology/shopify.svg' },
-    { name: "Webflow", icon: '/images/technology/webflow.svg' },
-    { name: "Woo Commerce", icon: '/images/technology/woo.svg' },
+    { name: "WordPress", icon: '/images/Wordpress.svg'  },
+    { name: "Shopify", icon: '/images/shopify.svg' },
+    { name: "Webflow", icon: '/images/webflow.svg' },
+    { name: "Woo Commerce", icon: '/images/woo.svg' },
   ],
   Deveops: [
-    { name: "AWS", icon: '/images/technology/aws.svg' },
-    { name: "Azure", icon: '/images/technology/azure.svg' },
-    { name: "Digital Ocean", icon: '/images/technology/digitalocean.svg' },
-    { name: "Cloudflare", icon: '/images/technology/cloudflare.png' }
+    { name: "AWS", icon: '/images/aws.svg' },
+    { name: "Azure", icon: '/images/azure.svg' },
+    { name: "Digital Ocean", icon: '/images/digitalocean.svg' },
+    { name: "Cloudflare", icon: '/images/cloudflare.png' }
   ],
 };
 
@@ -102,7 +102,7 @@ const Technologies = () => {
         ${
           activeTab === tab.label
             ? "bg-[#335D95] text-white"
-            : "bg-white text-[#335D95] hover:bg-[#a7c3e8] hover:text-white"
+            : "bg-white text-[#335D95] hover:bg-[#E5EBF2] e"
         }`}
     >
       <Image src={tab.icon} alt={tab.label} width={16} height={16} />

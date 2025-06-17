@@ -4,7 +4,7 @@ export default function GoodCompanySection() {
       {/* Left - Image */}
       <div className="lg:w-1/2 w-full">
         <img
-          src="/images/career/team.png"
+          src="/images/team.png"
           alt="Team Meeting"
           className="w-full h-full object-cover"
         />

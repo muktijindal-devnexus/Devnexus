@@ -1,7 +1,7 @@
 import React from 'react'
 import HiringSection from './HiringSection'
 import JobOpenings from './JobOpenings'
-import BannerImage1 from '../../../public/images/career/career.jpeg'
+import BannerImage1 from '../../../public/images/career.jpeg'
 import OurValues from './OurValues'
 import GoodCompanySection from './GoodCompany'
 import { Banners } from '../global/NavBanners'

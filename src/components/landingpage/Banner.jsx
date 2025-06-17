@@ -85,28 +85,33 @@ export const Banner = () => {
         </Link>
 
         {/* Dots */}
-        <div className="flex gap-4 mt-6">
-          {bannerData.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveIndex(index)}
-              className="flex items-center gap-1"
-            >
-              <div
-                className={`w-6 sm:w-10 h-0.5 transition-all duration-300 ${
-                  activeIndex === index ? 'bg-white' : 'bg-white/50'
-                }`}
-              />
-              <span
-                className={`text-white text-xs sm:text-sm ${
-                  activeIndex === index ? 'font-bold' : 'opacity-50'
-                }`}
-              >
-                {index + 1}
-              </span>
-            </button>
-          ))}
-        </div>
+     <div className="flex gap-4 mt-6">
+  {bannerData.map((_, index) => (
+    <button
+      key={index}
+      onClick={() => setActiveIndex(index)}
+      className="flex items-center gap-1 group"
+    >
+      <div
+        className={`
+          w-6 sm:w-10 h-0.5 transition-all duration-300 
+          ${activeIndex === index ? 'bg-white' : 'bg-white/50'} 
+          group-hover:bg-white
+        `}
+      />
+      <span
+        className={`
+          text-white text-xs sm:text-sm transition-all duration-300
+          ${activeIndex === index ? 'font-bold' : 'opacity-50'} 
+          group-hover:opacity-100 group-hover:font-semibold
+        `}
+      >
+        {index + 1}
+      </span>
+    </button>
+  ))}
+</div>
+
       </div>
     </div>
   )

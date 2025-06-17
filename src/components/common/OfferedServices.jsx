@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from "next/image";
 import React from "react";
 import DigitalMarketing from "../../../public/images/Services/DigitalMarketing.jpeg";
@@ -11,7 +11,6 @@ import BannerSheet from "../../../public/images/ServiceBannerSheet.png";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
 
 const services = [
   { title: "Digital Marketing", href: "/digital-marketing-services", image: DigitalMarketing },
@@ -46,8 +45,10 @@ export const OfferedServices = () => {
         className="custom-scroll"
       >
         {services.map((service, index) => (
-          <div
+          <motion.div
             key={index}
+            whileHover={{ scale: 1.0, y: -8 }}
+            transition={{ type: "spring", stiffness: 300 }}
             style={{
               flexShrink: 0,
               width: "280px",
@@ -56,14 +57,16 @@ export const OfferedServices = () => {
               position: "relative",
               borderRadius: "10px",
               overflow: "hidden",
+              backgroundColor: "#fff",
             }}
+            className="cursor-pointer"
           >
             {/* Background Image */}
             <Image
               src={service.image}
               alt={service.title}
               fill
-              className="object-cover z-0 "
+              className="object-cover z-0"
             />
 
             {/* Overlay Sheet */}
@@ -82,18 +85,17 @@ export const OfferedServices = () => {
             </div>
 
             {/* Button */}
-          <Link href={service.href} passHref>
-  <motion.div
-    whileHover={{ x: 8 }} // animate arrow move right on hover
-    whileTap={{ scale: 0.95 }} // optional: tap effect
-    transition={{ type: "spring", stiffness: 300 }}
-    className="bg-white text-blue-950 h-8 py-2 px-6 rounded-xl text-center items-center flex absolute z-50 bottom-10 right-10 cursor-pointer"
-  >
-    <MoveRight />
-  </motion.div>
-</Link>
-
-          </div>
+            <Link href={service.href} passHref>
+              <motion.div
+                whileHover={{ x: 8 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="bg-white text-blue-950 h-8 py-2 px-6 rounded-xl text-center items-center flex absolute z-50 bottom-10 right-10 cursor-pointer"
+              >
+                <MoveRight />
+              </motion.div>
+            </Link>
+          </motion.div>
         ))}
       </div>
 

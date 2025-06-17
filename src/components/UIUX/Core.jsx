@@ -15,7 +15,7 @@ const tools = [
   },
   {
     name: "Figma",
-    image: "/images/UUIX/figma.svg",
+    image: "/images/figma1.svg",
 bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -23,7 +23,7 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
   {
     name: "AdobeXD",
-    image: "/images/UUIX/adobe.svg",
+    image: "/images/adobe.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -31,7 +31,7 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
   {
     name: "Adobe Ilustrator",
-    image: "/images/technology/illustrator.svg",
+    image: "/images/illustrator.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -39,7 +39,7 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
   {
     name: "Adobe Photoshop",
-    image: "/images/technology/photoshop.svg",
+    image: "/images/photoshop.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:

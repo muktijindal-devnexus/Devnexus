@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const platforms = [
   { name: "Etherium", src: "/images/Blockchain/Etherium.svg" },
-  { name: "Solana", src: "/images/Blockchain/solana.svg" },
-  { name: "Stellar", src: "/images/Blockchain/stellar.svg" },
+  { name: "Solana", src: "/images/solana.svg" },
+  { name: "Stellar", src: "/images/stellar.svg" },
   { name: "Hyperledger", src: "/images/Blockchain/Hyperledger.svg" },
   { name: "Credits", src: "/images/Blockchain/Credits.svg" },
   { name: "Bigchaindb", src: "/images/Blockchain/Bigchaindb.svg" },

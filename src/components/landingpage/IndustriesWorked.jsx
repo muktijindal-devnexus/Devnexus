@@ -5,14 +5,14 @@ import { ChevronRight } from "lucide-react";
 
 const images = [
   { src: "/images/Industries/healthcare.jpeg", alt: "Health Care" },
-  { src: "/images/Industries/industries.jpeg", alt: "Real Estate" },
+  { src: "/images/industries.jpeg", alt: "Real Estate" },
   { src: "/images/Industries/manufacture.jpeg", alt: "Manufacture" },
   { src: "/images/Industries/logistics.jpeg", alt: "Logistics" },
   { src: "/images/Industries/ecomm.jpeg", alt: "Ecommerce" },
   { src: "/images/Industries/finance.jpeg", alt: "Finance" },
   { src: "/images/Industries/automotive.jpeg", alt: "Automotive" },
   { src: "/images/Industries/education.jpeg", alt: "Education" },
-  { src: "/images/Industries/hospitality.jpeg", alt: "Hospitality" },
+  { src: "/images/hospitality.jpeg", alt: "Hospitality" },
   { src: "/images/Industries/games.jpeg", alt: "Entertainment" },
 ];
 

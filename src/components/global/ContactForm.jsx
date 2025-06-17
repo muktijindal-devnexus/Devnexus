@@ -75,7 +75,7 @@ export const ContactForm = () => {
 
         {/* Form Section */}
         <div className="lg:w-1/2 w-full bg-[#f9f9f9] p-4 sm:p-6 rounded-xl">
-          <h2 className="text-lg sm:text-xl font-semibold mb-2">Get in Touch</h2>
+          <h2 className="text-3xl sm:text-xl font-semibold mb-2">Get in Touch</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">
             Please fill out the form to help us understand the areas where you
             require assistance.

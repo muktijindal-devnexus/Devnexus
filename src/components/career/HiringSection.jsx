@@ -8,15 +8,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const teamImages = [
-  { id: 1, src: "/images/career/team1.png", alt: "Team Member 1" },
-  { id: 2, src: "/images/career/team2.png", alt: "Team Member 2" },
-  { id: 3, src: "/images/career/team3.png", alt: "Prakash Singh Bisen" },
-  { id: 4, src: "/images/career/team4.png", alt: "Team Member 4" },
-  { id: 5, src: "/images/career/team5.png", alt: "Team Member 5" },
-  { id: 6, src: "/images/career/team6.png", alt: "Team Member 6" },
-  { id: 7, src: "/images/career/team7.png", alt: "Team Member 7" },
-  { id: 8, src: "/images/career/team18.png", alt: "Team Member 8" },
-  { id: 9, src: "/images/career/team22.png", alt: "Team Member 9" },
+  { id: 1, src: "/images/team1.png", alt: "Team Member 1" },
+  { id: 2, src: "/images/team2.png", alt: "Team Member 2" },
+  { id: 3, src: "/images/team3.png", alt: "Prakash Singh Bisen" },
+  { id: 4, src: "/images/team4.png", alt: "Team Member 4" },
+  { id: 5, src: "/images/team5.png", alt: "Team Member 5" },
+  { id: 7, src: "/images/team7.png", alt: "Team Member 7" },
+  { id: 8, src: "/images/team18.png", alt: "Team Member 8" },
+  { id: 9, src: "/images/team22.png", alt: "Team Member 9" },
 
 ];
 

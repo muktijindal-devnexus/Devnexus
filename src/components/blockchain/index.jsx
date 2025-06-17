@@ -11,37 +11,32 @@ import IndustriesWeServe from "./IndustriesWeServe";
 
 const faqData = [
   {
-    question: "Why do businesses need digital marketing services?",
+    question: "What businesses can benefit from Blockchain?",
     answer:
-      "Every business wants to grow and capture most of the market value in their niche, this is where digital marketing services come into play. With most of the consumers, products, and services being online, digital marketing services help to get more visibility and quality leads. It offers measurable results and is cost-effective. On the other hand, with digital marketing techniques, one can adopt the market trends very easily.",
+      "Blockchain is going to be the new normal for businesses across various industries. Businesses that are in finance, healthcare, politics, government services, supply chain, real estate, and gaming can enhance security, transparency, automation, and efficiency. If your business needs secure transactions, decentralized applications, or other smart contracts to improve efficiency, this is the time for all businesses to get involved in blockchain development services.",
   },
   {
     question:
-      "How much does it cost to hire a digital marketing agency near me?",
+      "What someone chooses is DevNexus Solutions for blockchain solution development?",
     answer:
-      'The cost of hiring a "digital marketing service near me" can vary widely, depending on the services you are looking for. business goals, etc. ',
+      'Our team of experts is delivering robust and scalable decentralized applications, which ensure the top class security for enterprises, agencies, and other startups.  ',
   },
   {
     question:
-      "What makes DevNexus Solutions the best digital marketing company?",
+      "What are the benefits of blockchain in my business/domain?",
     answer:
-      "DevNexus Solutions stands out as the best digital marketing company because of many reasons, like a result-driven approach, tailored solutions for your business needs, We combine deep industry expertise with top-class tools to deliver the results clients want. We have the solutions for all of your business needs. Our team focuses on measurable outcomes like lead generation, better ROI, brand growth, while maintaining transparency, Regular reporting, and clear communication. ",
+      "Blockchain enhance security and reduces fraud, automates process with the ensure data integrity, transparency and minimal operational costs by eliminating intermediaries and creating tamper-proof records.  ",
   },
   {
     question:
-      "Which digital marketing channels are most result-oriented for B2B?",
+      "Can blockchain be integrated with my existing business/website? ",
     answer:
-      "For B2B companies, the most workable digital marketing techniques are those that can deliver longer sales cycles. Include-LinkedIn Marketing,SEO,Pay Per Click,Meta Ads,E Mail Marketing,Content Writing,Video Marketing",
+      "Yes. We use APIs and middleware solutions to integrate the framework into existing solutions. This doesnot affect the overall working of the online business, rather enhances security and efficiency of the same.",
   },
   {
-    question: "I wish to market my business. How should I get started?",
+    question: "Is blockchain development dependent on the existing solution’s tech stack? ",
     answer:
-      "Lets connect. Based on your business domain, marketing preferences, target achievement and in hand budget, we will come up with a tailor-made plan. Depending on various cases, some businesses may prefer comprehensive social media strategies, or web UX changes, others may call for a more formal link building, or a reputation management. E-commerce also prefers Paid Ads. Depending on how and how much you would like to enroll will ensure your strategy for getting started with the services.",
-  },
-  {
-    question: "How much does it cost to hire a digital marketing agency?",
-    answer:
-      'The cost of hiring a "digital marketing service" can vary widely, depending on the services you are looking for, business goals, etc. Our monthly services start from $400  and go up to $5000 (+ Ads fee). Packages can be cheaper upon 3-6 months commitment.',
+      "Yes, blockchain development is mostly dependent on the existing solution's tech stack, especially whenever integration is required.",
   },
 ];
 

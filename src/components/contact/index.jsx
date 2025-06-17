@@ -3,6 +3,7 @@ import BannerImage1 from '../../../public/images/contact/Contactus.jpeg'
 import ContactSection from './ContactSection'
 import IndustryExperience from './GlobalSection'
 import { Banners } from '../global/NavBanners'
+import InstagramCarousel from '../global/Instagram'
 
 
 export const ContactComponents = () => {
@@ -16,6 +17,8 @@ export const ContactComponents = () => {
               />
               <ContactSection />
               <IndustryExperience />
+              <InstagramCarousel />
+              
     </div>
   )
 }

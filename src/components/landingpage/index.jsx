@@ -10,6 +10,7 @@ import { Product } from "./Product";
 import { Banner } from "./Banner";
 import { KeyFacts } from "./KeyFacts";
 import { Testimonial } from "../global/Testimonial";
+import InstagramCarousel from "../global/Instagram";
 
 const LandingComponent = () => {
   return (
@@ -25,6 +26,7 @@ const LandingComponent = () => {
       <BrandSlider />
       <IndustriesWorked />
       <Product />
+      <InstagramCarousel />
     </div>
   );
 };

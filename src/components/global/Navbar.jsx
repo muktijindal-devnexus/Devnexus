@@ -59,7 +59,7 @@ export const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8 relative">
-          <Link href="/" className="hover:text-blue-400">Home</Link>
+          <Link href="/" className="hover:text-white hover:font-bold">Home</Link>
 
           {/* About Dropdown */}
           <div className="relative" ref={aboutRef}>
@@ -70,7 +70,7 @@ export const Navbar = () => {
                   setAboutOpen(false);
                   setServicesOpen(false);
                 }}
-                className="hover:text-blue-400"
+                className="hover:text-white hover:font-bold"
               >
                 About Us
               </button>
@@ -86,7 +86,7 @@ export const Navbar = () => {
               </button>
             </div>
             {aboutOpen && (
-              <div className="absolute left-0 top-full bg-white rounded-md shadow-md mt-5 text-[#7E7E7E] z-50 min-w-[200px]">
+              <div className="absolute left-0 top-full bg-white rounded-md shadow-md mt-5 text-[#7E7E7E] z-50 min-w-[200px] p-4">
                 {aboutDropdown.map((item, index) => (
                   <Link
                     key={index}
@@ -141,10 +141,15 @@ export const Navbar = () => {
             )}
           </div>
 
-          {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
+          {[
+            "Project",
+            "Career",
+            "Blogs",
+            "Contact"
+          ].map((item, i) => (
             <Link
               key={i}
-              href={`/${item.toLowerCase()}`}
+              href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
               className="hover:text-white hover:font-bold"
             >
               {item}
@@ -156,7 +161,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="bg-[#4D77AF] text-white text-sm px-4 py-2 rounded-md hidden md:block"
+            className="bg-[#00357A] hover:bg-[#335D95] text-white text-sm px-4 py-2 rounded-md hidden md:block"
           >
             Free Consultation
           </Link>
@@ -169,7 +174,7 @@ export const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <nav className="md:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white p-7 space-y-3">
-          <Link href="/" onClick={() => setMenuOpen(false)} className="block hover:text-blue-400 text-xl">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="block hover:text-white hover:font-bold text-xl">
             Home
           </Link>
 
@@ -180,7 +185,7 @@ export const Navbar = () => {
                 key={index}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="block text-lg hover:text-blue-400"
+                className="block text-lg hover:text-white hover:font-bold"
               >
                 {item.name}
               </Link>
@@ -204,9 +209,9 @@ export const Navbar = () => {
           {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
             <Link
               key={i}
-              href={`/${item.toLowerCase()}`}
+              href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
               onClick={() => setMenuOpen(false)}
-              className="block hover:text-blue-400 text-xl"
+              className="block hover:text-[#00357A] text-xl"
             >
               {item}
             </Link>

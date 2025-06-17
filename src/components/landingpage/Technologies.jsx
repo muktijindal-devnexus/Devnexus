@@ -93,23 +93,24 @@ const Technologies = () => {
       </div>
 
       {/* Tabs with Icons */}
-      <div className="flex justify-center flex-wrap gap-3 mb-6">
-        {tabs.map((tab) => (
-          <button
-            key={tab.label}
-            onClick={() => setActiveTab(tab.label)}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-lg border border-[#335D95] text-sm font-medium transition-all
-              ${
-                activeTab === tab.label
-                  ? "bg-[#335D95] text-white"
-                  : "bg-white text-[#335D95]"
-              }`}
-          >
-            <Image src={tab.icon} alt={tab.label} width={16} height={16} />
-            {tab.label}
-          </button>
-        ))}
-      </div>
+    <div className="flex justify-center flex-wrap gap-3 mb-6">
+  {tabs.map((tab) => (
+    <button
+      key={tab.label}
+      onClick={() => setActiveTab(tab.label)}
+      className={`flex items-center gap-2 px-4 py-2.5 rounded-lg border border-[#335D95] text-sm font-medium transition-all duration-300
+        ${
+          activeTab === tab.label
+            ? "bg-[#335D95] text-white"
+            : "bg-white text-[#335D95] hover:bg-[#a7c3e8] hover:text-white"
+        }`}
+    >
+      <Image src={tab.icon} alt={tab.label} width={16} height={16} />
+      {tab.label}
+    </button>
+  ))}
+</div>
+
 
       {/* Tech Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto">

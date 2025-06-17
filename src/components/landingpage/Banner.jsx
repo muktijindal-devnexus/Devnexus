@@ -32,7 +32,7 @@ export const Banner = () => {
   const activeBanner = bannerData[activeIndex]
 
   return (
-    <div className="relative w-full h-[500px] md:h-[600px] select-none px-4 sm:px-8 md:px-16 overflow-hidden">
+    <div className="relative w-full h-[500px] md:h-[600px] select-none px-4 sm:px-8 md:px-16 overflow-hidden ">
       {/* Background Video */}
       <video
         src={activeBanner.video}

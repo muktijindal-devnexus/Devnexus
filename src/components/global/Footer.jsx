@@ -1,6 +1,7 @@
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,14 +9,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 border-b border-white/30 pb-8">
         {/* Logo and Contact Info */}
         <div className="order-1">
-          <Link href="/" className="flex items-center gap-2 pb-4">
-            <img src="/images/logo.svg" alt="Logo" className="h-12 w-auto sm:h-14" />
+               <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center">
+            <Image src="/images/logo.png" width={60} height={60} alt="Logo" />
             <div>
               <h1 className="text-sm font-bold">DevNexus Solutions</h1>
               <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>
             </div>
           </Link>
-          <div className="space-y-1 text-sm text-gray-300">
+        </div>
+          <div className="space-y-1 text-sm text-gray-300 pl-4">
             <p>
               <span className="font-semibold text-white">Email:</span>{" "}
               <a
@@ -41,44 +44,80 @@ export default function Footer() {
         </div>
 
         {/* Explore On */}
-        <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
-          <h3 className="font-semibold text-white mb-3">Explore On</h3>
-          <ul className="text-sm text-gray-300 space-y-2">
-            <li className="hover:text-white transition-colors">Home</li>
-            <li className="hover:text-white transition-colors">About us</li>
-            <li className="hover:text-white transition-colors">Services</li>
-            <li className="hover:text-white transition-colors">Contact</li>
-            <li className="hover:text-white transition-colors">Projects</li>
-          </ul>
-        </div>
+      <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
+  <h3 className="font-semibold text-white mb-3">Explore On</h3>
+  <ul className="text-sm text-gray-300 space-y-2">
+    <li>
+      <a href="/" className="hover:text-white transition-colors">Home</a>
+    </li>
+    <li>
+      <a href="/about" className="hover:text-white transition-colors">About us</a>
+    </li>
+    <li>
+      <a href="/services" className="hover:text-white transition-colors">Services</a>
+    </li>
+    <li>
+      <a href="/contact" className="hover:text-white transition-colors">Contact</a>
+    </li>
+    <li>
+      <a href="/projects" className="hover:text-white transition-colors">Project</a>
+    </li>
+  </ul>
+</div>
+
 
         {/* Our Services */}
-        <div className="order-4 lg:order-3">
-          <h3 className="font-semibold text-white mb-3">Our Services</h3>
-          <ul className="text-sm text-gray-300 space-y-2">
-            <li className="hover:text-white transition-colors">Web Development</li>
-            <li className="hover:text-white transition-colors">Blockchain Development</li>
-            <li className="hover:text-white transition-colors">Mobile App Development</li>
-            <li className="hover:text-white transition-colors">AI Technologies Development</li>
-            <li className="hover:text-white transition-colors">UI/UX Design</li>
-            <li className="hover:text-white transition-colors">Digital Marketing</li>
-          </ul>
-        </div>
+   <div className="order-4 lg:order-3">
+  <h3 className="font-semibold text-white mb-3">Our Services</h3>
+  <ul className="text-sm text-gray-300 space-y-2">
+    <li>
+      <a href="/web-design-development-services" className="hover:text-white transition-colors">
+        Web Development
+      </a>
+    </li>
+    <li>
+      <a href="/blockchain-development-services" className="hover:text-white transition-colors">
+        Blockchain Development
+      </a>
+    </li>
+    <li>
+      <a href="/mobile-development-services" className="hover:text-white transition-colors">
+        Mobile App Development
+      </a>
+    </li>
+    <li>
+      <a href="/uiux" className="hover:text-white transition-colors">
+        UI/UX Design
+      </a>
+    </li>
+    <li>
+      <a href="/digital-marketing-services" className="hover:text-white transition-colors">
+        Digital Marketing
+      </a>
+    </li>
+       <li>
+      <a href="/ai-tech-services" className="hover:text-white transition-colors">
+      AI Technologies
+      </a>
+    </li>
+  </ul>
+</div>
+
 
         {/* Social & Newsletter */}
         <div className="order-2 lg:order-4">
           <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
           <div className="flex gap-4 mb-4 text-white text-xl">
-            <a href="#" className="hover:text-gray-300 transition-colors">
+            <a href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3" className="hover:text-gray-300 transition-colors">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-gray-300 transition-colors">
+            <a href="https://www.facebook.com/share/1Dsa49Kxrr/" className="hover:text-gray-300 transition-colors">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-gray-300 transition-colors">
+            <a href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08" className="hover:text-gray-300 transition-colors">
               <IoClose />
             </a>
-            <a href="#" className="hover:text-gray-300 transition-colors">
+            <a href="https://www.linkedin.com/company/devnexus-solutions/" className="hover:text-gray-300 transition-colors">
               <FaLinkedinIn />
             </a>
           </div>

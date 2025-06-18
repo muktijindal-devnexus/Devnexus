@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import BannerSheet from '../../../public/images/Bannersheet.png'
+import BannerSheet from '../../../public/cdn/images/Bannersheet.png'
 
 export const Banners = ({ image, heading, description }) => {
   return (

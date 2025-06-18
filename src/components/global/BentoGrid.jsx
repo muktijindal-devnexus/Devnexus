@@ -8,7 +8,7 @@ const testimonials = [
     review:
       "DevNexus just gave me wonderful product, a great logo, and new website and now we are moving ahead with a digital marketing plan with them. Their design and development services are much better than we had anticipated.",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "La Osteria",
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
     review:
       "I'm truly grateful for the opportunity to start my professional journey with Devnexus Solutions Pvt. Ltd. The company values innovation and teamwork helped me build confidence and develop my skills. Looking forward to learning more and contributing further.",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "Medklaire",
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
     review:
       "I'm truly grateful for the opportunity to start my professional journey with Devnexus Solutions Pvt. Ltd. The company values innovation and teamwork helped me build confidence and develop my skills. Looking forward to learning more and contributing further.",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "Cervino Ceramix",
   },
   {
@@ -32,7 +32,7 @@ const testimonials = [
     review:
       "Working for DevNexus solutions for a long time. Work culture is great. It was an amazing experience to work with them.",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "Aaryavart Green Projects Pvt. Ltd",
   },
   {
@@ -40,7 +40,7 @@ const testimonials = [
     review:
       "One of my friends is working in the company, I truly admire the work culture and flexibility given by the company.",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "Bergamot Beaute",
   },
   {
@@ -48,7 +48,7 @@ const testimonials = [
     review:
       "Working at Devnexus has been a fantastic journey! The culture here is incredibly positive and motivating—everyone is always ready to help and collaborate. I've had so many opportunities to grow both professionally and personally. The management is approachable, and they genuinely care about the team's well-being and development. It's inspiring to be part of a company that values innovation, hard work, and team spirit. I'm proud to be part of this amazing organization!",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "Peace Of Mind",
   },
   {
@@ -56,7 +56,7 @@ const testimonials = [
     review:
       "Working at Devnexus has been a fantastic journey! The culture here is incredibly positive and motivating—everyone is always ready to help and collaborate. I've had so many opportunities to grow both professionally and personally. The management is approachable, and they genuinely care about the team's well-being and development. It's inspiring to be part of a company that values innovation, hard work, and team spirit. I'm proud to be part of this amazing organization!",
     stars: 5,
-    image: "/images/team/avatar.svg",
+    image: "/cdn/images/team/avatar.svg",
     company: "SRE India Reality",
   },
 ];

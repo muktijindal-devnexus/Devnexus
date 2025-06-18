@@ -5,12 +5,12 @@ import Link from "next/link";
 import { motion } from "framer-motion"; // ✅ Add this import
 
 // Assets
-import Design from "../../../public/images/design 1.svg";
-import Image1 from "../../../public/images/innovation1.svg";
-import Image2 from "../../../public/images/innovation2.svg";
-import Image3 from "../../../public/images/innovation3.svg";
-import Image4 from "../../../public/images/innovation4.svg";
-import Workspace from "../../../public/images/workspace.png";
+import Design from "../../../public/cdn/images/design 1.svg";
+import Image1 from "../../../public/cdn/images/innovation1.svg";
+import Image2 from "../../../public/cdn/images/innovation2.svg";
+import Image3 from "../../../public/cdn/images/innovation3.svg";
+import Image4 from "../../../public/cdn/images/innovation4.svg";
+import Workspace from "../../../public/cdn/images/workspace.png";
 
 export default function AboutUs() {
   return (

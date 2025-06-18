@@ -1,6 +1,6 @@
 import { Blogs } from '@/components/blogs'
 import React from 'react'
-import BannerImage1 from "../../../public/images/blogs/BlogsHeroSection.jpeg";
+import BannerImage1 from "../../../public/cdn/images/blogs/BlogsHeroSection.jpeg";
 import { Banners } from '@/components/global/NavBanners';
 
 

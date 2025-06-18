@@ -11,8 +11,6 @@ export const Navbar = () => {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
-  const aboutRef = useRef(null);
-  const servicesRef = useRef(null);
   const router = useRouter();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -29,19 +27,6 @@ export const Navbar = () => {
     { name: "Blockchain Development", href: "/blockchain-development-services" },
     { name: "AI Technologies", href: "/ai-tech-services" },
   ];
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (aboutRef.current && !aboutRef.current.contains(event.target)) {
-        setAboutOpen(false);
-      }
-      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
-        setServicesOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   return (
     <header className="fixed top-0 w-full z-50 text-white bg-[rgba(30,30,30,0.72)] backdrop-blur-md border-none">
@@ -61,9 +46,16 @@ export const Navbar = () => {
         <nav className="hidden md:flex items-center gap-8 relative">
           <Link href="/" className="hover:text-white hover:font-bold">Home</Link>
 
-          {/* About Dropdown */}
-          <div className="relative" ref={aboutRef}>
-            <div className="flex gap-1 items-center">
+          {/* About Dropdown (hover) */}
+          <div
+            className="relative"
+            onMouseEnter={() => {
+              setAboutOpen(true);
+              setServicesOpen(false);
+            }}
+            onMouseLeave={() => setAboutOpen(false)}
+          >
+            <div className="flex gap-1 items-center cursor-pointer">
               <button
                 onClick={() => {
                   router.push("/about");
@@ -74,16 +66,7 @@ export const Navbar = () => {
               >
                 About Us
               </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setAboutOpen(!aboutOpen);
-                  setServicesOpen(false);
-                }}
-                className="text-white"
-              >
-                <ChevronDown />
-              </button>
+              <ChevronDown />
             </div>
             {aboutOpen && (
               <div className="absolute left-0 top-full bg-white rounded-md shadow-md mt-5 text-[#7E7E7E] z-50 min-w-[200px] p-4">
@@ -101,9 +84,16 @@ export const Navbar = () => {
             )}
           </div>
 
-          {/* Services Dropdown */}
-          <div className="relative" ref={servicesRef}>
-            <div className="flex gap-1 items-center">
+          {/* Services Dropdown (hover) */}
+          <div
+            className="relative"
+            onMouseEnter={() => {
+              setServicesOpen(true);
+              setAboutOpen(false);
+            }}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
+            <div className="flex gap-1 items-center cursor-pointer">
               <button
                 onClick={() => {
                   router.push("/services");
@@ -114,16 +104,7 @@ export const Navbar = () => {
               >
                 Services
               </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setServicesOpen(!servicesOpen);
-                  setAboutOpen(false);
-                }}
-                className="text-white"
-              >
-                <ChevronDown />
-              </button>
+              <ChevronDown />
             </div>
             {servicesOpen && (
               <div className="absolute left-0 top-full bg-white text-[#7E7E7E] rounded-md shadow-md mt-5 z-50 min-w-[300px] p-8">
@@ -141,12 +122,7 @@ export const Navbar = () => {
             )}
           </div>
 
-          {[
-            "Project",
-            "Career",
-            "Blogs",
-            "Contact"
-          ].map((item, i) => (
+          {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
             <Link
               key={i}
               href={`/${item.toLowerCase().replace(/\s+/g, "")}`}

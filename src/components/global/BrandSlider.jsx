@@ -4,20 +4,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
-import Brand3 from '../../../public/images/brandslogo/Jindal.svg';
-import Brand4 from '../../../public/images/brandslogo/Studio.svg';
-import Brand5 from '../../../public/images/brandslogo/Rotunneling.svg';
-import Brand6 from '../../../public/images/brandslogo/travel.svg';
-import Brand7 from '../../../public/images/brandslogo/DCI.svg';
-import Brand10 from '../../../public/images/brandslogo/SRE.svg';
-import Brand11 from '../../../public/images/brandslogo/KG.svg';
-import Brand12 from '../../../public/images/brandslogo/nano.svg';
+import Brand3 from '../../../public/cdn/images/brandslogo/Jindal.svg';
+import Brand4 from '../../../public/cdn/images/brandslogo/Studio.svg';
+import Brand5 from '../../../public/cdn/images/brandslogo/Rotunneling.svg';
+import Brand6 from '../../../public/cdn/images/brandslogo/travel.svg';
+import Brand7 from '../../../public/cdn/images/brandslogo/DCI.svg';
+import Brand10 from '../../../public/cdn/images/brandslogo/SRE.svg';
+import Brand11 from '../../../public/cdn/images/brandslogo/KG.svg';
+import Brand12 from '../../../public/cdn/images/brandslogo/nano.svg';
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';
-import Brand14 from '../../../public/images/brandslogo/vize.svg';
-import Brand1 from '../../../public/images/brandslogo/AJP.svg';
-import Brand2 from '../../../public/images/brandslogo/cervano.svg';
-import Brand8 from '../../../public/images/brandslogo/peace.svg';
-import Brand9 from '../../../public/images/brandslogo/RA.png';
+import Brand14 from '../../../public/cdn/images/brandslogo/vize.svg';
+import Brand1 from '../../../public/cdn/images/brandslogo/AJP.svg';
+import Brand2 from '../../../public/cdn/images/brandslogo/cervano.svg';
+import Brand8 from '../../../public/cdn/images/brandslogo/peace.svg';
+import Brand9 from '../../../public/cdn/images/brandslogo/RA.png';
 
 const brands = [
   Brand1.src,

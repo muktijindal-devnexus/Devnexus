@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage1 from "../../../public/images/About/about.png";
+import BannerImage1 from "../../../public/cdn/images/About/about.png";
 import FoundersSection from './FounderSection';
 import Slider from '../common/Slider';
 import WhatWeDo from './WhatWeDo';
@@ -7,16 +7,16 @@ import { AboutDevnexus } from './ContentSection';
 import OurValues from './OurValues';
 import { Banners } from '../global/NavBanners';
 
-import Brand3 from '../../../public/images/brandslogo/Jindal.svg';
-import Brand4 from '../../../public/images/brandslogo/Studio.svg';
-import Brand5 from '../../../public/images/brandslogo/Rotunneling.svg';
-import Brand6 from '../../../public/images/brandslogo/travel.svg';
-import Brand7 from '../../../public/images/brandslogo/DCI.svg';
-import Brand10 from '../../../public/images/brandslogo/SRE.svg';
-import Brand11 from '../../../public/images/brandslogo/KG.svg';
-import Brand12 from '../../../public/images/brandslogo/nano.svg';
+import Brand3 from '../../../public/cdn/images/brandslogo/Jindal.svg';
+import Brand4 from '../../../public/cdn/images/brandslogo/Studio.svg';
+import Brand5 from '../../../public/cdn/images/brandslogo/Rotunneling.svg';
+import Brand6 from '../../../public/cdn/images/brandslogo/travel.svg';
+import Brand7 from '../../../public/cdn/images/brandslogo/DCI.svg';
+import Brand10 from '../../../public/cdn/images/brandslogo/SRE.svg';
+import Brand11 from '../../../public/cdn/images/brandslogo/KG.svg';
+import Brand12 from '../../../public/cdn/images/brandslogo/nano.svg';
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';
-import Brand14 from '../../../public/images/brandslogo/vize.svg';
+import Brand14 from '../../../public/cdn/images/brandslogo/vize.svg';
 
 const brandLogos = [
   Brand3.src,

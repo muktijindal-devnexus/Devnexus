@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import UnderConstruction from "../../../public/images/UnderConstruction.png";
+import UnderConstruction from "../../../public/cdn/images/UnderConstruction.png";
 import BlogSection from "./BlogSection";
 
 export const Blogs = () => {

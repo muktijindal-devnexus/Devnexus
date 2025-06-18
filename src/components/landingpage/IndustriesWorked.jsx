@@ -4,16 +4,16 @@ import React, { useEffect, useState } from "react";
 import { ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/images/Industries/healthcare.jpeg", alt: "Health Care" },
-  { src: "/images/industries.jpeg", alt: "Real Estate" },
-  { src: "/images/Industries/manufacture.jpeg", alt: "Manufacture" },
-  { src: "/images/Industries/logistics.jpeg", alt: "Logistics" },
-  { src: "/images/Industries/ecomm.jpeg", alt: "Ecommerce" },
-  { src: "/images/Industries/finance.jpeg", alt: "Finance" },
-  { src: "/images/Industries/automotive.jpeg", alt: "Automotive" },
-  { src: "/images/Industries/education.jpeg", alt: "Education" },
-  { src: "/images/hospitality.jpeg", alt: "Hospitality" },
-  { src: "/images/Industries/games.jpeg", alt: "Entertainment" },
+  { src: "/cdn/images/Industries/healthcare.jpeg", alt: "Health Care" },
+  { src: "/cdn/images/industries.jpeg", alt: "Real Estate" },
+  { src: "/cdn/images/Industries/manufacture.jpeg", alt: "Manufacture" },
+  { src: "/cdn/images/Industries/logistics.jpeg", alt: "Logistics" },
+  { src: "/cdn/images/Industries/ecomm.jpeg", alt: "Ecommerce" },
+  { src: "/cdn/images/Industries/finance.jpeg", alt: "Finance" },
+  { src: "/cdn/images/Industries/automotive.jpeg", alt: "Automotive" },
+  { src: "/cdn/images/Industries/education.jpeg", alt: "Education" },
+  { src: "/cdn/images/hospitality.jpeg", alt: "Hospitality" },
+  { src: "/cdn/images/Industries/games.jpeg", alt: "Entertainment" },
 ];
 
 export const IndustriesWorked = () => {
@@ -54,9 +54,9 @@ export const IndustriesWorked = () => {
       <div className="bg-[#00357A] bg-gradient-to-b from-transparent to-black opacity-90 flex flex-col md:flex-row p-6 md:p-14">
         <div className="text-white w-full md:w-[45%] flex flex-col justify-center gap-4 md:gap-7 mb-6 md:mb-0">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight md:leading-16 pr-0 md:pr-2">
-            Industries We've Worked In
+            Industries We've Worked For
           </h1>
-          <span className="text-sm md:text-[16px] leading-5 md:leading-6">
+          <span className="text-sm md:text-[16px] leading-5 md:leading-6 pr-10">
             We deliver tailored solutions across industries like healthcare,
             education, finance, e-commerce, and tech, leveraging deep expertise
             to drive impactful results.

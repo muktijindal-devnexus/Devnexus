@@ -1,25 +1,25 @@
 'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Arrow from '../../../public/images/Arrow.svg'
+import Arrow from '../../../public/cdn/images/Arrow.svg'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const bannerData = [
   {
-    video: '/images/Banner/Digital.mp4',
+    video: '/cdn/images/Banner/Digital.mp4',
     heading: 'Transforming Ideas into Digital Excellence',
     description:
       'We craft cutting-edge digital solutions that drive growth, enhance user experience, and elevate your brand. From software development to strategic marketing, we turn your vision into reality.',
   },
   {
-    video: '/images/Banner/Industries.mp4',
+    video: '/cdn/images/Banner/Industries.mp4',
     heading: 'Empowering Various Industries to Thrive in a Digital Era',
     description:
       'We specialize in driving digital transformation across a wide range of industries, empowering businesses to innovate, streamline in todays fast-moving digital world.',
   },
   {
-    video: '/images/Banner/Team.mp4',
+    video: '/cdn/images/Banner/Team.mp4',
     heading: 'Our Expert Minds Crafting Future-Ready Solutions.',
     description:
       'At DevNexus Solutions, our strength is our expert team, passionate professionals dedicated to delivering tailored digital transformation solutions.',

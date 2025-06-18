@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 // Icon Imports
-import HtmlIcon from "../../../public/images/html.png";
-import CSSIcon from "../../../public/images/CSS.svg";
-import ReactIcon from "../../../public/images/React.svg";
-import NextIcon from "../../../public/images/Nextjs.svg";
-import FlutterIcon from "../../../public/images/Flutter.svg";
-import TailwindIcon from "../../../public/images/Tailwind.svg";
-import MUIIcon from "../../../public/images/MUI.svg";
-import NativeIcon from "../../../public/images/React.svg";
-import FrontendIcon from "../../../public/images/Frontend.svg";
-import BackendIcon from "../../../public/images/Backend.svg";
-import DatabaseIcon from "../../../public/images/Database.svg";
-import UIIcon from "../../../public/images/UI UX.svg";
-import CMSIcon from "../../../public/images/CMS.svg";
+import HtmlIcon from "../../../public/cdn/images/html.png";
+import CSSIcon from "../../../public/cdn/images/CSS.svg";
+import ReactIcon from "../../../public/cdn/images/React.svg";
+import NextIcon from "../../../public/cdn/images/Nextjs.svg";
+import FlutterIcon from "../../../public/cdn/images/Flutter.svg";
+import TailwindIcon from "../../../public/cdn/images/Tailwind.svg";
+import MUIIcon from "../../../public/cdn/images/MUI.svg";
+import NativeIcon from "../../../public/cdn/images/React.svg";
+import FrontendIcon from "../../../public/cdn/images/Frontend.svg";
+import BackendIcon from "../../../public/cdn/images/Backend.svg";
+import DatabaseIcon from "../../../public/cdn/images/Database.svg";
+import UIIcon from "../../../public/cdn/images/UI UX.svg";
+import CMSIcon from "../../../public/cdn/images/CMS.svg";
 
 const tabs = [
   { label: "Frontend", icon: FrontendIcon },
@@ -38,45 +38,45 @@ const techData = {
     { name: "REACT NATIVE", icon: NativeIcon },
   ],
   Backend: [
-    { name: "Node.js", icon: '/images/nodejs.png' },
-    { name: "Express.js", icon: '/images/expressjs.svg' },
-    { name: "Nest.js", icon: '/images/Nest.svg' },
-    { name: "Python", icon: '/images/python.svg' },
-    { name: "Django", icon: '/images/Django.svg' },
-    { name: "Flask", icon: '/images/flask.svg' },
+    { name: "Node.js", icon: '/cdn/images/nodejs.png' },
+    { name: "Express.js", icon: '/cdn/images/expressjs.svg' },
+    { name: "Nest.js", icon: '/cdn/images/Nest.svg' },
+    { name: "Python", icon: '/cdn/images/python.svg' },
+    { name: "Django", icon: '/cdn/images/Django.svg' },
+    { name: "Flask", icon: '/cdn/images/flask.svg' },
 
 
-    { name: "Java", icon: '/images/java.svg' },
-    { name: "Spring Boot", icon: '/images/spring.svg' },
+    { name: "Java", icon: '/cdn/images/java.svg' },
+    { name: "Spring Boot", icon: '/cdn/images/spring.svg' },
 
-    { name: "Graph QL", icon: '/images/graphql.svg' },
+    { name: "Graph QL", icon: '/cdn/images/graphql.svg' },
   ],
   Database: [
-    { name: "MongoDB", icon: '/images/mongodb.svg' },
-    { name: "MySQL", icon: '/images/Mysql.svg' },
-    { name: "PostgreSQL", icon: '/images/postsql.svg' },
-    { name: "FireBase", icon: '/images/firebase.svg' },
+    { name: "MongoDB", icon: '/cdn/images/mongodb.svg' },
+    { name: "MySQL", icon: '/cdn/images/Mysql.svg' },
+    { name: "PostgreSQL", icon: '/cdn/images/postsql.svg' },
+    { name: "FireBase", icon: '/cdn/images/firebase.svg' },
   ],
   "UI/UX": [
-    { name: "Figma", icon: '/images/figma.svg' },
-    { name: "Adobe XD", icon: '/images/XD.svg' },
-    { name: "Adobe Illustrator", icon: '/images/illustrator.svg' },
-    { name: "Adobe Photoshop", icon: '/images/photoshop.svg' },
-    { name: "Canva  ", icon: '/images/canva.svg' },
+    { name: "Figma", icon: '/cdn/images/figma.svg' },
+    { name: "Adobe XD", icon: '/cdn/images/XD.svg' },
+    { name: "Adobe Illustrator", icon: '/cdn/images/illustrator.svg' },
+    { name: "Adobe Photoshop", icon: '/cdn/images/photoshop.svg' },
+    { name: "Canva  ", icon: '/cdn/images/canva.svg' },
 
 
   ],
   CMS: [
-    { name: "WordPress", icon: '/images/Wordpress.svg'  },
-    { name: "Shopify", icon: '/images/shopify.svg' },
-    { name: "Webflow", icon: '/images/webflow.svg' },
-    { name: "Woo Commerce", icon: '/images/woo.svg' },
+    { name: "WordPress", icon: '/cdn/images/Wordpress.svg'  },
+    { name: "Shopify", icon: '/cdn/images/shopify.svg' },
+    { name: "Webflow", icon: '/cdn/images/webflow.svg' },
+    { name: "Woo Commerce", icon: '/cdn/images/woo.svg' },
   ],
   Deveops: [
-    { name: "AWS", icon: '/images/aws.svg' },
-    { name: "Azure", icon: '/images/azure.svg' },
-    { name: "Digital Ocean", icon: '/images/digitalocean.svg' },
-    { name: "Cloudflare", icon: '/images/cloudflare.png' }
+    { name: "AWS", icon: '/cdn/images/aws.svg' },
+    { name: "Azure", icon: '/cdn/images/azure.svg' },
+    { name: "Digital Ocean", icon: '/cdn/images/digitalocean.svg' },
+    { name: "Cloudflare", icon: '/cdn/images/cloudflare.png' }
   ],
 };
 

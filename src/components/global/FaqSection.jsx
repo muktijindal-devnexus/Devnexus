@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import Faq from '../../../public/images/FAQs.svg';
+import Faq from '../../../public/cdn/images/FAQs.svg';
 import Image from 'next/image';
 
 const FaqSection = ({ faqs = [], title, subtitle }) => {

@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import React, { useState } from "react";
+import { FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
 
 export default function ChatBot() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -203,10 +204,20 @@ Address: Noida Sector 63, UP, India`,
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
+     
+      <a
+  href="https://wa.me/919711010160"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaWhatsapp className="w-14 h-14 text-[#00b93a] pb-2" />
+</a>
       {!chatOpen && (
+       
         <button onClick={handleStartChat}>
-          <Image src='/images/contact/contact.svg' width={60} height={60} alt="Contact" />
+          <Image src='/cdn/images/contact/contact.svg' width={60} height={60} alt="Contact" />
         </button>
+
       )}
 
       {chatOpen && (

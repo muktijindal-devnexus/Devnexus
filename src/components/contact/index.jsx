@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImage1 from '../../../public/images/contact/Contactus.jpeg'
+import BannerImage1 from '../../../public/cdn/images/contact/Contactus.jpeg'
 import ContactSection from './ContactSection'
 import IndustryExperience from './GlobalSection'
 import { Banners } from '../global/NavBanners'

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import ProcessImage from "../../../public/images/Process/OurProcess.jpeg";
-import Icon from "../../../public/images/ProcessIcon.svg";
-import LaunchIcon from "../../../public/images/Launch.svg";
-import DesignIcon from "../../../public/images/Design.svg";
-import TestingIcon from "../../../public/images/Testing.svg";
+import ProcessImage from "../../../public/cdn/images/Process/OurProcess.jpeg";
+import Icon from "../../../public/cdn/images/ProcessIcon.svg";
+import LaunchIcon from "../../../public/cdn/images/Launch.svg";
+import DesignIcon from "../../../public/cdn/images/Design.svg";
+import TestingIcon from "../../../public/cdn/images/Testing.svg";
 
 export const OurProcess = () => {
   const processSteps = [

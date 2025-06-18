@@ -1,8 +1,8 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import BannerImage1 from '../../../public/images/BannerImage.jpg'
-import BannerSheet from '../../../public/images/Bannersheet.png'
+import BannerImage1 from '../../../public/cdn/images/BannerImage.jpg'
+import BannerSheet from '../../../public/cdn/images/Bannersheet.png'
 
 const bannerData = [
   {

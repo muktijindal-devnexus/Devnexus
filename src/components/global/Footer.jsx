@@ -134,8 +134,14 @@ export default function Footer() {
               Submit
             </button>
           </div>
+       
         </div>
+       
       </div>
+    <div className="pt-2">
+      <a href="//www.dmca.com/Protection/Status.aspx?ID=b07cf681-1e6f-46f9-8992-50d8d54d14b9" title="DMCA.com Protection Status" className=""> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=b07cf681-1e6f-46f9-8992-50d8d54d14b9"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+
+</div>
       
       {/* Copyright section can be added here */}
       <div className="max-w-7xl mx-auto pt-4 text-center text-xs text-gray-400">

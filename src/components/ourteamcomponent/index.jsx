@@ -1,5 +1,5 @@
 import DeveloperCarousel from "./DeveloperCarousel";
-import BannerImage1 from "../../../public/images/team/our team.jpg";
+import BannerImage1 from "../../../public/cdn/images/team/our team.jpg";
 import { Banners } from "../global/NavBanners";
 
 const devData = [
@@ -8,14 +8,14 @@ const devData = [
     role: "Lead Backend Developer",
     experience: "5+ years",
     skills: ["Nodejs", "Express js", "Nest js", "Python"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Ankit",
     role: "Full Stack Developer Intern",
     experience: "5+ years",
     skills: ["Nodejs", "Express js", "Nest js", "Python"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 ];
 
@@ -25,21 +25,21 @@ const FrontendData = [
     role: "Frontend Developer",
     experience: "5+ years",
     skills: ["Bootstrap", "CSS3", "HTML5"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Anupam",
     role: "Lead Frontend Developer",
     experience: "5+ years",
     skills: ["Tailwind CSS", "HTML5", "Bootstrap"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Ashish Sharma",
     role: "Devops Developer",
     experience: "5+ years",
     skills: ["HTML5", "CSS3", "Tailwind CSS"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 ];
 
@@ -49,14 +49,14 @@ const DesignerData = [
     role: "Graphic Designer",
     experience: "5+ years",
     skills: ["Abobe", "Figma", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Vansh Kaushik",
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Figma", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -64,7 +64,7 @@ const DesignerData = [
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Abobe", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -72,35 +72,35 @@ const DesignerData = [
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Abobe", "Figma", "Photoshop"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Tanmay Rathi",
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Abobe", "Figma", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Saurabh Saxena",
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Abobe", "Figma", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Uday Chatterjee",
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Abobe", "Figma", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Pranav Rao",
     role: "UI UX Developer",
     experience: "5+ years",
     skills: ["Abobe", "Figma", "Photoshop", "Illustrator"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 ];
 
@@ -110,28 +110,28 @@ const ManagementData = [
     role: "Manager",
     experience: "5+ years",
     skills: ["Shopify", "WooCommerce", "WPCommerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Naveen",
     role: "Sales Head",
     experience: "5+ years",
     skills: ["Shopify", "WooCommerce", "WPCommerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Neeraj Kulkarni",
     role: "Sales Head",
     experience: "5+ years",
     skills: ["Shopify", "WooCommerce", "WPCommerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Aditya Sharma",
     role: "Frontend",
     experience: "5+ years",
     skills: ["React js", "Next js", "Angular js", "Vue js", "Typescript"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -139,7 +139,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["React js", "Next js", "Angular js", "Vue js", "Typescript"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -147,7 +147,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["React js", "Next js", "Angular js", "Vue js", "Typescript"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -155,7 +155,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["React js", "Next js", "Angular js", "Vue js"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -163,7 +163,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["React js", "Next js", "Angular js", "Vue js"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -176,7 +176,7 @@ const ManagementData = [
       "Predictive Analysis",
       "Machine Learning",
     ],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -189,7 +189,7 @@ const ManagementData = [
       "Predictive Analysis",
       "Machine Learning",
     ],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Ayan Tripathi",
@@ -201,7 +201,7 @@ const ManagementData = [
       "Predictive Analysis",
       "Machine Learning",
     ],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -214,7 +214,7 @@ const ManagementData = [
       "Predictive Analysis",
       "Machine Learning",
     ],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -222,7 +222,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["De-Fi", "Smart Contracts", "Public Chain", "Private Chain"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -230,7 +230,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["De-Fi", "Smart Contracts", "Public Chain", "Private Chain"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -238,7 +238,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["De-Fi", "Smart Contracts", "Public Chain", "Private Chain"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -246,7 +246,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["De-Fi", "Smart Contracts", "Public Chain"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -254,7 +254,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["MySQL", "Firebase", "MongoDB", "Posgre SQL"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -262,7 +262,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["MySQL", "Firebase", "MongoDB", "Posgre SQL"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -270,7 +270,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["MySQL", "Firebase", "MongoDB", "Posgre SQL"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 
   {
@@ -278,7 +278,7 @@ const ManagementData = [
     role: "Frontend",
     experience: "5+ years",
     skills: ["MySQL", "Firebase", "MongoDB", "Posgre SQL"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 ];
 
@@ -288,35 +288,35 @@ const CMSData = [
     role: "Frontend Developer",
     experience: "5+ years",
     skills: ["Wordpress", "Shopify", "Webflow", "Woo Commerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Anupam",
     role: "Lead Frontend Developer",
     experience: "5+ years",
     skills: ["Wordpress", "Shopify", "Webflow", "Woo Commerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Ashish Sharma",
     role: "Lead Backend Developer",
     experience: "5+ years",
     skills: ["Wordpress", "Shopify", "Webflow", "Woo Commerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Abdul Azeem",
     role: "Lead Backend Developer",
     experience: "5+ years",
     skills: ["Wordpress", "Shopify", "Webflow", "Woo Commerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
   {
     name: "Ankit",
     role: "Full Stack Developer Intern",
     experience: "5+ years",
     skills: ["Wordpress", "Shopify", "Webflow", "Woo Commerce"],
-    imgUrl: "images/team/avatar.svg",
+    imgUrl: "/cdn/images/team/avatar.svg",
   },
 ];
 

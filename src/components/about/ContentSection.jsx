@@ -6,7 +6,6 @@ import React from "react";
 
 const slides = [
   {
-    id: 1,
     title: "Our Approach",
     description:
       "We, DevNexians, believe every client is unique, every project requires a unique approach, and a new strategy altogether. Thus, we customize our offerings to each client in terms of their requirement, preferences and budget.",
@@ -27,12 +26,13 @@ export const AboutDevnexus = () => {
         viewport={{ once: true }}
         className="bg-[#2e5c9a] text-white p-6 sm:p-8 md:p-10 lg:px-12 lg:py-20 rounded-xl lg:rounded-r-2xl w-full lg:w-1/2 order-2 lg:order-1"
       >
-        <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-          We are a group of tech enthusiasts, with inclination towards agile,
-          who started their IT journey in 2010 (within our home office), and
-          now building to a team of 120+ tech experts matching the top
-          problem-solving strategies with the power of digitization.
-        </p>
+      
+           <h4 className="text-white text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">
+            {title}
+          </h4>
+          <p className="text-sm sm:text-base md:text-lg text-whie leading-relaxed">
+            {description}
+          </p>
       </motion.div>
 
       {/* Right section - White card */}
@@ -47,12 +47,12 @@ export const AboutDevnexus = () => {
           <h3 className="text-[#002f6c] text-2xl sm:text-3xl font-bold">
             {id < 10 ? `0${id}` : id}
           </h3>
-          <h4 className="text-[#2e5c9a] text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">
-            {title}
-          </h4>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-            {description}
-          </p>
+           <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+          We are a group of tech enthusiasts, with inclination towards agile,
+          who started their IT journey in 2010 (within our home office), and
+          now building to a team of 120+ tech experts matching the top
+          problem-solving strategies with the power of digitization.
+        </p>
         </div>
       </motion.div>
     </div>

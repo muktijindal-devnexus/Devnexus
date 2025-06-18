@@ -1,11 +1,11 @@
 'use client';
 import React from "react";
-import Innovation from "../../../public/images/Innovation.png";
+import Innovation from "../../../public/cdn/images/Innovation.png";
 import Image from "next/image";
-import TopArrow from "../../../public/images/KeyFactsArrow.svg";
-import RightTop from "../../../public/images/RightTop.svg";
-import LeftBottom from "../../../public/images/LeftBottom.svg";
-import RightBottom from "../../../public/images/RightBottom.svg";
+import TopArrow from "../../../public/cdn/images/KeyFactsArrow.svg";
+import RightTop from "../../../public/cdn/images/RightTop.svg";
+import LeftBottom from "../../../public/cdn/images/LeftBottom.svg";
+import RightBottom from "../../../public/cdn/images/RightBottom.svg";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 

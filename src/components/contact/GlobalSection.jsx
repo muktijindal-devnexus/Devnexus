@@ -24,7 +24,7 @@ const IndustryExperience = () => {
 
         <div className="mt-10  p-4 rounded-lg max-w-[700px] mx-auto ">
           <video
-            src="/images/contact/globalContact.mp4" 
+            src="/cdn/images/contact/globalContact.mp4" 
             autoPlay
             loop
             muted

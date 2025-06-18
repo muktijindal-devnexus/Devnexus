@@ -59,9 +59,9 @@ export const ContactForm = () => {
   };
 
   return (
-    <section className="flex justify-center px-4 sm:px-6">
+    <section className="flex justify-center ">
       <div
-        className="w-full max-w-6xl px-4 sm:px-8 md:px-12 lg:px-16 py-6 md:py-8 flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-10"
+        className="w-full max-w-6xl px-4 sm:px-8 md:px-12 lg:px-16 py-6 md:py-8 flex flex-col lg:flex-row gap-16 md:gap-8 lg:gap-16"
         style={{
           background: "linear-gradient(to right, white, #e9eef4, white)",
         }}
@@ -74,16 +74,18 @@ export const ContactForm = () => {
         </div>
 
         {/* Form Section */}
-        <div className="lg:w-1/2 w-full bg-[#f9f9f9] p-4 sm:p-6 rounded-xl">
-          <h2 className="text-3xl sm:text-xl font-semibold mb-2">Get in Touch</h2>
-          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">
+        <div className="lg:w-1/2 w-full bg-[#f9f9f9] p-14 sm:p-12 rounded-xl">
+          <h2 className="text-xl sm:text-3xl font-semibold ">
+            Get in Touch
+          </h2>
+          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6  pt-4">
             Please fill out the form to help us understand the areas where you
             require assistance.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+          <form onSubmit={handleSubmit} className="">
             {/* Row 1: Name & Email */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full sm:w-1/2">
                 <input
                   type="text"
@@ -111,33 +113,25 @@ export const ContactForm = () => {
                 <p className="text-red-500 text-xs sm:text-sm">{errors.name}</p>
               )}
               {errors.email && (
-                <p className="text-red-500 text-xs sm:text-sm">{errors.email}</p>
+                <p className="text-red-500 text-xs sm:text-sm">
+                  {errors.email}
+                </p>
               )}
             </div>
 
-            {/* Row 2: Country Code, Phone, Website */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* Row 2: Country Code, Phone */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <div className="border-[#828282] border rounded-xl w-20 flex items-center justify-center bg-gray-100 text-xs sm:text-sm font-medium p-1 sm:p-1.5 text-center">
                 IN +91
               </div>
-              <div className="border-[#828282] border rounded-xl w-full sm:w-1/3 p-1 sm:p-1.5">
+              <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 sm:p-2.5">
                 <input
                   type="tel"
                   name="phone"
                   placeholder="Mobile number*"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full text-center text-sm sm:text-[16px] py-1 sm:py-2 rounded-md outline-none"
-                />
-              </div>
-              <div className="border-[#828282] border rounded-xl flex-grow p-1 sm:p-1.5">
-                <input
-                  type="url"
-                  name="website"
-                  placeholder="Website URL"
-                  value={formData.website}
-                  onChange={handleChange}
-                  className="w-full text-center text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none"
+                  className="w-full text-sm sm:text-[16px] py-1 sm:py-2 rounded-md outline-none"
                 />
               </div>
             </div>
@@ -147,28 +141,41 @@ export const ContactForm = () => {
             )}
 
             {/* Row 3: Looking For */}
-            <div className="border-[#828282] border rounded-xl w-full sm:w-1/2 p-1 sm:p-1.5">
-              <input
-                type="text"
+            <div className="border-[#828282] border rounded-xl w-full sm:w-1/2 p-1 sm:p-1.5 text-gray-600 mb-8">
+              <select
                 name="lookingFor"
-                placeholder="Looking for*"
                 value={formData.lookingFor}
                 onChange={handleChange}
-                className="w-full text-center text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none"
-              />
+                className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none "
+              >
+                <option value="" disabled hidden >
+                  Services
+                </option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Branding">UI UX</option>
+                <option value="Branding">Blockchain Development</option>
+                <option value="Branding">AI Technologies</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
+
             {errors.lookingFor && (
-              <p className="text-red-500 text-xs sm:text-sm">{errors.lookingFor}</p>
+              <p className="text-red-500 text-xs sm:text-sm">
+                {errors.lookingFor}
+              </p>
             )}
 
             {/* Row 4: Message */}
-            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5">
+            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5 mb-8">
               <textarea
                 name="message"
-                placeholder="Enter Your Message"
+                placeholder="Brief description of your enquiry"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full text-center text-xs sm:text-sm px-2 py-1 sm:py-2 rounded-md outline-none min-h-[80px]"
+                className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none min-h-[80px]"
                 rows="3"
               ></textarea>
             </div>

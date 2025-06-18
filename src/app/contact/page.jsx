@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className='mt-8'>
         <ContactComponents />
     </div>
   )

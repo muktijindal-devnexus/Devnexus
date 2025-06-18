@@ -29,7 +29,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 text-white bg-[rgba(30,30,30,0.72)] backdrop-blur-md border-none">
+    <header className="fixed top-0 w-full z-50 text-white bg-[rgba(30,30,30,0.72)] backdrop-blur-md border-none cursor-pointer">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4">
         {/* Logo */}
         <div className="flex items-center gap-2">

@@ -5,7 +5,7 @@ import LandingComponent from "@/components/landingpage";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="">
     <LandingComponent />
     </div>
   );

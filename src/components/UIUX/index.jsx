@@ -12,7 +12,7 @@ import Brand4 from '../../../public/cdn/images/brandslogo/Studio.svg';
 import Brand5 from '../../../public/cdn/images/brandslogo/Rotunneling.svg';
 import Brand6 from '../../../public/cdn/images/brandslogo/travel.svg';
 import Brand7 from '../../../public/cdn/images/brandslogo/DCI.svg';
-import Brand10 from '../../../public/cdn//brandslogo/SRE.svg';
+import Brand10 from '../../../public/cdn/images/brandslogo/SRE.svg';
 import Brand11 from '../../../public/cdn/images/brandslogo/KG.svg';
 import Brand12 from '../../../public/cdn/images/brandslogo/nano.svg';
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';

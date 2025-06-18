@@ -66,7 +66,7 @@ export const MobileDevelopment = () => {
   return (
     <div>
       <Banner
-        image="/images/mobile/MobileHero.mp4"
+        image="/cdn/images/mobile/MobileHero.mp4"
         overlayImage
         heading="Upgrade Your Brand with Exceptional UI UX Design and Development Services"
         description="Elevate user engagement through intuitive design and seamless digital experiences."

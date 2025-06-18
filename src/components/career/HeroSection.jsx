@@ -2,7 +2,7 @@ export default function CareerSection() {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center"
-      style={{ backgroundImage: "url('/images/BannerImage.jpg')" }} // Replace with your actual image filename
+      style={{ backgroundImage: "url('/images/cdn/BannerImage.jpg')" }} // Replace with your actual image filename
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60 z-0" />

@@ -122,7 +122,7 @@ export const Fullstack = () => {
   return (
     <div>
       <Banner
-        image="/images/fullstack/fullstackHero.mp4"
+        image="/cdn/images/fullstack/fullstackHero.mp4"
         overlayImage
         heading="Web Design and Development Services That Clicks, Convert and Captivate "
         description="Creating seamless, high-performing websites that engage users and drive results"

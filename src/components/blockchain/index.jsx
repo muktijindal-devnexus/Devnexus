@@ -1,6 +1,6 @@
 import React from "react";
 import { Banner } from "../global/Banner";
-import BannerImage1 from "../../../public/images/BannerImage.jpg";
+import BannerImage1 from "../../../public/cdn//images/BannerImage.jpg";
 import StatusCard from "../common/Status";
 import BlockchainServices from "./BlockchainServices";
 import BlockchainMilestones from "./BlockchainMilestones";

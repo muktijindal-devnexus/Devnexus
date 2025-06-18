@@ -3,50 +3,52 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { ChevronRight } from "lucide-react";
 
-const images = [
-  { src: "/cdn/images/Industries/healthcare.jpeg", alt: "Health Care" },
-  { src: "/cdn/images/industries.jpeg", alt: "Real Estate" },
-  { src: "/cdn/images/Industries/manufacture.jpeg", alt: "Manufacture" },
-  { src: "/cdn/images/Industries/logistics.jpeg", alt: "Logistics" },
-  { src: "/cdn/images/Industries/ecomm.jpeg", alt: "Ecommerce" },
-  { src: "/cdn/images/Industries/finance.jpeg", alt: "Finance" },
-  { src: "/cdn/images/Industries/automotive.jpeg", alt: "Automotive" },
-  { src: "/cdn/images/Industries/education.jpeg", alt: "Education" },
-  { src: "/cdn/images/hospitality.jpeg", alt: "Hospitality" },
-  { src: "/cdn/images/Industries/games.jpeg", alt: "Entertainment" },
-];
-
 export const IndustriesWorked = () => {
+  const [industries, setIndustries] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const fetchIndustries = async () => {
+      try {
+        const res = await fetch("http://13.203.216.121:3002/api/all-Industry");
+        const data = await res.json();
+        if (data?.data) {
+          setIndustries(data.data);
+        }
+      } catch (error) {
+        console.error("Error fetching industries:", error);
+      }
+    };
+
+    fetchIndustries();
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const nextSlide = () => {
     const slideCount = isMobile ? 1 : 2;
-    setCurrentIndex((prev) => (prev + slideCount) % images.length);
+    setCurrentIndex((prev) => (prev + slideCount) % industries.length);
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 2000);
+    const interval = setInterval(nextSlide, 2000);
     return () => clearInterval(interval);
-  }, [isMobile]);
+  }, [industries, isMobile]);
 
-  const currentImages = isMobile 
-    ? [images[currentIndex]]
+  const currentImages = isMobile
+    ? [industries[currentIndex]]
     : [
-        images[currentIndex],
-        images[(currentIndex + 1) % images.length],
+        industries[currentIndex],
+        industries[(currentIndex + 1) % industries.length],
       ];
 
   return (
@@ -64,28 +66,32 @@ export const IndustriesWorked = () => {
         </div>
 
         <div className="relative flex items-center justify-center w-full md:w-[55%]">
-          <div className={`flex ${isMobile ? 'justify-center' : 'gap-4'} w-full`}>
-            {currentImages.map((image, index) => (
-              <div
-                key={index}
-                className={`relative h-[300px] md:h-[400px] ${isMobile ? 'w-full max-w-[300px]' : 'w-[300px]'} flex-1 overflow-hidden rounded-md`}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                  unoptimized // Add this prop to disable optimization
-                />
-
-                <div className="absolute inset-0 rounded-md bg-gradient-to-b from-transparent to-black opacity-100" />
-                <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-lg md:text-xl font-semibold z-10">
-                  {image.alt}
-                </div>
-              </div>
-            ))}
+          <div className={`flex ${isMobile ? "justify-center" : "gap-4"} w-full`}>
+            {currentImages.map(
+              (item, index) =>
+                item && (
+                  <div
+                    key={index}
+                    className={`relative h-[300px] md:h-[400px] ${
+                      isMobile ? "w-full max-w-[300px]" : "w-[300px]"
+                    } flex-1 overflow-hidden rounded-md`}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.title || "Industry"}
+                      fill
+                      className="object-cover"
+                      unoptimized
+                    />
+                    <div className="absolute inset-0 rounded-md bg-gradient-to-b from-transparent to-black opacity-100" />
+                    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-lg md:text-xl font-semibold z-10">
+                      {item.title}
+                    </div>
+                  </div>
+                )
+            )}
           </div>
-          
+
           {!isMobile && (
             <div className="flex items-center absolute right-0 translate-x-full">
               <ChevronRight

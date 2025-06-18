@@ -62,7 +62,7 @@ export const Navbar = () => {
                   setAboutOpen(false);
                   setServicesOpen(false);
                 }}
-                className="hover:text-white hover:font-bold"
+                className="hover:text-white cursor-pointer hover:font-bold"
               >
                 About Us
               </button>
@@ -93,14 +93,14 @@ export const Navbar = () => {
             }}
             onMouseLeave={() => setServicesOpen(false)}
           >
-            <div className="flex gap-1 items-center cursor-pointer">
+            <div className="flex gap-1 items-center cursor-pointer ">
               <button
                 onClick={() => {
                   router.push("/services");
                   setServicesOpen(false);
                   setAboutOpen(false);
                 }}
-                className="hover:text-white hover:font-bold"
+                className="hover:text-white cursor-pointer hover:font-bold"
               >
                 Services
               </button>

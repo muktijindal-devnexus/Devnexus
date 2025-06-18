@@ -77,7 +77,7 @@ export default function Footer() {
     </li>
     <li>
       <a href="/blockchain-development-services" className="hover:text-white transition-colors">
-        Blockchain Development
+       UI/UX Design
       </a>
     </li>
     <li>
@@ -87,12 +87,12 @@ export default function Footer() {
     </li>
     <li>
       <a href="/uiux" className="hover:text-white transition-colors">
-        UI/UX Design
+          Digital Marketing
       </a>
     </li>
     <li>
       <a href="/digital-marketing-services" className="hover:text-white transition-colors">
-        Digital Marketing
+         Blockchain Development
       </a>
     </li>
        <li>

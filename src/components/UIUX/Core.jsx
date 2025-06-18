@@ -37,6 +37,14 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     description:
       "AdobeXD is used for designing the UI, UX visual for web and mobile applications. It is a powerful and one of the trending designing tool and vector based software tool which is used for digital design.",
   },
+     {
+    name: "Sketch",
+    image: "/cdn/images/sketch.svg",
+    bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
+    textColor: "text-black hover:text-white",
+    description:
+      "Sketch is a popular vector-based design tool used for creating user interfaces, websites, and mobile app designs. It allows designers to build clean, scalable layouts and components. When paired with Zeplin, designs from Sketch can be exported for developers to access specs, assets, and code, making the handoff seamless and efficient.",
+  },
   {
     name: "Adobe Photoshop",
     image: "/cdn/images/photoshop.svg",
@@ -47,20 +55,13 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
     {
     name: "Zeplin",
-    image: "/cdn/images/photoshop.svg",
+    image: "/cdn/images/zeplin.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
-      "AdobeXD is used for designing the UI, UX visual for web and mobile applications. It is a powerful and one of the trending designing tool and vector based software tool which is used for digital design.",
+      "*Zeplin* is a collaboration tool that streamlines the handoff between designers and developers. It transforms designs from Figma, Sketch, or Adobe XD into developer-friendly specs, assets, and code snippets—making it easy to build pixel-perfect apps with consistent design.",
   },
-    {
-    name: "Sketch",
-    image: "/cdn/images/photoshop.svg",
-    bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
-    textColor: "text-black hover:text-white",
-    description:
-      "AdobeXD is used for designing the UI, UX visual for web and mobile applications. It is a powerful and one of the trending designing tool and vector based software tool which is used for digital design.",
-  },
+ 
 ];
 
 export default function UIDesignTechnologies() {

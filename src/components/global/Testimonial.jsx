@@ -2,29 +2,7 @@
 import React from "react";
 import BentoGrid from "./BentoGrid";
 
-const testimonials = [
-  {
-    name: "ANKIT",
-    review:
-      "DevNexus transformed our business with an incredible website and strategic marketing. Highly recommend their team!",
-    rating: 4.5,
-    platform: "Google reviews",
-  },
-  {
-    name: "ANKIT",
-    review:
-      "DevNexus transformed our business with an incredible website and strategic marketing. Highly recommend their team!",
-    rating: 4.5,
-    platform: "Google reviews",
-  },
-  {
-    name: "ANKIT",
-    review:
-      "DevNexus transformed our business with an incredible website and strategic marketing. Highly recommend their team!",
-    rating: 4.5,
-    platform: "Google reviews",
-  },
-];
+
 
 export const Testimonial = () => {
   return (

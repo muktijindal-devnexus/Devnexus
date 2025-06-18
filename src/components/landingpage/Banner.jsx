@@ -64,7 +64,7 @@ export const Banner = () => {
           >
             Request Quote
 
-            <span className="relative w-12 h-12 flex items-center justify-center overflow-visible">
+            <span className="relative w-12 h-12 flex items-center justify-center overflow-visible cursor-pointer">
               {/* Smooth Animated Circle */}
               <motion.span
                 className="absolute w-12 h-12 rounded-full border-[#a6a5a5] border-2 mr-14"
@@ -85,7 +85,7 @@ export const Banner = () => {
         </Link>
 
         {/* Dots */}
-     <div className="flex gap-4 mt-6">
+     <div className="flex gap-4 mt-6 cursor-pointer">
   {bannerData.map((_, index) => (
     <button
       key={index}
@@ -94,14 +94,14 @@ export const Banner = () => {
     >
       <div
         className={`
-          w-6 sm:w-10 h-0.5 transition-all duration-300 
+          w-6 sm:w-10 h-0.5 transition-all duration-300 cursor-pointer
           ${activeIndex === index ? 'bg-white' : 'bg-white/50'} 
           group-hover:bg-white
         `}
       />
       <span
         className={`
-          text-white text-xs sm:text-sm transition-all duration-300
+          text-white text-xs sm:text-sm transition-all duration-300 cursor-pointer
           ${activeIndex === index ? 'font-bold' : 'opacity-50'} 
           group-hover:opacity-100 group-hover:font-semibold
         `}

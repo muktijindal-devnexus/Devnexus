@@ -1,22 +1,34 @@
-import Image from 'next/image';
-import React from 'react';
+"use client";
 
-const projects = [
-  { name: "Cervino Ceramix", image: "/images/Project/cervano.png" },
-  { name: "XRD Nano", image: "/images/Project/xrdnano.png" },
-  { name: "Send Mail Reminder", image: "/images/Project/agprojects.png" },
-  { name: "Bergamot Beaute", image: "/images/Project/bergamot.png" },
-  { name: "IOWit", image: "/images/Project/iowit.png" },
-  { name: "Medklaire", image: "/images/Project/medklaire.png" },
-  { name: "SRE India Realty", image: "/images/Project/sreindiarealty.png" },
-  { name: "La Osteria", image: "/images/Project/rsisinternational.png" },
-  { name: "Peace of Mind", image: "/images/Project/peaceofmind.png" },
-];
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 export const Product = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const res = await fetch("http://13.203.216.121:3002/api/all-Port", {
+          method: "GET",
+        });
+        const data = await res.json();
+
+        // Assuming API returns an array of objects like: [{ name: "", image: "http://..." }]
+        setProjects(data.data || []); // adjust this based on actual response structure
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
   return (
     <div className="bg-white py-10 px-4">
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Projects</h2>
+      <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">
+        Projects
+      </h2>
       <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
           <div
@@ -31,6 +43,7 @@ export const Product = () => {
                   width={250}
                   height={500}
                   className="w-full object-cover"
+                  unoptimized // use this if the image is external and not added to next.config.js
                 />
               </div>
             </div>

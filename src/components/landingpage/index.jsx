@@ -5,12 +5,12 @@ import Technologies from "./Technologies";
 import { OurProcess } from "./OurProcess";
 import { Contact } from "./ContactBanner";
 import BrandSlider from "../global/BrandSlider";
-import { IndustriesWorked } from "./IndustriesWorked";
 import { Product } from "./Product";
 import { Banner } from "./Banner";
 import { KeyFacts } from "./KeyFacts";
 import { Testimonial } from "../global/Testimonial";
 import InstagramCarousel from "../global/Instagram";
+import { IndustriesWorked } from "./IndustriesWorked";
 
 const LandingComponent = () => {
   return (

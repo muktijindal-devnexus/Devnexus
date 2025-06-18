@@ -13,10 +13,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const services = [
-  { title: "Digital Marketing", href: "/digital-marketing-services", image: DigitalMarketing },
   { title: "Full-Stack Development", href: "/web-design-development-services", image: FullStackDev },
   { title: "UI/UX Designing", href: "/uiux", image: UIUX },
   { title: "Mobile Development", href: "/mobile-development-services", image: MobileDev },
+  { title: "Digital Marketing", href: "/digital-marketing-services", image: DigitalMarketing },
   { title: "Blockchain Development", href: "/blockchain-development-services", image: Blockchain },
   { title: "AI Technologies", href: "/ai-tech-services", image: AITech },
 ];

@@ -34,7 +34,7 @@ const caseStudies = [
     logoSrc: "/cdn/images/brandslogo/vize.svg",
     imageIcons: ["/app-icon.png", "/design-icon.png"],
     mainImage: "/cdn/images/vize.png",
-    websiteUrl: "https://www.vizecare.com/",
+    websiteUrl: "",
     pdfPath: "/cdn/images/Vize Health case study.pdf",
     companyName: "XYZ Startup",
   },

@@ -28,9 +28,9 @@ const features = [
   },
   {
     icon: FaProjectDiagram,
-    title: "Client-Centric Approach",
+    title: "Post-Launch Support & Growth",
     description:
-      "We are prioritising your business goals and vision delivering tailored web solutions that truly align with your brand and audience requirement.",
+      "We don't stop at launch. Our ongoing maintenance, analytics, and optimization services help your digital presence grow and evolve.",
   },
 ];
 

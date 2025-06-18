@@ -6,9 +6,8 @@ export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    website: "",
-    lookingFor: "",
+    phoneNumber: "",
+    services: "",
     message: "",
   });
 
@@ -29,8 +28,8 @@ export const ContactForm = () => {
     else if (!emailRegex.test(formData.email))
       newErrors.email = "Invalid email format";
 
-    if (!formData.phone.trim()) newErrors.phone = "Phone is required";
-    else if (!phoneRegex.test(formData.phone))
+    if (!formData.phoneNumber.trim()) newErrors.phoneNumber = "Phone is required";
+    else if (!phoneRegex.test(formData.phoneNumber))
       newErrors.phone = "Phone must be 10 digits";
 
     if (!formData.lookingFor.trim())
@@ -39,24 +38,66 @@ export const ContactForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
-    setErrors(validationErrors);
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  const validationErrors = validate();
+  setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
+  if (Object.keys(validationErrors).length === 0) {
+    try {
+      const response = await fetch("http://13.203.216.121:3002/api/contact-us", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phoneNumber: formData.phoneNumber || formData.phoneNumber,
+          services: formData.services || formData.lookingFor,
+          message: formData.message,
+        }),
+      });
+
+      if (!response.ok) throw new Error("API request failed");
+
+      const data = await response.json();
+      console.log("Success:", data);
       alert("Form submitted successfully!");
-      console.log(formData);
+
+      // Reset the form
       setFormData({
         name: "",
         email: "",
-        phone: "",
-        website: "",
-        lookingFor: "",
+        phoneNumber: "",
+        services: "",
         message: "",
       });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting the form.");
     }
-  };
+  }
+};
+
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const validationErrors = validate();
+  //   setErrors(validationErrors);
+
+  //   if (Object.keys(validationErrors).length === 0) {
+  //     alert("Form submitted successfully!");
+  //     console.log(formData);
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       phoneNumber: "",
+  //       services: "",
+  //       message: "",
+  //     });
+  //   }
+  // };
 
   return (
     <section className="flex justify-center ">
@@ -75,9 +116,7 @@ export const ContactForm = () => {
 
         {/* Form Section */}
         <div className="lg:w-1/2 w-full bg-[#f9f9f9] p-14 sm:p-12 rounded-xl">
-          <h2 className="text-xl sm:text-3xl font-semibold ">
-            Get in Touch
-          </h2>
+          <h2 className="text-xl sm:text-3xl font-semibold ">Get in Touch</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6  pt-4">
             Please fill out the form to help us understand the areas where you
             require assistance.
@@ -127,32 +166,34 @@ export const ContactForm = () => {
               <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 sm:p-2.5">
                 <input
                   type="tel"
-                  name="phone"
+                  name="phoneNumber"
                   placeholder="Mobile number*"
-                  value={formData.phone}
+                  value={formData.phoneNumber}
                   onChange={handleChange}
                   className="w-full text-sm sm:text-[16px] py-1 sm:py-2 rounded-md outline-none"
                 />
               </div>
             </div>
 
-            {errors.phone && (
+            {errors.phoneNumber && (
               <p className="text-red-500 text-xs sm:text-sm">{errors.phone}</p>
             )}
 
             {/* Row 3: Looking For */}
-            <div className="border-[#828282] border rounded-xl w-full sm:w-1/2 p-1 sm:p-1.5 text-gray-600 mb-8">
+            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:p-2.5 text-gray-600 mb-8">
               <select
                 name="lookingFor"
                 value={formData.lookingFor}
                 onChange={handleChange}
                 className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none "
               >
-                <option value="" disabled hidden >
+                <option value="" disabled hidden>
                   Services
                 </option>
                 <option value="Web Development">Web Development</option>
-                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Mobile App Development">
+                  Mobile App Development
+                </option>
                 <option value="UI/UX Design">UI/UX Design</option>
                 <option value="Digital Marketing">Digital Marketing</option>
                 <option value="Branding">UI UX</option>

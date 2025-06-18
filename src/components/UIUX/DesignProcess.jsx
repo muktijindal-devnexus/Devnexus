@@ -5,12 +5,12 @@ const stats = [
   {
     count: "User Interface",
     circleText:
-       "Empathize • Define • Ideation • Prototyping • Testing • Visual Design • Prototyping",
+       "Empathize • Define • Ideation • Prototyping • Testing • Visual Design • ",
   },
   {
     count: "User Experience",
     circleText:
-       "Research & Discovery • Information Architecture • Wire Framing & Layout Design • Testing",
+       "Research & Discovery • Information Architecture • Wire Framing • Layout Design • Testing",
   },
 ];
 

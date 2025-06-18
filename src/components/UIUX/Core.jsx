@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 const tools = [
   {
     name: "Canva",
-    image: "/images/UUIX/canva.svg",
+    image: "/cdn/images/UUIX/canva.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -15,7 +15,7 @@ const tools = [
   },
   {
     name: "Figma",
-    image: "/images/figma1.svg",
+    image: "/cdn/images/figma1.svg",
 bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -23,7 +23,7 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
   {
     name: "AdobeXD",
-    image: "/images/adobe.svg",
+    image: "/cdn/images/adobe.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -31,7 +31,7 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
   {
     name: "Adobe Ilustrator",
-    image: "/images/illustrator.svg",
+    image: "/cdn/images/illustrator.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:
@@ -39,7 +39,7 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
   },
   {
     name: "Adobe Photoshop",
-    image: "/images/photoshop.svg",
+    image: "/cdn/images/photoshop.svg",
     bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:

@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 export default function WhyChooseSection() {
   const features = [
-    { title: "Tailored AI Solutions", icon: "/images/ai/image 134.svg" },
-    { title: "End-to-End Expertise", icon: "/images/ai/image 135.svg" },
-    { title: "Proven Technical Excellence", icon: "/images/ai/image 136.svg" },
-    { title: "Scalable Development", icon: "/images/ai/image 137.svg" },
-    { title: "Responsible AI", icon: "/images/ai/image 138.svg" },
-    { title: "Ongoing Support", icon: "/images/ai/image 139.svg" },
-    { title: "Industry-driven data", icon: "/images/ai/image 140.svg" },
+    { title: "Tailored AI Solutions", icon: "/cdn/images/ai/image 134.svg" },
+    { title: "End-to-End Expertise", icon: "/cdn/images/ai/image 135.svg" },
+    { title: "Proven Technical Excellence", icon: "/cdn/images/ai/image 136.svg" },
+    { title: "Scalable Development", icon: "/cdn/images/ai/image 137.svg" },
+    { title: "Responsible AI", icon: "/cdn/images/ai/image 138.svg" },
+    { title: "Ongoing Support", icon: "/cdn/images/ai/image 139.svg" },
+    // { title: "Industry-driven data", icon: "/cdn/images/ai/image 140.svg" },
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function WhyChooseSection() {
           viewport={{ once: true }}
           className="w-full lg:w-1/2"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 text-[#00357A]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 text-[#00357A] pt-16">
             Why Choose <br />
             <span className="font-semibold">DevNexus Solutions?</span>
           </h2>

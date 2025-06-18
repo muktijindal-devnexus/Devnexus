@@ -47,13 +47,13 @@ const ProcessSteps = () => {
 
   const handleNext = () => {
     if (currentIndex + visibleCards < steps.length) {
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex(currentIndex + 2);
     }
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+      setCurrentIndex(currentIndex - 2);
     }
   };
 

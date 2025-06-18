@@ -4,16 +4,16 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const industries = [
-  { label: 'Healthcare', icon: '/images/Blockchain/healthcare.svg' },
-  { label: 'Automotive', icon: '/images/Blockchain/maintenance.svg' },
-  { label: 'Logistics', icon: '/images/Blockchain/trolley.svg' },
-  { label: 'Real Estate', icon: '/images/Blockchain/construction.svg' },
-  { label: 'Manufacturing', icon: '/images/Blockchain/Manufacturing.svg' },
-  { label: 'Telecom', icon: '/images/Blockchain/telecom.svg' },
-  { label: 'Entertainment', icon: '/images/Blockchain/cinema.svg' },
-  { label: 'Marketing', icon: '/images/Blockchain/marketing.svg' },
-  { label: 'Education', icon: '/images/Blockchain/global.svg' },
-  { label: 'Travel & Tourism', icon: '/images/Blockchain/travel.svg' },
+  { label: 'Healthcare', icon: '/cdn/images/Blockchain/healthcare.svg' },
+  { label: 'Automotive', icon: '/cdn/images/Blockchain/maintenance.svg' },
+  { label: 'Logistics', icon: '/cdn/images/Blockchain/trolley.svg' },
+  { label: 'Real Estate', icon: '/cdn/images/Blockchain/construction.svg' },
+  { label: 'Manufacturing', icon: '/cdn/images/Blockchain/Manufacturing.svg' },
+  { label: 'Telecom', icon: '/cdn/images/Blockchain/telecom.svg' },
+  { label: 'Entertainment', icon: '/cdn/images/Blockchain/cinema.svg' },
+  { label: 'Marketing', icon: '/cdn/images/Blockchain/marketing.svg' },
+  { label: 'Education', icon: '/cdn/images/Blockchain/global.svg' },
+  { label: 'Travel & Tourism', icon: '/cdn/images/Blockchain/travel.svg' },
 ];
 
 const containerVariants = {

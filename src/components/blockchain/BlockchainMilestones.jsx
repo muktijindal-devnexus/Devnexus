@@ -1,5 +1,3 @@
-import Image from "next/image"; // You may remove this if not used elsewhere
-
 const milestones = [
   {
     number: "01.",
@@ -18,7 +16,7 @@ const milestones = [
 const BlockchainMilestones = () => {
   return (
     <section className="bg-white px-4 md:px-16 lg:px-24 py-12">
-      <div className="flex flex-col md:flex-row gap-10 items-center">
+      <div className="flex flex-col md:flex-row gap-8 items-center justify-center p-20">
         {/* Left Content */}
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-3xl font-bold text-[#00357A] mb-6">
@@ -35,7 +33,7 @@ const BlockchainMilestones = () => {
             ))}
           </ul>
 
-          <button className="mt-8 bg-[#00357A] hover:bg-blue-800 text-white font-medium px-5 py-2 rounded">
+          <button className="mt-8 bg-[#00357A] hover:bg-[#335D95] text-white font-medium px-5 py-2 rounded">
             Consult Our Experts
           </button>
         </div>
@@ -43,7 +41,7 @@ const BlockchainMilestones = () => {
         {/* Right Video */}
         <div className="md:w-1/3 relative aspect-video  overflow-hidden">
           <video
-            src="/images/Blockchain/blockchain 2030.mp4"
+            src="/cdn/images/Blockchain/blockchain 2030.mp4"
             autoPlay
             loop
             muted

@@ -9,16 +9,22 @@ const features = [
       "We are creating eye catching, user friendly designs which adapt seamlessly across all devices to make sure an exceptional user experience.",
   },
   {
-    icon: Braces ,
+    icon: Braces,
     title: "Clean & Scalable Code",
     description:
       "At DevNexus Solutions our team of experts write efficient, well structured code which ensures high performance and easily scalable as your business grows.",
   },
   {
-    icon:  LayoutTemplate,
+    icon: LayoutTemplate,
     title: "Cutting-Edge Technology",
     description:
       "DevNexus Solutions use the latest tools and framework to make sure the future ready solutions for your brand.",
+  },
+  {
+    icon: FaProjectDiagram,
+    title: "Client-Centric Approach",
+    description:
+      "We are prioritising your business goals and vision delivering tailored web solutions that truly align with your brand and audience requirement.",
   },
   {
     icon: FaProjectDiagram,
@@ -44,7 +50,7 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={idx}
-                className="bg-white border rounded-md shadow-sm p-6 flex flex-col gap-3"
+                className="bg-white border rounded-md shadow-sm p-6 flex flex-col gap-3 transition-transform duration-300 transform hover:scale-105 hover:shadow-lg"
               >
                 <Icon className="text-2xl text-blue-900" />
                 <h3 className="text-base font-semibold text-blue-900">{feature.title}</h3>
@@ -54,15 +60,20 @@ const WhyChooseUs = () => {
           })}
         </div>
 
-        <div className="mt-6">
-          <div className="bg-white border rounded-md shadow-sm p-6 flex flex-col gap-3">
-            {(() => {
-              const Icon = features[3].icon;
-              return <Icon className="text-2xl text-blue-900" />;
-            })()}
-            <h3 className="text-base font-semibold text-blue-900">{features[3].title}</h3>
-            <p className="text-sm text-gray-600">{features[3].description}</p>
-          </div>
+        <div className="mt-6 flex gap-6 flex-col sm:flex-row">
+          {[3, 4].map((i) => {
+            const Icon = features[i].icon;
+            return (
+              <div
+                key={i}
+                className="bg-white border rounded-md shadow-sm p-6 flex flex-col gap-3 transition-transform duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                <Icon className="text-2xl text-blue-900" />
+                <h3 className="text-base font-semibold text-blue-900">{features[i].title}</h3>
+                <p className="text-sm text-gray-600">{features[i].description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

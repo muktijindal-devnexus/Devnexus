@@ -1,3 +1,4 @@
+import { Blend, DraftingCompass, KeyboardMusic, Rss, Workflow } from 'lucide-react';
 import React from 'react';
 import { FaClipboardList, FaLaptopCode, FaSearch } from 'react-icons/fa';
 
@@ -15,13 +16,13 @@ const cardData = [
       'We believe that every successful digital marketing begins with understanding your audience, where your brand fits for better visibility. This step is all about collecting insights that power effective, target-market campaigns. ',
   },
   {
-    icon: <FaSearch size={24} />,
+    icon: <DraftingCompass size={24} />,
     title: 'Crafting a Data-Driven Strategy',
     description:
       'Our team of specialists not only depends on market estimates but also constructs digital marketing strategies that are data-oriented and tailored to your business objectives. All of our decisions consider insights developed from your analytics ecosystem and an intimate knowledge of your audience.',
   },
   {
-    icon: <FaSearch size={24} />,
+    icon: <Rss size={24} />,
     title: 'Content That Connects',
     description:
       'Content is the bridge between your brand and your audience. At DevNexus Solutions, we believe in creating content which does not just inform but inspire, engage and drives actions.',
@@ -33,19 +34,19 @@ const cardData = [
       'At DevNexus Solutions, we are transforming strategy into action with seamless execution and proactive management. Our goal is simple: to ensure the digital marketing campaign delivers maximum impact on time and budget. ',
   },
     {
-    icon: <FaSearch size={24} />,
+    icon: <KeyboardMusic size={24} />,
     title: 'Performance Tracking ',
     description:
       'At DevNexus Solutions, we believe which perform tracking is the backbone of a successful digital marketing strategy. We begin with clear goals, measurable KPIs which align with your business objectives. Using tools like Google Analytics, Google Search Console, Meta Business Suite and LinkedIn analytics, we are monitoring performance across all channels in real time, ensuring every campaign stays on track.',
   },
     {
-    icon: <FaSearch size={24} />,
+    icon: <Workflow size={24} />,
     title: 'Continuous Optimization',
     description:
       'Digital Marketing is the process of learning and improving continuously. Thats why optimization is the core of everything we do, our team gives a close eye on the result after campaigns have been published From testing new creative ideas adjusting targeting parameters and refining strategy to implement AB testing our teams approach is proactive and agile. By staying ahead of market trends and consumer behaviour changes, we make sure that your campaigns remain relevant, competitive',
   },
     {
-    icon: <FaSearch size={24} />,
+    icon: <Blend size={24} />,
     title: 'Transparency & Collaboration',
     description:
       'We follow transparent, collaborative and open communication with our clients. We see ourselves as an extension of your team, working closely with you every step of the way. From clear reporting, regular process updates, to honest feedback and open discussion. Our digital marketing team make sure that you are always informed, involved and confident in the direction of your digital marketing efforts. ',

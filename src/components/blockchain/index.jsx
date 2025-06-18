@@ -44,7 +44,7 @@ export const Blockchain = () => {
   return (
     <div>
       <Banner
-        image="/images/Blockchain/blockchain.mp4"
+        image="/cdn/images/Blockchain/blockchain.mp4"
         overlayImage
         heading="Trusted Blockchain Development Company  "
         description="Building secure, scalable, and transparent systems for a decentralized future"

@@ -8,6 +8,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
+import Link from "next/link";
 
 const instagramImages = [
   "/cdn/images/insta/1.png",
@@ -26,19 +28,30 @@ export default function InstagramCarousel() {
 
   return (
     <div className="w-full py-10 px-5 md:px-20 bg-white relative">
-      <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#00357A] mb-6">
-        Follow us on Instagram
-      </h2>
+      <div className="flex flex-col justify-center items-center mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#00357A] ">
+          Follow us on Instagram
+        </h2>
+        <Link href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3">
+          <FaInstagram className="text-4xl mt-3 text-[#E1306C]" />
+        </Link>
+      </div>
 
       {/* Custom arrows */}
       <div className="absolute top-[220px] left-2 z-10 -translate-y-1/2">
-        <button ref={prevRef} className="p-2 bg-white shadow rounded-full hover:bg-gray-100 text-[#00357A]">
-       <ChevronLeft />
+        <button
+          ref={prevRef}
+          className="p-2 bg-white shadow rounded-full hover:bg-gray-100 text-[#00357A]"
+        >
+          <ChevronLeft />
         </button>
       </div>
       <div className="absolute top-[220px] right-2 z-10 -translate-y-1/2">
-        <button ref={nextRef} className="p-2 bg-white shadow rounded-full hover:bg-gray-100 text-[#00357A]">
-         <ChevronRight />
+        <button
+          ref={nextRef}
+          className="p-2 bg-white shadow rounded-full hover:bg-gray-100 text-[#00357A]"
+        >
+          <ChevronRight />
         </button>
       </div>
 
@@ -70,7 +83,6 @@ export default function InstagramCarousel() {
                 src={img}
                 alt={`Instagram post ${index + 1}`}
                 fill
-            
                 className="object-cover"
               />
             </div>

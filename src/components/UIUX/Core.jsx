@@ -45,6 +45,22 @@ bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     description:
       "AdobeXD is used for designing the UI, UX visual for web and mobile applications. It is a powerful and one of the trending designing tool and vector based software tool which is used for digital design.",
   },
+    {
+    name: "Zeplin",
+    image: "/cdn/images/photoshop.svg",
+    bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
+    textColor: "text-black hover:text-white",
+    description:
+      "AdobeXD is used for designing the UI, UX visual for web and mobile applications. It is a powerful and one of the trending designing tool and vector based software tool which is used for digital design.",
+  },
+    {
+    name: "Sketch",
+    image: "/cdn/images/photoshop.svg",
+    bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
+    textColor: "text-black hover:text-white",
+    description:
+      "AdobeXD is used for designing the UI, UX visual for web and mobile applications. It is a powerful and one of the trending designing tool and vector based software tool which is used for digital design.",
+  },
 ];
 
 export default function UIDesignTechnologies() {

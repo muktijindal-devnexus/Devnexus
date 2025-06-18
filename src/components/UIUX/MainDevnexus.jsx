@@ -60,8 +60,8 @@ export const MainDevnexus = () => {
 
       {/* Right section */}
       <div className="relative w-full lg:w-1/2 mt-6 lg:mt-0">
-        <div className="bg-white shadow-md rounded-xl lg:rounded-l-4xl p-6 sm:p-8 lg:p-10 border-l-0 lg:border-l-4 border-[#2e5c9a] transition-all duration-300 ease-in-out lg:relative lg:right-10">
-          <h3 className="text-[#002f6c] text-2xl sm:text-3xl font-bold">
+        <div className="bg-white shadow-md rounded-xl lg:rounded-l-4xl p-6 sm:p-8 lg:p-10 border-l-0 lg:border-l-4 border-[#2e5c9a] transition-all duration-300 ease-in-out lg:relative lg:right-10 h-[300px]">
+          <h3 className="text-[#002f6c] text-2xl sm:text-3xl font-bold pb-2">
             {id < 10 ? `0${id}` : id}
           </h3>
           <h4 className="text-[#2e5c9a] text-lg sm:text-xl font-semibold mb-2">{title}</h4>

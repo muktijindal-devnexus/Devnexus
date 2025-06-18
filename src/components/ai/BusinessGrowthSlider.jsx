@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { MoveLeft, MoveRight } from "lucide-react";
 
@@ -58,31 +58,38 @@ export default function BusinessGrowthSlider() {
     <section className="py-16 px-6 md:px-20 bg-white">
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left Card */}
-        <div className="bg-[#00357A] text-white p-8 rounded-xl md:w-1/2">
+        <div className="bg-[#00357A] text-white p-8 rounded-xl md:w-1/2 h-[300px]">
           <h2 className="text-2xl md:text-4xl font-semibold mb-4 leading-snug">
             Boost Your Business Growth With{" "}
             <span className="font-bold">AI Software Development</span>
           </h2>
           <p className="text-lg text-blue-100">
-            Unlock the potential of your business with Artificial Intelligence Development Services from DevNexus Solutions.
+            Unlock the potential of your business with Artificial Intelligence
+            Development Services from DevNexus Solutions.
           </p>
         </div>
 
         {/* Right Content */}
-        <div className="md:w-1/2 space-y-4">
-          <div className="text-sm font-medium border border-[#00357A] text-[#00357A] px-4 py-1 rounded-full inline-block w-fit">
+        <div className="md:w-1/2 h-[400px] flex flex-col justify-between pt-20">
+          {/* Slide Indicator */}
+          <div className="text-sm font-medium border border-[#00357A] text-[#00357A] px-4 py-1 rounded-full inline-block w-fit mb-6">
             {`0${current + 1} of 0${total}`}
           </div>
 
-          <h3 className="text-xl font-semibold text-[#00357A]">
-            {slides[current].title}
-          </h3>
+          {/* Title and Divider */}
+          <div>
+            <h3 className="text-xl font-semibold text-[#00357A]">
+              {slides[current].title}
+            </h3>
+            <hr className="border-[#00357A] w-24 my-2" />
+          </div>
 
-          <hr className="border-[#00357A] w-24" />
+          {/* Content Area with scroll if overflow */}
+          <div className="text-gray-700 text-sm overflow-y-auto pr-2 flex-1">
+            {slides[current].content}
+          </div>
 
-          <p className="text-gray-700 text-sm">{slides[current].content}</p>
-
-          {/* Dots (updated) */}
+          {/* Dots */}
           <div className="flex items-center gap-2 mt-4">
             {slides.map((_, i) => (
               <button

@@ -51,12 +51,19 @@ export default function AIServiceSection() {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            whileHover={{ scale: 1.05 }}
-            className="border rounded-xl shadow-sm p-6 bg-white hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.3 }}
+            whileHover={{
+              scale: 1.03,
+              boxShadow: "0px 12px 20px rgba(0, 53, 122, 0.1)",
+            }}
+            className="border rounded-xl shadow-sm p-6 bg-white transition duration-300 ease-in-out cursor-pointer"
           >
             <h3 className="text-lg font-semibold text-[#00357A] mb-2">{service.title}</h3>
             <p className="text-[#696969] text-sm">{service.description}</p>

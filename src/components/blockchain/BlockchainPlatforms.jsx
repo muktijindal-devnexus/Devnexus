@@ -3,18 +3,18 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const platforms = [
-  { name: "Etherium", src: "/images/Blockchain/Etherium.svg" },
-  { name: "Solana", src: "/images/solana.svg" },
-  { name: "Stellar", src: "/images/stellar.svg" },
-  { name: "Hyperledger", src: "/images/Blockchain/Hyperledger.svg" },
-  { name: "Credits", src: "/images/Blockchain/Credits.svg" },
-  { name: "Bigchaindb", src: "/images/Blockchain/Bigchaindb.svg" },
-  { name: "Hashgraph", src: "/images/Blockchain/Hashgraph.svg" },
-  { name: "Ripple", src: "/images/Blockchain/Ripple.svg" },
-  { name: "Corda", src: "/images/Blockchain/Corda.svg" },
-  { name: "Multichain", src: "/images/Blockchain/Multichain.svg" },
-  { name: "Tron", src: "/images/Blockchain/Tron.svg" },
-  { name: "EOS", src: "/images/Blockchain/EOS.svg" },
+  { name: "Etherium", src: "/cdn/images/Blockchain/Etherium.svg" },
+  { name: "Solana", src: "/cdn/images/solana.svg" },
+  { name: "Stellar", src: "/cdn/images/stellar.svg" },
+  { name: "Hyperledger", src: "/cdn/images/Blockchain/Hyperledger.svg" },
+  { name: "Credits", src: "/cdn/images/Blockchain/Credits.svg" },
+  { name: "Bigchaindb", src: "/cdn/images/Blockchain/Bigchaindb.svg" },
+  { name: "Hashgraph", src: "/cdn/images/Blockchain/Hashgraph.svg" },
+  { name: "Ripple", src: "/cdn/images/Blockchain/Ripple.svg" },
+  { name: "Corda", src: "/cdn/images/Blockchain/Corda.svg" },
+  { name: "Multichain", src: "/cdn/images/Blockchain/Multichain.svg" },
+  { name: "Tron", src: "/cdn/images/Blockchain/Tron.svg" },
+  { name: "EOS", src: "/cdn/images/Blockchain/EOS.svg" },
 ];
 
 const containerVariants = {

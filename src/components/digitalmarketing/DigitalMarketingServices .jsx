@@ -85,11 +85,11 @@ export const DigitalMarketingServices = () => {
 
       {/* Right side */}
       <div className="md:w-2/3 space-y-4">
-        <p className="text-[18px] text-gray-700 font-medium">
+        <p className="text-[18px] text-gray-700 font-medium my-8">
           As a leading Digital Marketing Company, we provide a wide range of Digital Marketing Services according to your business goals.
         </p>
 
-        <div className="p-18 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white">
+        <div className="p-18 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white h-[420px]">
           <h2 className="text-[24px] font-semibold text-[#335D95]">
             {selectedService.title}
           </h2>

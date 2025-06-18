@@ -69,7 +69,7 @@ export const Navbar = () => {
               <ChevronDown />
             </div>
             {aboutOpen && (
-              <div className="absolute left-0 top-full bg-white rounded-md shadow-md mt-5 text-[#7E7E7E] z-50 min-w-[200px] p-4">
+              <div className="absolute left-0 top-full bg-white rounded-md shadow-md text-[#7E7E7E] z-50 min-w-[200px] p-2">
                 {aboutDropdown.map((item, index) => (
                   <Link
                     key={index}
@@ -107,7 +107,7 @@ export const Navbar = () => {
               <ChevronDown />
             </div>
             {servicesOpen && (
-              <div className="absolute left-0 top-full bg-white text-[#7E7E7E] rounded-md shadow-md mt-5 z-50 min-w-[300px] p-8">
+              <div className="absolute left-0 top-full bg-white text-[#7E7E7E] rounded-md shadow-md  z-50 min-w-[300px] p-8">
                 {servicesDropdown.map((item, index) => (
                   <Link
                     key={index}

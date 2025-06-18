@@ -58,7 +58,7 @@ const faqData = [
   {
     question: "What tools are you using for UI UX design?",
     answer:
-      'At DevNexus our team of ui us designer are working on industry standard tools like Figma, Zeplin, Sketch, Adobe XD, etc',
+      'At DevNexus our team of ui ux designer are working on industry standard tools like Figma, Zeplin, Sketch, Adobe XD, etc',
   },
 ];
 

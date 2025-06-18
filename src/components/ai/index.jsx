@@ -44,7 +44,7 @@ export const AiTech = () => {
   return (
     <div>
             <Banner
-                     image='/images/ai/ai.mp4'
+                     image='/cdn/images/ai/ai.mp4'
                      overlayImage
                      heading=" Transform Artificial Intelligence Development Services"
                      description="At DevNexus Solutions, we are accelerating business through strategic Ai software development services."

@@ -130,7 +130,7 @@ export const Fullstack = () => {
       <StatusCard />
       <WhyChooseUs />
       {/* <ExecutionSection /> */}
-      <FullStackServices      />
+      <FullStackServices />
          <Slider
       title="Driving Growth To The Brands."
       subtitle="We deliver Global IT Services to brands of all sizes"

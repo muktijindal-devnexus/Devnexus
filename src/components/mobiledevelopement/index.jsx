@@ -7,16 +7,16 @@ import ExecutionSection from "../common/ExecutionSection";
 import StatusCard from "../common/Status";
 import { ProcessWeFollow } from "../common/ProcessWeFollow";
 import { Banner } from "../global/Banner";
-import Brand3 from '../../../public/cdn/images/brandslogo/Jindal.svg';
-import Brand4 from '../../../public/cdn/images/brandslogo/Studio.svg';
-import Brand5 from '../../../public/cdn/images/brandslogo/Rotunneling.svg';
-import Brand6 from '../../../public/cdn/images/brandslogo/travel.svg';
-import Brand7 from '../../../public/cdn/images/brandslogo/DCI.svg';
-import Brand10 from '../../../public/cdn/images/brandslogo/SRE.svg';
-import Brand11 from '../../../public/cdn/images/brandslogo/KG.svg';
-import Brand12 from '../../../public/cdn/images/brandslogo/nano.svg';
+import Brand3 from "../../../public/cdn/images/brandslogo/Jindal.svg";
+import Brand4 from "../../../public/cdn/images/brandslogo/Studio.svg";
+import Brand5 from "../../../public/cdn/images/brandslogo/Rotunneling.svg";
+import Brand6 from "../../../public/cdn/images/brandslogo/travel.svg";
+import Brand7 from "../../../public/cdn/images/brandslogo/DCI.svg";
+import Brand10 from "../../../public/cdn/images/brandslogo/SRE.svg";
+import Brand11 from "../../../public/cdn/images/brandslogo/KG.svg";
+import Brand12 from "../../../public/cdn/images/brandslogo/nano.svg";
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';
-import Brand14 from '../../../public/cdn/images/brandslogo/vize.svg';
+import Brand14 from "../../../public/cdn/images/brandslogo/vize.svg";
 
 const brandLogos = [
   Brand3.src,
@@ -74,11 +74,11 @@ export const MobileDevelopment = () => {
       <StatusCard />
       <WhyChooseUs />
       <ExecutionSection />
-        <Slider
-                          title="Driving Growth To The Brands."
-                          subtitle="We deliver Global IT Services to brands of all sizes"
-                          brands={brandLogos}
-                        />
+      <Slider
+        title="Driving Growth To The Brands."
+        subtitle="We deliver Global IT Services to brands of all sizes"
+        brands={brandLogos}
+      />
       <ProcessWeFollow />
       <FaqSection
         faqs={faqData}

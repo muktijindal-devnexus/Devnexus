@@ -10,14 +10,14 @@ import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const instagramImages = [
-  "/images/insta/1.png",
-  "/images/insta/2.png",
-  "/images/insta/3.png",
-  "/images/insta/4.png",
-  "/images/insta/5.png",
-  "/images/insta/1.png",
-  "/images/insta/2.png",
-  "/images/insta/3.png",
+  "/cdn/images/insta/1.png",
+  "/cdn/images/insta/2.png",
+  "/cdn/images/insta/3.png",
+  "/cdn/images/insta/4.png",
+  "/cdn/images/insta/5.png",
+  "/cdn/images/insta/1.png",
+  "/cdn/images/insta/2.png",
+  "/cdn/images/insta/3.png",
 ];
 
 export default function InstagramCarousel() {

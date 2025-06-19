@@ -1,10 +1,16 @@
+"use client";
+
 import React from "react";
+import dynamic from "next/dynamic";
+
 import BannerImage1 from "../../../public/cdn/images/contact/Contactus.jpeg";
 import ContactSection from "./ContactSection";
 import IndustryExperience from "./GlobalSection";
 import { Banners } from "../global/NavBanners";
 import InstagramCarousel from "../global/Instagram";
-import Map from "./Map";
+
+// ✅ Dynamically import Map to avoid window-related SSR error
+const Map = dynamic(() => import("./Map"), { ssr: false });
 
 export const ContactComponents = () => {
   return (

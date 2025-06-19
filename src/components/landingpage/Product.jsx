@@ -9,7 +9,7 @@ export const Product = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch("http://13.203.216.121:3002/api/all-Port", {
+        const res = await fetch("https://backend.devnexussolutions.com/api/all-Port", {
           method: "GET",
         });
         const data = await res.json();
@@ -38,8 +38,8 @@ export const Product = () => {
             <div className="relative h-[300px] sm:h-[350px] lg:h-[400px] overflow-hidden">
               <div className="absolute top-0 left-0 w-full group-hover:-translate-y-[calc(100%-150px)] sm:group-hover:-translate-y-[calc(100%-180px)] lg:group-hover:-translate-y-[calc(100%-224px)] transition-transform duration-[9000ms] ease-linear">
                 <Image
-                  src={project.image}
-                  alt={project.name}
+                  src={project?.image}
+                  alt={project?.title}
                   width={250}
                   height={500}
                   className="w-full object-cover"
@@ -48,7 +48,7 @@ export const Product = () => {
               </div>
             </div>
             <div className="text-center text-blue-900 font-semibold text-sm sm:text-base mt-2 px-2">
-              {project.name}
+              {project?.title}
             </div>
           </div>
         ))}

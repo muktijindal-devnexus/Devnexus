@@ -38,7 +38,7 @@ export default function InstagramCarousel() {
       </div>
 
       {/* Custom arrows */}
-      <div className="absolute top-[220px] left-2 z-10 -translate-y-1/2">
+      <div className="absolute top-[270px] left-2 z-10 -translate-y-1/2">
         <button
           ref={prevRef}
           className="p-2 bg-white shadow rounded-full hover:bg-gray-100 text-[#00357A]"

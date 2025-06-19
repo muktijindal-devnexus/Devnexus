@@ -6,18 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
+import { Ourteam } from "./Ourteam";
 
-const teamImages = [
-  { id: 1, src: "/images/team1.png", alt: "Team Member 1" },
-  { id: 2, src: "/images/team2.png", alt: "Team Member 2" },
-  { id: 3, src: "/images/team3.png", alt: "Prakash Singh Bisen" },
-  { id: 4, src: "/images/team4.png", alt: "Team Member 4" },
-  { id: 5, src: "/images/team5.png", alt: "Team Member 5" },
-  { id: 7, src: "/images/team7.png", alt: "Team Member 7" },
-  { id: 8, src: "/images/team18.png", alt: "Team Member 8" },
-  { id: 9, src: "/images/team22.png", alt: "Team Member 9" },
-
-];
 
 const HiringSection = () => {
   return (
@@ -41,40 +31,8 @@ const HiringSection = () => {
         {/* Reel-like Team Carousel */}
         <div className="text-center mt-16">
           <h3 className="text-2xl md:text-3xl font-bold text-[#00357A]">Meet Our Team</h3>
-
-          <div className="mt-10">
-            <Swiper
-              modules={[Autoplay]}
-              slidesPerView={2}
-              spaceBetween={20}
-              loop={true}
-              speed={4000} // Increase speed for smoother continuous effect
-              autoplay={{
-                delay: 0, 
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                640: { slidesPerView: 3 },
-                1024: { slidesPerView: 4 },
-              }}
-              className="!px-4"
-            >
-              {teamImages.concat(teamImages).map(({ id, src, alt }, index) => (
-                <SwiperSlide key={`${id}-${index}`}>
-                  <div className="rounded-lg overflow-hidden h-80 w-full relative">
-                    <Image
-                      src={src}
-                      alt={alt}
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-lg"
-                      priority
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          <Ourteam />
+        
         </div>
       </div>
     </section>

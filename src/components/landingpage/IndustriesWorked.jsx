@@ -11,7 +11,7 @@ export const IndustriesWorked = () => {
   useEffect(() => {
     const fetchIndustries = async () => {
       try {
-        const res = await fetch("http://13.203.216.121:3002/api/all-Industry");
+        const res = await fetch("https://backend.devnexussolutions.com/api/all-Industry");
         const data = await res.json();
         if (data?.data) {
           setIndustries(data.data);

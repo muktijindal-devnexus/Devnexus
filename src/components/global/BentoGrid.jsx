@@ -11,7 +11,7 @@ const BentoGrid = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const res = await fetch("http://13.203.216.121:3002/api/all-Testimonials");
+        const res = await fetch("https://backend.devnexussolutions.com/api/all-Testimonials");
         const data = await res.json();
           console.log("Fetched Testimonials:", data?.data);
         setTestimonials(data?.data || []);
@@ -94,17 +94,24 @@ const BentoGrid = () => {
           </div>
 
           {/* Center column */}
-          <div className="sm:col-span-2 lg:col-span-2 flex items-center justify-center mt-[190px]">
+          <div className="sm:col-span-2 lg:col-span-2 flex flex-col items-center justify-center mt-[30px]">
+        
+             <h1 className="font-semibold text-[20px] md:text-[30px] mb-8 text-center">
+             
+            Trusted by Many for Digital and Web Solutions
+          </h1>
             <motion.div
               variants={item}
               className="bg-white rounded-2xl p-6 flex flex-col items-center gap-4 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full w-full"
               whileHover={{ y: -5, scale: 1.02 }}
             >
+             
               <div className="flex justify-center mb-4">
                 <FaQuoteLeft className="text-[#00357A] text-xl w-[45px] h-[45px]" />
               </div>
+                      
               <p className="text-gray-700 text-sm md:text-base text-center leading-8">
-                {testimonials[3].description || testimonials[4].review}
+                {testimonials[2].description || testimonials[2].description}
               </p>
               <div className="flex items-center mt-auto gap-4 pt-4 border-t border-gray-100">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center overflow-hidden">

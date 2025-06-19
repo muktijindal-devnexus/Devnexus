@@ -15,7 +15,7 @@ const tools = [
   },
   {
     name: "Figma",
-    image: "/cdn/images/figma1.svg",
+    image: "/cdn/images/figma.svg",
 bgColor: "bg-[#E5EBF2] hover:bg-[#335D95]",
     textColor: "text-black hover:text-white",
     description:

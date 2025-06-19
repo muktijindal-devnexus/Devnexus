@@ -42,7 +42,7 @@ const techData = {
     { name: "Express.js", icon: '/cdn/images/expressjs.svg' },
     { name: "Nest.js", icon: '/cdn/images/Nest.svg' },
     { name: "Python", icon: '/cdn/images/python.svg' },
-    { name: "Django", icon: '/cdn/images/Django.svg' },
+    { name: "Django", icon: '/cdn/images/Django.webp' },
     { name: "Flask", icon: '/cdn/images/flask.svg' },
 
 
@@ -58,11 +58,11 @@ const techData = {
     { name: "FireBase", icon: '/cdn/images/firebase.svg' },
   ],
   "UI/UX": [
-    { name: "Figma", icon: '/cdn/images/figma.svg' },
+    { name: "Figma", icon: '/cdn/images/figma.webp' },
     { name: "Adobe XD", icon: '/cdn/images/XD.svg' },
     { name: "Adobe Illustrator", icon: '/cdn/images/illustrator.svg' },
     { name: "Adobe Photoshop", icon: '/cdn/images/photoshop.svg' },
-    { name: "Canva  ", icon: '/cdn/images/canva.svg' },
+    { name: "Canva  ", icon: '/cdn/images/canva.webp' },
 
 
   ],

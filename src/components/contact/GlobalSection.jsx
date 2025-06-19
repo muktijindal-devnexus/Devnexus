@@ -29,7 +29,7 @@ const IndustryExperience = () => {
             loop
             muted
             playsInline
-            className="w-full h-auto rounded-md"
+            className="w-full  rounded-md"
           />
         </div>
       </div>

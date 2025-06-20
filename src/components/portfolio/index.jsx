@@ -9,7 +9,7 @@ export const Portfolio = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const res = await fetch('http://13.203.216.121:3002/api/all-upload');
+      const res = await fetch('https://backend.devnexussolutions.com/api/all-upload');
       const data = await res.json();
       console.log(data?.data , 'product');
       setProducts(data?.data);

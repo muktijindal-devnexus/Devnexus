@@ -35,9 +35,10 @@ export const Ourteam = () => {
         loop={true}
         speed={4000}
         autoplay={{
-          delay: 0,
+          delay: 1,
           disableOnInteraction: false,
         }}
+        
         breakpoints={{
           640: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },

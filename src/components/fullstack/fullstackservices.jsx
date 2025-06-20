@@ -113,11 +113,11 @@ export const FullStackServices = () => {
 
       {/* Right side */}
       <div className="md:w-2/3">
-        <p className="text-[18px] text-gray-700 font-medium mt-8 mb-8">
+        <p className="text-[18px] text-gray-700 font-medium mt-8 mb-12">
           As a Leading Web Design and Web Development Service provide, we are providing  range of website development services-
         </p>
 
-        <div className="p-18 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white h-[420px] ">
+        <div className="p-18 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white h-[430px]  ">
           <h2 className="text-[24px] font-semibold text-[#335D95]">
             {selectedService.title}
           </h2>

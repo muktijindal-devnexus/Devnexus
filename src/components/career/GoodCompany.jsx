@@ -4,7 +4,7 @@ export default function GoodCompanySection() {
       {/* Left - Image */}
       <div className="lg:w-1/2 w-full">
         <img
-          src="/cdn/images/team.webp"
+          src="https://res.cloudinary.com/dt4ohfuwc/image/upload/v1750423924/WhatsApp_Image_2025-06-20_at_6.10.34_PM_ouwfpi.jpg"
           alt="Team Meeting"
           className="w-full h-full object-cover"
         />

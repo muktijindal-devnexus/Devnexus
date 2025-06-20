@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import { FaWhatsapp, FaWhatsappSquare } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ChatBot() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -113,9 +113,7 @@ Address: Noida Sector 63, UP, India`,
     setMessage("");
   };
 
-  const resetChat = () => {
-    handleStartChat();
-  };
+  const resetChat = () => handleStartChat();
 
   const validateEmail = (email) => /\S+@\S+\.\S+/.test(email);
 
@@ -143,17 +141,15 @@ Address: Noida Sector 63, UP, India`,
     }
   };
 
-  const handleEmailSubmit = () => {
+  const handleEmailSubmit = async () => {
     if (!fullName.trim()) {
       setChatLog((prev) => [...prev, { type: "bot", text: "Please enter your full name." }]);
       return;
     }
-
     if (!/^\d{7,15}$/.test(phoneNumber)) {
       setChatLog((prev) => [...prev, { type: "bot", text: "Please enter a valid phone number." }]);
       return;
     }
-
     if (!validateEmail(email)) {
       setChatLog((prev) => [...prev, { type: "bot", text: "Please enter a valid email address." }]);
       return;
@@ -166,19 +162,39 @@ Address: Noida Sector 63, UP, India`,
       { type: "user", text: `Email: ${email}` },
       {
         type: "bot",
-        text:
-          "Thank you for sharing your details! Please write any message or query you have below, or you can exit from here.",
+        text: "Thank you for sharing your details! Please write any message or query you have below, or you can exit from here.",
       },
     ]);
 
     setAwaitingEmail(false);
     setShowMessageBox(true);
 
-    console.log("📩 Submission Details:");
-    console.log("Full Name:", fullName);
-    console.log("Phone:", `${countryCode} ${phoneNumber}`);
-    console.log("Email:", email);
-    console.log("Last Selected Option:", finalSelection);
+    // 🔁 API POST request
+    try {
+      const res = await fetch("http://13.203.216.121:3002/api/chatbot", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: fullName,
+          email: email,
+          phoneNumber: phoneNumber,
+        }),
+      });
+
+      const result = await res.json();
+      console.log("✅ Chatbot API response:", result);
+    } catch (error) {
+      console.error(" Error submitting details to API:", error);
+      setChatLog((prev) => [
+        ...prev,
+        {
+          type: "bot",
+          text: "There was an error submitting your details. Please try again later.",
+        },
+      ]);
+    }
   };
 
   const handleMessageSubmit = () => {
@@ -197,39 +213,31 @@ Address: Noida Sector 63, UP, India`,
         text: "Thank you for your message! We will get back to you shortly. ✅",
       },
     ]);
-    console.log("Message:", message);
     setMessage("");
     setShowMessageBox(false);
   };
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
-     
       <a
-  href="https://wa.me/919711010160"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaWhatsapp className="w-14 h-14 text-[#00b93a] pb-2" />
-</a>
-      {!chatOpen && (
-       
-        <button onClick={handleStartChat}>
-          <Image src='/cdn/images/contact/contact.svg' width={60} height={60} alt="Contact" />
-        </button>
+        href="https://wa.me/919711010160"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaWhatsapp className="w-14 h-14 text-[#00b93a] pb-2" />
+      </a>
 
+      {!chatOpen && (
+        <button onClick={handleStartChat}>
+          <Image src="/cdn/images/contact/contact.svg" width={60} height={60} alt="Contact" />
+        </button>
       )}
 
       {chatOpen && (
         <div className="w-80 bg-white rounded-xl shadow-xl p-4 flex flex-col max-h-[80vh] overflow-y-auto">
           <div className="flex justify-between items-center mb-2">
             <h3 className="font-semibold text-lg">Chat Assistant</h3>
-            <button
-              onClick={() => setChatOpen(false)}
-              className="text-sm text-[#00357A]"
-            >
-              ✕
-            </button>
+            <button onClick={() => setChatOpen(false)} className="text-sm text-[#00357A]">✕</button>
           </div>
 
           <div className="space-y-2 mb-2">

@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import "swiper/css/free-mode";
 
 export default function BrandSlider() {
   const [sliderImages, setSliderImages] = useState([]);
@@ -13,19 +14,20 @@ export default function BrandSlider() {
   useEffect(() => {
     const fetchBrandImages = async () => {
       try {
-        const res = await fetch("https://backend.devnexussolutions.com/api/all-textSliderImage", {
-          method: "GET",
-          headers: {
-            Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjg0YmI2MzE4ZDE1MDUwNzQzYTJjMGM4IiwiZW1haWwiOiJhYmR1bEBnbWFpbC5jb20iLCJpYXQiOjE3NTAwNjk1MDQsImV4cCI6MTc1MDA3MzEwNH0.EjH78khEwpuRRzPViB1qoHOhNwKgc1BimLGIF0ukH7s",
-          },
-        });
-
+        const res = await fetch(
+          "https://backend.devnexussolutions.com/api/all-textSliderImage",
+          {
+            method: "GET",
+            headers: {
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbklkIjoiNjg0YmI2MzE4ZDE1MDUwNzQzYTJjMGM4IiwiZW1haWwiOiJhYmR1bEBnbWFpbC5jb20iLCJpYXQiOjE3NTAwNjk1MDQsImV4cCI6MTc1MDA3MzEwNH0.EjH78khEwpuRRzPViB1qoHOhNwKgc1BimLGIF0ukH7s",
+            },
+          }
+        );
         const data = await res.json();
         if (Array.isArray(data?.data)) {
-     
-          setSliderImages(data?.data.slice(0, 7));
-          setSliderImages2(data?.data.slice(0, 7));
+          setSliderImages(data.data.slice(0, 7));
+          setSliderImages2(data.data.slice(0, 7));
         }
       } catch (error) {
         console.error("Failed to fetch brand images", error);
@@ -34,6 +36,25 @@ export default function BrandSlider() {
 
     fetchBrandImages();
   }, []);
+
+  const commonSwiperProps = {
+    modules: [Autoplay, FreeMode],
+    loop: true,
+    freeMode: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    speed: 5000,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+      640: { slidesPerView: 4, spaceBetween: 25 },
+      768: { slidesPerView: 5, spaceBetween: 30 },
+      1024: { slidesPerView: 6, spaceBetween: 30 },
+    },
+  };
 
   return (
     <div className="relative bg-white py-[40px] md:py-[70px] mt-[50px] md:mt-[100px] px-4 sm:px-6">
@@ -54,21 +75,7 @@ export default function BrandSlider() {
       </div>
 
       {/* Swiper 1 */}
-      <Swiper
-        modules={[Autoplay]}
-        slidesPerView={3}
-        spaceBetween={20}
-        breakpoints={{
-          640: { slidesPerView: 4, spaceBetween: 25 },
-          768: { slidesPerView: 5, spaceBetween: 30 },
-          1024: { slidesPerView: 6, spaceBetween: 30 },
-        }}
-        loop
-        autoplay={{ delay: 0, disableOnInteraction: false }}
-        speed={5000}
-        grabCursor
-        className="mt-8 md:mt-12 z-10 relative"
-      >
+      <Swiper {...commonSwiperProps} className="mt-8 md:mt-12 z-10 relative ">
         {[...sliderImages, ...sliderImages].map((brand, i) => (
           <SwiperSlide key={`top-${i}`}>
             <img
@@ -82,19 +89,8 @@ export default function BrandSlider() {
 
       {/* Swiper 2 */}
       <Swiper
+        {...commonSwiperProps}
         dir="rtl"
-        modules={[Autoplay]}
-        slidesPerView={3}
-        spaceBetween={20}
-        breakpoints={{
-          640: { slidesPerView: 4, spaceBetween: 25 },
-          768: { slidesPerView: 5, spaceBetween: 30 },
-          1024: { slidesPerView: 6, spaceBetween: 30 },
-        }}
-        loop
-        autoplay={{ delay: 0, disableOnInteraction: false }}
-        speed={5000}
-        grabCursor
         className="mt-4 md:mt-2 z-10 relative"
       >
         {[...sliderImages2, ...sliderImages2].map((brand, i) => (

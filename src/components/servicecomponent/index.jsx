@@ -11,8 +11,8 @@ export const ServiceComponent = () => {
         image='/cdn/images/newherosection.jpg'
         overlayImage
         heading="Our Services"
-        description="At DevNexus Solutions, we are offering a full
-                                       range of IT services that are designed to upgrade your brand and drive business growth."
+        description="At DevNexus Solutions, we offer a full
+     range of IT services that are designed to upgrade your brand and drive business growth."
       />
       <ServicesSection />
       <OurProcess />

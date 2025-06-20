@@ -130,11 +130,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="pt-2">
+      {/* <div className="pt-2">
         <a href="//www.dmca.com/Protection/Status.aspx?ID=b07cf681-1e6f-46f9-8992-50d8d54d14b9" title="DMCA.com Protection Status">
           <img src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=b07cf681-1e6f-46f9-8992-50d8d54d14b9" alt="DMCA.com Protection Status" />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

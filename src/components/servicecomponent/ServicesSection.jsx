@@ -7,7 +7,7 @@ const services = [
   {
     title: "Full Stack Development",
     description:
-      "Creating seamless, high-performing websites that engage users and drive results",
+     "Create Seamless, High-Performing Websites That Engage Users And Drive Results.",
     icon: "/cdn/images/image155.svg",
     active: true,
     href: "/web-design-development-services",
@@ -15,35 +15,35 @@ const services = [
   {
     title: "UI/UX Design",
     description:
-      "Elevate user engagement through intuitive design and seamless digital experiences.",
+      "Elevate User Engagement Through Intuitive Design And Seamless Digital Experiences.",
     icon: "/cdn/images/image157.svg",
     href: "/uiux",
   },
   {
     title: "Mobile Development",
     description:
-      "Transforming ideas into high-performing Android & iOS applications",
+    "Transform Ideas Into High-Performing Android & iOS Applications.",
     icon: "/cdn/images/image156.svg",
     href: "/mobile-development-services",
   },
   {
     title: "Digital Marketing",
     description:
-      "Let the Right Digital Marketing Company Uplift Your Web Traffic, Generate More Leads and Sales for Your Business.",
+      "Uplift Your Web Traffic, Generate More Leads And Sales For Your Business.",
     icon: "/cdn/images/digital.svg",
     href: "/digital-marketing-services",
   },
   {
     title: "Blockchain Development",
     description:
-      "We build next-gen systems that redefine trust, resilience, and innovation for the world of tomorrow.",
+      "Redefine Trust, Resilience, And Innovation For The World Of Tomorrow.",
     icon: "/cdn/images/blockchain.svg",
     href: "/blockchain-development-services",
   },
   {
     title: "AI Technologies",
     description:
-      "Unleashing the power of AI to drive growth, streamline operations, and create scalable solutions for the digital age.",
+    "Unleash The Power Of AI To Drive Growth, Streamline Operations, And Create Scalable Solutions For The Digital Age.",
     icon: "/cdn/images/ai.svg",
     href: "/ai-tech-services",
   },

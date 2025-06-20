@@ -1,10 +1,10 @@
-const DeveloperCard = ({ name, role, experience, skills, imgUrl }) => {
+const DeveloperCard = ({ name, role, experience, skills, avatar }) => {
   return (
     <div className="bg-white shadow-md rounded-xl p-4 w-full xs:w-64 sm:w-72 h-auto min-h-[320px] sm:h-80 text-center border border-gray-200 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
       {/* Image Container */}
       <div className="flex justify-center mb-4">
         <img
-          src={imgUrl}
+          src={avatar}
           alt={name}
           className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-[#00357A]"
         />
@@ -14,7 +14,7 @@ const DeveloperCard = ({ name, role, experience, skills, imgUrl }) => {
       <div className="mb-3">
         <h3 className="text-[#00357A] font-semibold text-lg sm:text-xl">{name}</h3>
         <p className="text-sm sm:text-base text-gray-700 mt-1">{role}</p>
-        <p className="text-xs sm:text-sm text-gray-600 mt-1">{experience}</p>
+        <p className="text-xs sm:text-sm text-gray-600 mt-1">{experience} years</p>
       </div>
       
       {/* Skills */}

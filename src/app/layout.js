@@ -24,14 +24,14 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Global IT Services in USA - DevNexus Solution",
+  title: "Global IT Services - DevNexus Solution",
   description:
-    "Seeking Global IT Services in USA? Look no further than DevNexus Solution, a best marketing company to boost traffic, leads, and growth. Contact us.",
+    "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us.",
   openGraph: {
-    title: "Global IT Services in USA - DevNexus Solution",
+    title: "Global IT Services - DevNexus Solution",
     description:
-      "Looking for reliable IT and marketing services in the USA? DevNexus Solution helps you grow your business with expert digital strategies.",
-    url: "https://yourdomain.com",
+      "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us.",
+    url: "https://devnexussolutions.com/",
     siteName: "DevNexus Solution",
     images: [
       {
@@ -45,11 +45,11 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Global IT Services in USA - DevNexus Solution",
+    card: "https://res.cloudinary.com/dybqc3gax/image/upload/v1750312905/WhatsApp_Image_2025-06-19_at_11.28.37_htykk3.jpg",
+    title: "Global IT Services - DevNexus Solution",
     description:
-      "Top digital and IT services provider to accelerate your business growth.",
-    images: ["https://yourdomain.com/images/og-image.jpg"], // same as above
+      "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us.",
+    images: ["https://res.cloudinary.com/dybqc3gax/image/upload/v1750312905/WhatsApp_Image_2025-06-19_at_11.28.37_htykk3.jpg"],
   },
 };
 
@@ -65,6 +65,7 @@ export default function RootLayout({ children }) {
         <ChatBot />
         <Footer />
       </body>
+      
     </html>
   );
 }

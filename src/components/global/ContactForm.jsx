@@ -28,7 +28,8 @@ export const ContactForm = () => {
     else if (!emailRegex.test(formData.email))
       newErrors.email = "Invalid email format";
 
-    if (!formData.phoneNumber.trim()) newErrors.phoneNumber = "Phone is required";
+    if (!formData.phoneNumber.trim())
+      newErrors.phoneNumber = "Phone is required";
     else if (!phoneRegex.test(formData.phoneNumber))
       newErrors.phone = "Phone must be 10 digits";
 
@@ -39,47 +40,49 @@ export const ContactForm = () => {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  const validationErrors = validate();
-  setErrors(validationErrors);
+    e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
 
-  if (Object.keys(validationErrors).length === 0) {
-    try {
-      const response = await fetch("http://13.203.216.121:3002/api/contact-us", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phoneNumber: formData.phoneNumber || formData.phoneNumber,
-          services: formData.services || formData.lookingFor,
-          message: formData.message,
-        }),
-      });
+    if (Object.keys(validationErrors).length === 0) {
+      try {
+        const response = await fetch(
+          "https://backend.devnexussolutions.com/api/contact-us",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: formData.name,
+              email: formData.email,
+              phoneNumber: formData.phoneNumber || formData.phoneNumber,
+              services: formData.services || formData.lookingFor,
+              message: formData.message,
+            }),
+          }
+        );
 
-      if (!response.ok) throw new Error("API request failed");
+        if (!response.ok) throw new Error("API request failed");
 
-      const data = await response.json();
-      console.log("Success:", data);
-      alert("Form submitted successfully!");
+        const data = await response.json();
+        console.log("Success:", data);
+        alert("Form submitted successfully!");
 
-      // Reset the form
-      setFormData({
-        name: "",
-        email: "",
-        phoneNumber: "",
-        services: "",
-        message: "",
-      });
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("There was an error submitting the form.");
+        // Reset the form
+        setFormData({
+          name: "",
+          email: "",
+          phoneNumber: "",
+          services: "",
+          message: "",
+        });
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("There was an error submitting the form.");
+      }
     }
-  }
-};
-
+  };
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -129,13 +132,25 @@ export const ContactForm = () => {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Enter your name*"
+                  placeholder="Enter your First name*"
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full outline-none bg-transparent text-sm sm:text-base"
                 />
               </div>
               <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full sm:w-1/2">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your Last name*"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full ">
                 <input
                   type="email"
                   name="email"

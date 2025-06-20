@@ -17,7 +17,6 @@ export const Career = () => {
                 description="At DevNexus Solutions, we are not only offering jobs, we are building careers. Whether you are a creative thinker, tech lover, or result-driven marketer you will find freedom of work with us."
               />
       <HiringSection />
-      
       <JobOpenings />
       <OurValues/>
       <GoodCompanySection />

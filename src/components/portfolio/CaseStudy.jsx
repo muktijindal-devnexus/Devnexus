@@ -1,17 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowUpRight, X } from 'lucide-react';
 
 export default function CaseStudyCard({
   title,
   description,
-  logoSrc,
+  logo,
   imageIcons = [],
-  mainImage,
+  image,
   websiteUrl,
-  pdfPath,
+  pdf,
   companyName,
   index,  // <-- receive index prop here
 }) {
@@ -19,6 +19,9 @@ export default function CaseStudyCard({
 
   // Check if index is odd or even for layout toggle
   const isEven = index % 2 === 0;
+
+
+
 
   return (
     <section
@@ -28,13 +31,13 @@ export default function CaseStudyCard({
     >
       {/* Left or Right Section - Main Image */}
       <div className="flex-1 relative w-full">
-        <Image src={mainImage} width={500} height={400} alt={`${companyName} Main`} />
+        <Image src={image} width={500} height={400} alt={`${companyName} Main`} />
       </div>
 
       {/* Right or Left Section - Content */}
       <div className="flex-1">
         <div className="flex items-center justify-center gap-3 mb-4">
-          <Image src={logoSrc} alt={`${companyName} Logo`} width={140} height={140} />
+          <Image src={logo} alt={`${companyName} Logo`} width={140} height={140} />
         </div>
         <p className="text-gray-600 mb-8">{description}</p>
 
@@ -67,7 +70,7 @@ export default function CaseStudyCard({
               <X size={24} />
             </button>
             <iframe
-              src={pdfPath}
+              src={pdf}
               className="w-full h-[80vh]"
               frameBorder="0"
               title={`${companyName} Case Study`}

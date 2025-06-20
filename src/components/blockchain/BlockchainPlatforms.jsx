@@ -1,21 +1,7 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-const platforms = [
-  { name: "Etherium", src: "/cdn/images/Blockchain/Etherium.svg" },
-  { name: "Solana", src: "/cdn/images/solana.svg" },
-  { name: "Stellar", src: "/cdn/images/stellar.svg" },
-  { name: "Hyperledger", src: "/cdn/images/Blockchain/Hyperledger.svg" },
-  { name: "Credits", src: "/cdn/images/Blockchain/Credits.svg" },
-  { name: "Bigchaindb", src: "/cdn/images/Blockchain/Bigchaindb.svg" },
-  { name: "Hashgraph", src: "/cdn/images/Blockchain/Hashgraph.svg" },
-  { name: "Ripple", src: "/cdn/images/Blockchain/Ripple.svg" },
-  { name: "Corda", src: "/cdn/images/Blockchain/Corda.svg" },
-  { name: "Multichain", src: "/cdn/images/Blockchain/Multichain.svg" },
-  { name: "Tron", src: "/cdn/images/Blockchain/Tron.svg" },
-  { name: "EOS", src: "/cdn/images/Blockchain/EOS.svg" },
-];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -33,6 +19,28 @@ const itemVariants = {
 };
 
 const BlockchainPlatforms = () => {
+  const [platforms, setPlatforms] = useState([]);
+
+useEffect(() => {
+  const fetchPlatforms = async () => {
+    try {
+      const response = await fetch("https://backend.devnexussolutions.com/api/all-blockchain-platform");
+      const data = await response.json();
+      
+      if (Array.isArray(data?.data)) {
+        setPlatforms(data.data);
+      } else {
+        console.error("Unexpected response structure:", data);
+      }
+    } catch (error) {
+      console.error("Error fetching blockchain platforms:", error);
+    }
+  };
+
+  fetchPlatforms();
+}, []);
+
+
   return (
     <section className="py-12 px-4 md:px-16 lg:px-24 bg-white">
       <motion.h2
@@ -59,13 +67,13 @@ const BlockchainPlatforms = () => {
             className="flex flex-col items-center border rounded-lg shadow-sm p-4 w-full max-w-[120px] hover:shadow-md transition-all duration-300"
           >
             <Image
-              src={platform.src}
-              alt={platform.name}
+              src={platform?.BlockchainImage || "/cdn/images/placeholder.svg"}
+              alt={platform?.BlockchainTitle}
               width={50}
               height={50}
               className="mb-3 object-contain"
             />
-            <p className="text-sm font-medium text-gray-700 text-center">{platform.name}</p>
+            <p className="text-sm font-medium text-gray-700 text-center">{platform?.BlockchainTitle}</p>
           </motion.div>
         ))}
       </motion.div>

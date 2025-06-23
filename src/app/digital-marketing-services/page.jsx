@@ -10,7 +10,7 @@ const DigitalMarketingPage = () => {
         image='/cdn/images/digital/digital.mp4'
         overlayImage
         heading=" Digital Marketing Services To Boost Your Business Growth "
-        description="Let the Right Digital Marketing Company Uplift Your Web Traffic, Generate More Leads and Sales for Your Business. "
+        description="Let the Right Digital Marketing Company Uplift Your Web Traffic and Generate More Leads and Sales for Your Business."
       />
       <DigitalMarketing />
     </div>

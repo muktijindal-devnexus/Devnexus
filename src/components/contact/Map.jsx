@@ -1,38 +1,29 @@
-// components/Map.jsx
 "use client";
-
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-
-// Fix leaflet's default icon issue in Next.js
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
-
-const customIcon = L.icon({
-  iconUrl,
-  shadowUrl: iconShadow,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-});
-
-const position = [28.417276, 77.041598]; // Spaze IT Park, Sector 49, Gurgaon
+import React from "react";
 
 const Map = () => {
   return (
-    <div className="w-full h-[500px] rounded-xl overflow-hidden shadow-lg">
-      <MapContainer center={position} zoom={15} scrollWheelZoom={false} className="w-full h-full z-0">
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={position} icon={customIcon}>
-          <Popup>
-            Spaze IT Park <br />
-            Sector 49, Gurgaon, 122018
-          </Popup>
-        </Marker>
-      </MapContainer>
+    <div className="w-full max-w-7xl mx-auto p-4 relative">
+      {/* Clickable Overlay */}
+      <a
+        href="https://www.google.com/maps/place/DevNexus+Solutions+Private+Limited/@28.4287156,77.0183343,17z"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0 z-10"
+      ></a>
+
+      {/* Embedded Map */}
+      <div className="w-full h-[550px] rounded-lg overflow-hidden relative z-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28069.49185108725!2d77.01833434795387!3d28.42871559046473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23aa291b5bb3%3A0xf71548fe8ebbb887!2sDevNexus%20Solutions%20Private%20Limited!5e0!3m2!1sen!2sin!4v1750659776040!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const services = [
   {
     title: 'Search Engine Optimization (SEO)',
-    description:'We provide comprehensive Search Engine Optimization services, our tailor-made strategies are perfect for your brand. It contains a range of services like keyword research, on-page optimization, technical SEO,etc. Does not matter if you are a start-up or a business, we have the solutions for all your business needs.',
+    description:'We provide comprehensive Search Engine Optimization services, and our tailor-made strategies are perfect for your brand. It offers a range of services, including keyword research, on-page optimization, and technical SEO. Whether youre a start-up or an established business, we have solutions to meet all your business needs. ',
     points: [
       'Keyword Research & Strategy',
       'Link Building & Authority Growth',
@@ -14,14 +14,14 @@ const services = [
   },
     {
     title: 'PPC',
-    description: 'DevNexus Solutions is providing expert PPC services designed to maximize your online advertising ROI.  Our PPC experts focus on strategic keyword targeting, compelling ad creation, and advanced campaign management skills.  We are helping the business to reach its desired audience. Whether you want to boost website traffic, generate leads, or increase ROI, DevNexus Solutions is making sure that your PPC campaigns are cost-effective.',
+    description: 'DevNexus Solutions provides expert PPC services designed to maximize your online advertising ROI.  Our PPC experts focus on strategic keyword targeting, creating compelling ads, and utilizing advanced campaign management skills.  We are helping the business to reach its desired audience. Whether you want to boost website traffic, generate leads, or increase ROI, DevNexus Solutions ensures that your PPC campaigns are cost-effective and effective.',
     points: [
   
     ],
   },
   {
     title: 'Social Media Marketing (SMM)',
-    description: 'DexNexus Solutions delivers expert Social Media Marketing services that help businesses build a strong online presence and engage effectively with their potential audience. From strategy development and campaign management, tracking insights for performance. We have a tailor-made system for all the brand types.',
+    description: 'DexNexus Solutions delivers expert Social Media Marketing services that help businesses build a strong online presence and engage effectively with their potential audience, from strategy development and campaign management to tracking insights for performance. We have a tailor-made system for all the brand types.',
     points: [
       'Content Creation & Scheduling',
       'Audience Engagement',
@@ -31,7 +31,7 @@ const services = [
   {
     title: 'Meta Ads',
     description:
-      'Maximize your ROI with Meta Ads. We design, manage, and optimize ad campaigns across Meta’s network for precise targeting and better conversion rates.',
+      'DevNexus Solutions offers expert Meta Ads Services to help businesses reach a broader audience and generate high-quality leads. We have a team of experts ready to create effective, highly visual ad campaigns tailored to your business needs.',
     points: ['Ad Campaign Setup', 'Audience Targeting', 'A/B Testing'],
   },
   {

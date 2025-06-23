@@ -8,25 +8,25 @@ const slides = [
     id: 1,
     title: "User Centric Approach",
     description:
-      "At DevNexus Solutions, we first understand the requirements of the client so that we can connect with the target audience. We do comprehensive user research and persona development which ensures design aligns with the user needs and behaviours.",
+      "At DevNexus Solutions, we first understand the Client's requirements so that we can effectively connect with the target audience. We conduct comprehensive user research and personal development, ensuring that the design aligns with users' needs and behaviours. ",
   },
   {
     id: 2,
-    title: "Expertise Over diverse Platform",
+    title: "Expertise in diverse platforms",
     description:
-      "At DevNexus solutions we have the experience to create ux ui design across various platforms, including web and mobile applications.",
+      "At DevNexus Solutions, we have the experience to create UX/UI designs across various platforms, including web and mobile applications. ",
   },
   {
     id: 3,
     title: "Collaborative and Transparent Process",
     description:
-      "DevNexus Solutions involves clients throughout the design journey that has begun till the end point. We give regular feedback which make sure that the end product aligns with your vision.",
+      "DevNexus Solutions involves clients throughout the entire design journey, from the initial concept to the final implementation. We provide regular feedback to ensure that the end product aligns with your vision. ",
   },
   {
     id: 4,
     title: "Commitment to Innovation",
     description:
-      "Capturing the latest design and technologies, DevNexus crafting innovative solutions which meet with current standards and trends. Their attention to detail and commitment towards ensuring quality that each ui ux design functionally or visualising is appealing.",
+      "Capturing the latest designs and technologies, DevNexus crafts innovative solutions that meet current standards and trends. Their attention to detail and commitment to ensuring quality mean that each UI/UX design is both functionally and visually appealing.",
   },
 ];
 
@@ -48,7 +48,7 @@ export const MainDevnexus = () => {
       {/* Left section */}
       <div className="bg-[#2e5c9a] text-white p-6 sm:p-8 lg:px-12 lg:py-20 rounded-xl lg:rounded-r-2xl w-full lg:w-1/2">
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 leading-snug">
-          What Makes DevNexus Solutions a Better UI UX Design company for business?
+         What makes DevNexus Solutions a Better UI UX Design company for business?
         </h2>
         <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
           At DevNexus solutions we believe that thoughtful design and user based strategies
@@ -71,7 +71,7 @@ export const MainDevnexus = () => {
         </div>
 
         {/* Navigation Arrows */}
-        <div className="flex justify-center lg:justify-start gap-4 mt-4 lg:absolute lg:-left-10 lg:bottom-0">
+        <div className="flex justify-center lg:justify-start gap-4 mt-4 lg:absolute lg:-left-5 lg:bottom-4">
           <button
             onClick={prevSlide}
             className="bg-[#002f6c] text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#001e47] transition"

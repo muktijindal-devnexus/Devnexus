@@ -75,7 +75,7 @@ const FoundersSection = () => {
               every solution.
             </p>
           </div>
-            <div className="w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
+            <div className="w-[70%] h-[430px] relative rounded-md overflow-hidden mb-4">
             <Image
               src="/cdn/images/About/archit.png"
               alt="Ankit Sureka"

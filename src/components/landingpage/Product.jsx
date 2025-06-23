@@ -43,7 +43,7 @@ export const Product = () => {
                   width={250}
                   height={500}
                   className="w-full object-cover"
-                  unoptimized // use this if the image is external and not added to next.config.js
+                  unoptimized 
                 />
               </div>
             </div>

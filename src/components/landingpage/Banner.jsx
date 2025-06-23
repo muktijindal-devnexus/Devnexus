@@ -1,35 +1,35 @@
-'use client'
-import Link from 'next/link'
-import React, { useState } from 'react'
-import Arrow from '../../../public/cdn/images/Arrow.svg'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import Arrow from "../../../public/cdn/images/Arrow.svg";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const bannerData = [
   {
-    video: '/cdn/images/Banner/Digital.mp4',
-    heading: 'Transforming Ideas into Digital Excellence',
+    video: "/cdn/images/Banner/Digital.mp4",
+    heading: "Transforming Ideas into Digital Excellence",
     description:
-      'We craft cutting-edge digital solutions that drive growth, enhance user experience, and elevate your brand. From software development to strategic marketing, we turn your vision into reality.',
+      "We craft cutting-edge digital solutions that drive growth, enhance user experience, and elevate your brand. From software development to strategic marketing, we turn your vision into reality.",
   },
   {
-    video: '/cdn/images/Banner/Industries.mp4',
-    heading: 'Empowering Various Industries to Thrive in a Digital Era',
+    video: "/cdn/images/Banner/Industries.mp4",
+    heading: "Empowering Various Industries to Thrive in a Digital Era",
     description:
-      'We specialize in driving digital transformation across a wide range of industries, empowering businesses to innovate, streamline in todays fast-moving digital world.',
+      "We specialize in driving digital transformation across a wide range of industries, empowering businesses to innovate, streamline in todays fast-moving digital world.",
   },
   {
-    video: '/cdn/images/Banner/Team.mp4',
-    heading: 'Our Expert Minds Crafting Future-Ready Solutions.',
+    video: "/cdn/images/Banner/Team.mp4",
+    heading: "Our Expert Minds Crafting Future-Ready Solutions.",
     description:
-      'At DevNexus Solutions, our strength is our expert team, passionate professionals dedicated to delivering tailored digital transformation solutions.',
+      "At DevNexus Solutions, our strength is our expert team, passionate professionals dedicated to delivering tailored digital transformation solutions.",
   },
-]
+];
 
 export const Banner = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
-  const [isHovered, setIsHovered] = useState(false)
-  const activeBanner = bannerData[activeIndex]
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const activeBanner = bannerData[activeIndex];
 
   return (
     <div className="relative w-full h-[500px] md:h-[600px] select-none px-4 sm:px-8 md:px-16 overflow-hidden ">
@@ -48,10 +48,24 @@ export const Banner = () => {
 
       {/* Text Content */}
       <div className="absolute inset-0 z-20 flex flex-col justify-center text-white px-4 sm:px-6 md:px-10 w-full md:w-[55%]">
-        <h1 className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 leading-tight font-[Montserrat]">
+        <h1
+          className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 leading-tight font-[Montserrat] overflow-hidden"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+          }}
+        >
           {activeBanner.heading}
         </h1>
-        <span className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 leading-6 md:leading-8">
+        <span
+          className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 leading-6 md:leading-8 overflow-hidden"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+          }}
+        >
           {activeBanner.description}
         </span>
 
@@ -63,13 +77,12 @@ export const Banner = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             Request Quote
-
             <span className="relative w-12 h-12 flex items-center justify-center overflow-visible cursor-pointer">
               {/* Smooth Animated Circle */}
               <motion.span
                 className="absolute w-12 h-12 rounded-full border-[#a6a5a5] border-2 mr-14"
                 animate={{ x: isHovered ? 40 : 0 }}
-                transition={{ duration: 0.6, ease: 'easeInOut' }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
               />
 
               {/* Fixed Arrow Icon */}
@@ -85,34 +98,33 @@ export const Banner = () => {
         </Link>
 
         {/* Dots */}
-     <div className="flex gap-4 mt-6 cursor-pointer">
-  {bannerData.map((_, index) => (
-    <button
-      key={index}
-      onClick={() => setActiveIndex(index)}
-      className="flex items-center gap-1 group"
-    >
-      <div
-        className={`
+        <div className="flex gap-4 mt-6 cursor-pointer">
+          {bannerData.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveIndex(index)}
+              className="flex items-center gap-1 group"
+            >
+              <div
+                className={`
           w-6 sm:w-10 h-0.5 transition-all duration-300 cursor-pointer
-          ${activeIndex === index ? 'bg-white' : 'bg-white/50'} 
+          ${activeIndex === index ? "bg-white" : "bg-white/50"} 
           group-hover:bg-white
         `}
-      />
-      <span
-        className={`
+              />
+              <span
+                className={`
           text-white text-xs sm:text-sm transition-all duration-300 cursor-pointer
-          ${activeIndex === index ? 'font-bold' : 'opacity-50'} 
+          ${activeIndex === index ? "font-bold" : "opacity-50"} 
           group-hover:opacity-100 group-hover:font-semibold
         `}
-      >
-        {index + 1}
-      </span>
-    </button>
-  ))}
-</div>
-
+              >
+                {index + 1}
+              </span>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};

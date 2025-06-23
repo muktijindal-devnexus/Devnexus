@@ -36,7 +36,7 @@ export default function Footer() {
   };
 
   return (
-    <section className="bg-[#003B80] text-white p-4 sm:p-6 md:p-8 cursor-pointer">
+    <section className="bg-[#003B80] text-white p-4 sm:p-6 md:p-8 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 border-b border-white/30 pb-8">
         {/* Logo and Contact Info */}
         <div className="order-1">
@@ -64,7 +64,7 @@ export default function Footer() {
             <p>
               <span className="font-semibold text-white">Phone:</span>{" "}
               <a href="tel:+919711010160" className="underline hover:text-white">
-                +91 9711010160
+                +91 9211815556
               </a>
             </p>
             <p>
@@ -79,12 +79,12 @@ export default function Footer() {
           <h3 className="font-semibold text-white mb-3">Explore On</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-            <li><a href="/about" className="hover:text-white transition-colors">About us</a></li>
+            <li><a href="/aboutus" className="hover:text-white transition-colors">About us</a></li>
             <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="/contact" className="hover:text-white transition-colors">Projects</a></li>
-            <li><a href="/contact" className="hover:text-white transition-colors">Career</a></li>
-            <li><a href="/contact" className="hover:text-white transition-colors">Blogs</a></li>
-            <li><a href="/projects" className="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="/project" className="hover:text-white transition-colors">Projects</a></li>
+            <li><a href="/career" className="hover:text-white transition-colors">Career</a></li>
+            <li><a href="/blogs" className="hover:text-white transition-colors">Blogs</a></li>
+            <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
 
@@ -93,10 +93,10 @@ export default function Footer() {
           <h3 className="font-semibold text-white mb-3">Our Services</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li><a href="/web-design-development-services" className="hover:text-white transition-colors">Web Development</a></li>
-            <li><a href="/blockchain-development-services" className="hover:text-white transition-colors">UI/UX Design</a></li>
+            <li><a href="/uiux" className="hover:text-white transition-colors">UI/UX Design</a></li>
             <li><a href="/mobile-development-services" className="hover:text-white transition-colors">Mobile App Development</a></li>
-            <li><a href="/uiux" className="hover:text-white transition-colors">Digital Marketing</a></li>
-            <li><a href="/digital-marketing-services" className="hover:text-white transition-colors">Blockchain Development</a></li>
+            <li><a href="/digital-marketing-services" className="hover:text-white transition-colors">Digital Marketing</a></li>
+            <li><a href="/blockchain-development-services" className="hover:text-white transition-colors">Blockchain Development</a></li>
             <li><a href="/ai-tech-services" className="hover:text-white transition-colors">AI Technologies</a></li>
           </ul>
         </div>

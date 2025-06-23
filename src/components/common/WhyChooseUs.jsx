@@ -1,4 +1,4 @@
-import { MonitorSmartphone, Braces, LayoutTemplate } from "lucide-react";
+import { MonitorSmartphone, Braces, LayoutTemplate, BanknoteArrowUp } from "lucide-react";
 import { FaProjectDiagram } from "react-icons/fa";
 
 const features = [
@@ -6,19 +6,19 @@ const features = [
     icon: MonitorSmartphone,
     title: "Creative & Responsive Design",
     description:
-      "We are creating eye catching, user friendly designs which adapt seamlessly across all devices to make sure an exceptional user experience.",
+      "We create eye-catching, user-friendly designs that adapt seamlessly across all devices, ensuring an exceptional user experience.",
   },
   {
     icon: Braces,
     title: "Clean & Scalable Code",
     description:
-      "At DevNexus Solutions our team of experts write efficient, well structured code which ensures high performance and easily scalable as your business grows.",
+      " At DevNexus Solutions, our team of experts writes efficient, well-structured code that ensures high performance and is easily scalable as your business grows.",
   },
   {
     icon: LayoutTemplate,
     title: "Cutting-Edge Technology",
     description:
-      "DevNexus Solutions use the latest tools and framework to make sure the future ready solutions for your brand.",
+      "We prioritize your business goals and vision, delivering tailored web solutions that truly align with your brand and audience requirements. ",
   },
   {
     icon: FaProjectDiagram,
@@ -27,7 +27,7 @@ const features = [
       "We are prioritising your business goals and vision delivering tailored web solutions that truly align with your brand and audience requirement.",
   },
   {
-    icon: FaProjectDiagram,
+    icon: BanknoteArrowUp ,
     title: "Post-Launch Support & Growth",
     description:
       "We don't stop at launch. Our ongoing maintenance, analytics, and optimization services help your digital presence grow and evolve.",
@@ -40,8 +40,8 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-12">
           What makes{" "}
-          <span className="font-semibold text-blue-900">DevNexus Solutions</span> better for
-          <span className="font-semibold text-blue-900"> Web Design and Web Development</span> services?
+          <span className="font-semibold text-blue-900">DevNexus Solutions</span> Better for
+          <span className="font-semibold text-blue-900"> Web Design and Web Development</span> Services?
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">

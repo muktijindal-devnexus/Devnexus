@@ -16,12 +16,13 @@ export const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const aboutDropdown = [
+     { name: "About us", href: "/aboutus" },
     { name: "Our Team", href: "/ourteam" },
   ];
 
   const servicesDropdown = [
     { name: "Web Development", href: "/web-design-development-services" },
-    { name: "UI UX", href: "/uiux" },
+    { name: "UI/UX Design", href: "/uiux" },
     { name: "Mobile App Development", href: "/mobile-development-services" },
     { name: "Digital Marketing", href: "/digital-marketing-services" },
     { name: "Blockchain Development", href: "/blockchain-development-services" },
@@ -58,13 +59,13 @@ export const Navbar = () => {
             <div className="flex gap-1 items-center cursor-pointer">
               <button
                 onClick={() => {
-                  router.push("/about");
+                 
                   setAboutOpen(false);
                   setServicesOpen(false);
                 }}
                 className="hover:text-white cursor-pointer hover:font-bold"
               >
-                About Us
+              Who We are
               </button>
               <ChevronDown />
             </div>

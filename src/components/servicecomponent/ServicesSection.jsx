@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const services = [
   {
-    title: "Full Stack Development",
+    title: "Web Development",
     description:
      "Create Seamless, High-Performing Websites That Engage Users And Drive Results.",
     icon: "/cdn/images/image155.svg",
@@ -20,7 +20,7 @@ const services = [
     href: "/uiux",
   },
   {
-    title: "Mobile Development",
+    title: "Mobile App Development",
     description:
     "Transform Ideas Into High-Performing Android & iOS Applications.",
     icon: "/cdn/images/image156.svg",

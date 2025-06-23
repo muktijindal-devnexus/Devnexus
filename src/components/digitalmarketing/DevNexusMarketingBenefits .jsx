@@ -6,26 +6,26 @@ const features = [
     icon: <FaBullseye size={28} />,
     title: 'ROI-Driven Strategies',
     description:
-      'Every campaign created by our team is focused on results and the client’s requirements. Whether your brand needs leads, conversion, or boosting organic brand visibility, our team of experts will give you a tailored-made solution.',
+      'Every campaign created by our team is focused on results and the clients requirements. Whether. Whether your brand needs leads, conversation, or boosting Organic brand visibility, our team of experts will provide a tailored-made solution.',
     highlight: true,
   },
   {
     icon: <FaHandshake size={28} />,
-    title: 'Transparent Work Process',
+    title: 'Proven Digital Marketing Techniques',
     description:
       'Our team of experts always delivers clear, easy-to-understand reports and analyses that clearly show the work progress and other metrics, which represent how your brand is performing.',
   },
   {
     icon: <FaSearchPlus size={28} />,
-    title: 'Proven Digital Marketing Techniques',
+    title: 'Transparent Work Process',
     description:
-      'Our Digital Marketing strategies are designed to improve Google SERP, drive organic traffic, and aid in your long-term success. We stay up to date with the latest tools, updates, and algorithms.',
+      'Our team of experts consistently delivers clear, easy-to-understand reports and analyses that clearly show work progress and other key metrics representing how your brand is performing.',
   },
   {
     icon: <FaChartLine size={28} />,
     title: 'Performance-Based Work Report',
     description:
-      'Our skilled team of digital marketers, content creators and developers works closely to make the process seamless. By combining strategies and execution, we deliver campaigns that drive results.',
+      'Our skilled team of digital marketers, content creators and developers works closely to make the process seamless. By combining effective strategies with creative execution, we deliver campaigns that yield tangible results.',
   },
 ];
 
@@ -33,7 +33,7 @@ export const DevNexusMarketingBenefits = () => {
   return (
     <section className="px-6 md:px-16 py-12 space-y-10">
       <h2 className="text-2xl md:text-3xl font-light text-center text-[#335D95]">
-        What Makes <span className="font-bold text-[#00357A]">DevNexus Solutions</span> Best For{' '}
+        What Makes <span className="font-bold text-[#00357A]">DevNexus</span>  the Best Solution for {' '}
         <br />
         <span className="font-bold text-[#00357A]">Digital Marketing Services?</span>
       </h2>
@@ -68,7 +68,7 @@ export const DevNexusMarketingBenefits = () => {
               >
                 {feature.title}
               </h3>
-              <p className="text-sm transition-colors duration-300">{feature.description}</p>
+              <p className="text-sm transition-colors duration-300 text-black group-hover:text-white">{feature.description}</p>
             </div>
           </div>
         ))}

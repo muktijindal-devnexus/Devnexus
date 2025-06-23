@@ -7,31 +7,31 @@ const steps = [
     number: "01",
     title: "Custom Blockchain Development",
     description:
-      "Build your blockchain solution from scratch. At DevNexus Solutions, our team of experts is designing, developing, and deploying private, public blockchain networks with custom consensus algorithms and smart functionality. ",
+      "Build your blockchain solution from scratch. At DevNexus Solutions, our team of experts designs, develops, and deploys private and public blockchain networks with custom consensus algorithms and smart contract functionality. ",
   },
   {
     number: "02",
     title: "Smart Contract Development",
     description:
-      "Our Blockchain App Development team is automating the transaction and business process with self-executing smart contracts. At DevNexus Solutions, we write secure and efficient smart contracts for technology like Ethereum, Binance Smart Chain, Polygon, etc.",
+      "Our Blockchain App Development team is automating transactions and business processes with self-executing smart contracts. At DevNexus Solutions, we develop secure and efficient smart contracts for various blockchain technologies, including Ethereum, Binance Smart Chain, Polygon, and others.",
   },
   {
     number: "03",
     title: " Decentralized Application (dApp) Development",
     description:
-      "We are designing and developing user-friendly Decentralized Application (dApp) for finance, gaming, healthcare, and other industries. Our team of experts ensures a seamless user experience on the blockchain. ",
+      "We are designing and developing user-friendly Decentralised Applications (dApps) for finance, gaming, healthcare, and other industries. Our team of experts ensures a seamless user experience on the Blockchain.",
   },
   {
     number: "04",
     title: "NFT Marketplace Development",
     description:
-      "Launch your own NFT marketplace with secure trading and wallet integration. We are offering custom features for art, gaming, and metaverse platforms. ",
+      "Launch your own NFT marketplace with secure trading and wallet integration. We are offering custom features for art, gaming, and metaverse platforms.",
   },
   {
     number: "05",
     title: "Crypto Wallet Development",
     description:
-      "At DevNexus Solutions, we are creating secure, multi currency crytpo wallets with various features biometric security and seamless integration with dApps and other apps.",
+      "At DevNexus Solutions, we are creating secure, multi-currency crypto wallets with various features, biometric security, and seamless integration with dApps and other apps.",
   },
 ];
 
@@ -41,7 +41,7 @@ const BlockchainServices = () => {
   return (
     <section className="bg-white py-12 px-4 md:px-16 lg:px-24 flex flex-col justify-center items-center text-center">
       <h2 className="text-3xl font-bold text-[#00357A] mb-4">
-        Our Blockchain Development Services
+     Our Blockchain Development Services
       </h2>
       <p className="text-[16px] text-gray-600 mb-15 max-w-2xl">
         At DevNexus Solutions we are following a systematic and collaborative

@@ -6,19 +6,19 @@ const cards = [
     id: "01",
     title: "Cutting-Edge Technologies",
     description:
-    " DevNexus solutions works on modern technologies such as React, NEXT.js, Figma etc to craft a responsive and visually appealing design for your brand. ",
+    "DevNexus Solutions utilizes modern technologies, using React, NEXT.js, and Figma, to craft a responsive and visually appealing design for your brand.",
   },
   {
     id: "02",
     title: "Proven Record",
     description:
-      "With over 300+ projects covered and committed to deliver the quality assurance. DevNexus Solutions ensure that every work we deliver meets the highest work quality standard.",
+      "With over 300+ projects covered and committed to delivering quality assurance. DevNexus Solutions ensures that every piece of work we provide meets the highest quality standards. ",
   },
   {
     id: "03",
     title: "Global Reach with Local Expertise",
     description:
-      "DevNexus Solutions has successfully delivered projects across various segments, including healthcare, real estate, e-commerce, education etc.",
+      "DevNexus Solutions has successfully delivered projects across various segments, including healthcare, real estate, e-commerce, education, etc.",
   },
 ];
 

@@ -13,23 +13,23 @@ const faqData = [
   {
     question: "What businesses can benefit from Blockchain?",
     answer:
-      "Blockchain is going to be the new normal for businesses across various industries. Businesses that are in finance, healthcare, politics, government services, supply chain, real estate, and gaming can enhance security, transparency, automation, and efficiency. If your business needs secure transactions, decentralized applications, or other smart contracts to improve efficiency, this is the time for all businesses to get involved in blockchain development services.",
+      "Blockchain is poised to become the new standard for businesses across various industries. Businesses in finance, healthcare, politics, government services, supply chain management, real estate, and gaming can enhance security, transparency, automation, and efficiency. If your business requires secure transactions, decentralized applications, or other smart contracts to enhance efficiency, this is an ideal time for all businesses to engage in blockchain development services.",
   },
   {
     question:
-      "What someone chooses is DevNexus Solutions for blockchain solution development?",
+      "What makes someone choose DevNexus Solutions for Blockchain solution development?",
     answer:
-      'Our team of experts is delivering robust and scalable decentralized applications, which ensure the top class security for enterprises, agencies, and other startups.  ',
+      'Our team of experts delivers robust and scalable decentralized applications, ensuring top-class security for enterprises, agencies, and other startups.',
   },
   {
     question:
-      "What are the benefits of blockchain in my business/domain?",
+      "What are the benefits of Blockchain in my business/domain?",
     answer:
-      "Blockchain enhance security and reduces fraud, automates process with the ensure data integrity, transparency and minimal operational costs by eliminating intermediaries and creating tamper-proof records.  ",
+      "Blockchain enhances security and reduces fraud, automates processes to ensure data integrity, transparency, and minimal operational costs by eliminating intermediaries and creating tamper-proof records.",
   },
   {
     question:
-      "Can blockchain be integrated with my existing business/website? ",
+      "Can Blockchain be integrated with my existing business or website? ",
     answer:
       "Yes. We use APIs and middleware solutions to integrate the framework into existing solutions. This doesnot affect the overall working of the online business, rather enhances security and efficiency of the same.",
   },
@@ -46,7 +46,7 @@ export const Blockchain = () => {
       <Banner
         image="/cdn/images/Blockchain/blockchain.mp4"
         overlayImage
-        heading="Trusted Blockchain Development Company  "
+        heading="Trusted Blockchain Development Company "
         description="Building secure, scalable, and transparent systems for a decentralized future"
       />
       <StatusCard />

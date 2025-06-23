@@ -30,7 +30,7 @@ export default function InstagramCarousel() {
     <div className="w-full py-10 px-5 md:px-20 bg-white relative">
       <div className="flex flex-col justify-center items-center mb-6">
         <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#00357A] ">
-          Follow us on Instagram
+         Connect with Us !
         </h2>
         <Link href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3">
           <FaInstagram className="text-4xl mt-3 text-[#E1306C]" />
@@ -46,7 +46,7 @@ export default function InstagramCarousel() {
           <ChevronLeft />
         </button>
       </div>
-      <div className="absolute top-[220px] right-2 z-10 -translate-y-1/2">
+      <div className="absolute top-[270px] right-2 z-10 -translate-y-1/2">
         <button
           ref={nextRef}
           className="p-2 bg-white shadow rounded-full hover:bg-gray-100 text-[#00357A]"

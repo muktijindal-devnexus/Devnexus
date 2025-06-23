@@ -7,27 +7,27 @@ const steps = [
   {
     title: 'Discovery & Requirement Gathering',
     description:
-      "First we begin with the understanding of your brand's goals, potential audience and technical requirement needs to define the project scope clearly.",
+      "First, we begin by understanding your brand's goals, potential audience, and technical requirements to clearly define the project scope.",
   },
   {
     title: 'Planning Strategy',
     description:
-      'Our Web Design and Web Development team, create a detailed project road map, which include site architecture, technology stack, timeline and allocation of resources.',
+      'Our Web Design and Web Development team creates a detailed project roadmap that includes site architecture, technology stack, timeline, and resource allocation. ',
   },
   {
     title: 'UI UX Design',
     description:
-      'Our design team crafts intuitive, visually attractive layouts and user interface which align your brand identity.',
+      'Our design team crafts intuitive, visually attractive layouts and user interfaces that align with your brand identity. ',
   },
   {
     title: 'Frontend & Backend Development',
     description:
-      'Next we bring designs to life with clean, responsive front end code using modern frameworks like HTML5, CSS3, JavaScript, React, Node.js, PHP, Python, etc.',
+      'Next, we bring designs to life with clean, responsive front-end code using modern frameworks such as HTML5, CSS3, JavaScript, React, Node.js, PHP, and Python.',
   },
   {
     title: 'Integration & Testing',
     description:
-      "We make sure every component of your website or app works efficiently through seamless API's, third party services and backend systems. Our technology testing process includes functionality checks, performance testing, responsiveness and other security audits.",
+      "We ensure that every component of your website or app works efficiently through seamless APIs, third-party services, and backend systems. Our technology testing process includes functionality checks, performance testing, responsiveness, and other security audits. ",
   },
   {
     title: 'Deployment',
@@ -37,7 +37,7 @@ const steps = [
   {
     title: 'Maintenance & Support',
     description:
-      'Our team of experts provides ongoing updates, security, performance monitoring to keep your site secure, fast and keep it up to date.',
+      'Our team of experts provides ongoing updates, security, and performance monitoring to keep your site secure, fast, and keep it up to date.',
   },
 ];
 
@@ -69,7 +69,7 @@ const ProcessSteps = () => {
             Follow As The <br />
             <span className="font-bold">Web Design</span> <br />
             and <span className="font-bold">Web Development</span> <br />
-            services
+            Services
           </h2>
         </div>
 

@@ -22,32 +22,27 @@ import { FullStackServices } from "./fullstackservices";
 
 const faqData = [
   {
-    question: "What domains of business does DevNexus cater to?",
+    question:
+      "What domains of business does DevNexus cater to?",
     answer:
-      "We offer web design and development services to any business that needs a digital presence, including Real Estate, Construction, Services, Food & Beverages, Public sector, Education, Healthcare & Medicine, Travel, Banking & Fintech, and more.",
+      'We offer web design and development services to businesses of all types that need a digital presence, including Real Estate, Construction, Services, food and beverages, Public sector, Education, healthcare and medicine, Travel, banking and fintech, and more.',
   },
   {
     question:
-      "What tech stacks do you offer your web development services?",
+      "What tech stacks do you offer for your web development services?",
     answer:
-      'The team is technology agnostic and can adapt to any modern day web development frameworks including MERN stack (Node, React), Wordpress (& PHP), Python, HTML5/CSS3, jQuery and more. ',
+      "The team is technology-agnostic and can adapt to any modern web development framework, including the MERN stack (Node, React), WordPress (and PHP), Python, HTML5/CSS3, jQuery, and more.",
   },
   {
     question:
-      "How do you ensure that the developments you make are up to date with today's market demands?",
+      "How do you ensure that the developments you make are current with today's market demands?",
     answer:
-      "We are expert at designing & developing of websites as per latest Web2.0 Standards with W3C compliance for SEO friendliness, high UI/UX interface, cross-browser compatibility, Tableless HTML5/ CSS3, Responsive designing, QA and testing, fresh look & feel and visual appeal etc to enhance your business. ",
+      "We are expertsexperts at designing and developing websites according to the latest Web2.0 Standards with W3C compliance for SEO friendliness, high UI/UX interface, cross-browser compatibility, Tableless HTML5/CSS3, responsive design, QA and testing, fresh look and feel, and visual appeal to enhance your business.",
   },
   {
-    question:
-      "What tools do you use for communication and project management?",
+    question: "What tools do you use for communication and project management?",
     answer:
-      "We use Slack Whatsapp Email Phone Discord Google Meet Zoom and other tools to communicate with the client and even internally as required For project management we use modern day tools such as Trello Monday Jira and any tool that the client may prefer.",
-  },
-  {
-    question: "I wish to market my business. How should I get started?",
-    answer:
-      "Lets connect. Based on your business domain, marketing preferences, target achievement and in hand budget, we will come up with a tailor-made plan. Depending on various cases, some businesses may prefer comprehensive social media strategies, or web UX changes, others may call for a more formal link building, or a reputation management. E-commerce also prefers Paid Ads. Depending on how and how much you would like to enroll will ensure your strategy for getting started with the services.",
+      "We use Slack, WhatsApp, Email, Phone, Discord, Google Meet, Zoom, and other tools to communicate with clients and internally as required. For project management, we use modern tools such as Trello, Monday.com, and Jira, as well as any tool the client prefers.",
   },
 
 ];
@@ -124,7 +119,7 @@ export const Fullstack = () => {
       <Banner
         image="/cdn/images/fullstack/fullstackHero.mp4"
         overlayImage
-        heading="Web Design and Development Services That Clicks, Convert and Captivate "
+        heading="Web Design and Development Services That Click, Convert, and Captivate "
         description="Creating seamless, high-performing websites that engage users and drive results"
       />
       <StatusCard />

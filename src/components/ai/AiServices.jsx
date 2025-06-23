@@ -7,17 +7,17 @@ export default function AIServiceSection() {
     {
       title: "Custom AI Solutions Development",
       description:
-        "At DevNexus Solution, we specialize in Custom AI solutions Development to help your business unlock the full potential of growth. From tailored machine learning models to ai automation systems, we are creating data-driven solutions on the basis of Ai, which is designed according to industry needs.",
+        "At DevNexus, we specialise in Custom AI solution development to help your business unlock its full growth potential. From tailored machine learning models to AIAI automation systems, we are creating data-driven solutions based on AI, which areare designed according to industry needs.",
     },
     {
       title: "Machine Learning Solutions",
       description:
-        "At DevNexus Solutions, we are delivering machine learning solutions that empower businesses to harness the power of data-driven intelligence. From pre-analysis, recommendation engines to fraud detection, we are building robust ML models that solve real-world challenges.",
+        "At DevNexus Solutions, we are delivering machine learning solutions that empower businesses to harness the power of data-driven intelligence. From pre-analysis to recommendation engines and fraud detection, we are building robust ML models that solve real-world challenges.",
     },
     {
       title: "Natural Language Processing",
       description:
-        "At DevNexus Solutions, we are delivering Natural Language Processing (NLP) to help other businesses unlock the insights from text, speech, and other unstructured data. Our NLP solutions enable smarter interactions through AI-powered documents. Whether you are looking to enhance customer support, automate processes, or extract valuable insights.",
+        "At DevNexus Solutions, we deliver Natural Language Processing (NLP) to help other businesses unlock insights from text, speech, and other unstructured data. Our NLP solutions enable smarter interactions through AI-powered documents. Whether you are looking to enhance customer support, automate processes, or extract valuable insights. ",
     },
     {
       title: "AI Chat GPT Development",
@@ -27,12 +27,12 @@ export default function AIServiceSection() {
     {
       title: "AI Integration",
       description:
-        "At DevNexus Solutions, our team of experts specializes in Ai integration, seamlessly configuring intelligent capabilities into your existing system, applications and ongoing workflow. Our integration services are custom according to your specific needs, enabling needs, able to unlock your new possibilities.",
+        "At DevNexus Solutions, our team of experts specialises in AI integration, seamlessly configuring intelligent capabilities into your existing systems, applications, and ongoing workflows. Our integration services are tailored to your specific needs, enabling you to unlock new possibilities. ",
     },
     {
       title: "Automation Solutions",
       description:
-        "DevNexus Solutions delivers automation solutions that streamline workflows and reduce operational costs, and improve efficiency across your organization. By leveraging Ai, machine learning and robotic process automation, we are helping businesses automate tedious tasks, enhance accuracy.",
+        "DevNexus Solutions delivers automation solutions that streamline workflows, reduce operational costs, and improve efficiency across your organisation. By leveraging AI, machine learning, and robotic process automation, we are helping businesses automate tedious tasks and enhance accuracy.  ",
     },
   ];
 

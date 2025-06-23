@@ -66,7 +66,7 @@ const DeveloperCarousel = ({
         }}
       />
 
-      <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6 mt-6">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6 mt-6 cursor-pointer">
         {/* Left Arrow - Hidden on mobile when at start */}
         <button
           className={`text-2xl text-[#00357A] hover:text-[#002147] transition-colors ${

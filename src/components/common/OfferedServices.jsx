@@ -13,7 +13,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const services = [
-  { title: "Full-Stack Development", href: "/web-design-development-services", image: FullStackDev },
+  { title: "Web Development", href: "/web-design-development-services", image: FullStackDev },
   { title: "UI/UX Designing", href: "/uiux", image: UIUX },
   { title: "Mobile Development", href: "/mobile-development-services", image: MobileDev },
   { title: "Digital Marketing", href: "/digital-marketing-services", image: DigitalMarketing },
@@ -90,7 +90,7 @@ export const OfferedServices = () => {
                 whileHover={{ x: 8 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="bg-white text-blue-950 h-8 py-2 px-6 rounded-xl text-center items-center flex absolute z-50 bottom-10 right-10 cursor-pointer"
+                className="bg-white text-blue-950 h-8 py-2 px-6 rounded-xl text-center items-center flex absolute z-15 bottom-10 right-10 cursor-pointer"
               >
                 <MoveRight />
               </motion.div>

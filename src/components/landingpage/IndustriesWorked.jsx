@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ChevronLeft } from "lucide-react";
 
 export const IndustriesWorked = () => {
   const [industries, setIndustries] = useState([]);
@@ -39,8 +39,16 @@ export const IndustriesWorked = () => {
     setCurrentIndex((prev) => (prev + slideCount) % industries.length);
   };
 
+  const prevSlide = () => {
+    const slideCount = isMobile ? 1 : 2;
+    setCurrentIndex((prev) => {
+      const newIndex = prev - slideCount;
+      return newIndex < 0 ? industries.length + newIndex : newIndex;
+    });
+  };
+
   useEffect(() => {
-    const interval = setInterval(nextSlide, 2000);
+    const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
   }, [industries, isMobile]);
 
@@ -92,18 +100,32 @@ export const IndustriesWorked = () => {
             )}
           </div>
 
+          {/* Desktop Arrows */}
           {!isMobile && (
-            <div className="flex items-center absolute right-0 translate-x-full">
-              <ChevronRight
-                className="h-[60px] w-[60px] text-white cursor-pointer"
-                onClick={nextSlide}
-              />
-            </div>
+            <>
+              <div className="flex items-center absolute left-0 -translate-x-full">
+                <ChevronLeft
+                  className="h-[60px] w-[60px] text-white cursor-pointer"
+                  onClick={prevSlide}
+                />
+              </div>
+              <div className="flex items-center absolute right-0 translate-x-full">
+                <ChevronRight
+                  className="h-[60px] w-[60px] text-white cursor-pointer"
+                  onClick={nextSlide}
+                />
+              </div>
+            </>
           )}
         </div>
 
+        {/* Mobile Arrows */}
         {isMobile && (
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-between mt-4 px-10">
+            <ChevronLeft
+              className="h-10 w-10 text-white cursor-pointer"
+              onClick={prevSlide}
+            />
             <ChevronRight
               className="h-10 w-10 text-white cursor-pointer"
               onClick={nextSlide}

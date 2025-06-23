@@ -31,11 +31,7 @@ export default function WhyChooseSection() {
           </h2>
           <hr className="w-16 sm:w-20 border-[#00357A] border mb-4 sm:mb-6" />
           <p className="text-gray-700 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base">
-            As a leading AI software development services provider, DevNexus
-            Solutions goes beyond technology; we are delivering tailored,
-            future-ready solutions that drive real business value. Our team of
-            experts in AI automation, data-driven innovation ensures that every
-            solution is designed with your unique challenges and vision in mind.
+         As a leading AI software development services provider, DevNexus Solutions goes beyond technology; we are delivering tailored, future-ready solutions that drive real business value. Our team of experts in AI automation and data-driven innovation ensures that every solution is designed with your unique challenges and vision in mind.
           </p>
           <button className="bg-[#00357A] text-white px-4 sm:px-6 py-1 sm:py-2 rounded text-sm sm:text-base transition-all duration-300 hover:bg-[#002a5f] hover:scale-105 shadow-md hover:shadow-lg cursor-pointer">
             Consult Our Experts

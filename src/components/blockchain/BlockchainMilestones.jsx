@@ -1,15 +1,15 @@
 const milestones = [
   {
     number: "01.",
-    text: "By 2030 Blockchain projection is expected of US$ 53,182.9 million with CAGR over 90%.",
+    text: "By 2030, blockchain projections are expected to reach US$53,182.9 million with a compound annual growth rate (CAGR) of over 90%.",
   },
   {
     number: "02.",
-    text: "Business value is expected to reach by $3.1 trillion in 2030.",
+    text: "Business value is expected to reach $3.1 trillion in 2030.",
   },
   {
     number: "03.",
-    text: "Expected users in blockchain market are 1 billion 2030.",
+    text: "The anticipated number of users in the blockchain market is projected to reach 1 billion by 2030.",
   },
 ];
 

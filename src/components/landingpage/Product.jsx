@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export const Product = () => {
   const [projects, setProjects] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(null); // Track clicked project
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -13,9 +14,7 @@ export const Product = () => {
           method: "GET",
         });
         const data = await res.json();
-
-        // Assuming API returns an array of objects like: [{ name: "", image: "http://..." }]
-        setProjects(data.data || []); // adjust this based on actual response structure
+        setProjects(data.data || []);
       } catch (error) {
         console.error("Failed to fetch projects:", error);
       }
@@ -34,9 +33,19 @@ export const Product = () => {
           <div
             key={index}
             className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-[340px] sm:h-[390px] lg:h-[440px] m-2 overflow-hidden border border-gray-200 shadow-md rounded-lg group bg-white"
+            // Enable hover on desktop, click on mobile
+            onMouseEnter={() => !('ontouchstart' in window) && setActiveIndex(index)}
+            onMouseLeave={() => !('ontouchstart' in window) && setActiveIndex(null)}
+            onClick={() => ('ontouchstart' in window) && setActiveIndex(activeIndex === index ? null : index)}
           >
             <div className="relative h-[300px] sm:h-[350px] lg:h-[400px] overflow-hidden">
-              <div className="absolute top-0 left-0 w-full group-hover:-translate-y-[calc(100%-150px)] sm:group-hover:-translate-y-[calc(100%-180px)] lg:group-hover:-translate-y-[calc(100%-224px)] transition-transform duration-[9000ms] ease-linear">
+              <div 
+                className={`absolute top-0 left-0 w-full ${
+                  activeIndex === index 
+                    ? '-translate-y-[calc(100%-150px)] sm:-translate-y-[calc(100%-180px)] lg:-translate-y-[calc(100%-224px)]' 
+                    : ''
+                } transition-transform duration-[9000ms] ease-linear`}
+              >
                 <Image
                   src={project?.image}
                   alt={project?.title}

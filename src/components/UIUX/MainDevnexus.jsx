@@ -6,9 +6,9 @@ import React from 'react'
 const slides = [
   {
     id: 1,
-    title: "User Centric Approach",
+    title: "User-Centric Approach",
     description:
-      "At DevNexus Solutions, we first understand the Client's requirements so that we can effectively connect with the target audience. We conduct comprehensive user research and personal development, ensuring that the design aligns with users' needs and behaviours. ",
+      "At DevNexus Solutions, we first understand the Client's requirements so that we can effectively connect with the target audience. We conduct comprehensive user research and persona development, ensuring that the design aligns with users' needs and behaviours. ",
   },
   {
     id: 2,

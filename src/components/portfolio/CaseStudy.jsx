@@ -1,27 +1,26 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ArrowUpRight, X } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function CaseStudyCard({
   title,
   description,
   logo,
-  imageIcons = [],
   image,
   websiteUrl,
-  pdf,
   companyName,
-  index,  // <-- receive index prop here
+  index,
+  carousalImage, // ✅ API-based prop
 }) {
   const [isOpen, setIsOpen] = useState(false);
-
-  // Check if index is odd or even for layout toggle
   const isEven = index % 2 === 0;
-
-
-
 
   return (
     <section
@@ -29,12 +28,12 @@ export default function CaseStudyCard({
         !isEven ? 'lg:flex-row-reverse' : ''
       }`}
     >
-      {/* Left or Right Section - Main Image */}
+      {/* Project Image */}
       <div className="flex-1 relative w-full">
         <Image src={image} width={500} height={400} alt={`${companyName} Main`} />
       </div>
 
-      {/* Right or Left Section - Content */}
+      {/* Text Content */}
       <div className="flex-1">
         <div className="flex items-center justify-center gap-3 mb-4">
           <Image src={logo} alt={`${companyName} Logo`} width={140} height={140} />
@@ -59,22 +58,40 @@ export default function CaseStudyCard({
         </div>
       </div>
 
-      {/* Modal for PDF */}
+      {/* Modal with Swiper Carousel */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center p-4">
-          <div className="bg-white rounded-xl max-w-4xl w-full relative shadow-lg overflow-hidden">
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center pt-4">
+          <div className="bg-white rounded-xl max-w-4xl w-full relative shadow-lg overflow-hidden p-8">
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-3 right-3 text-gray-700 hover:text-black"
+              className="absolute top-3 right-3 text-gray-700 hover:text-black z-10"
             >
               <X size={24} />
             </button>
-            <iframe
-              src={pdf}
-              className="w-full h-[80vh]"
-              frameBorder="0"
-              title={`${companyName} Case Study`}
-            ></iframe>
+
+            {carousalImage?.length > 0 ? (
+              <Swiper
+                modules={[Navigation, Pagination]}
+                navigation
+                pagination={{ clickable: true }}
+                spaceBetween={20}
+                slidesPerView={1}
+              >
+                {carousalImage.map((imgUrl, idx) => (
+                  <SwiperSlide key={idx}>
+                    <Image
+                      src={imgUrl}
+                      alt={`Case Study Slide ${idx + 1}`}
+                      width={1000}
+                      height={600}
+                      className="mx-auto rounded-xl object-contain"
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <p className="text-center text-gray-500">No images available for this case study.</p>
+            )}
           </div>
         </div>
       )}

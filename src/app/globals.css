@@ -7,16 +7,14 @@ body {
 }
 
 section {
+
   padding: 64px;
 }
-
-
-
-
 
 @media (max-width: 640px) {
   section {
     padding: 40px 20px;
+  
   }
 }
 

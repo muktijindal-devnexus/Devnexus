@@ -220,14 +220,14 @@ Address: Noida Sector 63, UP, India`,
   return (
     <div className="fixed bottom-4 right-4 z-50">
       <a
-        href="https://wa.me/919711010160"
+        href="https://wa.me/919211815556"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaWhatsapp className="w-14 h-14 text-[#00b93a] pb-2" />
       </a>
 
-      {!chatOpen && (
+      {/* {!chatOpen && (
         <button onClick={handleStartChat}>
           <Image src="/cdn/images/contact/contact.svg" width={60} height={60} alt="Contact" />
         </button>
@@ -345,7 +345,7 @@ Address: Noida Sector 63, UP, India`,
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

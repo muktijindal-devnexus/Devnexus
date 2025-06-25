@@ -121,7 +121,7 @@ export const IndustriesWorked = () => {
 
         {/* Mobile Arrows */}
         {isMobile && (
-          <div className="flex justify-between mt-4 px-10">
+          <div className="flex justify-between mt-4 px-10 ">
             <ChevronLeft
               className="h-10 w-10 text-white cursor-pointer"
               onClick={prevSlide}

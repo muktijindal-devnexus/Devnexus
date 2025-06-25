@@ -49,7 +49,7 @@ export default function Footer() {
               </div>
             </Link>
           </div>
-          <div className="space-y-1 text-sm text-gray-300 pl-4">
+        <div className="space-y-1 sm:space-y-1 text-xs sm:text-sm text-gray-300 sm:pl-4">
             <p>
               <span className="font-semibold text-white">Email:</span>{" "}
               <a
@@ -73,8 +73,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
-        {/* Explore On */}
+   {/* Explore On */}
         <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
           <h3 className="font-semibold text-white mb-3">Explore On</h3>
           <ul className="text-sm text-gray-300 space-y-2">
@@ -100,6 +99,8 @@ export default function Footer() {
             <li><a href="/ai-tech-services" className="hover:text-white transition-colors">AI Technologies</a></li>
           </ul>
         </div>
+
+     
 
         {/* Social & Newsletter */}
         <div className="order-2 lg:order-4">

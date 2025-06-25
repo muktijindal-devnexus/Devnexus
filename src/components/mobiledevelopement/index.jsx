@@ -1,7 +1,5 @@
 import React from "react";
 import FaqSection from "../global/FaqSection";
-
-import WhyChooseUs from "../common/WhyChooseUs";
 import Slider from "../common/Slider";
 import ExecutionSection from "../common/ExecutionSection";
 import StatusCard from "../common/Status";
@@ -15,8 +13,8 @@ import Brand7 from "../../../public/cdn/images/brandslogo/DCI.svg";
 import Brand10 from "../../../public/cdn/images/brandslogo/SRE.svg";
 import Brand11 from "../../../public/cdn/images/brandslogo/KG.svg";
 import Brand12 from "../../../public/cdn/images/brandslogo/nano.svg";
-// import Brand13 from '../../../public/images/brandslogo/cafe.svg';
 import Brand14 from "../../../public/cdn/images/brandslogo/vize.svg";
+import WhyChooseUsMobile from "./WhyChooseMobile";
 
 const brandLogos = [
   Brand3.src,
@@ -58,9 +56,10 @@ const faqData = [
   {
     question: "Can you update or fix an existing iOS app?",
     answer:
-      "Yes, DevNexus Solutions, our team of experts update or fix an existing iOS app. Whether your app needs a performance upgrade, bug fixes, UI/UX changes, or either compatibility updates for the latest iOS version, we are here to help you out.",
+      "Yes, At DevNexus Solutions, our team of experts can update or fix an existing iOS app. Whether your app needs a performance upgrade, bug fixes, UI/UX changes, or compatibility updates for the latest iOS version, we are here to help you.",
   },
 ];
+
 
 export const MobileDevelopment = () => {
   return (
@@ -68,11 +67,11 @@ export const MobileDevelopment = () => {
       <Banner
         image="/cdn/images/mobile/MobileHero.mp4"
         overlayImage
-        heading="Upgrade Your Brand with Exceptional UI UX Design and Development Services"
-        description="Elevate user engagement through intuitive design and seamless digital experiences."
+        heading="Enroll in Mobile App Development Services To Boost Your Business and Connect With Customers"
+        description="DevNexus Solution delivers innovative, user-focused, mobile-friendly designs to boost growth and engagement."
       />
       <StatusCard />
-      <WhyChooseUs />
+      <WhyChooseUsMobile />
       <ExecutionSection />
       <Slider
         title="Driving Growth To The Brands."

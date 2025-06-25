@@ -2,21 +2,21 @@ const ExecutionSection = () => {
   const cards = [
     {
       id: 1,
-      title: "Responsive Web Design",
+      title: "Hybrid App Development",
       content:
-        "We are creating websites which look stunning and function seamlessly across all devices, ensuring that the audience enjoys a better experience whether on Desktop, tablet, or mobile.\n\n• Mobile-First & Cross-Browser Compatibility\n• Modern, Clean & Interactive UI/UX\n• High-Speed Performance Optimization\n• Brand-Consistent Visual Design",
+        "Hybrid App Development combines the best of web and native apps. It allows us to build an app that works seamlessly on iOS and Android systems. Hybrid apps are based on a single codebase, which reduces development time and cost while ensuring an improved user experience.",
     },
     {
       id: 2,
-      title: "E-commerce Development",
+      title: "Cross-Platform mobile app",
       content:
-        "At DevNexus Solutions we are building powerful, secure and user friendly e-commerce websites customized according to your business requirement. From listings of products and shopping carts to integration of payment gateway, our solutions are designed to deliver the best website which performs and converts.\n Shopify, WooCommerce, Magento & Custom Solutions\nProduct Catalogue & Shopping Cart Integration\nSecure Payment Gateway Setup\nMobile-Optimized & Fast-Loading Storefronts ",
+        "These apps are platform-agnostic, meaning they can be used regardless of the operating system powering mobile devices. With a cross-platform app, some source code can be shared over different platforms, such as iOS and Android.",
     },
     {
       id: 3,
-      title: "CMS Development (WordPress, Webflow & More)",
+      title: "Mobile UX development",
       content:
-        "We specialize in creating dynamic and easy to navigate websites using powerful Content management systems like wordpress, Joomla, etc. Our CMS solutions empower you to update the content, images without much hassle and technical skills. Whether you need a website, a blog, custom portal, DevNexus Solutions ready to deliver the best scalable, SEO friendly website which are tailored to your business goals.",
+        "At DevNexus Solutions, we are working on creativity with usability to craft mobile experiences that delight the user and can drive results. Our team of mobile app developers makes sure to make a mobile UX design not only stunning visuals but also to increase the user experience. ",
     },
     {
       id: 4,
@@ -26,15 +26,21 @@ const ExecutionSection = () => {
     },
     {
       id: 5,
-      title: "Custom Web Application Development",
+      title: "iOS App Development",
       content:
-        "We are offering tailor made Website development Services built from the ground up to match your unique business requirement. Whether you need a complex application, portal for business, or multi feature platform, our team of experts are developing scalable, secure and high performing websites. At DevNexus Solution, we are focusing on functionality, user experience and long term growth for your brand.",
+        "DevNexus Solutions specializes in iOS Mobile app development with high-performing and user-friendly iOS applications. Our expert team seeks clean design and uses the latest technology to deliver apps.",
     },
     {
       id: 6,
-      title: "Backend Development",
+      title: "Android App Development",
       content:
-        "At DevNexus Solutions, we are providing a robust, secure and scalable backend system which gives power to your application. From database architecture and development of API our backend team ensures optimal performance and reliability.",
+        "Our expert team at DevNexus Solutions delivers cutting-edge Android app development services that meet clients' needs. We have skilled developers who create scalable and visually appealing Android applications that perform seamlessly across different devices.",
+    },
+      {
+      id: 7,
+      title: "Progressive Web Pages",
+      content:
+        "We deliver top-notch progressive web apps that combine the reach of the web and native apps. With advanced technologies like service workers, web app manifests, and a responsive framework, we ensure your app will provide a smooth and hassle-free experience.",
     },
   ];
 
@@ -43,10 +49,10 @@ const ExecutionSection = () => {
       {/* Top Title Section */}
       <div className="flex flex-col items-center text-center mb-12 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-[#1C3C6B] mb-4">
-          Range of Web Development Services
+         Our Range Of Mobile App Development Services
         </h2>
         <p className="text-[#1C3C6B] text-lg leading-relaxed">
-          As a leading web design and development service provider, we offer a wide range of website development services.
+          As a leading mobile design and development service provider, we offer a wide range of services.
         </p>
       </div>
 

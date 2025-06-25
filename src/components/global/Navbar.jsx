@@ -4,12 +4,14 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const router = useRouter();
@@ -94,7 +96,7 @@ export const Navbar = () => {
               }}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <div className="flex gap-1 items-center cursor-pointer ">
+              <div className="flex gap-1 items-center cursor-pointer">
                 <button
                   onClick={() => {
                     router.push("/services");
@@ -150,57 +152,79 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <nav className="md:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white p-7 space-y-3">
-            <Link href="/" onClick={() => setMenuOpen(false)} className="block hover:text-white hover:font-bold text-xl">Home</Link>
+          <nav className="md:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white p-17 space-y-6 text-center">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="block hover:text-white font-semibold text-2xl">
+              Home
+            </Link>
 
-            <div className="space-y-1">
-              <p className="font-semibold text-xl">About Us</p>
-              {aboutDropdown.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block text-lg hover:text-white hover:font-bold"
-                >
-                  {item.name}
-                </Link>
-              ))}
+            {/* Mobile About Us Dropdown */}
+            <div className="space-y-3 ">
+              <div
+                onClick={() => {
+                  setMobileAboutOpen(!mobileAboutOpen);
+                  setMobileServicesOpen(false);
+                }}
+                className="flex items-center justify-center gap-2 cursor-pointer text-2xl font-semibold"
+              >
+              Who We are
+                {mobileAboutOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+              </div>
+              {mobileAboutOpen &&
+                aboutDropdown.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="block text-lg hover:text-white hover:font-bold"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
             </div>
 
-            <div className="space-y-1">
-              <p className="font-semibold text-xl">Services</p>
-              {servicesDropdown.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="block text-lg hover:text-blue-400"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+            {/* Mobile Services Dropdown */}
+            <div className="space-y-2">
+      <div className="flex items-center justify-center gap-2 cursor-pointer text-2xl font-semibold">
+        <Link
+          href="/services"
+          onClick={() => setMenuOpen(false)}
+          className="text-2xl font-semibold"
+        >
+          Services
+        </Link>
+        <button
+          onClick={() => {
+            setMobileServicesOpen(!mobileServicesOpen);
+            setMobileAboutOpen(false);
+          }}
+          className="text-white"
+        >
+          {mobileServicesOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+        </button>
+      </div>
+      {mobileServicesOpen &&
+        servicesDropdown.map((item, index) => (
+          <Link
+            key={index}
+            href={item.href}
+            onClick={() => setMenuOpen(false)}
+            className="block text-lg hover:text-blue-400 pl-4"
+          >
+            {item.name}
+          </Link>
+        ))}
+    </div>
 
             {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
               <Link
                 key={i}
                 href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
                 onClick={() => setMenuOpen(false)}
-                className="block hover:text-[#00357A] text-xl"
+                className="block hover:text-[#00357A] text-2xl font-semibold"
               >
                 {item}
               </Link>
             ))}
-
-            <button
-              onClick={() => {
-                setMenuOpen(false);
-                setShowModal(true);
-              }}
-              className="block bg-[#00357A] text-white text-lg px-4 py-4 rounded-md"
-            >
-              Free Consultation
-            </button>
           </nav>
         )}
       </header>

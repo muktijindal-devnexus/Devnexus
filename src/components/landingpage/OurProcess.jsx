@@ -54,59 +54,42 @@ export const OurProcess = () => {
             </span>
           </div>
 
+          {/* Desktop View - Full Cards */}
           <div className="hidden sm:flex gap-8 pt-[40px]">
-            <div className="mt-8 bg-white bg-opacity-90 text-black h-[130px] relative top-30 w-[270px] pb-[40px] rounded-xl p-4 shadow-lg flex flex-col justify-center text-center">
-              <Image
-                src={processSteps[0].icon}
-                alt="Icon"
-                width={40}
-                height={40}
-                className="relative bottom-4 left-[40%]"
-              />
-              <h2 className="text-xl font-semibold pb-2">
-                {processSteps[0].title}
-              </h2>
-              <p className="text-[16px]">{processSteps[0].description}</p>
-            </div>
-            <div className="mt-8 bg-white bg-opacity-90 text-black h-[130px] w-[270px] pb-[40px] rounded-xl p-4 shadow-lg flex flex-col justify-center text-center">
-              <Image
-                src={processSteps[1].icon}
-                alt="Icon"
-                width={40}
-                height={40}
-                className="relative bottom-4 left-[40%]"
-              />
-              <h2 className="text-xl font-semibold pb-2">
-                {processSteps[1].title}
-              </h2>
-              <p className="text-[16px]">{processSteps[1].description}</p>
-            </div>
-            <div className="mt-8 bg-white bg-opacity-90 text-black h-[130px] relative top-30 w-[270px] rounded-xl p-4 pb-[40px] shadow-lg flex flex-col justify-center text-center">
-              <Image
-                src={processSteps[2].icon}
-                alt="Icon"
-                width={40}
-                height={40}
-                className="relative bottom-4 left-[40%]"
-              />
-              <h2 className="text-xl font-semibold pb-2">
-                {processSteps[2].title}
-              </h2>
-              <p className="text-[16px]">{processSteps[2].description}</p>
-            </div>
-            <div className="mt-8 bg-white bg-opacity-90 text-black h-[130px] w-[270px] rounded-xl p-4 shadow-lg flex flex-col pb-[40px] justify-center text-center">
-              <Image
-                src={processSteps[3].icon}
-                alt="Icon"
-                width={40}
-                height={40}
-                className="relative bottom-4 left-[40%]"
-              />
-              <h2 className="text-xl font-semibold pb-2">
-                {processSteps[3].title}
-              </h2>
-              <p className="text-[16px]">{processSteps[3].description}</p>
-            </div>
+            {processSteps.map((step, index) => (
+              <div 
+                key={index}
+                className={`mt-8 bg-white bg-opacity-90 text-black h-[130px] w-[270px] pb-[40px] rounded-xl p-4 shadow-lg flex flex-col justify-center text-center ${
+                  index % 2 === 0 ? "relative top-30" : ""
+                }`}
+              >
+                <Image
+                  src={step.icon}
+                  alt="Icon"
+                  width={40}
+                  height={40}
+                  className="relative bottom-4 left-[40%]"
+                />
+                <h2 className="text-xl font-semibold pb-2">
+                  {step.title}
+                </h2>
+                <p className="text-[16px]">{step.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile View - Only Titles */}
+          <div className="sm:hidden flex flex-wrap justify-center gap-4 pt-8 px-4">
+            {processSteps.map((step, index) => (
+              <div 
+                key={index}
+                className="bg-white bg-opacity-90 text-black rounded-lg p-3 shadow-md text-center min-w-[230px]"
+              >
+                <h2 className="text-lg font-semibold">
+                  {step.title}
+                </h2>
+              </div>
+            ))}
           </div>
         </section>
       </div>

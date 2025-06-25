@@ -7,16 +7,16 @@ import DesignProcess from "./DesignProcess";
 import Slider from "../common/Slider";
 import { WhyUIUX } from "./WhyUIUX";
 import FaqSection from "../global/FaqSection";
-import Brand3 from '../../../public/cdn/images/brandslogo/Jindal.svg';
-import Brand4 from '../../../public/cdn/images/brandslogo/Studio.svg';
-import Brand5 from '../../../public/cdn/images/brandslogo/Rotunneling.svg';
-import Brand6 from '../../../public/cdn/images/brandslogo/travel.svg';
-import Brand7 from '../../../public/cdn/images/brandslogo/DCI.svg';
-import Brand10 from '../../../public/cdn/images/brandslogo/SRE.svg';
-import Brand11 from '../../../public/cdn/images/brandslogo/KG.svg';
-import Brand12 from '../../../public/cdn/images/brandslogo/nano.svg';
+import Brand3 from "../../../public/cdn/images/brandslogo/Jindal.svg";
+import Brand4 from "../../../public/cdn/images/brandslogo/Studio.svg";
+import Brand5 from "../../../public/cdn/images/brandslogo/Rotunneling.svg";
+import Brand6 from "../../../public/cdn/images/brandslogo/travel.svg";
+import Brand7 from "../../../public/cdn/images/brandslogo/DCI.svg";
+import Brand10 from "../../../public/cdn/images/brandslogo/SRE.svg";
+import Brand11 from "../../../public/cdn/images/brandslogo/KG.svg";
+import Brand12 from "../../../public/cdn/images/brandslogo/nano.svg";
 // import Brand13 from '../../../public/images/brandslogo/cafe.svg';
-import Brand14 from '../../../public/cdn/images/brandslogo/vize.svg';
+import Brand14 from "../../../public/cdn/images/brandslogo/vize.svg";
 
 const brandLogos = [
   Brand3.src,
@@ -35,54 +35,50 @@ const faqData = [
   {
     question: "Why UI UX designer important for my business?",
     answer:
-    'A UI UX designer plays an important role in shaping how users feel and observe your website, app or other digital products. They make sure that ui ux platforms are not only visually appealing but also intuitive, user friendly. After focusing on user behavior, design flow, our experience team will give you a  solution for improving customer satisfaction, increasing conversion etc. ',
+      "A UI UX designer plays an important role in shaping how users feel and observe your website, app or other digital products. They make sure that ui ux platforms are not only visually appealing but also intuitive, user friendly. After focusing on user behavior, design flow, our experience team will give you a  solution for improving customer satisfaction, increasing conversion etc. ",
   },
   {
-    question:
-      "Will I be involved in the UI and UX design process?",
+    question: "Will I be involved in the UI and UX design process?",
     answer:
-    'At every step of the ui and ux design process, your insight and feedback will play a key role. From initial session and wireframe reviews to design approvals and final review we are working collaboratively with you to ensure that work quality of end products is not compromised and product alignment with your brand, goals, user needs. ',
+      "At every step of the ui and ux design process, your insight and feedback will play a key role. From initial session and wireframe reviews to design approvals and final review we are working collaboratively with you to ensure that work quality of end products is not compromised and product alignment with your brand, goals, user needs. ",
   },
   {
-    question:
-      "How is your UI and UX design process structured?",
+    question: "How is your UI and UX design process structured?",
     answer:
-    'At DevNexus Solutions our UI and UX design process is structured and user centric to give a seamless experience. Our process begins with discovery and research where we understand your brand vision and potential audience, then we define user persona and map their journey to indemnify problem points and opportunities. Then we come to the process of wireframe creation to lay out the structure and flow which is followed by different prototypes. Once the user flow is confirmed, then we move to the high quality visual appealing design according to your brand. Testing is also conducted at every step for the refinements.',
+      "At DevNexus Solutions our UI and UX design process is structured and user centric to give a seamless experience. Our process begins with discovery and research where we understand your brand vision and potential audience, then we define user persona and map their journey to indemnify problem points and opportunities. Then we come to the process of wireframe creation to lay out the structure and flow which is followed by different prototypes. Once the user flow is confirmed, then we move to the high quality visual appealing design according to your brand. Testing is also conducted at every step for the refinements.",
   },
   {
-    question:
-      "Do you redesign existing websites/apps?",
+    question: "Do you redesign existing websites/apps?",
     answer:
-    'Yes, we are offering UI UX redesign services to improve usability and on the basis of feedback and analytics. Whether your current design looks outdated, or does not convert well, our team of experts will start analysing its performance, user feedback and problem points.',
+      "Yes, we are offering UI UX redesign services to improve usability and on the basis of feedback and analytics. Whether your current design looks outdated, or does not convert well, our team of experts will start analysing its performance, user feedback and problem points.",
   },
   {
     question: "What tools are you using for UI UX design?",
     answer:
-      'At DevNexus our team of ui ux designer are working on industry standard tools like Figma, Zeplin, Sketch, Adobe XD, etc',
+      "At DevNexus our team of ui ux designer are working on industry standard tools like Figma, Zeplin, Sketch, Adobe XD, etc",
   },
 ];
-
 
 export const UIUXComponent = () => {
   return (
     <div>
       <Banner
-        image='/cdn/images/UUIX/UIUXHero.mp4'
+        image="/cdn/images/UUIX/UIUXHero.mp4"
         overlayImage
         heading="Upgrade Your Brand with Exceptional UI UX Design and Development Services"
-        description="At DevNexus Solutions, thoughtful design and user-based strategies increase the user experience. Our UI/X design services are carefully crafted to transform your digital product into an engaging, visually appealing one that effectively connects with your audience. "
+        description="At DevNexus Solutions, thoughtful design and user-based strategies increase the user experience. Our UI/UX design services are carefully crafted to transform your digital product into an engaging, visually appealing one that effectively connects with your audience."
       />
       <StatusCard />
       <UIDesignTechnologies />
       <MainDevnexus />
       <DesignProcess />
-            <Slider
-                          title="Driving Growth To The Brands."
-                          subtitle="We deliver Global IT Services to brands of all sizes"
-                          brands={brandLogos}
-                        />
+      <Slider
+        title="Driving Growth To The Brands."
+        subtitle="We deliver Global IT Services to brands of all sizes"
+        brands={brandLogos}
+      />
       <WhyUIUX />
-       <FaqSection
+      <FaqSection
         faqs={faqData}
         title="  Frequently Asked Questions (FAQs)"
         subtitle=" Answers to Your Most Common Questions Fast, Clear, and Helpful."

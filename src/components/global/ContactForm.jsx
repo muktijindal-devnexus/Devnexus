@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PhoneForm from "../contact/PhoneForm";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -105,7 +106,7 @@ export const ContactForm = () => {
   return (
     <section className="flex justify-center ">
       <div
-        className="w-full max-w-6xl px-4 sm:px-8 md:px-12 lg:px-16 py-6 md:py-8 flex flex-col lg:flex-row gap-16 md:gap-8 lg:gap-16"
+        className="w-full max-w-6xl px-2 sm:px-8 md:px-12 lg:px-16 pt-6 md:py-8 flex flex-col lg:flex-row gap-10 md:gap-8 lg:gap-16"
         style={{
           background: "linear-gradient(to right, white, #e9eef4, white)",
         }}
@@ -118,7 +119,7 @@ export const ContactForm = () => {
         </div>
 
         {/* Form Section */}
-        <div className="lg:w-1/2 w-full bg-[#f9f9f9] p-14 sm:p-12 rounded-xl">
+        <div className="lg:w-1/2 w-full bg-[#f9f9f9] sm:p-12 rounded-xl">
           <h2 className="text-xl sm:text-3xl font-semibold ">Get in Touch</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6  pt-4">
             Please fill out the form to help us understand the areas where you
@@ -141,9 +142,9 @@ export const ContactForm = () => {
               <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full sm:w-1/2">
                 <input
                   type="text"
-                  name="name"
+                  name="lastname"
                   placeholder="Enter your Last name*"
-                  value={formData.name}
+                  value={formData.lastname}
                   onChange={handleChange}
                   className="w-full outline-none bg-transparent text-sm sm:text-base"
                 />
@@ -174,9 +175,9 @@ export const ContactForm = () => {
             </div>
 
             {/* Row 2: Country Code, Phone */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <div className="flex flex-row sm:flex-row gap-4 mb-8">
               <div className="border-[#828282] border rounded-xl w-20 flex items-center justify-center bg-gray-100 text-xs sm:text-sm font-medium p-1 sm:p-1.5 text-center">
-                IN +91
+               <PhoneForm />
               </div>
               <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 sm:p-2.5">
                 <input
@@ -205,16 +206,15 @@ export const ContactForm = () => {
                 <option value="" disabled hidden>
                   Services
                 </option>
-                <option value="Web Development">Web Development</option>
-                <option value="Mobile App Development">
+                <option value="webDevelopment">Web Development</option>
+                <option value="mobileDevelopment">
                   Mobile App Development
                 </option>
-                <option value="UI/UX Design">UI/UX Design</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Branding">UI UX</option>
-                <option value="Branding">Blockchain Development</option>
-                <option value="Branding">AI Technologies</option>
-                <option value="Other">Other</option>
+                <option value="UIUX">UI/UX Design</option>
+                <option value="digitalMarketing">Digital Marketing</option>
+                <option value="BlockChain">Blockchain Development</option>
+                <option value="AITechnologies">AI Technologies</option>
+                <option value="other">Other</option>
               </select>
             </div>
 

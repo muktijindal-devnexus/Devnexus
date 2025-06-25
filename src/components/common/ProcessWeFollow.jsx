@@ -3,39 +3,34 @@ import React from "react";
 export const ProcessWeFollow = () => {
   const steps = [
     {
-      title: "Discovery & Requirement Gathering",
+      title: "Discovery and Strategy",
       description:
-        "First we begin with the understanding of your brand's goals, potential audience and technical requirement needs to define the project scope clearly.",
+        "First, we understand the client's expectations and the potential audience market size. This phase includes market research, competitor analysis, and other significant factors. ",
     },
     {
-      title: "Planning Strategy",
+      title: "UI/UX Experience",
       description:
-        "Our Web Design and Web Development team, create a detailed project road map, which include site architecture, technology stack, timeline and allocation of resources. ",
+        "Our expert designers create wireframes and interactive prototypes, mainly focused on usability and user engagement. ",
     },
     {
-      title: "UI UX Design",
+      title: "Agile Development",
       description:
-        "Our design team crafts intuitive, visually attractive layouts and user interface which align your brand identity. ",
+        "We use agile development teams and technologies to build a secure performance app. Whether native or cross-functional, we ensure the code is clean, modular, and maintainable.",
     },
     {
-      title: "Frontend & Backend Development",
+      title: "Quality Assurance & Testing",
       description:
-        "Next we bring designs to life with clean, responsive front end code using modern frameworks like HTML5, CSS3, JavaScript, React, Node.js, PHP, Python, etc.",
+        "Every step of app development undergoes manual and automated testing to check whether it covers all the functionalities or needs any changes.",
     },
     {
-      title: "Integration & Testing-",
+      title: "Deployment & Launch",
       description:
-        "We make sure every component of your website or app works efficiently through seamless API's, third party services and backend systems. Our technology testing process includes functionality checks, performance testing, responsiveness and other security audits.",
+        "We control the whole app store submission process, including Apple App Store and Google Play Store guidelines. We also provide strategies for maximum visibility. ",
     },
         {
-      title: "Deployment",
+      title: "Post-Launch Support",
       description:
-        "After comprehensive testing, we launch your website on the preferred hosting server and ensure smooth setup and operation.",
-    },
-    {
-      title: "Maintenance & Support",
-      description:
-        "Our team of experts provides ongoing updates, security, performance monitoring to keep your site secure, fast and keep it up to date.",
+        "Once an app is launched, our work does not stop. We offer ongoing support, performance monitoring, and feature enhancements to keep your app up to date.",
     },
   ];
 
@@ -44,8 +39,8 @@ export const ProcessWeFollow = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div className="w-[50%] mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-medium text-[#00357A]">
-            Process We Follow As The <span className="font-bold">Web Design</span>{" "}
-            and <span className="font-bold">Web Development</span> services
+          Our Comprehensive <span className="font-bold">Approach </span>{" "}
+            for  <span className="font-bold">Mobile App Development</span> Services
           </h2>
         </div>
 

@@ -19,7 +19,8 @@ export const KeyFacts = () => {
       ref={ref}
       className="flex justify-center items-center gap-4 flex-col py-12"
     >
-      <div className="flex flex-col text-center w-[70%]">
+    <div className="flex flex-col text-center w-full sm:w-[90%] md:w-[70%] mx-auto">
+
         <h1 className="text-[34px] leading-[44px] text-[#00357A]">
           Key Facts About Us
         </h1>
@@ -31,7 +32,7 @@ export const KeyFacts = () => {
 
       <div className="grid grid-cols-1 justify-items-center items-center gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl px-4 pt-16">
         {/* Column 1 */}
-        <div className="space-y-8">
+       <div className="flex gap-20 lg:space-y-8 lg:block">
           <div className="text-center">
             <div className="text-4xl font-medium text-[#7E7E7E]">
               {inView ? <CountUp end={95} duration={3} /> : '0'}%
@@ -80,7 +81,7 @@ export const KeyFacts = () => {
         </div>
 
         {/* Column 3 */}
-        <div className="space-y-8">
+       <div className="flex gap-20 lg:space-y-8 lg:block">
           <div className="text-center">
             <div className="text-4xl font-medium text-[#7E7E7E]">
               {inView ? <CountUp end={130} duration={6.5} /> : '0'}+

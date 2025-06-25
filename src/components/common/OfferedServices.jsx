@@ -24,7 +24,7 @@ const services = [
 export const OfferedServices = () => {
   return (
     <section className="px-4 md:px-8 lg:px-16 py-10">
-      <div className="flex flex-col lg:flex-row items-start justify-center text-center lg:items-center gap-4 lg:gap-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center text-center lg:items-center gap-4 lg:gap-10">
         <h1 className="font-semibold text-2xl md:text-3xl lg:text-[34px] text-[#335D95] leading-snug">
           Services Offered by <br />
           <span className="text-[#00357A] text-[30px] md:text-[36px] lg:text-[40px] font-bold">

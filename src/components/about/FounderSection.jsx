@@ -18,8 +18,8 @@ const FoundersSection = () => {
 
       <div className=" justify-center gap-8">
         {/* Founder 1 */}
-        <div className="bg-white rounded-lg shadow-md p-8 w-full flex">
-          <div className="w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
+      <div className="bg-white rounded-lg shadow-md p-8 w-full flex flex-col md:flex-row">
+         <div className="w-full sm:w-[90%] md:w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
             <Image
               src="/cdn/images/About/ankit.png" // Replace with correct path
               alt="Ankit Sureka"
@@ -27,7 +27,7 @@ const FoundersSection = () => {
               className="object-cover"
             />
           </div>
-          <div className="p-14 w-[90%]">
+         <div className="p-0 sm:p-14 w-[90%]">
             <h3 className="text-2xl font-semibold text-[#00357A]">
               Ankit Sureka
             </h3>
@@ -51,8 +51,8 @@ const FoundersSection = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-8 w-full flex mt-10">
-          <div className="p-14 w-[90%]">
+    <div className="bg-white rounded-lg shadow-md p-8 w-full flex flex-col md:flex-row">
+                 <div className="pb-6 sm:p-14 w-[90%]">
             <h3 className="text-2xl font-semibold text-[#00357A]">
               Archit Sureka
             </h3>
@@ -75,7 +75,7 @@ const FoundersSection = () => {
               every solution.
             </p>
           </div>
-            <div className="w-[70%] h-[430px] relative rounded-md overflow-hidden mb-4">
+                    <div className="w-full sm:w-[90%] md:w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
             <Image
               src="/cdn/images/About/archit.png"
               alt="Ankit Sureka"

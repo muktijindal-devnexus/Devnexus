@@ -2,21 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion"; // ✅ Add this import
-
-// Assets
-import Design from "../../../public/cdn/images/design 1.svg";
-import Image1 from "../../../public/cdn/images/innovation1.svg";
-import Image2 from "../../../public/cdn/images/innovation2.svg";
-import Image3 from "../../../public/cdn/images/innovation3.svg";
-import Image4 from "../../../public/cdn/images/innovation4.svg";
+import { motion } from "framer-motion";
 import Workspace from "../../../public/cdn/images/workspace.png";
 
 export default function AboutUs() {
   return (
     <section className="relative bg-white overflow-hidden py-16 px-6 md:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pr-1">
-        
         {/* Left: Floating Animated Image */}
         <motion.div
           className="overflow-hidden"
@@ -27,7 +19,7 @@ export default function AboutUs() {
             src={Workspace}
             alt="Workspace"
             className="w-full bg-transparent 
-              h-[300px] sm:h-[400px] md:h-[380px] lg:h-[460px]"
+              h-[300px] sm:h-[340px] md:h-[380px] lg:h-[460px]"
             sizes="(max-width: 640px) 100vw, 
          (max-width: 768px) 100vw, 
          (max-width: 1024px) 100vw, 
@@ -36,7 +28,7 @@ export default function AboutUs() {
         </motion.div>
 
         {/* Right: Text + Button */}
-        <div className="bg-gradient-to-br from-white to-[#f8f9fd] rounded-2xl shadow-md p-15">
+<div className="bg-gradient-to-br from-white to-[#f8f9fd] rounded-xl sm:rounded-2xl shadow-sm sm:shadow-md p-8 sm:p-8 md:p-12 lg:p-15">
           <p className="text-lg text-[#00357A]">INNOVATE • BUILD • GROW</p>
           <h2 className="text-4xl md:text-3xl font-semibold leading-snug mb-4  font-[Montserrat] py-6">
             Beyond Code — Where{" "}
@@ -52,10 +44,8 @@ export default function AboutUs() {
 
           {/* Know More Button */}
           <div className="flex justify-start mt-8">
-            <Link href="/about">
-              <button
-                className="px-6 py-2 border border-[#00357A] text-[#00357A] rounded-md font-medium transition-all hover:bg-[#00357A] hover:text-white"
-              >
+            <Link href="/aboutus">
+              <button className="px-6 py-2 border border-[#00357A] text-[#00357A] rounded-md font-medium transition-all hover:bg-[#00357A] hover:text-white">
                 Know more
               </button>
             </Link>

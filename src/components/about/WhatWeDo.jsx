@@ -36,9 +36,9 @@ const WhatWeDo = () => {
             <blockquote className="border-l-4 rounded-l-lg border-[#00357A] pl-4 text-base font-medium text-gray-900">
              "To be a global leader in technology services, recognized for our commitment to excellence, customer-centric approach, and our role in shaping a smarter, more connected, and sustainable digital future."
             </blockquote>
-            <p>
-             At DevNexus Solutions, our vision is to lead the way in shaping a future where the digital era becomes the foundation for progress and sustainable growth. Through our commitment to excellence, we continue learning, we are aiming to redefine what's possible in the world of IT services, turning today's challenges into tomorrow's breakthrough.
-            </p>
+         <p className="hidden sm:block">
+  At DevNexus Solutions, our vision is to lead the way in shaping a future where the digital era becomes the foundation for progress and sustainable growth. Through our commitment to excellence, we continue learning, we are aiming to redefine what's possible in the world of IT services, turning today's challenges into tomorrow's breakthrough.
+</p>
           </div>
         )}
 
@@ -63,7 +63,7 @@ const WhatWeDo = () => {
             <blockquote className="border-l-4 rounded-l-lg border-[#00357A] pl-4 text-base font-medium text-gray-900">
            "To empower businesses and individuals by delivering innovative, reliable, and scalable IT solutions that drive digital transformation, enhance productivity, and create lasting value for our clients and communities."
             </blockquote>
-            <p>
+            <p className="hidden sm:block">
             We believe tech should work as a bridge, not a barrier to opportunity. That's why we are designing every solution with reliability and leaving a long-term impact in mind. Does not matter that you are, start-up looking to scale the market reach or business who is undergoing digital revulation, we are here to make your process seamless.
             </p>
           </div>

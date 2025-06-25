@@ -33,6 +33,10 @@ export const OfferedServices = () => {
         </h1>
       </div>
 
+      <span className="text-[#557191] flex justify-end pt-5">
+Scroll for more
+      </span>
+
       {/* Cards with custom scroll */}
       <div
         style={{

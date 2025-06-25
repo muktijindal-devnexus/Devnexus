@@ -30,7 +30,7 @@ export const Banners = ({ image, heading, description }) => {
           <h1 className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 leading-tight font-[Montserrat]">
             {heading}
           </h1>
-          <p className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 leading-6 md:leading-8">
+          <p className="text-normal  sm:text-base md:text-lg mb-4 md:mb-6 leading-6 md:leading-8">
             {description}
           </p>
         </div>

@@ -17,7 +17,7 @@ export const AboutDevnexus = () => {
   const { id, title, description } = slides[currentIndex];
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center py-8 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white">
+    <div className="flex flex-col-reverse lg:flex-row items-center justify-center py-8 md:py-12 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-white">
       {/* Left section - Blue background */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -30,7 +30,7 @@ export const AboutDevnexus = () => {
            <h4 className="text-white text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">
             {title}
           </h4>
-          <p className="text-sm sm:text-base md:text-lg text-whie leading-relaxed">
+          <p className="text-normal sm:text-base md:text-lg text-whie leading-relaxed">
             {description}
           </p>
       </motion.div>
@@ -47,7 +47,7 @@ export const AboutDevnexus = () => {
           <h3 className="text-[#002f6c] text-2xl sm:text-3xl font-bold">
             {id < 10 ? `0${id}` : id}
           </h3>
-           <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+           <p className="text-normal sm:text-base md:text-lg leading-relaxed">
           We are a group of tech enthusiasts, with inclination towards agile,
           who started their IT journey in 2010 (within our home office), and
           now building to a team of 120+ tech experts matching the top

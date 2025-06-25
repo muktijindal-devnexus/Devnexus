@@ -40,7 +40,7 @@ const WhyChooseUsMobile = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-12">
           What makes{" "}
-          <span className="font-semibold text-blue-900">DevNexus Solutions</span> a better option for
+          <span className="font-semibold text-blue-900">DevNexus Solutions</span> a better option for{" "}
           <span className="font-semibold text-blue-900">Mobile App Development</span> Services?
         </h2>
 
@@ -54,7 +54,7 @@ const WhyChooseUsMobile = () => {
               >
                 <Icon className="text-2xl text-blue-900" />
                 <h3 className="text-base font-semibold text-blue-900">{feature.title}</h3>
-                <p className="text-sm text-gray-600">{feature.description}</p>
+                <p className="text-normal text-gray-600">{feature.description}</p>
               </div>
             );
           })}

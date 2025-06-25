@@ -42,7 +42,7 @@ const IndustriesWeServe = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8"
+        className="grid grid-cols-3 md:grid-cols-5 gap-6 md:gap-8"
       >
         {industries.map((industry, index) => (
           <motion.div
@@ -57,7 +57,7 @@ const IndustriesWeServe = () => {
               width={60}
               height={60}
               className="object-contain"
-            />``
+            />
             <p className="text-sm font-medium text-gray-800">{industry.label}</p>
           </motion.div>
         ))}

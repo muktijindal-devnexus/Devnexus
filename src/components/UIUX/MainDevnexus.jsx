@@ -50,7 +50,7 @@ export const MainDevnexus = () => {
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 leading-snug">
          What makes DevNexus Solutions a Better UI UX Design company for business?
         </h2>
-        <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
+        <p className="text-normal sm:text-sm lg:text-base leading-relaxed">
           At DevNexus solutions we believe that thoughtful design and user based strategies
           increase the user experience. Our UI UX design services are crafted to convert your
           digital product into an engaging, visually appealing stuff, which will connect your
@@ -60,12 +60,12 @@ export const MainDevnexus = () => {
 
       {/* Right section */}
       <div className="relative w-full lg:w-1/2 mt-6 lg:mt-0">
-        <div className="bg-white shadow-md rounded-xl lg:rounded-l-4xl p-6 sm:p-8 lg:p-10 border-l-0 lg:border-l-4 border-[#2e5c9a] transition-all duration-300 ease-in-out lg:relative lg:right-10 h-[300px]">
+        <div className="bg-white shadow-md rounded-xl lg:rounded-l-4xl p-6 sm:p-8 lg:p-10 border-l-0 lg:border-l-4 border-[#2e5c9a] transition-all duration-300 ease-in-out lg:relative lg:right-10 h-[355px]">
           <h3 className="text-[#002f6c] text-2xl sm:text-3xl font-bold pb-2">
             {id < 10 ? `0${id}` : id}
           </h3>
           <h4 className="text-[#2e5c9a] text-lg sm:text-xl font-semibold mb-2">{title}</h4>
-          <p className="text-xs sm:text-sm lg:text-base text-gray-700 leading-relaxed">
+          <p className="text-normal sm:text-sm lg:text-base text-gray-700 leading-relaxed">
             {description}
           </p>
         </div>

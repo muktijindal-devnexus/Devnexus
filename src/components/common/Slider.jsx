@@ -21,7 +21,7 @@ export default function Slider({ title, subtitle, brands }) {
       {/* Swiper Row 1 - Left to Right */}
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={2.5}
+        slidesPerView={3.5}
         spaceBetween={20}
         loop
         autoplay={{ 

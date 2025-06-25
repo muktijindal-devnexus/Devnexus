@@ -71,7 +71,7 @@ const services = [
   {
     title: 'Conversion-Focused Development (CRO)',
     description:
-      'We optimize your website’s design and functionality to increase conversion rates. From A/B testing to performance tracking, we help turn visitors into loyal customers.',
+      'We optimize your website design and functionality to increase conversion rates. From A/B testing to performance tracking, we help turn visitors into loyal customers.',
     points: [
       'Landing Page Development',
       'UX/UI Improvements',
@@ -81,20 +81,32 @@ const services = [
   },
 ];
 
-
 export const FullStackServices = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
   const selectedService = services[selectedIndex];
 
+  const toggleService = (index) => {
+    if (window.innerWidth < 768) {
+      // Mobile behavior - toggle accordion
+      setExpandedIndex(expandedIndex === index ? null : index);
+    } else {
+      // Desktop behavior - select service
+      setSelectedIndex(index);
+    }
+  };
+
   return (
-    <section className="p-10 flex flex-col md:flex-row gap-10">
+    <section className="p-4 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10">
       {/* Left side */}
       <div className="md:w-1/3 space-y-6">
-        <h1 className="text-[32px] font-light text-[#335D95] leading-tight">
+        <h1 className="text-2xl md:text-[32px] font-light text-[#335D95] leading-tight">
           Explore the <span className="font-bold text-[#00357A]">Web<br />Development Services</span> We Offer
         </h1>
-        <div className="space-y-2">
+        
+        {/* Desktop view - buttons */}
+        <div className="hidden md:block space-y-2">
           {services.map((service, index) => (
             <button
               key={index}
@@ -109,15 +121,41 @@ export const FullStackServices = () => {
             </button>
           ))}
         </div>
+        
+        {/* Mobile view - accordion */}
+        <div className="md:hidden space-y-2">
+          {services.map((service, index) => (
+            <div key={index} className="border border-[#ccc] rounded-md overflow-hidden">
+              <button
+                className={`w-full text-left px-4 py-3 ${
+                  expandedIndex === index ? 'bg-[#00357A] text-white' : 'bg-white text-[#00357A]'
+                }`}
+                onClick={() => toggleService(index)}
+              >
+                {service.title}
+              </button>
+              {expandedIndex === index && (
+                <div className="p-4 bg-white text-gray-700">
+                  <p className="mb-3">{service.description}</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    {service.points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
-      {/* Right side */}
-      <div className="md:w-2/3">
+      {/* Right side - Desktop only */}
+      <div className="hidden md:block md:w-2/3">
         <p className="text-[18px] text-gray-700 font-medium mt-8 mb-12">
-          As a Leading Web Design and Web Development Service provide, we are providing  range of website development services-
+          As a Leading Web Design and Web Development Service provide, we are providing range of website development services-
         </p>
 
-        <div className="p-6 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white max-h-[630px] lg:h-[430px] lg:p-18 ">
+        <div className="p-6 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white max-h-[630px] lg:h-[430px] lg:p-18">
           <h2 className="text-[24px] font-semibold text-[#335D95]">
             {selectedService.title}
           </h2>

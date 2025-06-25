@@ -16,7 +16,7 @@ const milestones = [
 const BlockchainMilestones = () => {
   return (
     <section className="bg-white px-4 md:px-16 lg:px-24 py-12">
-      <div className="flex flex-col md:flex-row gap-8 items-center justify-center p-20">
+      <div className="flex flex-col md:flex-row gap-8 items-center justify-center md:p-20 p-0">
         {/* Left Content */}
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-3xl font-bold text-[#00357A] mb-6">

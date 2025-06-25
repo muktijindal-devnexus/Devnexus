@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
               >
                 <Icon className="text-2xl text-blue-900" />
                 <h3 className="text-base font-semibold text-blue-900">{feature.title}</h3>
-                <p className="text-sm text-gray-600">{feature.description}</p>
+                <p className="text-normal text-gray-600">{feature.description}</p>
               </div>
             );
           })}

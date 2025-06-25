@@ -36,7 +36,7 @@ const ExecutionSection = () => {
       content:
         "Our expert team at DevNexus Solutions delivers cutting-edge Android app development services that meet clients' needs. We have skilled developers who create scalable and visually appealing Android applications that perform seamlessly across different devices.",
     },
-      {
+    {
       id: 7,
       title: "Progressive Web Pages",
       content:
@@ -49,10 +49,11 @@ const ExecutionSection = () => {
       {/* Top Title Section */}
       <div className="flex flex-col items-center text-center mb-12 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-[#1C3C6B] mb-4">
-         Our Range Of Mobile App Development Services
+          Our Range Of Mobile App Development Services
         </h2>
         <p className="text-[#1C3C6B] text-lg leading-relaxed">
-          As a leading mobile design and development service provider, we offer a wide range of services.
+          As a leading mobile design and development service provider, we offer
+          a wide range of services.
         </p>
       </div>
 
@@ -61,7 +62,7 @@ const ExecutionSection = () => {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="group min-w-[488px] max-w-[320px] p-10 rounded-xl border-[#D3DBE6] hover:border-[#1C3C6B] border-2 shadow-lg bg-white transition-all duration-300 hover:shadow-xl"
+            className="group min-w-[80%] sm:min-w-[488px] sm:max-w-[320px] p-6 sm:p-10 rounded-xl border-[#D3DBE6] hover:border-[#1C3C6B] border-2 shadow-lg bg-white transition-all duration-300 hover:shadow-xl"
           >
             <div className="flex items-center mb-4">
               <span className="text-2xl font-bold text-[#1C3C6B] mr-3 group-hover:text-[#1C3C6B] transition-colors duration-300">

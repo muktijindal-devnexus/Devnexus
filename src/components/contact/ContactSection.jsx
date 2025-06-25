@@ -36,7 +36,7 @@ const ContactSection = () => {
         {/* Right Side */}
         <div className="w-full md:w-1/2 bg-[#f9f9f9] rounded-lg p-6 shadow-md ">
           <h3 className="text-xl font-semibold mb-2 text-gray-800">Get in Touch</h3>
-          <p className="text-sm text-gray-600 mb-6">
+          <p className="text-normal text-gray-600 mb-6">
             Please fill out the form to help us understand the areas where you require assistance.
           </p>
 

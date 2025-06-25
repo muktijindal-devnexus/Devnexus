@@ -94,7 +94,7 @@ const ProcessSteps = () => {
                   <hr className="border-t border-gray-300 my-2" />
                   <h3 className="text-lg sm:text-xl font-bold mb-4 pt-4">{step.title}</h3>
                   <p
-                    className="text-sm sm:text-base text-gray-600 overflow-hidden"
+                    className="text-normal leading-7 sm:text-base text-gray-600 overflow-hidden"
                     style={{
                       display: '-webkit-box',
                       WebkitLineClamp: 7,

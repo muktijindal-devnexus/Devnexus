@@ -38,6 +38,10 @@ const OurProcess = () => {
         </p>
       </div>
 
+       <span className='flex justify-end text-[#335D95] opacity-[60%] mb-4'>
+          Tap to view the process
+        </span>
+
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16">
         {processSteps.map((step, idx) => (

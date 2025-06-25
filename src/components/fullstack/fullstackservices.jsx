@@ -104,7 +104,9 @@ export const FullStackServices = () => {
         <h1 className="text-2xl md:text-[32px] font-light text-[#335D95] leading-tight">
           Explore the <span className="font-bold text-[#00357A]">Web<br />Development Services</span> We Offer
         </h1>
-        
+        <span className='flex justify-end text-[#335D95] opacity-[60%]'>
+          Tap to expand
+        </span>
         {/* Desktop view - buttons */}
         <div className="hidden md:block space-y-2">
           {services.map((service, index) => (

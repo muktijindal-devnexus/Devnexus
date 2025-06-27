@@ -6,7 +6,7 @@ const cards = [
     id: "01",
     title: "Cutting-Edge Technologies",
     description:
-    "DevNexus Solutions utilizes modern technologies, using React, NEXT.js, and Figma, to craft a responsive and visually appealing design for your brand.",
+    "DevNexus Solutions utilizes modern technologies, using React, Next.js, and Figma, to craft a responsive and visually appealing design for your brand.",
   },
   {
     id: "02",

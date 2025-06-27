@@ -21,7 +21,7 @@ function PhoneForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div onSubmit={handleSubmit}>
      
       <PhoneInput
         country={countryCode}
@@ -35,7 +35,7 @@ function PhoneForm() {
         }}
       />
 
-    </form>
+    </div>
   );
 }
 

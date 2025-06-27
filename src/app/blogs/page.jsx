@@ -6,7 +6,7 @@ import BlogSection from '@/components/blogs/BlogSection';
 import { Blogs } from '@/components/blogs';
 
 
-const BlogPage = () => {
+const BlogPage = ({slug}) => {
   return (
     <div>
          <Banners
@@ -16,7 +16,7 @@ const BlogPage = () => {
                               description="Stay ahead in the digital world with insights given by experts of DevNexus Solutions."
                             />
                             {/* <BlogSection /> */}
-        <Blogs />
+        <Blogs slug={slug} />
     </div>
   )
 }

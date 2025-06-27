@@ -21,9 +21,9 @@ export const KeyFacts = () => {
     >
     <div className="flex flex-col text-center w-full sm:w-[90%] md:w-[70%] mx-auto">
 
-        <h1 className="text-[34px] leading-[44px] text-[#00357A]">
+        <h2 className="text-[34px] leading-[44px] text-[#00357A]">
           Key Facts About Us
-        </h1>
+        </h2>
         <p className="text-[19px] leading-6 pt-5">
           Discover Why Clients Choose DevNexus for Mobile & Web App Development,
           UI/UX Design, Digital Marketing, and Graphic Design Solutions.

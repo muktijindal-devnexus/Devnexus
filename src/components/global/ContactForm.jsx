@@ -6,6 +6,7 @@ import PhoneForm from "../contact/PhoneForm";
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
+    lastname: "",
     email: "",
     phoneNumber: "",
     services: "",
@@ -34,8 +35,8 @@ export const ContactForm = () => {
     else if (!phoneRegex.test(formData.phoneNumber))
       newErrors.phone = "Phone must be 10 digits";
 
-    if (!formData.lookingFor.trim())
-      newErrors.lookingFor = "This field is required";
+    if (!formData.services.trim())
+      newErrors.services = "This field is required";
 
     return newErrors;
   };
@@ -55,11 +56,11 @@ export const ContactForm = () => {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              name: formData.name,
-              email: formData.email,
-              phoneNumber: formData.phoneNumber || formData.phoneNumber,
-              services: formData.services || formData.lookingFor,
-              message: formData.message,
+              name: formData.name || " ",
+              email: formData.email || " ",
+              phoneNumber: formData.phoneNumber || " ",
+              services: formData.services || formData.services || " ",
+              message: formData.message || " ",
             }),
           }
         );
@@ -73,6 +74,7 @@ export const ContactForm = () => {
         // Reset the form
         setFormData({
           name: "",
+          lastname: "",
           email: "",
           phoneNumber: "",
           services: "",
@@ -117,9 +119,8 @@ export const ContactForm = () => {
             Let's Make Your Brand Shine & Competitors Envy!
           </h1>
         </div>
-
         {/* Form Section */}
-        <div className="lg:w-1/2 w-full bg-[#f9f9f9] sm:p-12 rounded-xl">
+        <div className="lg:w-1/2 w-full bg-[#f9f9f9] sm:p-12 rounded-xl p-6">
           <h2 className="text-xl sm:text-3xl font-semibold ">Get in Touch</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6  pt-4">
             Please fill out the form to help us understand the areas where you
@@ -142,7 +143,7 @@ export const ContactForm = () => {
               <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full sm:w-1/2">
                 <input
                   type="text"
-                  name="lastname"
+                name="lastname"
                   placeholder="Enter your Last name*"
                   value={formData.lastname}
                   onChange={handleChange}
@@ -176,8 +177,8 @@ export const ContactForm = () => {
 
             {/* Row 2: Country Code, Phone */}
             <div className="flex flex-row sm:flex-row gap-4 mb-8">
-              <div className="border-[#828282] border rounded-xl w-20 flex items-center justify-center bg-gray-100 text-xs sm:text-sm font-medium p-1 sm:p-1.5 text-center">
-               <PhoneForm />
+              <div className="border-[#828282] border rounded-xl w-40 flex items-center justify-center bg-gray-100 text-xs sm:text-sm font-medium p-1 sm:p-1.5 text-center">
+                <PhoneForm />
               </div>
               <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 sm:p-2.5">
                 <input
@@ -198,8 +199,8 @@ export const ContactForm = () => {
             {/* Row 3: Looking For */}
             <div className="border-[#828282] border rounded-xl w-full  p-1 sm:p-2.5 text-gray-600 mb-8">
               <select
-                name="lookingFor"
-                value={formData.lookingFor}
+                name="services"
+                value={formData.services}
                 onChange={handleChange}
                 className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none "
               >
@@ -218,9 +219,9 @@ export const ContactForm = () => {
               </select>
             </div>
 
-            {errors.lookingFor && (
+            {errors.services && (
               <p className="text-red-500 text-xs sm:text-sm">
-                {errors.lookingFor}
+                {errors.services}
               </p>
             )}
 

@@ -45,9 +45,9 @@ const BlockchainDevelopment = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-2xl md:text-4xl text-[#00357A]">
+          <h2 className="text-2xl md:text-4xl text-[#00357A]">
             Our <span className="font-bold">Blockchain Development</span> Services
-          </h1>
+          </h2>
         </motion.div>
 
         {/* Cards */}

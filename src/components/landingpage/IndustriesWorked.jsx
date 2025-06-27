@@ -63,9 +63,9 @@ export const IndustriesWorked = () => {
     <section className="py-6 px-4 md:px-0">
       <div className="bg-[#00357A] bg-gradient-to-b from-transparent to-black opacity-90 flex flex-col md:flex-row p-6 md:p-14">
         <div className="text-white w-full md:w-[45%] flex flex-col justify-center gap-4 md:gap-7 mb-6 md:mb-0">
-          <h1 className="text-3xl md:text-5xl font-semibold leading-tight md:leading-16 pr-0 md:pr-2">
+          <h2 className="text-3xl md:text-5xl font-semibold leading-tight md:leading-16 pr-0 md:pr-2">
             Industries We've Worked For
-          </h1>
+          </h2>
           <span className="text-sm md:text-[16px] leading-5 md:leading-6 pr-10">
             We deliver tailored solutions across industries like healthcare,
             education, finance, e-commerce, and tech, leveraging deep expertise

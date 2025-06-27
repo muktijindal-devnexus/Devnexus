@@ -23,9 +23,9 @@ export const ContactComponents = () => {
         description="Have a vision for your brand? Let's make it happen together. At DevNexus Solutions, we are here to understand your business and deliver custom digital solutions that drive actual results"
       />
       <div className="min-h-screen p-10 bg-gray-100">
-        <h1 className="text-4xl font-bold mb-6 text-center text-[#00357A]">
+        <h3 className="text-4xl font-bold mb-6 text-center text-[#00357A]">
           Our Office Location
-        </h1>
+        </h3>
         <Map />
       </div>
 <Contactdetails />

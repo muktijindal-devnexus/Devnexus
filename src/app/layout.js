@@ -4,7 +4,7 @@ import { Navbar } from "@/components/global/Navbar";
 import Footer from "@/components/global/Footer";
 import { ContactForm } from "@/components/global/ContactForm";
 import ChatBot from "@/components/global/Chatboat";
-import Script from "next/script"; // ✅ Import Script
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,41 +22,48 @@ const montserrat = Montserrat({
   weight: ["400", "700"],
 });
 
-export const metadata = {
-  title: "Global IT Services - DevNexus Solution",
-  description:
-    "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us.",
-  openGraph: {
-    title: "Global IT Services - DevNexus Solution",
-    description:
-      "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us.",
-    url: "https://devnexussolutions.com/",
-    siteName: "DevNexus Solution",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dybqc3gax/image/upload/v1750312905/WhatsApp_Image_2025-06-19_at_11.28.37_htykk3.jpg",
-        width: 1200,
-        height: 630,
-        alt: "DevNexus Solution",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Global IT Services - DevNexus Solution",
-    description:
-      "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us.",
-    images: ["https://res.cloudinary.com/dybqc3gax/image/upload/v1750312905/WhatsApp_Image_2025-06-19_at_11.28.37_htykk3.jpg"],
-  },
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-     
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Global IT Services - DevNexus Solution</title>
+        <meta
+          name="description"
+          content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
+        />
+
+        {/* Open Graph tags for LinkedIn and Facebook */}
+        <meta property="og:title" content="Global IT Services - DevNexus Solution" />
+        <meta
+          property="og:description"
+          content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
+        />
+        <meta property="og:url" content="https://devnexussolutions.com/" />
+        <meta property="og:site_name" content="DevNexus Solution" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dybqc3gax/image/upload/v1750312905/WhatsApp_Image_2025-06-19_at_11.28.37_htykk3.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Global IT Services - DevNexus Solution" />
+        <meta
+          name="twitter:description"
+          content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
+        />
+        <meta
+          name="twitter:image"
+          content="https://res.cloudinary.com/dybqc3gax/image/upload/v1750312905/WhatsApp_Image_2025-06-19_at_11.28.37_htykk3.jpg"
+        />
+
+        {/* GTM Script */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -71,7 +78,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
       >
-       
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KQSN2X9Q"
@@ -81,7 +87,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        <Navbar className="" />
+        <Navbar />
         {children}
         <ContactForm />
         <ChatBot />

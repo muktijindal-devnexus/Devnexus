@@ -46,7 +46,7 @@ export const OurProcess = () => {
         {/* Content moved outside the overlay by increasing z-index */}
         <section className="absolute top-0 left-0 w-full h-full flex flex-col items-center pt-[10px] text-white z-20">
           <div className="text-center max-w-2xl px-2">
-            <h1 className="text-3xl font-bold leading-10 pb-2.5">Our Process</h1>
+            <h2 className="text-3xl font-bold leading-10 pb-2.5">Our Process</h2>
             <span className="text-base leading-4">
               Our approach is collaborative and goal-oriented. We begin by
               understanding your needs, followed by planning, execution, and

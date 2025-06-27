@@ -1,7 +1,6 @@
 import React from "react";
 import { SeoMarketing } from "./SeoMarketing";
 import Slider from "../common/Slider";
-import { DigitalMarketingServices } from "./DigitalMarketingServices ";
 import { DevNexusMarketingBenefits } from "./DevNexusMarketingBenefits ";
 
 import Brand3 from '../../../public/cdn/images/brandslogo/Jindal.svg';
@@ -17,6 +16,7 @@ import Brand14 from '../../../public/cdn/images/brandslogo/vize.svg';
 
 import StatusCard from "../common/Status";
 import FaqSection from "../global/FaqSection";
+import { DigitalMarketingServices } from "./DigitalMarketingServices ";
 
 const faqData  = [
   {

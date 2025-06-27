@@ -59,7 +59,7 @@ export const SeoMarketing = () => {
     <section className="flex flex-col md:flex-row gap-10 p-10">
       {/* Left Content */}
       <div className="md:w-1/2 space-y-6">
-        <h1 className="text-[32px] md:text-[48px] text-[#335D95] leading-tight">
+        <h2 className="text-[32px] md:text-[48px] text-[#335D95] leading-tight">
          Our {' '}
           <span className="text-[#00357A] font-semibold">
           Comprehensive Approach  
@@ -67,7 +67,7 @@ export const SeoMarketing = () => {
           </span>{' '}
           to the Digital Marketing Process -<br />
           
-        </h1>
+        </h2>
         <p className="text-[18px] md:text-[20px] text-gray-700">
           Access end-to-end SEO services through our structured and agile methodology.
           We follow a proven, results-driven approach that encompasses everything from

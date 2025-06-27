@@ -101,9 +101,9 @@ export const FullStackServices = () => {
     <section className="p-4 md:p-10 flex flex-col md:flex-row gap-6 md:gap-10">
       {/* Left side */}
       <div className="md:w-1/3 space-y-6">
-        <h1 className="text-2xl md:text-[32px] font-light text-[#335D95] leading-tight">
+        <h2 className="text-2xl md:text-[32px] font-light text-[#335D95] leading-tight">
           Explore the <span className="font-bold text-[#00357A]">Web<br />Development Services</span> We Offer
-        </h1>
+        </h2>
         <span className='flex justify-end text-[#335D95] opacity-[60%]'>
           Tap to expand
         </span>

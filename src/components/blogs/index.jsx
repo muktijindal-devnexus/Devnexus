@@ -4,12 +4,10 @@ import UnderConstruction from "../../../public/cdn/images/UnderConstruction.png"
 import BlogSection from "./BlogSection";
 
 
-export const Blogs = () => {
+export const Blogs = ({slug}) => {
   return (
-
-
     <section className="flex flex-col justify-center items-center">
-      <BlogSection />
+      <BlogSection slug={slug} />
       {/* <div className="relative w-[250px] h-[250px]">
         <Image
           src={UnderConstruction}

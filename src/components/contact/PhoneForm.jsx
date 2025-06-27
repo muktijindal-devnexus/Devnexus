@@ -30,7 +30,6 @@ function PhoneForm() {
         enableSearch={true}
         inputStyle={{
           width: "100%",
-          padding: "10px",
           fontSize: "16px",
           color: "black",
         }}

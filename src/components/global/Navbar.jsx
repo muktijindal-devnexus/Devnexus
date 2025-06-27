@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { ContactModal } from "./ContactModal";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -231,26 +232,7 @@ export const Navbar = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-[9999]">
-          <div className="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
-            <button
-              onClick={() => setShowModal(false)}
-              className="absolute top-3 right-4 text-gray-600 hover:text-red-500 text-2xl"
-            >
-              &times;
-            </button>
-            <h2 className="text-xl font-semibold mb-4">Free Consultation</h2>
-            <p className="text-sm text-gray-700 mb-4">Please fill the form and our team will get back to you.</p>
-            <form className="flex flex-col gap-3">
-              <input type="text" placeholder="Your Name" className="border rounded-md px-3 py-2 text-sm" />
-              <input type="email" placeholder="Your Email" className="border rounded-md px-3 py-2 text-sm" />
-              <textarea placeholder="Your Message" className="border rounded-md px-3 py-2 text-sm" rows={3} />
-              <button className="bg-[#00357A] hover:bg-[#335D95] text-white px-4 py-2 rounded-md text-sm">
-                Submit
-              </button>
-            </form>
-          </div>
-        </div>
+       <ContactModal setShowModal={setShowModal} />
       )}
     </>
   );

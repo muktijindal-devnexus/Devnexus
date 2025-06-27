@@ -12,25 +12,25 @@ const features = [
     icon: Braces,
     title: "Clean & Scalable Code",
     description:
-      " At DevNexus Solutions, our team of experts writes efficient, well-structured code that ensures high performance and is easily scalable as your business grows.",
+      " At DevNexus Solutions, our team of experts writes efficient, well-structured code that ensures high performance and seamless scalability as your business evolves.",
   },
   {
     icon: LayoutTemplate,
     title: "Cutting-Edge Technology",
     description:
-      "We prioritize your business goals and vision, delivering tailored web solutions that truly align with your brand and audience requirements. ",
+      "We leverage the latest tools, frameworks, and industry best practices to build high-performance websites tailored to your unique brand identity and business objectives.",
   },
   {
     icon: FaProjectDiagram,
     title: "Client-Centric Approach",
     description:
-      "We are prioritising your business goals and vision delivering tailored web solutions that truly align with your brand and audience requirement.",
+      "At DevNexus, your vision drives our strategy. We collaborate closely with you to build custom web solutions that resonate with your target audience and support your long-term goals.",
   },
   {
     icon: BanknoteArrowUp ,
     title: "Post-Launch Support & Growth",
     description:
-      "We don't stop at launch. Our ongoing maintenance, analytics, and optimization services help your digital presence grow and evolve.",
+      "We don't stop at launch, our ongoing maintenance, analytics, and optimization services help your digital presence grow and evolve.",
   },
 ];
 
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
               >
                 <Icon className="text-2xl text-blue-900" />
                 <h3 className="text-base font-semibold text-blue-900">{features[i].title}</h3>
-                <p className="text-sm text-gray-600">{features[i].description}</p>
+                <p className="text-normal text-gray-600">{features[i].description}</p>
               </div>
             );
           })}

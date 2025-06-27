@@ -23,9 +23,9 @@ import { FullStackServices } from "./fullstackservices";
 const faqData = [
   {
     question:
-      "What domains of business does DevNexus cater to?",
+      "What domains of business does DevNexus Solutions cater to?",
     answer:
-      'We offer web design and development services to businesses of all types that need a digital presence, including Real Estate, Construction, Services, food and beverages, Public sector, Education, healthcare and medicine, Travel, banking and fintech, and more.',
+      'We offer web design and development services to businesses of all types that need a digital presence, including real estate, construction, Services, food and beverages, public sector, education, healthcare and medicine, travel, banking and fintech, and more.',
   },
   {
     question:
@@ -126,12 +126,13 @@ export const Fullstack = () => {
       <WhyChooseUs />
       {/* <ExecutionSection /> */}
       <FullStackServices />
-         <Slider
-      title="Driving Growth To The Brands."
-      subtitle="We deliver Global IT Services to brands of all sizes"
+        
+    <ProcessSteps />
+     <Slider
+      title="Driving Brand Excellence,"
+      subtitle="we deliver Global IT Services to business ranging from startups to global enterprises"
       brands={brandLogos}
     />
-    <ProcessSteps />
      
       <FaqSection
         faqs={faqData}

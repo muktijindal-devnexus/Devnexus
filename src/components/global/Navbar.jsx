@@ -126,7 +126,7 @@ export const Navbar = () => {
               )}
             </div>
 
-            {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
+            {["Projects", "Career", "Blogs", "Contact"].map((item, i) => (
               <Link
                 key={i}
                 href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
@@ -216,7 +216,7 @@ export const Navbar = () => {
         ))}
     </div>
 
-            {["Project", "Career", "Blogs", "Contact"].map((item, i) => (
+            {["Projects", "Career", "Blogs", "Contact"].map((item, i) => (
               <Link
                 key={i}
                 href={`/${item.toLowerCase().replace(/\s+/g, "")}`}

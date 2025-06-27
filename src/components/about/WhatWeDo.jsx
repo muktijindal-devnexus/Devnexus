@@ -11,7 +11,7 @@ const WhatWeDo = () => {
     <section className="py-16 px-4 md:px-20 bg-white text-center">
       <h2 className="text-xl md:text-2xl font-semibold text-[#00357A] mb-2">What We Do</h2>
       <p className="text-black mb-8 text-base md:text-lg">
-   We solve the world's problems, live by the code, and deliver it back to society.
+ We build smart digital solutions to solve real-world problems- <br/> driven by code, inspired by purpose, and designed to serve society.
       </p>
 
       <div className="text-left max-w-3xl mx-auto">
@@ -36,8 +36,8 @@ const WhatWeDo = () => {
             <blockquote className="border-l-4 rounded-l-lg border-[#00357A] pl-4 text-base font-medium text-gray-900">
              "To be a global leader in technology services, recognized for our commitment to excellence, customer-centric approach, and our role in shaping a smarter, more connected, and sustainable digital future."
             </blockquote>
-         <p className="hidden sm:block">
-  At DevNexus Solutions, our vision is to lead the way in shaping a future where the digital era becomes the foundation for progress and sustainable growth. Through our commitment to excellence, we continue learning, we are aiming to redefine what's possible in the world of IT services, turning today's challenges into tomorrow's breakthrough.
+         <p className="hidden sm:block text-base font-medium">
+  At DevNexus Solutions, our vision is to lead the way in shaping a future where the digital era becomes the foundation for progress and sustainable growth. Through our commitment to excellence and continuous learning, we aim to redefine what's possible in the world of IT services, turning today's challenges into tomorrow's breakthroughs.
 </p>
           </div>
         )}
@@ -61,10 +61,10 @@ const WhatWeDo = () => {
         {showMission && (
           <div className="py-6 text-sm text-gray-700 space-y-3">
             <blockquote className="border-l-4 rounded-l-lg border-[#00357A] pl-4 text-base font-medium text-gray-900">
-           "To empower businesses and individuals by delivering innovative, reliable, and scalable IT solutions that drive digital transformation, enhance productivity, and create lasting value for our clients and communities."
+           "To empower businesses and individuals by delivering innovative, reliable, and scalable IT solutions that drive digital transformation, enhance productivity, and create substantial impact for our clients and communities."
             </blockquote>
-            <p className="hidden sm:block">
-            We believe tech should work as a bridge, not a barrier to opportunity. That's why we are designing every solution with reliability and leaving a long-term impact in mind. Does not matter that you are, start-up looking to scale the market reach or business who is undergoing digital revulation, we are here to make your process seamless.
+            <p className="hidden sm:block text-base font-medium">
+            We believe tech should work as a bridge, not a barrier to opportunity. We are designing every solution with reliability and leaving a long-term impact in mind. Whether you're a start-up aiming to boost your market reach or a business who is undergoing digital revolution, we are here to make your process seamless.
             </p>
           </div>
         )}

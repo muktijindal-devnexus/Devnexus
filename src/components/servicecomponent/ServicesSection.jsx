@@ -7,7 +7,7 @@ const services = [
   {
     title: "Web Development",
     description:
-     "Create Seamless, High-Performing Websites That Engage Users And Drive Results.",
+     "Create seamless, high-performing websites that engage users and drive results.",
     icon: "/cdn/images/image155.svg",
     active: true,
     href: "/web-design-development-services",
@@ -15,35 +15,35 @@ const services = [
   {
     title: "UI/UX Design",
     description:
-      "Elevate User Engagement Through Intuitive Design And Seamless Digital Experiences.",
+      "Elevate user engagement through intuitive design and seamless digital experiences.",
     icon: "/cdn/images/image157.svg",
     href: "/uiux",
   },
   {
     title: "Mobile App Development",
     description:
-    "Transform Ideas Into High-Performing Android & iOS Applications.",
+    "Transform ideas into high-performing android & iOS applications.",
     icon: "/cdn/images/image156.svg",
     href: "/mobile-development-services",
   },
   {
     title: "Digital Marketing",
     description:
-      "Uplift Your Web Traffic, Generate More Leads And Sales For Your Business.",
+      "Uplift your web traffic, generate more leads and sales for your business.",
     icon: "/cdn/images/digital.svg",
     href: "/digital-marketing-services",
   },
   {
     title: "Blockchain Development",
     description:
-      "Redefine Trust, Resilience, And Innovation For The World Of Tomorrow.",
+      "Redefining Digital Trust with Scalable Blockchain Solutions for a Decentralized Future.",
     icon: "/cdn/images/blockchain.svg",
     href: "/blockchain-development-services",
   },
   {
     title: "AI Technologies",
     description:
-    "Unleash The Power Of AI To Drive Growth, Streamline Operations, And Create Scalable Solutions For The Digital Age.",
+    "Unleash the power of AI to drive growth, streamline operations, and create scalable solutions for the digital age.",
     icon: "/cdn/images/ai.svg",
     href: "/ai-tech-services",
   },

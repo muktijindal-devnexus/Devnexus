@@ -38,7 +38,7 @@ const OurProcess = () => {
         </p>
       </div>
 
-       <span className='flex justify-end text-[#335D95] opacity-[60%] mb-4'>
+       <span className='flex justify-end text-[#335D95] opacity-[60%] mb-4 md:hidden'>
           Tap to view the process
         </span>
 

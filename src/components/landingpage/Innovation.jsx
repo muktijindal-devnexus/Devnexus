@@ -38,7 +38,7 @@ export default function AboutUs() {
           <p className="text-gray-600 text-base leading-relaxed mb-6 ">
             At DevNexus Solutions, we believe in the transformative power of
             technology and the people who are building it. Our mission is to
-            empower businesses with fast-forward thinking solutions that bridge
+            empower businesses with next-gen solutions that bridge
             today's challenges with tomorrow's innovations.
           </p>
 

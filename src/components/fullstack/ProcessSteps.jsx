@@ -7,22 +7,22 @@ const steps = [
   {
     title: 'Discovery & Requirement Gathering',
     description:
-      "First, we begin by understanding your brand's goals, potential audience, and technical requirements to clearly define the project scope.",
+      "First, we begin by understanding your brand's goal, potential audience, and technical requirements to clearly define the project scope.",
   },
   {
     title: 'Planning Strategy',
     description:
-      'Our Web Design and Web Development team creates a detailed project roadmap that includes site architecture, technology stack, timeline, and resource allocation. ',
+      'Our web design and web development team creates a detailed project roadmap that includes site architecture, technology stack, timeline, and resource allocation.',
   },
   {
-    title: 'UI UX Design',
+    title: 'UI/UX Design',
     description:
-      'Our design team crafts intuitive, visually attractive layouts and user interfaces that align with your brand identity. ',
+      'Our design team crafts intuitive, visually attractive layouts and user interfaces that aligns with your brand identity. ',
   },
   {
     title: 'Frontend & Backend Development',
     description:
-      'Next, we bring designs to life with clean, responsive front-end code using modern frameworks such as HTML5, CSS3, JavaScript, React, Node.js, PHP, and Python.',
+      'Next, we bring designs to life with clean and responsive frontend and backend using modern frameworks such as HTML5, CSS3, JavaScript, React, Next.js, PHP, and Python.',
   },
   {
     title: 'Integration & Testing',
@@ -75,7 +75,7 @@ const ProcessSteps = () => {
           <div className="md:w-1/3">
             <h2 className="text-2xl sm:text-2xl md:text-4xl font-medium leading-relaxed ">
               Process We <br />
-              Follow As The <br />
+              Follow for <br />
               <span className="font-bold">Web Design</span> <br />
               and <span className="font-bold">Web Development</span> <br />
               Services

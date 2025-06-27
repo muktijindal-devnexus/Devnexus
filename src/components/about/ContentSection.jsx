@@ -48,9 +48,9 @@ export const AboutDevnexus = () => {
             {id < 10 ? `0${id}` : id}
           </h3>
            <p className="text-normal sm:text-base md:text-lg leading-relaxed">
-          We are a group of tech enthusiasts, with inclination towards agile,
-          who started their IT journey in 2010 (within our home office), and
-          now building to a team of 120+ tech experts matching the top
+          We are a group of tech enthusiasts, with an inclination towards Agile methodology,
+          who started their IT journey in 2010, and have
+          now grown into a team of 50+ tech experts matching the top
           problem-solving strategies with the power of digitization.
         </p>
         </div>

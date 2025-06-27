@@ -84,7 +84,7 @@ export const KeyFacts = () => {
        <div className="flex gap-20 lg:space-y-8 lg:block">
           <div className="text-center">
             <div className="text-4xl font-medium text-[#7E7E7E]">
-              {inView ? <CountUp end={130} duration={6.5} /> : '0'}+
+              {inView ? <CountUp end={50} duration={6.5} /> : '0'}+
             </div>
             <h3 className="mt-2 text-lg font-medium text-[#335D95]">
               Employees

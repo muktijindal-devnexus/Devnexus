@@ -47,7 +47,7 @@ export const Banner = () => {
       <div className="absolute inset-0 bg-black/40 z-10" />
 
       {/* Text Content */}
-      <div className="absolute inset-0 z-20 flex flex-col justify-center text-white px-4 sm:px-6 md:px-10 w-full md:w-[55%]">
+      <div className="absolute inset-0 z-20 flex flex-col justify-center text-white px-4 sm:px-6 md:px-10 w-full md:w-[75%]">
         <h1
           className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 leading-tight font-[Montserrat] overflow-hidden"
           style={{
@@ -76,7 +76,7 @@ export const Banner = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            Request Quote
+            Request a Quote
             <span className="relative w-12 h-12 flex items-center justify-center overflow-visible cursor-pointer">
               {/* Smooth Animated Circle */}
               <motion.span

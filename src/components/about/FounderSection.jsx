@@ -8,26 +8,25 @@ const FoundersSection = () => {
   return (
     <section className="py-12 px-4 md:px-16 bg-white text-center">
       <h2 className="text-2xl md:text-3xl font-medium text-[#00357A] mb-10">
-        Led by{" "}
+      
         <span className="font-bold text-[#00357A]">
-          Two Young Entrepreneurs
+        Meet Our Founders
         </span>
-        , the company is driven by <br />
-        energy, enthusiasm, and a hunger for growth
+      
       </h2>
 
       <div className=" justify-center gap-8">
         {/* Founder 1 */}
-      <div className="bg-white rounded-lg shadow-md p-8 w-full flex flex-col md:flex-row">
-         <div className="w-full sm:w-[90%] md:w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
+        <div className="bg-white rounded-lg shadow-md p-8 w-full flex flex-col md:flex-row">
+          <div className="w-full sm:w-[90%] md:w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
             <Image
-              src="/cdn/images/About/ankit.png" // Replace with correct path
+              src="/cdn/images/About/ankit.png"
               alt="Ankit Sureka"
               fill
               className="object-cover"
             />
           </div>
-         <div className="p-0 sm:p-14 w-[90%]">
+          <div className="p-0 sm:p-14 w-[90%]">
             <h3 className="text-2xl font-semibold text-[#00357A]">
               Ankit Sureka
             </h3>
@@ -40,7 +39,7 @@ const FoundersSection = () => {
                 <FaLinkedin className=" hover:scale-110 transition" />
               </Link>
             </div>
-            <p className="text-lg  text-[#4C4C4C] text-center leading-8">
+            <p className="text-lg  text-[#4C4C4C]  leading-8 text-center md:text-left">
               Ankit Sureka is a technologist and a marketing strategist with
               digital growth expertise in SEO, brand positioning, and
               performance marketing. He oversees marketing operations and
@@ -51,21 +50,22 @@ const FoundersSection = () => {
           </div>
         </div>
 
-    <div className="bg-white rounded-lg shadow-md p-8 w-full flex flex-col md:flex-row">
-                 <div className="pb-6 sm:p-14 w-[90%]">
+        <div className="bg-white rounded-lg shadow-md p-8 w-full flex flex-col-reverse md:flex-row">
+          {/* Text Section */}
+       <div className="p-0 sm:p-14 w-[90%]">
             <h3 className="text-2xl font-semibold text-[#00357A]">
               Archit Sureka
             </h3>
-            <div className="flex gap-2 justify-center text-xl">
+              <div className="flex gap-2 justify-center text-xl">
               <p className="text-sm text-[#727272] mb-3">COO & Co-Founder</p>
               <Link
                 href="https://www.linkedin.com/in/archit-sureka-b6a95435a/"
                 target="_blank"
               >
-                <FaLinkedin className=" hover:scale-110 transition" />
+                <FaLinkedin className="hover:scale-110 transition" />
               </Link>
             </div>
-            <p className="text-lg  text-[#4C4C4C] text-center leading-8">
+            <p className="text-lg text-[#4C4C4C] leading-8 text-center md:text-left">
               Archit Sureka is a visionary tech entrepreneur with a passion for
               building scalable digital products. With a background in software
               development and project strategy, Archit brings deep technical
@@ -75,10 +75,12 @@ const FoundersSection = () => {
               every solution.
             </p>
           </div>
-                    <div className="w-full sm:w-[90%] md:w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
+
+          {/* Image Section */}
+          <div className="w-full sm:w-[90%] md:w-[70%] h-[400px] relative rounded-md overflow-hidden mb-4">
             <Image
               src="/cdn/images/About/archit.png"
-              alt="Ankit Sureka"
+              alt="Archit Sureka"
               fill
               className="object-cover"
             />

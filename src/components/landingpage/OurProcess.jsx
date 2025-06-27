@@ -48,7 +48,7 @@ export const OurProcess = () => {
           <div className="text-center max-w-2xl px-2">
             <h2 className="text-3xl font-bold leading-10 pb-2.5">Our Process</h2>
             <span className="text-base leading-4">
-              Our approach is collaborative and goal-oriented. We begin by
+             We take a collaborative, goal-driven approach. We begin by
               understanding your needs, followed by planning, execution, and
               continuous feedback to ensure success.
             </span>

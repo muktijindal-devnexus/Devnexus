@@ -1,6 +1,6 @@
 "use client"
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
+import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -63,7 +63,7 @@ export default function Footer() {
             </p>
             <p>
               <span className="font-semibold text-white">Phone:</span>{" "}
-              <a href="tel:+919711010160" className="underline hover:text-white">
+              <a href="tel:+919211815556" className="underline hover:text-white">
                 +91 9211815556
               </a>
             </p>
@@ -78,9 +78,10 @@ export default function Footer() {
           <h3 className="font-semibold text-white mb-3">Explore On</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-            <li><a href="/aboutus" className="hover:text-white transition-colors">About us</a></li>
+            <li><a href="/aboutus" className="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="/ourteam" className="hover:text-white transition-colors">Our Team</a></li>
             <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="/project" className="hover:text-white transition-colors">Projects</a></li>
+            <li><a href="/projects" className="hover:text-white transition-colors">Projects</a></li>
             <li><a href="/career" className="hover:text-white transition-colors">Career</a></li>
             <li><a href="/blogs" className="hover:text-white transition-colors">Blogs</a></li>
             <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
@@ -108,7 +109,7 @@ export default function Footer() {
           <div className="flex gap-4 mb-4 text-white text-xl">
             <a href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3" className="hover:text-gray-300 transition-colors"><FaInstagram /></a>
             <a href="https://www.facebook.com/share/1Dsa49Kxrr/" className="hover:text-gray-300 transition-colors"><FaFacebookF /></a>
-            <a href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08" className="hover:text-gray-300 transition-colors"><IoClose /></a>
+            <a href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08" className="hover:text-gray-300 transition-colors"><FaXTwitter /></a>
             <a href="https://www.linkedin.com/company/devnexus-solutions/" className="hover:text-gray-300 transition-colors"><FaLinkedinIn /></a>
           </div>
           <h4 className="text-sm font-medium mb-3">Subscribe us for Latest News</h4>

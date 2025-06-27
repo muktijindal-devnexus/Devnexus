@@ -62,7 +62,7 @@ const BentoGrid = () => {
                 <div className="flex justify-center">
                   <FaQuoteLeft className="text-[#00357A] text-xl w-[45px] h-[45px]" />
                 </div>
-                <p className="text-gray-700 text-sm md:text-base text-center leading-8">
+                <p className="text-gray-700 text-sm md:text-base text-center">
                   {testimonial.description || testimonial.review}
                 </p>
                 <div className="flex items-center mt-auto gap-4 pt-4 border-t border-gray-100">
@@ -79,7 +79,7 @@ const BentoGrid = () => {
                     <p className="font-semibold text-gray-900">
                       {testimonial.name}
                     </p>
-                    <p className="text-xs text-gray-500 mb-1 leading-8">
+                    <p className="text-xs text-gray-500 mb-1 ">
                       {testimonial.destination || testimonial.company}
                     </p>
                     <div className="flex gap-1">
@@ -110,7 +110,7 @@ const BentoGrid = () => {
                 <FaQuoteLeft className="text-[#00357A] text-xl w-[45px] h-[45px]" />
               </div>
                       
-              <p className="text-gray-700 text-sm md:text-base text-center leading-8">
+              <p className="text-gray-700 text-sm md:text-base text-center ">
                 {testimonials[2].description || testimonials[2].description}
               </p>
               <div className="flex items-center mt-auto gap-4 pt-4 border-t border-gray-100">
@@ -124,10 +124,10 @@ const BentoGrid = () => {
                   />
                 </div>
                 <div className="flex-1">
-                  <p className="font-semibold text-gray-900 leading-8">
+                  <p className="font-semibold text-gray-900 ">
                     {testimonials[2].name}
                   </p>
-                  <p className="text-xs text-gray-500 mb-1 leading-8">
+                  <p className="text-xs text-gray-500 mb-1 ">
                     {testimonials[2].destination || testimonials[2].company}
                   </p>
                   <div className="flex gap-1 ">
@@ -141,7 +141,7 @@ const BentoGrid = () => {
           </div>
 
           {/* Third Column */}
-          <div className="sm:col-span-1 lg:col-span-2 flex flex-col gap-6 leading-8">
+          <div className="sm:col-span-1 lg:col-span-2 flex flex-col gap-6 ">
             {[testimonials[3], testimonials[4]].map((testimonial, index) => (
               <motion.div
                 key={testimonial._id || index}
@@ -152,7 +152,7 @@ const BentoGrid = () => {
                 <div className="flex justify-center">
                   <FaQuoteLeft className="text-[#00357A] text-xl w-[45px] h-[45px]" />
                 </div>
-                <p className="text-gray-700 text-sm md:text-base text-center leading-8">
+                <p className="text-gray-700 text-sm md:text-base text-center">
                   {testimonial.description || testimonial.review}
                 </p>
                 <div className="flex items-center mt-auto gap-4 pt-4 border-t border-gray-100">

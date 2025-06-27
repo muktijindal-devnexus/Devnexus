@@ -56,7 +56,7 @@ const OurTeamComponent = () => {
         image={BannerImage1}
         overlayImage
         heading="The Minds Behind the Success"
-        description="At DevNexus Solutions, our strength is in our team of experts. We are a passionate team of developers, designers, market strategists and digital marketers who thrive on all challenges with creative thinking."
+        description="At DevNexus Solutions, our strength is in our team of experts. We are a passionate team of developers, designers, market strategists, and digital marketers who thrive on all challenges with creative thinking."
       />
 
       <main className="min-h-screen flex flex-col my-10 gap-12 items-center justify-center bg-gray-50">

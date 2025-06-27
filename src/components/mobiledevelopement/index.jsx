@@ -74,8 +74,8 @@ export const MobileDevelopment = () => {
       <WhyChooseUsMobile />
       <ExecutionSection />
       <Slider
-        title="Driving Growth To The Brands."
-        subtitle="We deliver Global IT Services to brands of all sizes"
+        title="Driving Brand Excellence,"
+        subtitle="we deliver Global IT Services to business ranging from startups to global enterprises"
         brands={brandLogos}
       />
       <ProcessWeFollow />

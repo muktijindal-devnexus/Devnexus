@@ -17,7 +17,7 @@ const tabs = [
   { label: "Database", icon: DatabaseIcon },
   { label: "UI/UX", icon: UIIcon },
   { label: "CMS", icon: CMSIcon },
-  { label: "Deveops", icon: DevopsIcon },
+  { label: "DevOps", icon: DevopsIcon },
 ];
 
 const Technologies = () => {
@@ -112,7 +112,7 @@ const Technologies = () => {
                 width={80}
                 height={80}
               />
-              <span className="text-sm font-semibold">{tech.name}</span>
+              <span className="text-sm font-semibold ">{tech.name}</span>
             </motion.div>
           ))}
         </AnimatePresence>

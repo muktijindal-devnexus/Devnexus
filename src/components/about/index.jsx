@@ -39,7 +39,7 @@ export const AboutComponent = () => {
                 image={BannerImage1}
                 overlayImage
                 heading="Your Partner in Digital Growth, Not Just a Service Provider  "
-                description="At DevNexus Solutions, we go beyond just delivering websites or campaigns to deliver the best possible result.  We understand your brand goals and craft tailor-made solutions that drive growth."
+                description="At DevNexus Solutions, we go beyond just delivering websites or campaigns to deliver the best possible results.  We understand your brand goals and craft tailor-made solutions that drive growth."
               />
               
               <AboutDevnexus />
@@ -47,8 +47,8 @@ export const AboutComponent = () => {
               <FoundersSection />
                <WhatWeDo />
                 <Slider
-                    title="Driving Growth To The Brands."
-                    subtitle="We deliver Global IT Services to brands of all sizes"
+                    title="Driving Brand Excellence,"
+                    subtitle="we deliver Global IT Services to business ranging from startups to global enterprises"
                     brands={brandLogos}
                   />
              

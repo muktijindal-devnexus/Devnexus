@@ -47,9 +47,9 @@ const services = [
     ],
   },
   {
-    title: 'Front End Development',
+    title: 'Frontend Development',
     description:
-      'Our front-end team will bring your vision to life with clean, responsive, and interactive design. Using the latest technology like HTML5, CSS3, JavaScript, React, etc. We are developing a user-centric design that delivers a seamless experience across all types of devices. At DevNexus Solutions, we focus on performance, accessibility to ensure your websites functionality.',
+      'Our frontend team will bring your vision to life with clean, responsive, and interactive design. Using the latest technology like HTML5, CSS3, JavaScript, React, etc. We are developing a user-centric design that delivers a seamless experience across all types of devices. At DevNexus Solutions, we focus on performance, accessibility to ensure your websites functionality.',
     points: [
       'Responsive & Adaptive UI Design',
       'React, Vue, Angular Development',

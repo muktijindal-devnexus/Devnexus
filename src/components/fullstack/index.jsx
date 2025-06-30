@@ -23,26 +23,26 @@ import { FullStackServices } from "./fullstackservices";
 const faqData = [
   {
     question:
-      "What domains of business does DevNexus Solutions cater to?",
+      "What domains of business does DevNexus Solutions provide digital solutions to?",
     answer:
-      'We offer web design and development services to businesses of all types that need a digital presence, including real estate, construction, Services, food and beverages, public sector, education, healthcare and medicine, travel, banking and fintech, and more.',
+      'We offer web design and development services to businesses of all types that need a digital presence, including real estate, construction, services, food and beverages, public sector, education, healthcare, travel, banking, fintech, and more.',
   },
   {
     question:
       "What tech stacks do you offer for your web development services?",
     answer:
-      "The team is technology-agnostic and can adapt to any modern web development framework, including the MERN stack (Node, React), WordPress (and PHP), Python, HTML5/CSS3, jQuery, and more.",
+      "The team is technology-agnostic and can adapt to any modern web development framework, including the MERN stack (Node, React), Nextjs, Typescript, React Native, Flutter, WordPress (and PHP), Python, HTML5/CSS3, Tailwind CSS, Modular CSS, Redux and more.",
   },
   {
     question:
-      "How do you ensure that the developments you make are current with today's market demands?",
+      "How do you ensure that the developments you make are aligned with latest's market demands?",
     answer:
-      "We are expertsexperts at designing and developing websites according to the latest Web2.0 Standards with W3C compliance for SEO friendliness, high UI/UX interface, cross-browser compatibility, Tableless HTML5/CSS3, responsive design, QA and testing, fresh look and feel, and visual appeal to enhance your business.",
+      "We are experts at designing and developing websites according to the latest Web 2.0 Standards with W3C compliance for SEO friendliness, high quality UI/UX design, cross-browser compatibility, responsive design, QA and testing, authentication and authorization, performance, capabilities, and scalability to enhance your business.",
   },
   {
-    question: "What tools do you use for communication and project management?",
+    question: "What platforms do you use for communication and project management?",
     answer:
-      "We use Slack, WhatsApp, Email, Phone, Discord, Google Meet, Zoom, and other tools to communicate with clients and internally as required. For project management, we use modern tools such as Trello, Monday.com, and Jira, as well as any tool the client prefers.",
+      "We use Slack, WhatsApp, Email, Phone, Google Meet, Zoom, and other platforms to communicate with clients and internally as required. For project management, we use modern platforms such as Jira, or any platform our clients prefer.",
   },
 
 ];
@@ -59,7 +59,7 @@ const brandLogos = [
   // Brand13.src,
   Brand14.src,
 ];
-  
+
 
 export const Fullstack = () => {
   return (
@@ -77,8 +77,8 @@ export const Fullstack = () => {
         
     <ProcessSteps />
      <Slider
-      title="Driving Brand Excellence,"
-      subtitle="we deliver Global IT Services to business ranging from startups to global enterprises"
+      title="Driving Brand Excellence"
+      subtitle="We deliver Global IT Services to businesses ranging from startups to global enterprises"
       brands={brandLogos}
     />
      

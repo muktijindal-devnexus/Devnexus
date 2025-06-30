@@ -31,27 +31,27 @@ const brandLogos = [
 
 const faqData = [
   {
-    question: "What types of mobile apps do you develop?",
+    question: "What types of mobile apps do we develop?",
     answer:
-      "At DevNexus Solutions, we are developing a wide range of mobile app, which are tailored to your business needs. Our expertise includes",
+      "At DevNexus Solutions, we are developing a wide range of mobile app, which are tailored to your business needs. Our expertise includes Native, app development , cross function app developement, progresive web app development, ecommerce web app development.",
   },
   {
     question:
-      "Do you provide post-launch support for mobile app development services?",
+      "Do we provide post-launch support for mobile app development services?",
     answer:
       "Yes, we are providing post-launch app services, and we are offering comprehensive post-launch support as a part of our mobile app development services. Once your app goes live we will continue to work with you to ensure app functionality. This includes bug fixes, regular updates to keep apps active, monitor the performance, and user enhancements. ",
   },
   {
     question:
-      "What type of technologies do you use for Android app development?",
+      "What type of technologies do we use for Android app development?",
     answer:
-      "At DevNexus Solutio,n a Mobile app development company, we are using the latest and most reliable technologies for Android app development. Our major tech stack includes JAVA for native Android development. For cross-platform needs, we also leverage Flutter and React Native, which allow faster development across both devices.  ",
+      "At DevNexus Solutions, a Mobile app development company, we are using the latest and most reliable technologies for Android app development. Our major tech stack includes JAVA for native Android development. For cross-platform needs, we also leverage Flutter and React Native, which allow faster development across both devices.  ",
   },
   {
     question:
-      "What programming languages do you use for iOS Mobile app development?",
+      "What programming languages do we use for iOS Mobile app development?",
     answer:
-      "At DevNexus, solutions for iOS mobile app development, we are primarily focused on Swift, Apple's modern and powerful programming language, which is specifically designed for iOS, macOS, and watchOS. For legacy projects or working with existing codebases, we are also using objective-C.",
+      "At DevNexus Solutions, for iOS mobile app development, we are primarily focused on Swift, Apple's modern and powerful programming language, which is specifically designed for iOS, macOS, and watchOS. For legacy projects or working with existing codebases, we are also using objective-C.",
   },
   {
     question: "Can you update or fix an existing iOS app?",
@@ -67,18 +67,18 @@ export const MobileDevelopment = () => {
       <Banner
         image="/cdn/images/mobile/MobileHero.mp4"
         overlayImage
-        heading="Enroll in Mobile App Development Services To Boost Your Business and Connect With Customers"
-        description="DevNexus Solution delivers innovative, user-focused, mobile-friendly designs to boost growth and engagement."
+        heading="Mobile App Development Services To Boost Your Business"
+        description="DevNexus Solution delivers innovative, user-centeric and mobile-friendly applications to boost growth and engagement"
       />
       <StatusCard />
       <WhyChooseUsMobile />
       <ExecutionSection />
-      <Slider
-        title="Driving Brand Excellence,"
-        subtitle="we deliver Global IT Services to business ranging from startups to global enterprises"
+      <ProcessWeFollow />
+       <Slider
+        title="Driving Brand Excellence"
+        subtitle="We deliver Global IT Services to businesses ranging from startups to global enterprises"
         brands={brandLogos}
       />
-      <ProcessWeFollow />
       <FaqSection
         faqs={faqData}
         title="  Frequently Asked Questions (FAQs)"

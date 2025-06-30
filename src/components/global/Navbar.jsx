@@ -232,7 +232,7 @@ export const Navbar = () => {
 
       {/* Modal */}
       {showModal && (
-       <ContactModal setShowModal={setShowModal} />
+       <ContactModal setShowModal={setShowModal} servicesDropdown={servicesDropdown} />
       )}
     </>
   );

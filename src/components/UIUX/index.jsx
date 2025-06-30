@@ -33,29 +33,24 @@ const brandLogos = [
 
 const faqData = [
   {
-    question: "Why UI UX designer important for my business?",
+    question: "Why is a UI/UX designer important for your business?",
     answer:
-      "A UI UX designer plays an important role in shaping how users feel and observe your website, app or other digital products. They make sure that ui ux platforms are not only visually appealing but also intuitive, user friendly. After focusing on user behavior, design flow, our experience team will give you a  solution for improving customer satisfaction, increasing conversion etc. ",
+      "A UI/UX designer plays an important role in shaping how users feel and observe your website, app or other digital products. They ensure that every interface is not only visually engaging but also intuitive, accessible, and user-centric.",
   },
   {
-    question: "Will I be involved in the UI and UX design process?",
+    question: "Will you be involved in the UI/UX design process?",
     answer:
-      "At every step of the ui and ux design process, your insight and feedback will play a key role. From initial session and wireframe reviews to design approvals and final review we are working collaboratively with you to ensure that work quality of end products is not compromised and product alignment with your brand, goals, user needs. ",
+      "At every step of the design process, your insights and feedbacks will play a vital role. From wireframing to prototyping, we are working collaboratively with you to ensure that work quality of the end product is not compromised and product aligns with your brand goals and user needs. ",
   },
   {
-    question: "How is your UI and UX design process structured?",
+    question: "How is your UI/UX design process structured?",
     answer:
-      "At DevNexus Solutions our UI and UX design process is structured and user centric to give a seamless experience. Our process begins with discovery and research where we understand your brand vision and potential audience, then we define user persona and map their journey to indemnify problem points and opportunities. Then we come to the process of wireframe creation to lay out the structure and flow which is followed by different prototypes. Once the user flow is confirmed, then we move to the high quality visual appealing design according to your brand. Testing is also conducted at every step for the refinements.",
+    "At DevNexus Solutions, our UI/UX design process is user-centric and crafted to deliver a seamless digital experience. We begin with in-depth discovery and research to understand your brand vision and target audience.  We define user personas and map their journeys to identify pain points and opportunities. Next, we move into wireframing to establish layout and flow, followed by iterative prototyping to refine interaction and design logic. Once the user flow is finalized, we craft visually compelling, high-fidelity designs that align with your brand identity. Testing is conducted at every phase to ensure usability, performance, and continuous refinement."
   },
   {
     question: "Do you redesign existing websites/apps?",
     answer:
-      "Yes, we are offering UI UX redesign services to improve usability and on the basis of feedback and analytics. Whether your current design looks outdated, or does not convert well, our team of experts will start analysing its performance, user feedback and problem points.",
-  },
-  {
-    question: "What tools are you using for UI UX design?",
-    answer:
-      "At DevNexus our team of ui ux designer are working on industry standard tools like Figma, Zeplin, Sketch, Adobe XD, etc",
+      "Yes, we are offering UI/UX redesign services and on the basis of feedback and analytics to improve usability. Whether your current design looks outdated or does not convert well, our team of experts will start analysing its performance, user feedback and problem points.",
   },
 ];
 
@@ -65,19 +60,20 @@ export const UIUXComponent = () => {
       <Banner
         image="/cdn/images/UUIX/UIUXHero.mp4"
         overlayImage
-        heading="Upgrade Your Brand with Exceptional UI UX Design and Development Services"
-        description="At DevNexus Solutions, thoughtful design and user-based strategies increase the user experience. Our UI/UX design services are carefully crafted to transform your digital product into an engaging, visually appealing one that effectively connects with your audience."
+        heading="Upgrade Your Brand with Exceptional UI/UX Design and Development Services"
+        description="At DevNexus Solutions, thoughtful design and user-based strategies enhances the user experience.Our UI/UX services are thoughtfully crafted to transform digital products into immersive, and visually compelling experiences that truly resonate with your audience."
       />
       <StatusCard />
       <UIDesignTechnologies />
       <MainDevnexus />
       <DesignProcess />
+      
+      <WhyUIUX />
       <Slider
-        title="Driving Brand Excellence,"
-        subtitle="we deliver Global IT Services to business ranging from startups to global enterprises"
+        title="Driving Brand Excellence"
+        subtitle="We deliver Global IT Services to businesses ranging from startups to global enterprises"
         brands={brandLogos}
       />
-      <WhyUIUX />
       <FaqSection
         faqs={faqData}
         title="  Frequently Asked Questions (FAQs)"

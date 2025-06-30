@@ -35,7 +35,7 @@ const posts = [
   },
   {
     id: 41,
-    title: "Top Skills Every UI UX Designer Should Master in 2025",
+    title: "Top Skills Every UI/UX Designer Should Master in 2025",
     excerpt:
       "2025 demands UI/UX designers to be both creative and technically sound. These are the must-have skills.",
     image: "https://res.cloudinary.com/dybqc3gax/image/upload/v1750856163/4_p4uu1s.png",

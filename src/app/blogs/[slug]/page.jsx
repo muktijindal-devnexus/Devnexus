@@ -158,6 +158,7 @@ export default function BlogUploadForm() {
       });
 
       const data = await res.json();
+      console.log(data, 'blogs')
 
       if (res.ok) {
         alert("Blog uploaded successfully!");
@@ -177,13 +178,13 @@ export default function BlogUploadForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-2xl mx-auto p-36 space-y-4 bg-white shadow rounded"
-    >
-      <h2 className="text-2xl font-bold">{title}</h2>
+    // <form
+    //   onSubmit={handleSubmit}
+    //   className="max-w-2xl mx-auto p-36 space-y-4 bg-white shadow rounded"
+    // >
+     
 
-      <input
+      /* <input
         type="text"
         placeholder="Blog Title"
         className="w-full border p-2 rounded"
@@ -211,8 +212,12 @@ export default function BlogUploadForm() {
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
       >
         {loading ? "Uploading..." : "Upload Blog"}
-      </button>
-    </form>
+      </button> */
+    // </form>
+
+    <div>
+       <h2 className="text-2xl font-bold">{blogContent}</h2>
+       </div>
   );
 }
 

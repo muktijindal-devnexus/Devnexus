@@ -26,7 +26,7 @@ export default function UIDesignTechnologies() {
   return (
     <div className="py-10 px-4 md:px-20 bg-white text-center relative z-0 overflow-hidden">
       <h2 className="text-2xl md:text-3xl font-semibold mb-8">
-        Core <span className="text-blue-800 font-bold">UI UX Design</span> Technologies
+        Core <span className="text-blue-800 font-bold">UI/UX Design</span> Technologies
       </h2>
 
       <Swiper

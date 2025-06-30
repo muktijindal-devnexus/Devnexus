@@ -6,7 +6,7 @@ const features = [
     icon: <FaBullseye size={28} />,
     title: 'ROI-Driven Strategies',
     description:
-      'Every campaign created by our team is focused on results and the clients requirements. Whether. Whether your brand needs leads, conversation, or boosting Organic brand visibility, our team of experts will provide a tailored-made solution.',
+      'Every campaign created by our team is focused on results and the clients requirements. Whether your brand needs leads, conversation, or boosting Organic brand visibility, our team of experts will provide a tailored-made solution.',
     highlight: true,
   },
   {

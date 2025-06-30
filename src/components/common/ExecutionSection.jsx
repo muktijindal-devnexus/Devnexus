@@ -22,7 +22,7 @@ const ExecutionSection = () => {
       id: 4,
       title: "Front End Development",
       content:
-        "Our front end team will bring your vision to life with clean, responsive and interactive design. Using the latest technology like HTML5, CSS3, JavaScript, React, etc. We are developing user centric design which delivers a seamless experience across all types of devices. At DevNexus Solutions we focus on performance, accessibility to ensure your website's functionality. ",
+        "Our front end team will bring your vision to life with clean, responsive and interactive design. Using the latest technologies like HTML5, CSS3, JavaScript, React, etc. We are developing user centric design which delivers a seamless experience across all types of devices. At DevNexus Solutions we focus on performance, accessibility to ensure your website's functionality. ",
     },
     {
       id: 5,
@@ -56,6 +56,9 @@ const ExecutionSection = () => {
           a wide range of services.
         </p>
       </div>
+          <span className="text-[#557191] flex justify-end py-5">
+Scroll for more
+      </span>
 
       {/* Card Scroll Row */}
       <div className="flex space-x-6 overflow-x-auto pb-4">

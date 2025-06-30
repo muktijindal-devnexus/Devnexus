@@ -5,6 +5,30 @@ import AIServiceSection from './AiServices'
 import FaqSection from '../global/FaqSection'
 import WhyChooseSection from './WhyChooseSection'
 import BusinessGrowthSlider from './BusinessGrowthSlider'
+import Slider from '../common/Slider'
+import Brand3 from '../../../public/cdn/images/brandslogo/Jindal.svg';
+import Brand4 from '../../../public/cdn/images/brandslogo/Studio.svg';
+import Brand5 from '../../../public/cdn/images/brandslogo/Rotunneling.svg';
+import Brand6 from '../../../public/cdn/images/brandslogo/travel.svg';
+import Brand7 from '../../../public/cdn/images/brandslogo/DCI.svg';
+import Brand10 from '../../../public/cdn/images/brandslogo/SRE.svg';
+import Brand11 from '../../../public/cdn/images/brandslogo/KG.svg';
+import Brand12 from '../../../public/cdn/images/brandslogo/nano.svg';
+// import Brand13 from '../../../public/images/brandslogo/cafe.svg';
+import Brand14 from '../../../public/cdn/images/brandslogo/vize.svg';
+
+const brandLogos = [
+  Brand3.src,
+  Brand4.src,
+  Brand5.src,
+  Brand6.src,
+  Brand7.src,
+  Brand10.src,
+  Brand11.src,
+  Brand12.src,
+  // Brand13.src,
+  Brand14.src,
+];
 
 
 const faqData = [
@@ -52,7 +76,13 @@ export const AiTech = () => {
                    <StatusCard />
                    <AIServiceSection />
                    <WhyChooseSection />
-                   <BusinessGrowthSlider />
+                   <BusinessGrowthSlider /> 
+                    <Slider
+                           title="Driving Brand Excellence"
+                           subtitle="We deliver Global IT Services to businesses ranging from startups to global enterprises"
+                           brands={brandLogos}
+                         />
+
                    <FaqSection
         faqs={faqData}
         title="  Frequently Asked Questions (FAQs)"

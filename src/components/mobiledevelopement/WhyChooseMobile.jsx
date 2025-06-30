@@ -6,7 +6,7 @@ const features = [
     icon: MonitorSmartphone,
     title: "End-to-End Expertise",
     description:
-      "Our team of experts delivers end-to-end services from strategy to UI/UX design to development, testing, and deployment. We handle the whole mobile app life cycle to ensure a seamless experience.",
+      "Our team of experts delivers end-to-end services from strategic planning and UI/UX design to development, testing, and deployment. We handle the whole mobile app life cycle to ensure a seamless experience.",
   },
   {
     icon: Braces,
@@ -24,7 +24,7 @@ const features = [
     icon: FaProjectDiagram,
     title: "Agile and Scalability",
     description:
-      "Our agile methodology ensures faster delivery, flexibility to adapt to changes, and the ability to scale your app according to your business's requirements.",
+      "Our agile methodology ensures faster delivery, flexibility to adapt to changes, and the ability to scale your app according to your business requirements.",
   },
   {
     icon: BanknoteArrowUp ,
@@ -40,8 +40,8 @@ const WhyChooseUsMobile = () => {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-12">
           What makes{" "}
-          <span className="font-semibold text-blue-900">DevNexus Solutions</span> a better option for{" "}
-          <span className="font-semibold text-blue-900">Mobile App Development</span> Services?
+          <span className="font-semibold text-blue-900">DevNexus Solutions</span> your go to{" "} <br/>
+          <span className="font-semibold text-blue-900">Mobile App Development</span> Service Providers?
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -70,7 +70,7 @@ const WhyChooseUsMobile = () => {
               >
                 <Icon className="text-2xl text-blue-900" />
                 <h3 className="text-base font-semibold text-blue-900">{features[i].title}</h3>
-                <p className="text-sm text-gray-600">{features[i].description}</p>
+                <p className="text-normal text-gray-600">{features[i].description}</p>
               </div>
             );
           })}

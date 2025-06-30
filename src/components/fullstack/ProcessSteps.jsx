@@ -32,12 +32,12 @@ const steps = [
   {
     title: 'Deployment',
     description:
-      "We set up your site or app on the hosting platform of your choice—whether that’s AWS, Google Cloud, Azure, or a private server.Our DevOps team takes care of all the setup: getting the servers ready, sorting out CI/CD pipelines, installing SSL, and making sure things are ready for real users. We also help with DNS setup and tweak performance settings so the launch goes smoothly without any surprises.",
+      "We set up your site or app on the hosting platform of your choice—whether that’s AWS, Google Cloud, Azure, or a private server. Our DevOps team takes care of all the setup: getting the servers ready, sorting out CI/CD pipelines and installing SSL.",
   },
   {
     title: 'Maintenance & Support',
     description:
-      'Our team of experts provides ongoing updates, security, and performance monitoring to keep your site secure, fast, and keep it up to date.',
+      'Our team of experts provides ongoing updates, security, and performance monitoring to keep your site secure, fast, and up-to-date.',
   },
 ];
 
@@ -97,7 +97,7 @@ const ProcessSteps = () => {
                     className="text-normal leading-7 sm:text-base text-gray-600 overflow-hidden"
                     style={{
                       display: '-webkit-box',
-                      WebkitLineClamp: 7,
+                      WebkitLineClamp: 8,
                       WebkitBoxOrient: 'vertical',
                     }}
                   >

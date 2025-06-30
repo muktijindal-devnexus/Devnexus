@@ -8,13 +8,13 @@ const slides = [
     id: 1,
     title: "User-Centric Approach",
     description:
-      "At DevNexus Solutions, we first understand the Client's requirements so that we can effectively connect with the target audience. We conduct comprehensive user research and persona development, ensuring that the design aligns with users' needs and behaviours. ",
+      "At DevNexus Solutions, we first understand the client's requirements so that we can effectively connect with the target audience. We conduct comprehensive user research and persona development, ensuring that the design aligns with users' needs and behaviours. ",
   },
   {
     id: 2,
-    title: "Expertise in diverse platforms",
+    title: "Expertise in Diverse Platforms",
     description:
-      "At DevNexus Solutions, we have the experience to create UX/UI designs across various platforms, including web and mobile applications. ",
+      "At DevNexus Solutions, we have the experience to create UX/UI designs across  various design platforms. These designs are compatible with mobile and web applications.",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const slides = [
     id: 4,
     title: "Commitment to Innovation",
     description:
-      "Capturing the latest designs and technologies, DevNexus crafts innovative solutions that meet current standards and trends. Their attention to detail and commitment to ensuring quality mean that each UI/UX design is both functionally and visually appealing.",
+      "Capturing the latest designs and technologies, DevNexus Solutions crafts innovative solutions that meet current standards and trends. Our attention to detail and commitment to ensuring quality standards mean that every UI/UX design is functionally and visually appealing.",
   },
 ];
 
@@ -48,13 +48,10 @@ export const MainDevnexus = () => {
       {/* Left section */}
       <div className="bg-[#2e5c9a] text-white p-6 sm:p-8 lg:px-12 lg:py-20 rounded-xl lg:rounded-r-2xl w-full lg:w-1/2">
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 leading-snug">
-         What makes DevNexus Solutions a Better UI UX Design company for business?
+      What makes DevNexus Solutions an ideal UI UX Design company for your business?
         </h2>
         <p className="text-normal sm:text-sm lg:text-base leading-relaxed">
-          At DevNexus solutions we believe that thoughtful design and user based strategies
-          increase the user experience. Our UI UX design services are crafted to convert your
-          digital product into an engaging, visually appealing stuff, which will connect your
-          audience very well.
+DevNexus Solutions delivers intuitive, brand-aligned UI/UX designs that drive user engagement and business growth. Our user-first approach ensures every interaction is purposeful, seamless, and conversion-ready.
         </p>
       </div>
 

@@ -6,19 +6,19 @@ const cards = [
     id: "01",
     title: "Cutting-Edge Technologies",
     description:
-    "DevNexus Solutions utilizes modern technologies, using React, Next.js, and Figma, to craft a responsive and visually appealing design for your brand.",
+    "DevNexus Solutions utilizes modern technologies such as Framer, Splin, Visily, MidJounrney and Magician(Figma Plugin).",
   },
   {
     id: "02",
-    title: "Proven Record",
+    title: "Proven Record Of Excellence",
     description:
-      "With over 300+ projects covered and committed to delivering quality assurance. DevNexus Solutions ensures that every piece of work we provide meets the highest quality standards. ",
+    "With a proven record of 600+ satisfied clients and over 1,100 successfully delivered projects, DevNexus Solutions is deeply committed to maintaining the highest standards of quality. Our impressive client retention rate of 85% reflects the trust and consistency we bring to every engagement."
   },
   {
     id: "03",
-    title: "Global Reach with Local Expertise",
+    title: "Global footprint across diverse sectors ",
     description:
-      "DevNexus Solutions has successfully delivered projects across various segments, including healthcare, real estate, e-commerce, education, etc.",
+      "DevNexus Solutions has successfully delivered projects in 12+ countries across a diverse range of industries including healthcare, real estate, e-commerce, education, etc.",
   },
 ];
 
@@ -26,8 +26,8 @@ export const WhyUIUX = () => {
   return (
     <section className="py-12 px-4 md:px-12 bg-white">
       <h2 className="text-2xl md:text-[48px]  text-center text-[#00357A] mb-12 ">
-        Why DevNexus Solutions for{" "}
-        <span className="text-[#00357A] font-bold">UI UX <br/> Design & Development</span> services?
+        What Sets DevNexus Solutions Apart as a Leading{" "}
+        <span className="text-[#00357A] font-bold">UI/UX Design Partner for </span> Businesses?
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

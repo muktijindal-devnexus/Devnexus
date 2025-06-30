@@ -131,7 +131,7 @@ export const ContactModal = ({ setShowModal, servicesDropdown }) => {
             rows={3}
           />
 
-          <button type="submit" className="bg-[#00357A] hover:bg-[#335D95] text-white px-4 py-2 rounded-md text-sm">
+          <button type="submit" className="bg-[#00357A] hover:bg-[#335D95] text-white px-4 py-2 rounded-md text-sm cursor-pointer">
             Submit
           </button>
         </form>

@@ -71,7 +71,7 @@ export const Contact = () => {
                 alt="arrow"
                 width={80}
                 height={30}
-                className="w-[100px] z-10"
+                className="w-[100px] z-10 "
               />
             </span>
           </div>

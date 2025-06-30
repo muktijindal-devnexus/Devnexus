@@ -32,7 +32,7 @@ const steps = [
   {
     title: 'Deployment',
     description:
-      'After comprehensive testing, we launch your website on the preferred hosting server and ensure smooth setup and operation.',
+      "We set up your site or app on the hosting platform of your choice—whether that’s AWS, Google Cloud, Azure, or a private server.Our DevOps team takes care of all the setup: getting the servers ready, sorting out CI/CD pipelines, installing SSL, and making sure things are ready for real users. We also help with DNS setup and tweak performance settings so the launch goes smoothly without any surprises.",
   },
   {
     title: 'Maintenance & Support',

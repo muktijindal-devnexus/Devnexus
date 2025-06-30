@@ -10,9 +10,9 @@ export default function Slider({ title, subtitle, brands }) {
     <div className="relative bg-white py-12 md:py-16 lg:p-[70px]">
       {/* Header */}
       <div className="flex flex-col justify-center text-center items-center px-4 lg:px-0">
-        <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-medium text-[#335D95] leading-[1.2] ">
+        <h2 className="text-3xl sm:text-4xl lg:text-[48px] font-medium text-[#335D95] leading-[1.2] ">
           {title}
-        </h1>
+        </h2>
         <p className="text-lg sm:text-xl lg:text-[26px] text-[#335D95]  mt-2 sm:mt-3">
           {subtitle}
         </p>

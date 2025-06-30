@@ -44,7 +44,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center">
               <Image src="/cdn/images/logo.webp" width={60} height={60} alt="Logo" />
               <div>
-                <h1 className="text-sm font-bold">DevNexus Solutions</h1>
+                <h2 className="text-sm font-bold">DevNexus Solutions</h2>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>
               </div>
             </Link>

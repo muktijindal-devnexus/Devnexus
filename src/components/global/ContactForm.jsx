@@ -115,9 +115,9 @@ export const ContactForm = () => {
       >
         {/* Heading Section */}
         <div className="lg:w-1/3 flex items-center">
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#002b5b] leading-snug">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#002b5b] leading-snug">
             Let's Make Your Brand Shine & Competitors Envy!
-          </h1>
+          </h2>
         </div>
         {/* Form Section */}
         <div className="lg:w-1/2 w-full bg-[#f9f9f9] sm:p-12 rounded-xl p-6">

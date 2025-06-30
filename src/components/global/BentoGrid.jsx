@@ -96,10 +96,10 @@ const BentoGrid = () => {
           {/* Center column */}
           <div className="sm:col-span-2 lg:col-span-2 flex flex-col items-center justify-center mt-[30px]">
         
-             <h1 className="font-semibold text-[20px] md:text-[30px] mb-8 text-center">
+             <h2 className="font-semibold text-[20px] md:text-[30px] mb-8 text-center">
              
             Trusted by Many for Digital and Web Solutions
-          </h1>
+          </h2>
             <motion.div
               variants={item}
               className="bg-white rounded-2xl p-6 flex flex-col items-center gap-4 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full w-full"

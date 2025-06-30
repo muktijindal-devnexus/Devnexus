@@ -27,9 +27,9 @@ export const Banners = ({ image, heading, description }) => {
       {/* Centered Content */}
       <div className="absolute inset-0 z-20 flex items-center text-white px-10 text-center justify-center">
         <div className="max-w-2xl">
-          <h1 className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 leading-tight font-[Montserrat]">
+          <h2 className="text-xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-4 leading-tight font-[Montserrat]">
             {heading}
-          </h1>
+          </h2>
           <p className="text-normal  sm:text-base md:text-lg mb-4 md:mb-6 leading-6 md:leading-8">
             {description}
           </p>

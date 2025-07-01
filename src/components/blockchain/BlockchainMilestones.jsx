@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const milestones = [
   {
     number: "01.",
@@ -33,9 +35,11 @@ const BlockchainMilestones = () => {
             ))}
           </ul>
 
-          <button className="mt-8 bg-[#00357A] hover:bg-[#335D95] text-white font-medium px-5 py-2 rounded">
-            Consult Our Experts
-          </button>
+          <Link href="/contact" passHref>
+            <div className="mt-8 bg-[#00357A] hover:bg-[#335D95] text-white font-medium px-5 py-2 rounded inline-block">
+              Consult Our Experts
+            </div>
+          </Link>
         </div>
 
         {/* Right Video */}

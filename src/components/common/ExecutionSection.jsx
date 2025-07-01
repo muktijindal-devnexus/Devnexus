@@ -16,13 +16,13 @@ const ExecutionSection = () => {
       id: 3,
       title: "Mobile UX development",
       content:
-        "At DevNexus Solutions, we are working on creativity with usability to craft mobile experiences that delight the user and can drive results. Our team of mobile app developers makes sure to make a mobile UX design not only stunning visuals but also to increase the user experience. ",
+        "At DevNexus Solutions, we are working on creativity with usability to craft mobile experiences that delight the user and can drive results.Our mobile app designs focus on crafting UX designs that are not only visually striking but also enhance overall usability—ensuring intuitive, seamless experiences for every user. ",
     },
     {
       id: 4,
       title: "Front End Development",
       content:
-        "Our front end team will bring your vision to life with clean, responsive and interactive design. Using the latest technologies like HTML5, CSS3, JavaScript, React, etc. We are developing user centric design which delivers a seamless experience across all types of devices. At DevNexus Solutions we focus on performance, accessibility to ensure your website's functionality. ",
+        "Our front end team will bring your vision to life with clean, responsive and interactive design. Leveraging the latest technologies such as Nextjs, Typescript, JavaScript, React, etc. We are developing user centric designs which delivers a user-friendly experience across all types of devices. At DevNexus Solutions we focus on performance and accessibility to ensure your website's functionality. ",
     },
     {
       id: 5,
@@ -34,7 +34,7 @@ const ExecutionSection = () => {
       id: 6,
       title: "Android App Development",
       content:
-        "Our expert team at DevNexus Solutions delivers cutting-edge Android app development services that meet clients' needs. We have skilled developers who create scalable and visually appealing Android applications that perform seamlessly across different devices.",
+        "Our expert team at DevNexus Solutions delivers cutting-edge Android app development services that meets client specific needs. We have skilled developers who create scalable android applications that perform effectuality across different devices.",
     },
     {
       id: 7,

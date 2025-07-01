@@ -31,32 +31,32 @@ const brandLogos = [
 
 const faqData = [
   {
-    question: "What types of mobile apps do we develop?",
+    question: "What types of mobile applications do we develop?",
     answer:
-      "At DevNexus Solutions, we are developing a wide range of mobile app, which are tailored to your business needs. Our expertise includes Native, app development , cross function app developement, progresive web app development, ecommerce web app development.",
+      "At DevNexus Solutions, we are developing a wide range of mobile applications which are tailored to your business needs. Our expertise includes native app development , cross-functional app developement, progresive web app development, e-commerce web app development.",
   },
   {
     question:
       "Do we provide post-launch support for mobile app development services?",
     answer:
-      "Yes, we are providing post-launch app services, and we are offering comprehensive post-launch support as a part of our mobile app development services. Once your app goes live we will continue to work with you to ensure app functionality. This includes bug fixes, regular updates to keep apps active, monitor the performance, and user enhancements. ",
+      "Yes, we are providing post-launch app services and comprehensive post-launch support as a part of our mobile app development services. Once your app goes live we will continue to work with you to ensure app functionality. This includes bug fixes, regular updates to keep your application active, monitor the performance, and user enhancements. ",
   },
   {
     question:
       "What type of technologies do we use for Android app development?",
     answer:
-      "At DevNexus Solutions, a Mobile app development company, we are using the latest and most reliable technologies for Android app development. Our major tech stack includes JAVA for native Android development. For cross-platform needs, we also leverage Flutter and React Native, which allow faster development across both devices.  ",
+      "We are using the latest and most reliable technologies for Android app development. Our major tech stack includes JAVA for native Android development. For cross-platform needs, we also leverage Flutter and React Native, which allow faster development across all devices. ",
   },
   {
     question:
       "What programming languages do we use for iOS Mobile app development?",
     answer:
-      "At DevNexus Solutions, for iOS mobile app development, we are primarily focused on Swift, Apple's modern and powerful programming language, which is specifically designed for iOS, macOS, and watchOS. For legacy projects or working with existing codebases, we are also using objective-C.",
+      "For iOS mobile app development, we are primarily focused on Swift (Apple's modern and powerful programming language), which is specifically designed for iOS, macOS, and watchOS. For legacy projects or working with existing codebases, we are also using objective-C.",
   },
   {
     question: "Can you update or fix an existing iOS app?",
     answer:
-      "Yes, At DevNexus Solutions, our team of experts can update or fix an existing iOS app. Whether your app needs a performance upgrade, bug fixes, UI/UX changes, or compatibility updates for the latest iOS version, we are here to help you.",
+      "Whether your app needs a performance upgrade, bug fixes, UI/UX changes, or compatibility updates for the latest iOS version, we are here to help you.",
   },
 ];
 

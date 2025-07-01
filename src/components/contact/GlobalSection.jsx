@@ -10,7 +10,7 @@ const IndustryExperience = () => {
           <span className="text-[#00357A] font-bold">Our</span> industry
           experience <span className="text-[#00357A] font-bold">and</span>{" "}
           market research{" "}
-          <span className="text-[#00357A] font-bold">make the difference</span>
+          <span className="text-[#00357A] font-bold">gives us a competitive edge</span>
         </h2>
 
         <p className="text-[#4C4C4C] text-lg md:text-base mt-10 ">

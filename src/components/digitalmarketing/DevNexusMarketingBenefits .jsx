@@ -6,20 +6,20 @@ const features = [
     icon: <FaBullseye size={28} />,
     title: 'ROI-Driven Strategies',
     description:
-      'Every campaign created by our team is focused on results and the clients requirements. Whether your brand needs leads, conversation, or boosting Organic brand visibility, our team of experts will provide a tailored-made solution.',
+      'Every campaign created by our top-tier professionals is focused on results and the clients requirements. Whether your brand require leads, conversion, or organic brand visibility, our team of experts will provide a tailored-made solution.',
     highlight: true,
   },
   {
     icon: <FaHandshake size={28} />,
     title: 'Proven Digital Marketing Techniques',
     description:
-      'Our team of experts always delivers clear, easy-to-understand reports and analyses that clearly show the work progress and other metrics, which represent how your brand is performing.',
+      'Our experienced specialists consistently delivers concise, easy-to-interpret reports and insights that transparently showcase project progress and key performance metrics—giving you a clear view of your brand’s growth and impact.',
   },
   {
     icon: <FaSearchPlus size={28} />,
     title: 'Transparent Work Process',
     description:
-      'Our team of experts consistently delivers clear, easy-to-understand reports and analyses that clearly show work progress and other key metrics representing how your brand is performing.',
+      'Transparency is woven into every stage of our workflow. From initial discovery to final delivery, we maintain open communication, share real-time progress updates, and provide clear documentation. Our clients stay informed through every milestone—ensuring complete visibility, trust, and confidence in the results we deliver.',
   },
   {
     icon: <FaChartLine size={28} />,
@@ -33,7 +33,7 @@ export const DevNexusMarketingBenefits = () => {
   return (
     <section className="px-6 md:px-16 py-12 space-y-10">
       <h2 className="text-2xl md:text-3xl font-light text-center text-[#335D95]">
-        What Makes <span className="font-bold text-[#00357A]">DevNexus</span>  the Best Solution for {' '}
+        What Makes <span className="font-bold text-[#00357A]">DevNexus Solutions</span>  the No. 1 choice for {' '}
         <br />
         <span className="font-bold text-[#00357A]">Digital Marketing Services?</span>
       </h2>

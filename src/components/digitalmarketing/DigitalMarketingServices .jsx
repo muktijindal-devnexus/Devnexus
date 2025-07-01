@@ -5,7 +5,7 @@ const services = [
   {
     title: "Search Engine Optimization (SEO)",
     description:
-      "We provide comprehensive Search Engine Optimization services, and our tailor-made strategies are perfect for your brand. It offers a range of services, including keyword research, on-page optimization, and technical SEO. Whether you are a start-up or an established business, we have solutions to meet all your business needs. ",
+      "Our tailor-made strategies are perfect for your brand. We offer a range of services, including keyword research, on-page optimization, off-page SEO, and technical SEO. Whether you are a start-up or an established business, we have solutions to meet all your business needs. ",
     points: [
       "Keyword Research & Strategy",
       "Link Building & Authority Growth",
@@ -14,15 +14,15 @@ const services = [
     ],
   },
   {
-    title: "PPC",
+    title: "Pay-per-click (PPC)",
     description:
-      "DevNexus Solutions provides expert PPC services designed to maximize your online advertising ROI.  Our PPC experts focus on strategic keyword targeting, creating compelling ads, and utilizing advanced campaign management skills.  We are helping the business to reach its desired audience. Whether you want to boost website traffic, generate leads, or increase ROI, DevNexus Solutions ensures that your PPC campaigns are cost-effective and effective.",
+      "DevNexus Solutions provides expert PPC services designed to maximize your online advertising ROI.  Our PPC experts focus on strategic keyword targeting, creating compelling ads, and utilizing advanced campaign management skills.  We are helping your business to reach its desired audience. Whether you want to boost website traffic, generate leads, or increase ROI, DevNexus Solutions ensures that your PPC campaigns are cost-effective.",
     points: [],
   },
   {
     title: "Social Media Marketing (SMM)",
     description:
-      "DexNexus Solutions delivers expert Social Media Marketing services that help businesses build a strong online presence and engage effectively with their potential audience, from strategy development and campaign management to tracking insights for performance. We have a tailor-made system for all the brand types.",
+      "DexNexus Solutions delivers expert Social Media Marketing services that help businesses build a strong online presence and engage effectively with their potential audience. From strategy development and campaign management to tracking insights for performance, we have a tailor-made system for every specific brand.",
     points: [
       "Content Creation & Scheduling",
       "Audience Engagement",
@@ -32,7 +32,7 @@ const services = [
   {
     title: "Meta Ads",
     description:
-      "DevNexus Solutions offers expert Meta Ads Services to help businesses reach a broader audience and generate high-quality leads. We have a team of experts ready to create effective, highly visual ad campaigns tailored to your business needs.",
+      "DevNexus Solutions offers expert Meta Ads Services to help businesses reach a broader audience and generate high-quality leads. We have a team of experts ready to create effective and highly visual ad campaigns tailored to your business needs.",
     points: ["Ad Campaign Setup", "Audience Targeting", "A/B Testing"],
   },
   {
@@ -48,13 +48,13 @@ const services = [
   {
     title: "Content Marketing",
     description:
-      "We deliver high-quality, SEO-optimized content to boost your visibility and establish authority in your niche.",
+      "We deliver high-quality, SEO-optimized content to boost your brands visibility and establish authority in your niche.",
     points: ["Blog Writing", "SEO Copywriting", "Content Strategy"],
   },
   {
     title: "Conversion Rate Optimization (CRO)",
     description:
-      "We analyze user behavior and optimize your website layout, CTAs, and funnel to convert more visitors into customers.",
+      "We analyze user behavior and optimize your website's layout, CTAs, and funnels to convert more visitors into customers.",
     points: [
       "A/B Testing",
       "Heatmaps & Analytics",

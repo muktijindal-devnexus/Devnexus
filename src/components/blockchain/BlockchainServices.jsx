@@ -7,19 +7,19 @@ const steps = [
     number: "01",
     title: "Custom Blockchain Development",
     description:
-      "Build your blockchain solution from scratch. At DevNexus Solutions, our team of experts designs, develops, and deploys private and public blockchain networks with custom consensus algorithms and smart contract functionality.",
+      "Build your blockchain solution from scratch. At DevNexus Solutions, our strategic thinkers, design, develop, and deploy private and public blockchain networks with custom consensus algorithms and smart contract functionality.",
   },
   {
     number: "02",
     title: "Smart Contract Development",
     description:
-      "Our Blockchain App Development team is automating transactions and business processes with self-executing smart contracts. At DevNexus Solutions, we develop secure and efficient smart contracts for various blockchain technologies, including Ethereum, Binance Smart Chain, Polygon, and others.",
+      "Our Blockchain App Development team is automating transactions and business processes with self-executing smart contracts. At DevNexus Solutions, we develop secure and efficient smart contracts for various blockchain technologies including Ethereum, Binance Smart Chain, Polygon, and others.",
   },
   {
     number: "03",
     title: "Decentralized Application (dApp) Development",
     description:
-      "We are designing and developing user-friendly Decentralised Applications (dApps) for finance, gaming, healthcare, and other industries. Our team of experts ensures a seamless user experience on the Blockchain.",
+    "We specialize in designing and developing intuitive decentralized applications (dApps) across industries such as finance, gaming, healthcare, and more. Our expert team ensures a seamless and secure user experience by leveraging the full potential of blockchain technology.",
   },
   {
     number: "04",
@@ -60,7 +60,7 @@ const BlockchainServices = () => {
         solutions.
       </p>
 
-      <div className="flex flex-col md:flex-row gap-18 w-full">
+      <div className="flex flex-col md:flex-row gap-18">
         {/* Desktop: Steps List */}
         <div className="hidden md:flex flex-col w-full md:w-1/3 space-y-4">
           {steps.map((step, index) => (

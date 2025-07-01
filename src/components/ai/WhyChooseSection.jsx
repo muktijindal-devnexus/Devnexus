@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function WhyChooseSection() {
   const features = [
@@ -33,9 +34,11 @@ export default function WhyChooseSection() {
           <p className="text-gray-700 mb-4 sm:mb-6 text-xs sm:text-sm md:text-base">
          As a leading AI software development services provider, DevNexus Solutions goes beyond technology; we are delivering tailored, future-ready solutions that drive real business value. Our team of experts in AI automation and data-driven innovation ensures that every solution is designed with your unique challenges and vision in mind.
           </p>
-          <button className="bg-[#00357A] text-white px-4 sm:px-6 py-1 sm:py-2 rounded text-sm sm:text-base transition-all duration-300 hover:bg-[#002a5f] hover:scale-105 shadow-md hover:shadow-lg cursor-pointer">
-            Consult Our Experts
-          </button>
+          <Link href="/contact" passHref>
+            <div className="mt-8 bg-[#00357A] hover:bg-[#335D95] text-white font-medium px-5 py-2 rounded inline-block">
+              Consult Our Experts
+            </div>
+          </Link>
         </motion.div>
 
         {/* Right Section */}

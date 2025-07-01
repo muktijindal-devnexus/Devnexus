@@ -7,43 +7,43 @@ const slides = [
     id: 1,
     title: "Tailor-Made AI Solutions",
     content:
-      "At DevNexus Solutions, our team of experts specialises in providing tailored AI solutions that address your unique brand challenges and requirements. From tailored AI models to advanced automation, we can design an AI system that perfectly matches your data and workflows. ",
+      "At DevNexus Solutions, We specialise in providing tailored AI solutions that address your unique brand challenges and requirements. From tailored AI models to advanced automation, we can design an AI system that perfectly matches your data and workflows. ",
   },
   {
     id: 2,
     title: " Enhance decision-making ",
     content:
-      "At DevNexus Solutions, we help your business enhance the decision-making process with AI software development services by leveraging advanced analytics models and real-time data processing. Our team of experts enables faster, smarter, and more informed decisions. ",
+      "We help your business enhance the decision-making process with AI software development services by leveraging advanced analytics models and real-time data processing. Our team of experts enables faster, smarter, and more informed decisions. ",
   },
   {
     id: 3,
     title: "Streamline operations",
     content:
-      "At DevNexus Solutions, we help businesses streamline their operations by automating repetitive tasks, optimising workflows, and integrating AI-driven solutions into their daily processes. Our specially designed AI tools reduce manual efforts, improve accuracy and boost efficiency, allowing your team to focus on strategic growth. ",
+      "We help businesses streamline their operations by automating repetitive tasks, optimising workflows, and integrating AI-driven solutions into their daily processes. Our AI tools reduce manual efforts, improve accuracy and boost efficiency, allowing your team to focus on strategic growth. ",
   },
   {
     id: 4,
     title: "Improve Efficiency",
     content:
-      "Our team of experts can integrate AI-powered tools that help businesses improve efficiency. Our custom AI solutions enable faster workflows, reduce human errors, and maximise productivity across all operations. ",
+      "We can integrate AI-powered tools that help businesses improve efficiency. Our custom AI solutions enable faster workflows, reduce human errors, and maximise productivity across all operations. ",
   },
   {
     id: 5,
     title: "Custom AI Model Development",
     content:
-      "Our team of experts specialises in developing custom AI models that help businesses address unique challenges. It doesn't matter whether you are looking for predictive analytics or natural language processing; we can design AI models that are perfect for your data. ",
+      "We specialise in developing custom AI models that help businesses address unique challenges. It doesn't matter whether you are looking for predictive analytics or natural language processing; we can design AI models that are perfect for your data. ",
   },
   {
     id: 6,
-    title: "Seamless integration",
+    title: "Streamline integration",
     content:
-      "Our Custom AI Solutions Development experts ensure the seamless integration of AI technology into your existing system and workflow. Our team specialises in connecting AI models, APIs, and other tools with your software, such as CRM, ERP, or other similar platforms, to unlock more potential. From data scratch to deployment, we are making AI adoption smooth, efficient and future-ready.",
+      "Our Custom AI Solutions Development experts ensures streamlined integration of AI technology into your existing system and workflow. Our team specialises in connecting AI models, APIs, and other tools with your software, such as CRM, ERP, or other similar platforms, to unlock more potential. From data scratch to deployment, we are making AI adoption smooth, efficient and future-ready.",
   },
   {
     id: 7,
     title: "Future-Ready Applications",
     content:
-      "Our AI chatbot development services can create future-ready applications that evolve with your business needs. Our AI-powered solutions are scalable, flexible and advanced technologies to ensure they stay relevant in the fast-growing digital landscape.",
+      "Our AI chatbot development services can create future-ready applications that evolve with your business needs. Our AI-powered solutions are scalable, flexible and advanced to ensure that they stay relevant in the fast-growing digital landscape.",
   },
 ];
 

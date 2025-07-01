@@ -11,18 +11,20 @@ import "swiper/css/navigation";
 const JobOpenings = () => {
   const jobPositions = [
     {
-      department: "Deveops",
+      department: "DevOps",
       position: "AWS Developer",
       location: "Gurgaon",
       experience: "3+ years",
-      description: "Responsible for managing cloud infrastructure and deployment pipelines.",
+      description:
+        "Responsible for managing cloud infrastructure and deployment pipelines.",
     },
     {
       department: "Designing",
       position: "Video Writer",
       location: "Gurgaon",
       experience: "Fresher",
-      description: "Create compelling scripts for visual storytelling and marketing videos.",
+      description:
+        "Create compelling scripts for visual storytelling and marketing videos.",
     },
     {
       department: "Developer",
@@ -36,7 +38,8 @@ const JobOpenings = () => {
       position: "Sales Executive",
       location: "Gurgaon",
       experience: "Fresher to 1 year",
-      description: "Engage clients, generate leads and close sales effectively.",
+      description:
+        "Engage clients, generate leads and close sales effectively.",
     },
   ];
 
@@ -49,7 +52,7 @@ const JobOpenings = () => {
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-8xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-[#00357A] mb-6 text-center">
-          Number of Openings
+          Job Openings
         </h1>
 
         {/* Navigation Arrows */}
@@ -99,25 +102,31 @@ const JobOpenings = () => {
                   <div className="grid grid-cols-1 gap-6 my-4">
                     <div className="flex">
                       <p className="text-[#6F6F6F] text-xl">Position:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">{job.position}</p>
+                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">
+                        {job.position}
+                      </p>
                     </div>
                     <div className="flex">
                       <p className="text-[#6F6F6F] text-xl">Location:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">{job.location}</p>
+                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">
+                        {job.location}
+                      </p>
                     </div>
                     <div className="flex">
                       <p className="text-[#6F6F6F] text-xl">Experience:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">{job.experience}</p>
+                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">
+                        {job.experience}
+                      </p>
                     </div>
                   </div>
 
                   <div className="flex gap-4 mt-auto">
-                    <button
+                    {/* <button
                       onClick={() => setModalContent({ type: "description", job })}
                       className="bg-[#335D95] text-white text-sm rounded-sm w-full py-2"
                     >
                       Job Description
-                    </button>
+                    </button> */}
                     <button
                       onClick={() => setModalContent({ type: "apply", job })}
                       className="bg-[#335D95] text-white text-sm font-medium rounded w-full py-2"
@@ -150,46 +159,56 @@ const JobOpenings = () => {
             {modalContent.type === "description" ? (
               <p className="text-gray-700">{modalContent.job.description}</p>
             ) : (
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full border border-gray-300 rounded px-3 py-2"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full border border-gray-300 rounded px-3 py-2"
-                  required
-                />
-                <textarea
-                  placeholder="Why are you a good fit?"
-                  className="w-full border border-gray-300 rounded px-3 py-2"
-                  rows="4"
-                  required
-                ></textarea>
+              // <form className="space-y-4">
+              //   <input
+              //     type="text"
+              //     placeholder="Your Name"
+              //     className="w-full border border-gray-300 rounded px-3 py-2"
+              //     required
+              //   />
+              //   <input
+              //     type="email"
+              //     placeholder="Your Email"
+              //     className="w-full border border-gray-300 rounded px-3 py-2"
+              //     required
+              //   />
+              //   <textarea
+              //     placeholder="Why are you a good fit?"
+              //     className="w-full border border-gray-300 rounded px-3 py-2"
+              //     rows="4"
+              //     required
+              //   ></textarea>
 
-                {/* Resume Upload */}
-                <div>
-                  <label className="block mb-1 text-sm font-medium text-gray-700">
-                    Upload Resume (PDF, DOC, DOCX)
-                  </label>
-                  <input
-                    type="file"
-                    accept=".pdf,.doc,.docx"
-                    className="w-full border border-gray-300 rounded px-3 py-2 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-[#335D95] file:text-white"
-                    required
-                  />
-                </div>
+              //   {/* Resume Upload */}
+              //   <div>
+              //     <label className="block mb-1 text-sm font-medium text-gray-700">
+              //       Upload Resume (PDF, DOC, DOCX)
+              //     </label>
+              //     <input
+              //       type="file"
+              //       accept=".pdf,.doc,.docx"
+              //       className="w-full border border-gray-300 rounded px-3 py-2 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-[#335D95] file:text-white"
+              //       required
+              //     />
+              //   </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-[#335D95] text-white py-2 rounded"
-                >
-                  Submit Application
-                </button>
-              </form>
+              //   <button
+              //     type="submit"
+              //     className="w-full bg-[#335D95] text-white py-2 rounded"
+              //   >
+              //     Submit Application
+              //   </button>
+              // </form>
+              <div>
+                <span>
+                  To Apply Email your resume at - <br/>Email: contactus@devnexus.in
+                </span>
+                {/* Contact Us<br/><br/>
+                <span>Email: contactus@devnexus.in</span>  <br/><br/>
+                <span>Phone: +91 9211815556 <br/><br/>
+                  </span>
+                Location: 26-B, Spaze Itech Park, Sector-49, Gurgaon, 122018 */}
+              </div>
             )}
           </div>
         </div>

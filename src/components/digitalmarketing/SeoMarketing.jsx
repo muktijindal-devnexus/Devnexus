@@ -5,15 +5,15 @@ import { FaClipboardList, FaLaptopCode, FaSearch } from 'react-icons/fa';
 const cardData = [
   {
     icon: <FaClipboardList size={24} />,
-    title: 'Understanding Of Your Business',
+    title: 'Understanding Your Business',
     description:
-      'At DevNexus Solutions, every business requires a comprehensive analysis. This is why our team of experts begins with a deep understanding of your business from the ground up. These foundational steps ensure that every plan is perfectly aligned with the brands goals, industry, and potential audience.',
+      'At DevNexus Solutions, every business requires a comprehensive analysis. This is why our dedicated team begins with a deep understanding of your business from the scratch. These foundational steps ensures that every plan is perfectly aligned with the brands goals and potential audience.',
   },
   {
     icon: <FaLaptopCode size={24} />,
     title: 'Audience & Market Research',
     description:
-      'Every successful digital marketing campaign begins with understanding your audience and determining and determining where your brand fits for better visibility. This step is all about collecting insights that power effective target-market campaigns. ',
+      'Every successful digital marketing campaign begins with understanding your audience and determining where your brand fits for better visibility. This step is all about collecting insights that power effective target-market campaigns. ',
   },
   {
     icon: <DraftingCompass size={24} />,
@@ -43,13 +43,13 @@ const cardData = [
     icon: <Workflow size={24} />,
     title: 'Continuous Optimization',
     description:
-      'Digital Marketing is the process of learning and improving continuously. Thats why optimization is the core of everything we do; our team keeps a close eye on the results after campaigns have been published. From testing new creative ideas, adjusting targeting parameters, and refining strategy to implement A/B testing, our teams approach is proactive and agile. By staying ahead, of mensure thatensure that and changes in consumer behavoand competition your campaigns remain relevant and competitive.',
+      'Digital Marketing is the process of learning and improving continuously. Thats why optimization is the core of everything we do, our team keeps a close eye on the results after campaigns have been published. From testing new creative ideas, adjusting targeting parameters, and refining strategy to implement A/B testing, our teams approach is proactive and agile.',
   },
     {
     icon: <Blend size={24} />,
     title: 'Transparency & Collaboration',
     description:
-      'We follow transparent, collaborative, and open communication with our clients. We see ourselves as an extension of your team, working closely with you every step of the way, from clear reporting and regular process updates to honest feedback and open discussion. Our digital marketing team makes sure that you are always informed, involved, and confident in the direction of your digital marketing efforts. ',
+    "At DevNexus Solutions, we believe in open, honest, and collaborative partnerships. We operate as an extension of your team—maintaining clear communication, sharing regular progress updates, and encouraging open dialogue at every stage. Our digital marketing experts ensure you're consistently informed, actively involved, and fully confident in the strategic direction of your campaigns.",
   },
  
 ];
@@ -61,18 +61,19 @@ export const SeoMarketing = () => {
       <div className="md:w-1/2 space-y-6">
         <h2 className="text-[32px] md:text-[48px] text-[#335D95] leading-tight">
          Our {' '}
-          <span className="text-[#00357A] font-semibold">
+          <span>
           Comprehensive Approach  
           
           </span>{' '}
-          to the Digital Marketing Process -<br />
+          to the <span className="text-[#00357A] font-semibold"> Digital Marketing Process
+            </span> -<br />
           
         </h2>
         <p className="text-[18px] md:text-[20px] text-gray-700">
           Access end-to-end SEO services through our structured and agile methodology.
           We follow a proven, results-driven approach that encompasses everything from
           requirement gathering and strategy design to final deployment. This
-          commitment to excellence has established us as one of India’s leading SEO
+          commitment to excellence has established us as one of India’s leading digital
           marketing companies with a strong track record of success.
         </p>
       </div>

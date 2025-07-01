@@ -20,33 +20,33 @@ import { DigitalMarketingServices } from "./DigitalMarketingServices ";
 
 const faqData  = [
   {
-    question: 'Why do businesses need digital marketing services?',
+    question: 'Why Businesses Need Digital Marketing Services?',
     answer:
-      'Every business wants to grow and capture the majority of the market value in its niche; this is where digital marketing services play a crucial role. With most consumers, products, and services available online, digital marketing services help increase visibility and generate high-quality leads. It offers measurable results, and it is cost-effective. On the other hand, with digital marketing techniques, it is easy to adopt market trends.',
+    "In today’s highly competitive, digitally driven landscape, every business aims to expand its reach and dominate its market niche. Digital marketing plays a pivotal role in achieving this by enhancing online visibility, generating high-quality leads, and delivering measurable, cost-effective results. With most consumers now engaging online, digital strategies also enable businesses to stay agile, quickly adapting to emerging market trends and consumer behaviors.",
   },
   {
-    question: 'How much does it cost to hire a digital marketing agency near me?',
+    question: ' How Much Does It Cost to Hire a Digital Marketing Agency Near Me?',
     answer:
-    'The cost of hiring a "digital marketing service near me" can vary widely, depending on the services you are looking for. Business goals, etc.'
+    "The cost of hiring a digital marketing agency can vary significantly based on your specific business goals, the scope of services required, and the level of expertise you’re seeking. Factors such as campaign complexity, target audience, duration, and platform choice all contribute to the overall investment, making it essential to align the budget with measurable outcomes and long-term strategy.",
   },
   {
-    question:'What makes DevNexus Solutions the best digital marketing company?',
+    question:'. Why DevNexus Solutions Leads in Digital Marketing?',
     answer:
-    'DevNexus Solutions stands out as the best digital marketing company for several reasons, including its result-driven approach and tailored solutions tailored to meet your business needs.. We combine deep industry expertise with top-class tools to deliver the results clients want. We offer solutions tailored to meet all your business needs. Our team focuses on measurable outcomes, such as lead generation, improved ROI, and brand growth, while maintaining transparency Through Regular reporting and clear communication.',
+    "DevNexus Solutions distinguishes itself as a top-tier digital marketing company through its results-driven approach and customized strategies tailored to each client’s unique goals. Backed by deep industry expertise and cutting-edge tools, we deliver impactful solutions that drive measurable outcomes—whether it's lead generation, increased ROI, or brand visibility. Our commitment to transparency is reflected in consistent, clear reporting and open communication throughout every stage of the marketing journey."
   },
   {
-    question: 'Which digital marketing channels are most result-oriented for B2B?',
+    question: 'Which Digital Marketing Channels Deliver the Best Results for B2B?',
     answer:
-      'For B2B companies, the most workable digital marketing techniques are those that can deliver longer sales cycles. Include-LinkedIn Marketing SEO Pay Per Click Meta Ads E-Mail Marketing Content Writing Video Marketing',
+      'For B2B companies, the most effective digital marketing strategies are those that support longer sales cycles and nurture high-value leads. Key result-oriented channels include LinkedIn marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, Meta (Facebook) ads, email marketing, content creation, and video marketing—each playing a vital role in building trust, driving engagement, and accelerating conversions in the B2B space.',
   },
   {
-    question: 'I wish to market my business. How should I get started?',
+    question: 'Ready to Market Your Business? Let’s Get Started.?',
     answer:
-    'Lets connect. Based on your business domain, marketing preferences, target achievement, and available budget, we will develop a tailor-made plan. Depending on various cases, some businesses may prefer comprehensive social media strategies or web UX changes; others may call for a more formal link building or reputation management. E-commerce also prefers Paid Ads. Depending on how and how much you would like to enroll, we will ensure that your strategy for getting started with the services is tailored to your needs.',
+    "At DevNexus Solutions, we begin by understanding the core of your business—your industry, marketing objectives, target milestones, and available budget. From there, we craft a custom marketing roadmap aligned with your unique goals.Depending on your business model, your ideal strategy may include:– Comprehensive social media campaigns to grow brand presence– Website UX enhancements to boost conversions– Link building and reputation management for long-term SEO gains – Paid advertising strategies (especially for e-commerce) to accelerate visibility and results Whether you're looking to start small or go all-in, we’ll tailor a marketing solution that fits your ambition and scales with your growth",
   },
     {
-    question: 'How much does it cost to hire a digital marketing agency?',
-    answer:  'The cost of hiring a "digital marketing service" can vary widely, depending on the services you are looking for, business goals, etc. Our monthly services start at $400 and range up to $5,000 (plus ad fees). Packages can be cheaper upon a 3-6 month commitment.'
+    question: 'How Much Does It Cost to Hire a Digital Marketing Agency?',
+    answer:  'The cost of hiring a digital marketing agency can vary significantly based on your business goals, target markets, and the range of services required. At DevNexus Solutions, our monthly service plans start at $400 and can go up to $5,000, excluding ad spend. For clients seeking greater value and consistency, we also offer discounted packages on 3 to 6-month commitments, ensuring strategic continuity and cost-effectiveness.'
     },
 ];
 

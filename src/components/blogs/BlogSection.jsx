@@ -61,12 +61,14 @@ const sidebarPosts = [
   {
     id: 4,
     title: "Unlocking Digital Success with a Reliable WordPress Partner",
-    image: "/images/BannerImage.jpg",
+    image: "https://res.cloudinary.com/dybqc3gax/image/upload/v1750856017/1_vbxxhu.png",
+
   },
   {
     id: 5,
     title: "How to Create a Brand Content Marketing Plan for 2025",
-    image: "/images/BannerImage.jpg",
+      image: "https://res.cloudinary.com/dybqc3gax/image/upload/v1750856017/1_vbxxhu.png",
+
   },
 ];
 

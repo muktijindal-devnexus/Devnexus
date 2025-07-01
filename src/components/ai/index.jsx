@@ -33,32 +33,32 @@ const brandLogos = [
 
 const faqData = [
   {
-    question: "How can AI chatbot development services benefit my business?",
+    question: ". How Can AI Chatbot Development Services Benefit Your Business?",
     answer:
-      "AI chatbots improve customer engagement, provide 24/7 services, help reduce operational costs, automate tedious tasks, and deliver a personalised experience, which increases customer satisfaction and loyalty. ",
+      "AI chatbots offer transformative value by enhancing customer engagement, delivering round-the-clock support, and significantly reducing operational costs. They automate repetitive tasks, streamline communication, and provide personalized interactions, leading to improved customer satisfaction, stronger brand loyalty, and increased efficiency. Whether it's handling FAQs, qualifying leads, or supporting transactions, AI chatbots empower businesses to scale smarter and serve faster.",
   },
   {
     question:
-      "What platforms can AI chatbots be deployed on?",
+      "Where Can AI Chatbots Be Deployed?",
     answer:
-      'AI chatbots can be integrated across various platforms, including websites, mobile apps, social media channels, and messaging apps, ensuring seamless interaction wherever your potential audience is present.',
+      'AI chatbots can be seamlessly deployed across multiple platforms—including websites, mobile apps, social media, messaging apps, e-commerce sites, and CRM systems—to deliver consistent, real-time support and personalized user experiences wherever your audience engages.',
   },
   {
     question:
-      "How do you ensure the Artificial Intelligence Development Services fit my specific business needs?",
+      "How Do You Ensure AI Development Services Align with My Business Needs?",
     answer:
-      "Our team of AI software development services experts starts a thorough consultation to understand your goals and problems, then start begins working on designing customised AI models and workflows that align with your unique requirements.",
+      "At DevNexus Solutions, we begin with an in-depth consultation to understand your business objectives, challenges, and operational landscape. Based on this discovery phase, our AI specialists design and implement customized models and intelligent workflows that align precisely with your goals, ensuring seamless integration, measurable impact, and long-term scalability.",
   },
   {
     question:
-      "What is the typical timeline for AI development projects?",
+      "What Is the Typical Timeline for AI Development Projects?",
     answer:
-      "AI development timelines depend on complexity and scope; timelines may range from a couple of weeks for a small project to several months for a large-scale project.",
+      "The timeline for AI development projects varies based on complexity, scope, and integration requirements. Smaller projects—such as chatbot development or basic automation—can take 2 to 6 weeks, while larger, enterprise-grade solutions involving custom models, data pipelines, and system integration may span 3 to 6 months or more. A thorough discovery phase helps define realistic milestones and ensures timely delivery.",
   },
   {
-    question: "How do you handle data privacy and security in AI projects?",
+    question: "How Do You Handle Data Privacy and Security in AI Projects?",
     answer:
-      "Our team of experts adheres to best practices and compliance standards to safeguard sensitive data,, ensuring secure data integrity throughout our AI development services.",
+      "At DevNexus Solutions, we prioritize data privacy and security at every stage of AI development. Our team follows industry best practices and regulatory standards to safeguard sensitive information—implementing robust encryption, access controls, and anonymization techniques. From data collection to model deployment, we ensure data integrity, confidentiality, and compliance, empowering clients with secure, trustworthy AI solutions.",
   },
 
 ];
@@ -70,8 +70,8 @@ export const AiTech = () => {
             <Banner
                      image='/cdn/images/ai/ai.mp4'
                      overlayImage
-                     heading=" Transform Artificial Intelligence Development Services"
-                     description="At DevNexus Solutions, we accelerate business through strategic AI software development services."
+                     heading=" Transform your Business with Artificial Intelligence Development Services"
+                     description="At DevNexus Solutions, we accelerate your business through strategic AI software development services."
                    />
                    <StatusCard />
                    <AIServiceSection />

@@ -72,6 +72,7 @@ export default function Footer() {
               Spaze Itech Park, Sector-49, Gurgaon, 122018
             </p>
           </div>
+     
         </div>
    {/* Explore On */}
         <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
@@ -85,6 +86,7 @@ export default function Footer() {
             <li><a href="/career" className="hover:text-white transition-colors">Career</a></li>
             <li><a href="/blogs" className="hover:text-white transition-colors">Blogs</a></li>
             <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+            <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
           </ul>
         </div>
 

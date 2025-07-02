@@ -2,8 +2,15 @@
 import React from 'react'
 import BannerImage1 from "../../../public/cdn/images/blogs/BlogsHeroSection.jpeg";
 import { Banners } from '@/components/global/NavBanners';
-import BlogSection from '@/components/blogs/BlogSection';
 import { Blogs } from '@/components/blogs';
+
+export const metadata = {
+  title: "Blog - DevNexus Solutions",
+  description: "DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience.  Reach out to us today, talk with our expert today.",
+  alternates: {
+    canonical: "https://devnexussolutions.com/blogs",
+  },
+};
 
 
 const BlogPage = ({slug}) => {

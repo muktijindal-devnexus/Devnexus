@@ -51,7 +51,7 @@ const Technologies = () => {
   }, []);
 
   return (
-    <section className="bg-white text-center">
+    <section className="bg-white text-center py-10">
       {/* Title */}
       <motion.div
         className="flex justify-center items-center mb-6"
@@ -103,16 +103,16 @@ const Technologies = () => {
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="border border-[#00357A] rounded-2xl p-4 flex flex-col items-center justify-center select-none bg-white shadow-md"
+              className="border border-[#00357A] rounded-2xl p-4 select-none bg-white shadow-md h-44 flex flex-col items-center justify-between"
             >
               <Image
                 src={tech.image}
                 alt={tech.name}
-                className="mb-2"
+                className="object-contain"
                 width={80}
                 height={80}
               />
-              <span className="text-sm font-semibold ">{tech.name}</span>
+              <span className="text-sm font-semibold">{tech.name}</span>
             </motion.div>
           ))}
         </AnimatePresence>

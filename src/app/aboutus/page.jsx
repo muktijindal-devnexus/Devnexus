@@ -5,7 +5,7 @@ export const metadata = {
   title: "About Us - DevNexus Solutions",
   description: "DevNexus Solutions is a certified Digital Transformaiton Consultant. Our team of experts loves to create smart ideas. Contact us now. ",
   alternates: {
-    canonical: "https://devnexussolutions.com/about",
+    canonical: "https://devnexussolutions.com/aboutus",
   },
 };
 

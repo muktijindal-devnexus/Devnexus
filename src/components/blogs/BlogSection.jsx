@@ -31,7 +31,7 @@ export default function BlogSection() {
     fetchBlogs();
   }, []);
 
-  const sidebarPosts = blogs?.slice(0, 5); // show latest 5
+  const sidebarPosts = blogs?.slice(0, 45); // show latest 5
 
   return (
     <section className="flex flex-col md:flex-row gap-6 p-6">

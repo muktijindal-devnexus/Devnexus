@@ -42,7 +42,7 @@ export default function AIServiceSection() {
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-3xl md:text-4xl text-[#00357A] leading-snug">
          
-          <span className="font-bold">DevNexus Solutions</span> provides :
+          <span className="font-bold">DevNexus Solutions</span> provides
         </h2>
       </div>
 

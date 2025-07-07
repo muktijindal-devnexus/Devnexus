@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +18,9 @@ export default function BlogSection() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("https://backend.devnexussolutions.com/api/blogs");
+        const res = await fetch(
+          "https://backend.devnexussolutions.com/api/blogs"
+        );
         const data = await res.json();
         setBlogs(data);
       } catch (error) {
@@ -44,9 +46,13 @@ export default function BlogSection() {
             const title = post?.title ?? "Untitled Blog";
             return (
               <Link
-                href={`/blogs/${slugify(post.title)}?id=${post._id}`}
+                href={{
+                  pathname: `/blogs/${slugify(post.title)}`,
+                }}
                 key={post._id}
                 className="bg-white rounded-2xl shadow-md overflow-hidden h-[300px] hover:shadow-lg transition"
+                // 👇 pass ID via state
+                state={{ id: post._id }}
               >
                 <div className="relative h-[130px] w-full">
                   <Image

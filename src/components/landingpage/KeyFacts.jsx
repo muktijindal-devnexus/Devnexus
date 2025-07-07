@@ -25,7 +25,7 @@ export const KeyFacts = () => {
           Key Facts About Us
         </h2>
         <p className="text-[19px] leading-6 pt-5">
-          Discover Why Clients Choose DevNexus for Mobile & Web App Development,
+          Discover Why Clients Choose DevNexus Solutions for Mobile & Web App Development,
           UI/UX Design, Digital Marketing, and Graphic Design Solutions.
         </p>
       </div>

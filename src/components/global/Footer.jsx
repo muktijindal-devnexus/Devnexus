@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
@@ -17,7 +17,9 @@ export default function Footer() {
 
     try {
       const res = await fetch(
-        `https://backend.devnexussolutions.com/api/subscribe?email=${encodeURIComponent(email)}`,
+        `https://backend.devnexussolutions.com/api/subscribe?email=${encodeURIComponent(
+          email
+        )}`,
         {
           method: "POST",
         }
@@ -42,14 +44,19 @@ export default function Footer() {
         <div className="order-1">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center">
-              <Image src="/cdn/images/logo.webp" width={60} height={60} alt="Logo" />
+              <Image
+                src="/cdn/images/logo.webp"
+                width={60}
+                height={60}
+                alt="Logo"
+              />
               <div>
                 <h2 className="text-sm font-bold">DevNexus Solutions</h2>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>
               </div>
             </Link>
           </div>
-        <div className="space-y-1 sm:space-y-1 text-xs sm:text-sm text-gray-300 sm:pl-4">
+          <div className="space-y-1 sm:space-y-1 text-sm sm:text-sm text-gray-300 sm:pl-4">
             <p>
               <span className="font-semibold text-white">Email:</span>{" "}
               <a
@@ -63,7 +70,10 @@ export default function Footer() {
             </p>
             <p>
               <span className="font-semibold text-white">Phone:</span>{" "}
-              <a href="tel:+919211815556" className="underline hover:text-white">
+              <a
+                href="tel:+919211815556"
+                className="underline hover:text-white"
+              >
                 +91 9211815556
               </a>
             </p>
@@ -72,21 +82,57 @@ export default function Footer() {
               Spaze Itech Park, Sector-49, Gurgaon, 122018
             </p>
           </div>
-     
         </div>
-   {/* Explore On */}
+        {/* Explore On */}
         <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
           <h3 className="font-semibold text-white mb-3">Explore On</h3>
           <ul className="text-sm text-gray-300 space-y-2">
-            <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-            <li><a href="/aboutus" className="hover:text-white transition-colors">About Us</a></li>
-            <li><a href="/ourteam" className="hover:text-white transition-colors">Our Team</a></li>
-            <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
-            <li><a href="/projects" className="hover:text-white transition-colors">Projects</a></li>
-            <li><a href="/career" className="hover:text-white transition-colors">Career</a></li>
-            <li><a href="/blogs" className="hover:text-white transition-colors">Blogs</a></li>
-            <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
-            <li><a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+            <li>
+              <a href="/" className="hover:text-white transition-colors">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/aboutus" className="hover:text-white transition-colors">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="/ourteam" className="hover:text-white transition-colors">
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="/services"
+                className="hover:text-white transition-colors"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="/projects"
+                className="hover:text-white transition-colors"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="/career" className="hover:text-white transition-colors">
+                Career
+              </a>
+            </li>
+            <li>
+              <a href="/blogs" className="hover:text-white transition-colors">
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="hover:text-white transition-colors">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -94,27 +140,86 @@ export default function Footer() {
         <div className="order-4 lg:order-3">
           <h3 className="font-semibold text-white mb-3">Our Services</h3>
           <ul className="text-sm text-gray-300 space-y-2">
-            <li><a href="/web-design-development-services" className="hover:text-white transition-colors">Web Development</a></li>
-            <li><a href="/uiux" className="hover:text-white transition-colors">UI/UX Design</a></li>
-            <li><a href="/mobile-development-services" className="hover:text-white transition-colors">Mobile App Development</a></li>
-            <li><a href="/digital-marketing-services" className="hover:text-white transition-colors">Digital Marketing</a></li>
-            <li><a href="/blockchain-development-services" className="hover:text-white transition-colors">Blockchain Development</a></li>
-            <li><a href="/ai-tech-services" className="hover:text-white transition-colors">AI Technologies</a></li>
+            <li>
+              <a
+                href="/web-design-development-services"
+                className="hover:text-white transition-colors"
+              >
+                Web Development
+              </a>
+            </li>
+            <li>
+              <a href="/uiux" className="hover:text-white transition-colors">
+                UI/UX Design
+              </a>
+            </li>
+            <li>
+              <a
+                href="/mobile-development-services"
+                className="hover:text-white transition-colors"
+              >
+                Mobile App Development
+              </a>
+            </li>
+            <li>
+              <a
+                href="/digital-marketing-services"
+                className="hover:text-white transition-colors"
+              >
+                Digital Marketing
+              </a>
+            </li>
+            <li>
+              <a
+                href="/blockchain-development-services"
+                className="hover:text-white transition-colors"
+              >
+                Blockchain Development
+              </a>
+            </li>
+            <li>
+              <a
+                href="/ai-tech-services"
+                className="hover:text-white transition-colors"
+              >
+                AI Technologies
+              </a>
+            </li>
           </ul>
         </div>
-
-     
 
         {/* Social & Newsletter */}
         <div className="order-2 lg:order-4">
           <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
           <div className="flex gap-4 mb-4 text-white text-xl">
-            <a href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3" className="hover:text-gray-300 transition-colors"><FaInstagram /></a>
-            <a href="https://www.facebook.com/share/1Dsa49Kxrr/" className="hover:text-gray-300 transition-colors"><FaFacebookF /></a>
-            <a href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08" className="hover:text-gray-300 transition-colors"><FaXTwitter /></a>
-            <a href="https://www.linkedin.com/company/devnexus-solutions/" className="hover:text-gray-300 transition-colors"><FaLinkedinIn /></a>
+            <a
+              href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
+              className="hover:text-gray-300 transition-colors"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1Dsa49Kxrr/"
+              className="hover:text-gray-300 transition-colors"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08"
+              className="hover:text-gray-300 transition-colors"
+            >
+              <FaXTwitter />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/devnexus-solutions/"
+              className="hover:text-gray-300 transition-colors"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
-          <h4 className="text-sm font-medium mb-3">Subscribe us for Latest News</h4>
+          <h4 className="text-sm font-medium mb-3">
+            Subscribe us for Latest News
+          </h4>
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <input
               type="email"
@@ -134,10 +239,18 @@ export default function Footer() {
         </div>
       </div>
 
-
-      <p className="text-center text-xs text-gray-400 mt-6">
-Copyright © 2025 DevNexus Solutions | All Rights Reserved.
-</p>
+   <div className="flex flex-col justify-center items-center">
+    <p className="text-center text-xs text-gray-400 mt-6">
+        Copyright © 2025 DevNexus Solutions | All Rights Reserved.
+      </p>
+         <a
+        href="/privacy-policy"
+        className="hover:text-white transition-colors text-center text-xs text-gray-400 mt-2"
+      >
+        Privacy Policy
+      </a>
+   </div>
+  
 
       {/* <div className="pt-2">
         <a href="//www.dmca.com/Protection/Status.aspx?ID=b07cf681-1e6f-46f9-8992-50d8d54d14b9" title="DMCA.com Protection Status">

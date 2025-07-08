@@ -23,7 +23,7 @@ export const Portfolio = () => {
       <Banners
         image={BannerImage1}
         overlayImage
-        heading="From Ideas to Execution - Explore DevNexus Solutions Diverse Portfolio Work"
+        heading="From Ideas to Execution - Explore DevNexus Solutions Diverse Portfolio"
         description="Every project we deliver at DevNexus Solutions is a reflection of our commitment to innovation and performance. From dynamic websites to scalable platforms and intelligent digital strategies, our work solves actual problems."
       />
       <div className="">

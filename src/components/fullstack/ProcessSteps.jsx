@@ -72,12 +72,21 @@ const ProcessSteps = () => {
       <div className="bg-[#345C9C] text-white rounded-xl shadow-md overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-start gap-10 px-4 py-10 md:px-10 md:py-14">
           {/* Left Heading */}
-          <div className="md:w-1/3">
+          <div className="hidden md:block md:w-1/3 pt-10">
             <h2 className="text-2xl sm:text-2xl md:text-4xl font-medium leading-relaxed ">
               Process We <br />
               Follow for <br />
               <span className="font-bold">Web Design</span> <br />
               and <span className="font-bold">Web Development</span> <br />
+              Services
+            </h2>
+          </div>
+
+            <div className=" md:hidden md:w-1/3">
+            <h2 className="text-2xl sm:text-2xl md:text-4xl font-medium leading-relaxed ">
+              Process We Follow for {""} <br/>
+              <span className="font-bold">Web Design</span>  {""}
+              and {""} <span className="font-bold">Web Development</span> {""}
               Services
             </h2>
           </div>

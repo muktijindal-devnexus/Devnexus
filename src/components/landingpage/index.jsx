@@ -11,6 +11,7 @@ import { KeyFacts } from "./KeyFacts";
 import { Testimonial } from "../global/Testimonial";
 import InstagramCarousel from "../global/Instagram";
 import { IndustriesWorked } from "./IndustriesWorked";
+import LinkedInFeed from "../global/Instagram";
 
 const LandingComponent = () => {
   return (
@@ -26,7 +27,7 @@ const LandingComponent = () => {
       <BrandSlider />
       <IndustriesWorked />
       <Product />
-      <InstagramCarousel />
+      <LinkedInFeed />
     </div>
   );
 };

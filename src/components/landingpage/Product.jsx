@@ -28,6 +28,9 @@ export const Product = () => {
       <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">
         Projects
       </h2>
+         <span className="text-[#557191] flex justify-end py-3 md:hidden">
+Tap to see more
+      </span>
       <div className="flex flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
           <div

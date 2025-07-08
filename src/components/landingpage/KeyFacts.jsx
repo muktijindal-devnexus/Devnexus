@@ -44,7 +44,7 @@ export const KeyFacts = () => {
 
           <div className="text-center">
             <div className="text-4xl font-medium text-[#7E7E7E]">
-              {inView ? <CountUp end={1100} duration={2.5} /> : '0'}+
+              {inView ? <CountUp end={500} duration={2.5} /> : '0'}+
             </div>
             <h3 className="mt-2 text-lg font-medium text-[#335D95]">
               Projects Done

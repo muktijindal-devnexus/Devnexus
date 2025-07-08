@@ -47,9 +47,9 @@ const StatusCard = () => {
         <div className="flex flex-col items-center text-center px-4">
           <FaUsers className="text-2xl md:text-3xl text-blue-900 mb-2" />
           <h3 className="text-lg md:text-xl font-bold">
-            <CountUp key={`clients-${countKey}`} end={600} duration={2} suffix="+" />
+            <CountUp key={`clients-${countKey}`} end={300} duration={2} suffix="+" />
           </h3>
-          <p className="text-xs md:text-sm text-gray-500">Satisfied Clients</p>
+          <p className="text-xs md:text-sm text-gray-500">Client Served</p>
         </div>
       </div>
     </div>

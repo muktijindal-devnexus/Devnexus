@@ -93,7 +93,7 @@ export const KeyFacts = () => {
 
           <div className="text-center">
             <div className="text-4xl font-medium text-[#7E7E7E]">
-              {inView ? <CountUp end={14} duration={6.2} /> : '0'}+
+              {inView ? <CountUp end={5} duration={6.2} /> : '0'}+
             </div>
             <h3 className="mt-2 text-lg font-medium text-[#335D95]">
               Years Experience

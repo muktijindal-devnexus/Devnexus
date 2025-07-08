@@ -35,7 +35,7 @@ const StatusCard = () => {
         <div className="flex flex-col items-center text-center px-4 mb-4 md:mb-0">
           <MdBusinessCenter className="text-2xl md:text-3xl text-blue-900 mb-2" />
           <h3 className="text-lg md:text-xl font-bold">
-            <CountUp key={`business-${countKey}`} end={14} duration={5} suffix="+" />
+            <CountUp key={`business-${countKey}`} end={5} duration={5} suffix="+" />
           </h3>
           <p className="text-xs md:text-sm text-gray-500">Years of Business</p>
         </div>

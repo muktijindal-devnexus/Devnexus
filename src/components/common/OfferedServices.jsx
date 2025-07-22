@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const services = [
   { title: "Web Development", href: "/web-design-development-services", image: FullStackDev },
-  { title: "UI/UX Designing", href: "/uiux", image: UIUX },
+  { title: "UI/UX Designing", href: "/ui-ux-design-services", image: UIUX },
   { title: "Mobile Development", href: "/mobile-development-services", image: MobileDev },
   { title: "Digital Marketing", href: "/digital-marketing-services", image: DigitalMarketing },
   { title: "Blockchain Development", href: "/blockchain-development-services", image: Blockchain },

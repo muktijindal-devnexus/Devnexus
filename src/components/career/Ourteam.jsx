@@ -15,9 +15,8 @@ export const Ourteam = () => {
       try {
         const res = await fetch("https://backend.devnexussolutions.com/api/all-brands");
         const data = await res.json();
-        setTeamImages(data?.data);
-
-        console.log(data , "ourteam")
+        setTeamImages(data?.data || []);
+        console.log(data, "ourteam");
       } catch (err) {
         console.error("Failed to fetch team data:", err);
       }
@@ -33,12 +32,16 @@ export const Ourteam = () => {
         slidesPerView={2}
         spaceBetween={20}
         loop={true}
-        speed={4000}
+        speed={2000} // Adjust slide transition speed (ms)
         autoplay={{
-          delay: 1,
+          delay: 0, // 0 delay creates continuous smooth movement
           disableOnInteraction: false,
+          pauseOnMouseEnter: false,
         }}
-        
+        grabCursor={true}
+        freeMode={true}
+        centeredSlides={false}
+        watchSlidesProgress={true}
         breakpoints={{
           640: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },

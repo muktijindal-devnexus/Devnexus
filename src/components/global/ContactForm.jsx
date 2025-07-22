@@ -120,7 +120,7 @@ export const ContactForm = () => {
           </h2>
         </div>
         {/* Form Section */}
-        <div className="lg:w-1/2 w-full bg-[#f9f9f9] sm:p-12 rounded-xl p-6">
+        <div className="lg:w-[60%] w-full bg-[#f9f9f9] sm:p-12 rounded-xl p-6">
           <h2 className="text-xl sm:text-3xl font-semibold ">Get in Touch</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6  pt-4">
             Please fill out the form to help us understand the areas where you

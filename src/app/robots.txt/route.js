@@ -3,7 +3,7 @@ export async function GET() {
 User-agent: *
 Disallow:
 
-Sitemap: https://devnexussolutions.com/sitemap_index.xml
+Sitemap: https://devnexussolutions.com/sitemap.xml
 `;
 
   return new Response(content.trim(), {

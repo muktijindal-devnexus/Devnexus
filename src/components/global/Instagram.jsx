@@ -12,13 +12,12 @@ import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const instagramImages = [
-  "/cdn/images/insta/1.png",
-  "/cdn/images/insta/2.png",
-  "/cdn/images/insta/3.png",
-  "/cdn/images/insta/4.png",
-  "/cdn/images/insta/5.png",
-  "/cdn/images/insta/1.png",
-  "/cdn/images/insta/2.png",
+  "/cdn/images/insta/14.png",
+  "/cdn/images/insta/16.png",
+  "/cdn/images/insta/18.png",
+  "/cdn/images/insta/19.png",
+  "/cdn/images/insta/20.png",
+  "/cdn/images/insta/21.png",
   "/cdn/images/insta/3.png",
 ];
 

@@ -33,7 +33,7 @@ const brandLogos = [
 
 const faqData = [
   {
-    question: ". How Can AI Chatbot Development Services Benefit Your Business?",
+    question: "How Can AI Chatbot Development Services Benefit Your Business?",
     answer:
       "AI chatbots offer transformative value by enhancing customer engagement, delivering round-the-clock support, and significantly reducing operational costs. They automate repetitive tasks, streamline communication, and provide personalized interactions, leading to improved customer satisfaction, stronger brand loyalty, and increased efficiency. Whether it's handling FAQs, qualifying leads, or supporting transactions, AI chatbots empower businesses to scale smarter and serve faster.",
   },

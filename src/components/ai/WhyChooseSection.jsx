@@ -49,7 +49,7 @@ export default function WhyChooseSection() {
           viewport={{ once: true }}
           className="w-full lg:w-1/2 mt-6 lg:mt-0"
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 hover:cursor-pointer ">
             {features.map((feature, index) => (
               <div 
                 key={index} 

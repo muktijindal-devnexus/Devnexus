@@ -89,7 +89,7 @@ export default function BusinessGrowthSlider() {
           </div>
 
           {/* Dots */}
-          <div className="flex items-center gap-2 mt-4">
+          <div className="flex items-center gap-2 mt-4 hover:cursor-pointer">
             {slides.map((_, i) => (
               <button
                 key={i}
@@ -103,10 +103,10 @@ export default function BusinessGrowthSlider() {
 
           {/* Navigation Arrows */}
           <div className="flex gap-4 mt-4 justify-end">
-            <button onClick={handlePrev} className="text-[#00357A]">
+            <button onClick={handlePrev} className="text-[#00357A] hover:cursor-pointer">
               <MoveLeft size={40} />
             </button>
-            <button onClick={handleNext} className="text-[#00357A]">
+            <button onClick={handleNext} className="text-[#00357A] hover:cursor-pointer">
               <MoveRight size={40} />
             </button>
           </div>

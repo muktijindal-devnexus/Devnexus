@@ -20,9 +20,18 @@ const tabs = [
   { label: "DevOps", icon: DevopsIcon },
 ];
 
+// Mirror Skeleton Card
+const MirrorSkeletonCard = () => (
+  <div className="border border-[#00357A] rounded-2xl p-4 bg-white shadow-md h-44 flex flex-col items-center justify-between animate-pulse">
+    <div className="w-20 h-20 bg-gray-200 rounded-full mb-2" />
+    <div className="w-3/4 h-4 bg-gray-200 rounded" />
+  </div>
+);
+
 const Technologies = () => {
   const [activeTab, setActiveTab] = useState("Frontend");
   const [techData, setTechData] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchTechData = async () => {
@@ -44,6 +53,8 @@ const Technologies = () => {
         setTechData(groupedData);
       } catch (error) {
         console.error("Error fetching technologies:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -88,34 +99,39 @@ const Technologies = () => {
         ))}
       </div>
 
-      {/* Technology Grid */}
+      {/* Grid Section */}
       <motion.div
         layout
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-4xl mx-auto"
       >
-        <AnimatePresence mode="wait">
-          {techData[activeTab]?.map((tech) => (
-            <motion.div
-              key={tech.name}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.3 }}
-              className="border border-[#00357A] rounded-2xl p-4 select-none bg-white shadow-md h-44 flex flex-col items-center justify-between"
-            >
-              <Image
-                src={tech.image}
-                alt={tech.name}
-                className="object-contain"
-                width={80}
-                height={80}
-              />
-              <span className="text-sm font-semibold">{tech.name}</span>
-            </motion.div>
-          ))}
-        </AnimatePresence>
+        {loading ? (
+          // Skeleton Loader
+          Array.from({ length: 8 }).map((_, idx) => <MirrorSkeletonCard key={idx} />)
+        ) : (
+          <AnimatePresence mode="wait">
+            {techData[activeTab]?.map((tech) => (
+              <motion.div
+                key={tech.name}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.3 }}
+                className="border border-[#00357A] rounded-2xl p-4 select-none bg-white shadow-md h-44 flex flex-col items-center justify-between"
+              >
+                <Image
+                  src={tech.image}
+                  alt={tech.name}
+                  className="object-contain"
+                  width={80}
+                  height={80}
+                />
+                <span className="text-sm font-semibold">{tech.name}</span>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        )}
       </motion.div>
     </section>
   );

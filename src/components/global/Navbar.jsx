@@ -141,7 +141,7 @@ export const Navbar = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setShowModal(true)}
-              className="bg-[#00357A] hover:bg-[#335D95] text-white text-sm px-4 py-2 rounded-md hidden md:block"
+              className="bg-[#00357A] hover:bg-[#335D95] hover:cursor-pointer  text-white text-sm px-4 py-2 rounded-md hidden md:block"
             >
               Free Consultation
             </button>

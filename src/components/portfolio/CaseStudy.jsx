@@ -17,7 +17,7 @@ export default function CaseStudyCard({
   websiteUrl,
   companyName,
   index,
-  carousalImage, // ✅ API-based prop
+  carousalImage,
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const isEven = index % 2 === 0;

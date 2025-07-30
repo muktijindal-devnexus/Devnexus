@@ -220,17 +220,17 @@ export default function Footer() {
           <h4 className="text-sm font-medium mb-3">
             Subscribe us for Latest News
           </h4>
-          <div className="flex flex-col sm:flex-row items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-center gap-3 ">
             <input
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="px-3 py-2 text-sm rounded-md w-full text-black bg-white focus:outline-none focus:ring-0 focus:border-transparent"
+              className="px-3 py-2 text-sm rounded-md w-full text-black bg-white focus:outline-none focus:ring-0 focus:border-transparent "
             />
             <button
               onClick={handleSubscribe}
-              className="px-4 py-2 sm:py-1 rounded-md text-sm text-white border border-white hover:bg-white hover:text-[#003B80] transition-colors w-full sm:w-auto text-center"
+              className="px-4 py-2 sm:py-1 rounded-md text-sm text-white border border-white hover:bg-white hover:text-[#003B80] transition-colors w-full sm:w-auto text-center hover:cursor-pointer"
             >
               Submit
             </button>

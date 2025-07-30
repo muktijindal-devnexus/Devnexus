@@ -109,11 +109,11 @@ export const FullStackServices = () => {
           Tap to expand
         </span>
         {/* Desktop view - buttons */}
-        <div className="hidden md:block space-y-2">
+        <div className="hidden md:block space-y-2 ">
           {services.map((service, index) => (
             <button
               key={index}
-              className={`w-full text-left px-4 py-3 rounded-md border ${
+              className={`w-full text-left px-4 py-3 rounded-md border hover:cursor-pointer ${
                 selectedIndex === index
                   ? 'bg-[#00357A] text-white'
                   : 'bg-white text-[#00357A] border-[#ccc]'

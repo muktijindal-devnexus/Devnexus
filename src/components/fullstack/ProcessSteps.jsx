@@ -117,17 +117,17 @@ const ProcessSteps = () => {
             </div>
 
             {/* Navigation Arrows */}
-            <div className="flex justify-end gap-4 mt-6">
+            <div className="flex justify-end gap-4 mt-6 ">
               <button
                 onClick={handlePrev}
-                className="bg-white text-[#345C9C] p-2 rounded-full shadow hover:bg-gray-200 disabled:opacity-50"
+                className="bg-white text-[#345C9C] p-2 rounded-full shadow hover:bg-gray-200 disabled:opacity-50 hover:cursor-pointer"
                 disabled={currentIndex === 0}
               >
                 <ChevronLeft size={20} />
               </button>
               <button
                 onClick={handleNext}
-                className="bg-white text-[#345C9C] p-2 rounded-full shadow hover:bg-gray-200 disabled:opacity-50"
+                className="bg-white text-[#345C9C] p-2 rounded-full shadow hover:bg-gray-200 disabled:opacity-50 hover:cursor-pointer"
                 disabled={currentIndex + visibleCards >= steps.length}
               >
                 <ChevronRight size={20} />

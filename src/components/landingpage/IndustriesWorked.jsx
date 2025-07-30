@@ -7,6 +7,7 @@ export const IndustriesWorked = () => {
   const [industries, setIndustries] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchIndustries = async () => {
@@ -18,6 +19,8 @@ export const IndustriesWorked = () => {
         }
       } catch (error) {
         console.error("Error fetching industries:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -59,6 +62,16 @@ export const IndustriesWorked = () => {
         industries[(currentIndex + 1) % industries.length],
       ];
 
+  const SkeletonCard = () => (
+    <div
+      className={`relative h-[300px] md:h-[400px] ${
+        isMobile ? "w-full max-w-[300px]" : "w-[300px]"
+      } flex-1 animate-pulse bg-gray-800 rounded-md overflow-hidden`}
+    >
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 animate-[pulse_1.5s_ease-in-out_infinite]" />
+    </div>
+  );
+
   return (
     <section className="py-6 px-4 md:px-0">
       <div className="bg-[#00357A] bg-gradient-to-b from-transparent to-black opacity-90 flex flex-col md:flex-row p-6 md:p-14">
@@ -75,33 +88,34 @@ export const IndustriesWorked = () => {
 
         <div className="relative flex items-center justify-center w-full md:w-[55%]">
           <div className={`flex ${isMobile ? "justify-center" : "gap-4"} w-full`}>
-            {currentImages.map(
-              (item, index) =>
-                item && (
-                  <div
-                    key={index}
-                    className={`relative h-[300px] md:h-[400px] ${
-                      isMobile ? "w-full max-w-[300px]" : "w-[300px]"
-                    } flex-1 overflow-hidden rounded-md`}
-                  >
-                    <Image
-                      src={item.image}
-                      alt={item.title || "Industry"}
-                      fill
-                      className="object-cover"
-                      unoptimized
-                    />
-                    <div className="absolute inset-0 rounded-md bg-gradient-to-b from-transparent to-black opacity-100" />
-                    <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-lg md:text-xl font-semibold z-10">
-                      {item.title}
-                    </div>
-                  </div>
-                )
-            )}
+            {loading
+              ? Array(isMobile ? 1 : 2).fill(0).map((_, idx) => <SkeletonCard key={idx} />)
+              : currentImages.map(
+                  (item, index) =>
+                    item && (
+                      <div
+                        key={index}
+                        className={`relative h-[300px] md:h-[400px] ${
+                          isMobile ? "w-full max-w-[300px]" : "w-[300px]"
+                        } flex-1 overflow-hidden rounded-md`}
+                      >
+                        <Image
+                          src={item.image}
+                          alt={item.title || "Industry"}
+                          fill
+                          className="object-cover"
+                          unoptimized
+                        />
+                        <div className="absolute inset-0 rounded-md bg-gradient-to-b from-transparent to-black opacity-100" />
+                        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-lg md:text-xl font-semibold z-10">
+                          {item.title}
+                        </div>
+                      </div>
+                    )
+                )}
           </div>
 
-          {/* Desktop Arrows */}
-          {!isMobile && (
+          {!isMobile && !loading && (
             <>
               <div className="flex items-center absolute left-0 -translate-x-full">
                 <ChevronLeft
@@ -119,8 +133,7 @@ export const IndustriesWorked = () => {
           )}
         </div>
 
-        {/* Mobile Arrows */}
-        {isMobile && (
+        {isMobile && !loading && (
           <div className="flex justify-between mt-4 px-10 ">
             <ChevronLeft
               className="h-10 w-10 text-white cursor-pointer"

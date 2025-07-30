@@ -53,7 +53,7 @@ const FaqSection = ({ faqs = [], title, subtitle }) => {
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full text-left px-4 py-3 md:px-5 md:py-4 flex justify-between items-center"
+              className="w-full text-left px-4 py-3 md:px-5 md:py-4 flex justify-between items-center "
               aria-expanded={openIndex === index}
               aria-controls={`faq-answer-${index}`}
             >
@@ -63,9 +63,9 @@ const FaqSection = ({ faqs = [], title, subtitle }) => {
                 {faq.question}
               </span>
               {openIndex === index ? (
-                <FaMinus className="text-white" />
+                <FaMinus className="text-white hover:cursor-pointer" />
               ) : (
-                <FaPlus className="text-[#00357A]" />
+                <FaPlus className="text-[#00357A] hover:cursor-pointer" />
               )}
             </button>
             {openIndex === index && (

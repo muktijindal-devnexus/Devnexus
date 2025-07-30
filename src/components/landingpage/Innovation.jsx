@@ -45,7 +45,7 @@ export default function AboutUs() {
           {/* Know More Button */}
           <div className="flex justify-start mt-8">
             <Link href="/aboutus">
-              <button className="px-6 py-2 border border-[#00357A] text-[#00357A] rounded-md font-medium transition-all hover:bg-[#00357A] hover:text-white">
+              <button className="px-6 py-2 border border-[#00357A] text-[#00357A] rounded-md font-medium transition-all hover:bg-[#00357A] hover:text-white hover:cursor-pointer">
                 Know more
               </button>
             </Link>

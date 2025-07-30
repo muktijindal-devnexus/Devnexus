@@ -7,9 +7,43 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/free-mode";
 
+// Skeleton Brand Loader
+const BrandSkeleton = () => (
+  <>
+    <Swiper
+      loop
+      grabCursor
+      slidesPerView={6}
+      spaceBetween={30}
+      className="mt-8 md:mt-12 z-10 relative"
+    >
+      {Array(12).fill(0).map((_, i) => (
+        <SwiperSlide key={`skeleton-top-${i}`}>
+          <div className="h-12 md:h-16 w-24 bg-gray-200 rounded animate-pulse mx-auto" />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+    <Swiper
+      loop
+      grabCursor
+      slidesPerView={6}
+      spaceBetween={30}
+      dir="rtl"
+      className="mt-4 md:mt-2 z-10 relative"
+    >
+      {Array(12).fill(0).map((_, i) => (
+        <SwiperSlide key={`skeleton-bottom-${i}`}>
+          <div className="h-12 md:h-16 w-24 bg-gray-200 rounded animate-pulse mx-auto mt-[30px] md:mt-[60px]" />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </>
+);
+
 export default function BrandSlider() {
   const [sliderImages, setSliderImages] = useState([]);
   const [sliderImages2, setSliderImages2] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchBrandImages = async () => {
@@ -31,6 +65,8 @@ export default function BrandSlider() {
         }
       } catch (error) {
         console.error("Failed to fetch brand images", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -74,35 +110,37 @@ export default function BrandSlider() {
         </div>
       </div>
 
-      {/* Swiper 1 */}
-      <Swiper {...commonSwiperProps} className="mt-8 md:mt-12 z-10 relative ">
-        {[...sliderImages, ...sliderImages].map((brand, i) => (
-          <SwiperSlide key={`top-${i}`}>
-            <img
-              src={brand?.textImage1}
-              alt={`Brand ${i}`}
-              className="h-12 md:h-16 w-auto object-contain mx-auto"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {loading ? (
+        <BrandSkeleton />
+      ) : (
+        <>
+          {/* Swiper 1 */}
+          <Swiper {...commonSwiperProps} className="mt-8 md:mt-12 z-10 relative">
+            {[...sliderImages, ...sliderImages].map((brand, i) => (
+              <SwiperSlide key={`top-${i}`}>
+                <img
+                  src={brand?.textImage1}
+                  alt={`Brand ${i}`}
+                  className="h-12 md:h-16 w-auto object-contain mx-auto"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-      {/* Swiper 2 */}
-      <Swiper
-        {...commonSwiperProps}
-        dir="rtl"
-        className="mt-4 md:mt-2 z-10 relative"
-      >
-        {[...sliderImages2, ...sliderImages2].map((brand, i) => (
-          <SwiperSlide key={`bottom-${i}`}>
-            <img
-              src={brand?.textImage2}
-              alt={`Brand ${i}`}
-              className="h-12 md:h-16 w-auto object-contain mx-auto mt-[30px] md:mt-[60px]"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          {/* Swiper 2 */}
+          <Swiper {...commonSwiperProps} dir="rtl" className="mt-4 md:mt-2 z-10 relative">
+            {[...sliderImages2, ...sliderImages2].map((brand, i) => (
+              <SwiperSlide key={`bottom-${i}`}>
+                <img
+                  src={brand?.textImage2}
+                  alt={`Brand ${i}`}
+                  className="h-12 md:h-16 w-auto object-contain mx-auto mt-[30px] md:mt-[60px]"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </>
+      )}
     </div>
   );
 }

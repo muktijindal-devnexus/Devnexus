@@ -71,13 +71,13 @@ DevNexus Solutions delivers intuitive, brand-aligned UI/UX designs that drive us
         <div className="flex justify-center lg:justify-start gap-4 mt-4 lg:absolute lg:-left-5 lg:bottom-4">
           <button
             onClick={prevSlide}
-            className="bg-[#002f6c] text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#001e47] transition"
+            className="bg-[#002f6c] text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#001e47] transition hover:cursor-pointer "
           >
             &#x276E;
           </button>
           <button
             onClick={nextSlide}
-            className="bg-[#002f6c] text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#001e47] transition"
+            className="bg-[#002f6c] text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-[#001e47] transition hover:cursor-pointer"
           >
             &#x276F;
           </button>

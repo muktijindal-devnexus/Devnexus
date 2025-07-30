@@ -17,7 +17,7 @@ const WhatWeDo = () => {
       <div className="text-left max-w-3xl mx-auto">
         {/* Vision Accordion */}
         <button
-          className={`w-full px-4 py-3 rounded-md flex justify-between items-center font-semibold text-lg transition-colors duration-200 ${
+          className={`w-full px-4 py-3 rounded-md flex justify-between items-center font-semibold text-lg transition-colors duration-200 hover:cursor-pointer ${
             showVision
               ? 'bg-[#00357A] text-white'
               : 'bg-white text-[#00357A] border border-gray-300'
@@ -44,7 +44,7 @@ const WhatWeDo = () => {
 
         {/* Mission Accordion */}
         <button
-          className={`w-full mt-6 px-4 py-3 rounded-md flex justify-between items-center font-semibold text-lg transition-colors duration-200 ${
+          className={`w-full mt-6 px-4 py-3 rounded-md flex justify-between items-center font-semibold text-lg transition-colors duration-200 hover:cursor-pointer ${
             showMission
               ? 'bg-[#00357A] text-white'
               : 'bg-white text-[#00357A] border border-gray-300'

@@ -59,23 +59,23 @@ export default function Footer() {
           <div className="space-y-1 sm:space-y-1 text-sm sm:text-sm text-gray-300 sm:pl-4">
             <p>
               <span className="font-semibold text-white">Email:</span>{" "}
-              <a
+              <Link
                 href="mailto:contactus@devnexus.in"
                 className="underline hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 contactus@devnexus.in
-              </a>
+              </Link>
             </p>
             <p>
               <span className="font-semibold text-white">Phone:</span>{" "}
-              <a
+              <Link
                 href="tel:+919211815556"
                 className="underline hover:text-white"
               >
                 +91 9211815556
-              </a>
+              </Link>
             </p>
             <p>
               <span className="font-semibold text-white">Location:</span> 26-B,
@@ -88,50 +88,50 @@ export default function Footer() {
           <h3 className="font-semibold text-white mb-3">Explore On</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li>
-              <a href="/" className="hover:text-white transition-colors">
+              <Link href="/" className="hover:text-white transition-colors">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/aboutus" className="hover:text-white transition-colors">
+              <Link href="/aboutus" className="hover:text-white transition-colors">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/ourteam" className="hover:text-white transition-colors">
+              <Link href="/ourteam" className="hover:text-white transition-colors">
                 Our Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/services"
                 className="hover:text-white transition-colors"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/projects"
                 className="hover:text-white transition-colors"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/career" className="hover:text-white transition-colors">
+              <Link href="/career" className="hover:text-white transition-colors">
                 Career
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blogs" className="hover:text-white transition-colors">
+              <Link href="/blogs" className="hover:text-white transition-colors">
                 Blogs
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white transition-colors">
+              <Link href="/contact" className="hover:text-white transition-colors">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -141,12 +141,12 @@ export default function Footer() {
           <h3 className="font-semibold text-white mb-3">Our Services</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li>
-              <a
+              <Link
                 href="/web-design-development-services"
                 className="hover:text-white transition-colors"
               >
                 Web Development
-              </a>
+              </Link>
             </li>
             <li>
               <a href="/ui-ux-design-services" className="hover:text-white transition-colors">
@@ -154,36 +154,36 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
+              <Link
                 href="/mobile-development-services"
                 className="hover:text-white transition-colors"
               >
                 Mobile App Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/digital-marketing-services"
                 className="hover:text-white transition-colors"
               >
                 Digital Marketing
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/blockchain-development-services"
                 className="hover:text-white transition-colors"
               >
                 Blockchain Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/ai-tech-services"
                 className="hover:text-white transition-colors"
               >
                 AI Technologies
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -192,30 +192,30 @@ export default function Footer() {
         <div className="order-2 lg:order-4">
           <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
           <div className="flex gap-4 mb-4 text-white text-xl">
-            <a
+            <Link
               href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
               className="hover:text-gray-300 transition-colors"
             >
               <FaInstagram />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.facebook.com/share/1Dsa49Kxrr/"
               className="hover:text-gray-300 transition-colors"
             >
               <FaFacebookF />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08"
               className="hover:text-gray-300 transition-colors"
             >
               <FaXTwitter />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/company/devnexus-solutions/"
               className="hover:text-gray-300 transition-colors"
             >
               <FaLinkedinIn />
-            </a>
+            </Link>
           </div>
           <h4 className="text-sm font-medium mb-3">
             Subscribe us for Latest News
@@ -240,12 +240,12 @@ export default function Footer() {
       </div>
 
    <div className="flex flex-col justify-center items-center">
-    <p className="text-center text-xs text-gray-400 mt-6">
+    <p className="text-center text-xs text- mt-6">
         Copyright © 2025 DevNexus Solutions | All Rights Reserved.
       </p>
          <a
         href="/privacy-policy"
-        className="hover:text-white transition-colors text-center text-xs text-gray-400 mt-2"
+        className="hover:text-white transition-colors text-center text-xs text-white mt-2"
       >
         Privacy Policy
       </a>

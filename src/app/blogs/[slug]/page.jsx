@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
     description:
       'DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience. Reach out to us today, talk with our expert today.',
     alternates: {
-      canonical: `https://devnexussolutions.com/blogs/blogs/${slug}`,
+      canonical: `https://devnexussolutions.com/blogs/${slug}`,
     },
   };
 }

@@ -49,7 +49,7 @@ export const AboutDevnexus = () => {
           </h3>
            <p className="text-normal sm:text-base md:text-lg leading-relaxed">
           We are a group of tech enthusiasts, with an inclination towards Agile methodology,
-          who started their IT journey in 2010, and have
+          who started their IT journey in 2020, and have
           now grown into a team of 50+ tech experts matching the top
           problem-solving strategies with the power of digitization.
         </p>

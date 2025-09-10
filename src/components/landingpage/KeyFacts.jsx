@@ -17,7 +17,7 @@ export const KeyFacts = () => {
   return (
     <section
       ref={ref}
-      className="flex justify-center items-center gap-4 flex-col py-12"
+      className="flex justify-center items-center gap-4 flex-col py-12 "
     >
     <div className="flex flex-col text-center w-full sm:w-[90%] md:w-[70%] mx-auto">
 
@@ -30,7 +30,7 @@ export const KeyFacts = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 justify-items-center items-center gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl px-4 pt-16">
+      <div className="grid grid-cols-1 justify-items-center items-center gap-8 sm:grid-cols-1 lg:grid-cols-3 w-full max-w-6xl px-4 pt-16">
         {/* Column 1 */}
        <div className="flex gap-20 lg:space-y-8 lg:block">
           <div className="text-center">

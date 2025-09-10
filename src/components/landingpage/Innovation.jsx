@@ -19,7 +19,7 @@ export default function AboutUs() {
             src={Workspace}
             alt="Workspace"
             className="w-full bg-transparent 
-              h-[300px] sm:h-[340px] md:h-[380px] lg:h-[460px]"
+              h-[300px] sm:h-[340px] md:h-[580px] lg:h-[460px]"
             sizes="(max-width: 640px) 100vw, 
          (max-width: 768px) 100vw, 
          (max-width: 1024px) 100vw, 

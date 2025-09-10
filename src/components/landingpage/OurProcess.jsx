@@ -33,14 +33,14 @@ export const OurProcess = () => {
   
   return (
     <div>
-      <div className="relative w-full h-[551px]">
+      <div className="relative w-full h-[551px] md:h-[500px] lg:h-[551px]">
         {/* Overlay div moved to be sibling of Image but before content */}
         <div className="absolute inset-0 bg-black/70 z-10"></div>
         
         <Image
           src={ProcessImage}
           alt="OurProcess Image"
-          className="w-full h-[551px] object-cover"
+          className="w-full h-[551px] md:h-[500px] lg:h-[551px] object-cover"
         />
         
         {/* Content moved outside the overlay by increasing z-index */}
@@ -55,11 +55,11 @@ export const OurProcess = () => {
           </div>
 
           {/* Desktop View - Full Cards */}
-          <div className="hidden sm:flex gap-8 pt-[40px]">
+          <div className="hidden lg:flex gap-6 xl:gap-8 pt-[30px] md:pt-[40px]">
             {processSteps.map((step, index) => (
               <div 
                 key={index}
-                className={`mt-8 bg-white bg-opacity-90 text-black h-[130px] w-[270px] pb-[40px] rounded-xl p-4 shadow-lg flex flex-col justify-center text-center ${
+                className={`mt-8 bg-white bg-opacity-90 text-black h-[130px] w-[270px] pb-[40px]  rounded-xl p-4 shadow-lg flex flex-col justify-center text-center ${
                   index % 2 === 0 ? "relative top-30" : ""
                 }`}
               >
@@ -74,6 +74,28 @@ export const OurProcess = () => {
                   {step.title}
                 </h2>
                 <p className="text-[16px]">{step.description}</p>
+              </div>
+            ))}
+          </div>
+
+                {/* Tablet View - 2x2 Grid */}
+          <div className="hidden sm:flex lg:hidden flex-wrap justify-center gap-4 md:gap-6 pt-4 md:pt-8 px-4 md:px-6">
+            {processSteps.map((step, index) => (
+              <div 
+                key={index}
+                className="bg-white bg-opacity-90 text-black h-[120px] w-[45%] md:w-[43%] rounded-xl p-3 md:p-4 shadow-lg flex flex-col justify-center text-center"
+              >
+                {/* <Image
+                  src={step.icon}
+                  alt="Icon"
+                  width={35}
+                  height={35}
+                  className="relative bottom-3 mx-auto"
+                /> */}
+                <h2 className="text-lg md:text-xl font-semibold pb-1 md:pb-2">
+                  {step.title}
+                </h2>
+                <p className="text-[13px] md:text-[14px]">{step.description}</p>
               </div>
             ))}
           </div>

@@ -114,7 +114,7 @@ const BentoGrid = () => {
     return (
       <div className="px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 max-w-6xl w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-4 sm:gap-6 max-w-6xl w-full">
             <div className="col-span-full sm:col-span-1 lg:col-span-2 flex flex-col gap-6">
               <SkeletonCard />
               <SkeletonCard />
@@ -138,7 +138,7 @@ const BentoGrid = () => {
     <div className="px-4 sm:px-6 lg:px-8 py-12">
       <div className="flex justify-center">
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 max-w-6xl w-full"
+          className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-4 sm:gap-6 max-w-6xl w-full"
           variants={container}
           initial="hidden"
           whileInView="show"

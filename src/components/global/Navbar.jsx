@@ -48,7 +48,7 @@ export const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center gap-8 relative">
+          <nav className="hidden lg:flex items-center gap-8 relative">
             <Link href="/" className="hover:text-white hover:font-bold">Home</Link>
 
             {/* About Dropdown */}
@@ -141,11 +141,11 @@ export const Navbar = () => {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setShowModal(true)}
-              className="bg-[#00357A] hover:bg-[#335D95] hover:cursor-pointer  text-white text-sm px-4 py-2 rounded-md hidden md:block"
+              className="bg-[#00357A] hover:bg-[#335D95] hover:cursor-pointer  text-white text-sm px-4 py-2 rounded-md hidden lg:block"
             >
               Free Consultation
             </button>
-            <button onClick={toggleMenu} className="md:hidden text-white text-xl">
+            <button onClick={toggleMenu} className="lg:hidden text-white text-xl">
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
@@ -153,7 +153,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <nav className="md:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white p-17 space-y-6 text-center">
+          <nav className="lg:hidden bg-[rgba(30,30,30,0.72)] backdrop-blur-md text-white p-17 space-y-6 text-center">
             <Link href="/" onClick={() => setMenuOpen(false)} className="block hover:text-white font-semibold text-2xl">
               Home
             </Link>

@@ -10,7 +10,7 @@ const services = [
      "Create seamless, high-performing websites that engage users and drive results.",
     icon: "/cdn/images/image155.svg",
     active: true,
-    href: "/web-design-development-services",
+    href: "/web-development-services",
   },
   {
     title: "UI/UX Design",

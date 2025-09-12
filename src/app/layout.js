@@ -28,10 +28,10 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Global IT Services - DevNexus Solutions</title>
+        <title>DevNexus | Web Development & Digital Transformation Company</title>
         <meta
           name="description"
-          content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us!"
+          content="DevNexus is a Web development & digital solutions company delivering innovative, scalable services for startups, enterprises, & government clients across industries."
         />
 
         {/* Open Graph tags for LinkedIn and Facebook */}
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
         />
-        <meta property="og:url" content="https://devnexussolutions.com/" />
+        <meta property="og:url" content="https://devnexussolutions.com" />
         <meta property="og:site_name" content="DevNexus Solution" />
         <meta
           property="og:image"

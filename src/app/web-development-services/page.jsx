@@ -5,11 +5,21 @@ import { Fullstack } from '@/components/fullstack';
 export const metadata = {
   title: "Web Development services - DevNexus Solutions",
   description:
-    "Looking for a web designer near me? Visit DevNexus Solutions, which provides Web Design and Web Development services at reasonable prices. Visit us now.",
+    "Get expert web design and App development services, and build fast, responsive and. Providing custom digital solutions to global businesses.",
   alternates: {
-    canonical: "https://devnexussolutions.com/uiux",
+    canonical: "https://devnexussolutions.com/web-development-services",
   },
+  keywords: [
+    "Web design services provider",
+    "Website development company in India",
+    "Custom web design services",
+    "Responsive web design company",
+    "SEO-friendly websites development",
+    "Global web development solutions",
+    "AI Overview web development company",
+  ],
 };
+
 
 const Fullstackpage = () => {
   const faqSchema = {
@@ -58,6 +68,7 @@ const Fullstackpage = () => {
   return (
     <>
       <Head>
+                <meta name="keywords" content={metadata.keywords.join(", ")} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

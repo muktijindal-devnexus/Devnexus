@@ -3,13 +3,23 @@ import Head from 'next/head';
 import React from 'react';
 
 export const metadata = {
-  title: "#1 Artificial Intelligence Development Services - DevNexus Solutions",
+  title: "AI Development & Technology Services | DevNexus Solutions",
   description:
-    "DevNexus Solutions, a trusted Ai Software Development Services provider. Our experts offer services that improve user experience and boost security.",
+    "Drive innovation with AI development services from DevNexus Solutions. From ML & NLP to GPT-powered chatbots & automation — transform your business.",
   alternates: {
     canonical: "https://devnexussolutions.com/ai-tech-services",
   },
+  keywords: [
+    "Artificial intelligence services",
+    "AI development",
+    "Machine learning",
+    "NLP",
+    "AI chatbot development",
+    "AI automation solutions",
+    "DevNexus Solutions",
+  ],
 };
+
 
 const AiTechpage = () => {
   return (
@@ -18,6 +28,7 @@ const AiTechpage = () => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="canonical" href={metadata.alternates.canonical} />
+        <meta name="keywords" content={metadata.keywords.join(", ")} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

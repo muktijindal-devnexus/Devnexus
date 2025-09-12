@@ -3,13 +3,21 @@ import Head from 'next/head';
 import { UIUXComponent } from '@/components/UIUX';
 
 export const metadata = {
-  title: "Ui Ux Design and Development Services - DevNexus Solutions",
+  title: "UI/UX Design and Development Services - DevNexus Solutions",
   description:
-    "Want to Improve user experience? Hire the expert UI/UX designer like DevNexus Solutions. We have expert designers to craft stunning products for you. Visit us now.",
+    "Transform your online presence with expert web, mobile, and UI/UX design services. Unlock new digital growth for your business with DevNexus solutions.",
   alternates: {
     canonical: "https://devnexussolutions.com/ui-ux-design-services",
   },
+  keywords: [
+    "UI UX design and development services",
+    "UI UX web development company",
+    "UI UX development service provider",
+    "UI UX design & development company",
+    "UI UX design development company in India",
+  ],
 };
+
 
 const UIUX = () => {
   const faqSchema = {
@@ -58,6 +66,7 @@ const UIUX = () => {
   return (
     <>
       <Head>
+                <meta name="keywords" content={metadata.keywords.join(", ")} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

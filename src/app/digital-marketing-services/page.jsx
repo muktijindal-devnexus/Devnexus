@@ -4,13 +4,25 @@ import { Banner } from "@/components/global/Banner";
 import { DigitalMarketing } from "@/components/digitalmarketing";
 
 export const metadata = {
-  title: "#1 Best Digital Marketing Services - DevNexus Solutions",
+  title: "AI Digital Marketing Services | SEO, AEO, Local GEO.",
   description:
-    "Get the best digital marketing services with DevNexus Solutions to grow your online presence, drive organic traffic, increase ROI. Get a free quote now.",
+    "Grow with AI-driven SEO, PPC & content marketing. Optimize for AEO & target local GEO customers. Smarter strategies, real business growth with DevNexus Solutions.",
   alternates: {
     canonical: "https://devnexussolutions.com/digital-marketing-services",
   },
+  keywords: [
+    "AI digital marketing services",
+    "Answer engine optimization",
+    "SEO services",
+    "Voice search optimization",
+    "Local SEO services",
+    "PPC services",
+    "Social media marketing company",
+    "Content marketing agency",
+    "Digital advertising company",
+  ],
 };
+
 
 const DigitalMarketingPage = () => {
   const faqSchema = {
@@ -77,6 +89,7 @@ const DigitalMarketingPage = () => {
   return (
     <>
       <Head>
+                <meta name="keywords" content={metadata.keywords.join(", ")} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

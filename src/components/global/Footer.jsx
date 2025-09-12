@@ -142,7 +142,7 @@ export default function Footer() {
           <ul className="text-sm text-gray-300 space-y-2">
             <li>
               <Link
-                href="/web-design-development-services"
+                href="/web-development-services"
                 className="hover:text-white transition-colors"
               >
                 Web Development

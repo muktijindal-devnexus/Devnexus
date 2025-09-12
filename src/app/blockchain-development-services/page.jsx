@@ -3,12 +3,23 @@ import Head from 'next/head';
 import { Blockchain } from '@/components/blockchain';
 
 export const metadata = {
-  title: "Trusted Custom Blockchain Development Services - DevNexus Solutions",
-  description: "DevNexus Solutions is a leading Blockchain App Development Company, delivering innovative solutions according to your business needs. Get A Free Quote Now.",
+  title: "Custom Blockchain Development Services | DevNexus Solutions",
+  description:
+    "DevNexus Solutions offers custom & public blockchain development services. From smart contracts to dApps, we create secure, scalable decentralized solutions globally.",
   alternates: {
     canonical: "https://devnexussolutions.com/blockchain-development-services",
   },
+  keywords: [
+    "Hybrid Blockchain development services",
+    "Public Blockchain development company",
+    "dApp development services",
+    "Private Blockchain development company",
+    "NFT marketplace development company",
+    "Crypto wallet app development company",
+    "Digital solutions provider company",
+  ],
 };
+
 
 const BlockchainPage = () => {
   return (
@@ -17,6 +28,8 @@ const BlockchainPage = () => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="canonical" href={metadata.alternates.canonical} />
+                <meta name="keywords" content={metadata.keywords.join(", ")} />
+        
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

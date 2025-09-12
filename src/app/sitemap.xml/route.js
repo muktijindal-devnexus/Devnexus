@@ -12,7 +12,7 @@ export async function GET() {
     '/blogs',
     '/contact',
     '/aboutus',
-    '/web-design-development-services',
+    '/web-development-services',
     '/mobile-development-services',
     '/digital-marketing-services',
     '/blockchain-development-services',

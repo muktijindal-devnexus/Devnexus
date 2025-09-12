@@ -24,7 +24,7 @@ export const Navbar = () => {
   ];
 
   const servicesDropdown = [
-    { name: "Web Development", href: "/web-design-development-services" },
+    { name: "Web Development", href: "/web-development-services" },
     { name: "UI/UX Design", href: "/ui-ux-design-services " },
     { name: "Mobile App Development", href: "/mobile-development-services" },
     { name: "Digital Marketing", href: "/digital-marketing-services" },

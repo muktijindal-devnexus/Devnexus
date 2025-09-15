@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         /> */}
 
         {/* Open Graph tags for LinkedIn and Facebook */}
-        <meta property="og:title" content="Global IT Services - DevNexus Solution" />
+        <meta property="og:title" content="DevNexus | Web Development & Digital Transformation Company" />
         <meta
           property="og:description"
           content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Global IT Services - DevNexus Solution" />
+        <meta name="twitter:title" content="DevNexus | Web Development & Digital Transformation Company" />
         <meta
           name="twitter:description"
           content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."

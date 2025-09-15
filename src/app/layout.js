@@ -29,10 +29,10 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DevNexus | Web Development & Digital Transformation Company</title>
-        <meta
+        {/* <meta
           name="description"
           content="DevNexus is a Web development & digital solutions company delivering innovative, scalable services for startups, enterprises, & government clients across industries."
-        />
+        /> */}
 
         {/* Open Graph tags for LinkedIn and Facebook */}
         <meta property="og:title" content="Global IT Services - DevNexus Solution" />

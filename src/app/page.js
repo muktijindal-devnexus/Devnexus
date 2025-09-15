@@ -1,8 +1,8 @@
 import LandingPage from "./home/page";
 
 export const metadata = {
-  title: "Global IT Services - DevNexus Solutions",
-  description: "DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us!",
+  title: "DevNexus | Web Development & Digital Transformation Company",
+  description: "DevNexus is a Web development & digital solutions company delivering innovative, scalable services for startups, enterprises, & government clients across industries.",
   alternates: {
     canonical: "https://devnexussolutions.com/",
   },

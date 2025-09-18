@@ -35,7 +35,7 @@ export const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
-    }, 1000); // change every 5 seconds
+    }, 3000); // change every 5 seconds
 
     return () => clearInterval(interval); // cleanup on unmount
   }, []);

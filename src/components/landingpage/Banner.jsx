@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Arrow from "../../../public/cdn/images/Arrow.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -30,6 +30,15 @@ export const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const activeBanner = bannerData[activeIndex];
+
+  // ✅ Auto-scroll effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
+    }, 1000); // change every 5 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
 
   return (
     <div className="relative w-full h-[500px] md:h-[600px] select-none px-4 sm:px-8 md:px-16 overflow-hidden ">
@@ -107,17 +116,17 @@ export const Banner = () => {
             >
               <div
                 className={`
-          w-6 sm:w-10 h-0.5 transition-all duration-300 cursor-pointer
-          ${activeIndex === index ? "bg-white" : "bg-white/50"} 
-          group-hover:bg-white
-        `}
+                  w-6 sm:w-10 h-0.5 transition-all duration-300 cursor-pointer
+                  ${activeIndex === index ? "bg-white" : "bg-white/50"} 
+                  group-hover:bg-white
+                `}
               />
               <span
                 className={`
-          text-white text-xs sm:text-sm transition-all duration-300 cursor-pointer
-          ${activeIndex === index ? "font-bold" : "opacity-50"} 
-          group-hover:opacity-100 group-hover:font-semibold
-        `}
+                  text-white text-xs sm:text-sm transition-all duration-300 cursor-pointer
+                  ${activeIndex === index ? "font-bold" : "opacity-50"} 
+                  group-hover:opacity-100 group-hover:font-semibold
+                `}
               >
                 {index + 1}
               </span>

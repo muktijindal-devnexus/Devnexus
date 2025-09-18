@@ -108,7 +108,7 @@ export const ContactForm = () => {
   return (
     <section className="flex justify-center ">
       <div
-        className="w-full max-w-6xl px-2 sm:px-8 md:px-12 lg:px-16 pt-6 md:py-8 flex flex-col lg:flex-row gap-10 md:gap-8 lg:gap-16"
+        className="w-full max-w-6xl px-2 sm:px-8 md:px-10 lg:px-16 pt-6 md:py-8 flex flex-col lg:flex-row gap-10 md:gap-8 lg:gap-16"
         style={{
           background: "linear-gradient(to right, white, #e9eef4, white)",
         }}
@@ -120,17 +120,17 @@ export const ContactForm = () => {
           </h2>
         </div>
         {/* Form Section */}
-        <div className="lg:w-[60%] w-full bg-[#f9f9f9] sm:p-12 rounded-xl p-6">
-          <h2 className="text-xl sm:text-3xl font-semibold ">Get in Touch</h2>
-          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6  pt-4">
+        <div className="lg:w-[55%] w-full bg-[#f9f9f9] sm:py-5 sm:px-12 rounded-lg p-4 ">
+          <h2 className="text-lg sm:text-2xl font-semibold ">Get in Touch</h2>
+          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-3  pt-3">
             Please fill out the form to help us understand the areas where you
             require assistance.
           </p>
 
           <form onSubmit={handleSubmit} className="">
             {/* Row 1: Name & Email */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full sm:w-1/2">
+            <div className="flex flex-col sm:flex-row gap-4 mb-4">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full sm:w-1/2">
                 <input
                   type="text"
                   name="name"
@@ -140,7 +140,7 @@ export const ContactForm = () => {
                   className="w-full outline-none bg-transparent text-sm sm:text-base"
                 />
               </div>
-              <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full sm:w-1/2">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full sm:w-1/2">
                 <input
                   type="text"
                 name="lastname"
@@ -151,8 +151,8 @@ export const ContactForm = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <div className="border-[#828282] border rounded-xl sm:rounded-2xl p-2 sm:p-3.5 w-full ">
+            <div className="flex flex-col sm:flex-row gap-4 mb-3">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full ">
                 <input
                   type="email"
                   name="email"
@@ -176,18 +176,18 @@ export const ContactForm = () => {
             </div>
 
             {/* Row 2: Country Code, Phone */}
-            <div className="flex flex-row sm:flex-row gap-4 mb-8">
-              <div className="border-[#828282] border rounded-xl w-40 flex items-center justify-center bg-gray-100 text-xs sm:text-sm font-medium p-1 sm:p-1.5 text-center">
+            <div className="flex flex-row items-center sm:flex-row gap-4 mb-4">
+              <div className="  w-40 ">
                 <PhoneForm />
               </div>
-              <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 sm:p-2.5">
+              <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 ">
                 <input
                   type="tel"
                   name="phoneNumber"
                   placeholder="Mobile number*"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  className="w-full text-sm sm:text-[16px] py-1 sm:py-2 rounded-md outline-none"
+                  className="w-full text-sm sm:text-[16px] py-1 rounded-md outline-none"
                 />
               </div>
             </div>
@@ -197,12 +197,12 @@ export const ContactForm = () => {
             )}
 
             {/* Row 3: Looking For */}
-            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:p-2.5 text-gray-600 mb-8">
+            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:py-2.5 sm:px-3.5 text-gray-600 mb-4">
               <select
                 name="services"
                 value={formData.services}
                 onChange={handleChange}
-                className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none "
+                className="w-full text-sm sm:text-[16px] px-2 py-1  rounded-md outline-none "
               >
                 <option value="" disabled hidden>
                   Services
@@ -226,7 +226,7 @@ export const ContactForm = () => {
             )}
 
             {/* Row 4: Message */}
-            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5 mb-8">
+            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5 mb-4">
               <textarea
                 name="message"
                 placeholder="Brief description of your enquiry"
@@ -239,7 +239,7 @@ export const ContactForm = () => {
 
             <button
               type="submit"
-              className="bg-[#002b5b] hover:bg-[#003d82] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto cursor-pointer"
+              className="bg-[#002b5b] hover:bg-[#003d82] text-white py-2 sm:py-2 px-4 sm:px-6 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto cursor-pointer"
             >
               Submit
             </button>

@@ -10,13 +10,13 @@ export const metadata = {
     canonical: "https://devnexussolutions.com/mobile-development-services",
   },
   keywords: [
-    "Mobile app development company",
-    "Mobile development services",
-    "Custom mobile apps developer",
-    "Enterprise app solutions",
-    "iOS development company",
-    "Android app development company",
-    "Digital solutions company near me",
+    " Mobile app development company",
+    " Mobile development services",
+    " Custom mobile apps developer",
+    " Enterprise app solutions",
+    " iOS development company",
+    " Android app development company",
+    " Digital solutions company near me",
   ],
 };
 

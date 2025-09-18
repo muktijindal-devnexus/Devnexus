@@ -29,8 +29,7 @@ export const Contact = () => {
           Let’s Connect & Build Something!
         </h2>
         <p className="mt-4 text-sm md:text-lg text-white font-semibold w-[90%] md:w-[45%] p-2 pb-6">
-          Ready to take your digital presence to the next level? Let’s work
-          together to build innovative solutions that drive results.
+          Ready to take your digital presence to the next level? Together, let's design creative solutions that drive outcomes.
         </p>
 
         {/* <Link href="/contact" passHref>

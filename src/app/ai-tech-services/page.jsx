@@ -10,13 +10,13 @@ export const metadata = {
     canonical: "https://devnexussolutions.com/ai-tech-services",
   },
   keywords: [
-    "Artificial intelligence services",
-    "AI development",
-    "Machine learning",
-    "NLP",
-    "AI chatbot development",
-    "AI automation solutions",
-    "DevNexus Solutions",
+    " Artificial intelligence services",
+    " AI development",
+    " Machine learning",
+    " NLP",
+    " AI chatbot development",
+    " AI automation solutions",
+    " DevNexus Solutions",
   ],
 };
 

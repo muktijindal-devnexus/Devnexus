@@ -10,13 +10,13 @@ export const metadata = {
     canonical: "https://devnexussolutions.com/web-development-services",
   },
   keywords: [
-    "Web design services provider",
-    "Website development company in India",
-    "Custom web design services",
-    "Responsive web design company",
-    "SEO-friendly websites development",
-    "Global web development solutions",
-    "AI Overview web development company",
+    " Web design services provider",
+    " Website development company in India",
+    " Custom web design services",
+    " Responsive web design company",
+    " SEO-friendly websites development",
+    " Global web development solutions",
+    " AI Overview web development company",
   ],
 };
 

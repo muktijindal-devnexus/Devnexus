@@ -80,9 +80,7 @@ export const IndustriesWorked = () => {
             Industries We've Worked For
           </h2>
           <span className="text-sm md:text-[16px] leading-5 md:leading-6 pr-10">
-            We deliver tailored solutions across industries like healthcare,
-            education, finance, e-commerce, and tech, leveraging deep expertise
-            to drive impactful results.
+           We specialize in industry-focused customized solutions in healthcare, education, finance, e-commerce,  and <br/> technology, leveraging deep experience to <br/> build impactful outcomes.
           </span>
         </div>
 

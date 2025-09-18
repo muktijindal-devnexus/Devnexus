@@ -10,13 +10,13 @@ export const metadata = {
     canonical: "https://devnexussolutions.com/blockchain-development-services",
   },
   keywords: [
-    "Hybrid Blockchain development services",
-    "Public Blockchain development company",
-    "dApp development services",
-    "Private Blockchain development company",
-    "NFT marketplace development company",
-    "Crypto wallet app development company",
-    "Digital solutions provider company",
+    " Hybrid Blockchain development services",
+    " Public Blockchain development company",
+    " dApp development services",
+    " Private Blockchain development company",
+    " NFT marketplace development company",
+    " Crypto wallet app development company",
+    " Digital solutions provider company",
   ],
 };
 

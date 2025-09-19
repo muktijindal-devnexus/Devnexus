@@ -10,7 +10,7 @@ import { Banners } from "../global/NavBanners";
 import InstagramCarousel from "../global/Instagram";
 import { Contactdetails } from "./Contactdetails";
 
-// ✅ Dynamically import Map to avoid window-related SSR error
+
 const Map = dynamic(() => import("./Map"), { ssr: false });
 
 export const ContactComponents = () => {

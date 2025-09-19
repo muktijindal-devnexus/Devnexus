@@ -10,7 +10,7 @@ export const Contact = () => {
     const [isHovered, setIsHovered] = useState(false)
   
   return (
-    <div className="relative h-[400px] flex items-center justify-center text-white">
+    <div className="relative h-[400px] flex items-center justify-center text-white ">
       {/* Background Image */}
       <Image
         src={ContactImage}

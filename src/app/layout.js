@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DevNexus | Web Development & Digital Transformation Company</title>
+        <title>DevNexus Solutions | Web Development & Digital Solutions</title>
         {/* <meta
           name="description"
           content="DevNexus is a Web development & digital solutions company delivering innovative, scalable services for startups, enterprises, & government clients across industries."

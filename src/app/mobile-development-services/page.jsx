@@ -7,7 +7,7 @@ export const metadata = {
   description:
     "Boost your business with custom mobile app development services from DevNexus Solutions. We build secure, scalable, and user-friendly apps globally.",
   alternates: {
-    canonical: "https://devnexussolutions.com/mobile-development-services",
+    canonical: "https://devnexussolutions.com/mobile-app-development-services",
   },
   keywords: [
     " Mobile app development company",

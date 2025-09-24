@@ -1,7 +1,7 @@
 import LandingPage from "./home/page";
 
 export const metadata = {
-  title: "DevNexus | Web Development & Digital Transformation Company",
+  title: "DevNexus Solutions | Web Development & Digital Solutions",
   description: "DevNexus is a Web development & digital solutions company delivering innovative, scalable services for startups, enterprises, & government clients across industries.",
   alternates: {
     canonical: "https://devnexussolutions.com/",

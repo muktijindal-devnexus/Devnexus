@@ -1,10 +1,10 @@
 "use client";
+import PhoneForm from "@/components/contact/PhoneForm";
+import { ContactForm } from "@/components/global/ContactForm";
+import { useEffect, useState } from "react";
 
-import { useState } from "react";
-import PhoneForm from "../contact/PhoneForm";
-
-export const ContactForm = () => {
-  const [formData, setFormData] = useState({
+export default function AutoPopup() {
+      const [formData, setFormData] = useState({
     name: "",
     lastname: "",
     email: "",
@@ -12,16 +12,27 @@ export const ContactForm = () => {
     services: "",
     message: "",
   });
+  const [showPopup, setShowPopup] = useState(false);
+   const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
 
-  const [errors, setErrors] = useState({});
-const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
+    const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const validate = () => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 4000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!showPopup) return null;
+
+
+    const validate = () => {
     const newErrors = {};
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{10}$/;
@@ -42,21 +53,16 @@ const [loading, setLoading] = useState(false);
     return newErrors;
   };
 
-  const handleSubmit = async (e) => {
+
+    const handleSubmit = async (e) => {
     e.preventDefault();
-       if (loading) return;
+        if (loading) return;
     const validationErrors = validate();
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-
-         
-
       try {
-
-
-         setLoading(true);
-
+          setLoading(true); // 👈 start loading
 
         const response = await fetch(
           "https://backend.devnexussolutions.com/api/contact-us",
@@ -94,46 +100,22 @@ const [loading, setLoading] = useState(false);
         console.error("Error submitting form:", error);
         alert("There was an error submitting the form.");
       }
-      finally {
+       finally {
         setLoading(false); // 👈 stop loading
       }
     }
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const validationErrors = validate();
-  //   setErrors(validationErrors);
-
-  //   if (Object.keys(validationErrors).length === 0) {
-  //     alert("Form submitted successfully!");
-  //     console.log(formData);
-  //     setFormData({
-  //       name: "",
-  //       email: "",
-  //       phoneNumber: "",
-  //       services: "",
-  //       message: "",
-  //     });
-  //   }
-  // };
-
   return (
-    <section className="flex justify-center ">
-      <div
-        className="w-full max-w-6xl px-2 sm:px-8 md:px-10 lg:px-16 pt-6 md:py-8 flex flex-col lg:flex-row gap-10 md:gap-8 lg:gap-16"
-        style={{
-          background: "linear-gradient(to right, white, #e9eef4, white)",
-        }}
-      >
-        {/* Heading Section */}
-        <div className="lg:w-1/3 flex items-center">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#002b5b] leading-snug">
-            Let's Make Your Brand Shine & Competitors Envy!
-          </h2>
-        </div>
-        {/* Form Section */}
-        <div className="lg:w-[55%] w-full bg-[#f9f9f9] sm:py-5 sm:px-12 rounded-lg p-4 ">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+      <div className="bg-white p-6 rounded-2xl shadow-lg  relative">
+        <button
+          onClick={() => setShowPopup(false)}
+          className="absolute top-2 right-2 text-gray-500 hover:text-black"
+        >
+          ✖
+        </button>
+           <div className=" w-full bg-[#f9f9f9] sm:py-5 sm:px-12 rounded-lg p-9 ">
           <h2 className="text-lg sm:text-2xl font-semibold ">Get in Touch</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-3  pt-3">
             Please fill out the form to help us understand the areas where you
@@ -252,12 +234,12 @@ const [loading, setLoading] = useState(false);
 
             <button
               type="submit"
-                  disabled={loading} // 👈 disable during submit
+                disabled={loading} // 👈 disable during submit
               className={`flex items-center justify-center gap-2 bg-[#002b5b] hover:bg-[#003d82] text-white py-2 px-6 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto cursor-pointer transition ${
                 loading ? "opacity-70 cursor-not-allowed" : ""
               }`}
             >
-                          {loading && (
+                   {loading && (
                 <svg
                   className="animate-spin h-5 w-5 text-white"
                   xmlns="http://www.w3.org/2000/svg"
@@ -282,8 +264,9 @@ const [loading, setLoading] = useState(false);
               {loading ? "Submitting..." : "Submit"}
             </button>
           </form>
-        </div>
+        </div>  
+
       </div>
-    </section>
+    </div>
   );
-};
+}

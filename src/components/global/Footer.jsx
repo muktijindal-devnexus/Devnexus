@@ -160,7 +160,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/mobile-development-services"
+                href="/mobile-app-development-services"
                 className="hover:text-white transition-colors"
               >
                 Mobile App Development

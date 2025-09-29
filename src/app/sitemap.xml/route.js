@@ -13,7 +13,7 @@ export async function GET() {
     '/contact',
     '/aboutus',
     '/web-development-services',
-    '/mobile-development-services',
+    '/mobile-app-development-services',
     '/digital-marketing-services',
     '/blockchain-development-services',
     '/ai-tech-services',

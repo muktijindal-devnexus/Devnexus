@@ -31,7 +31,7 @@ export const Banner = () => {
   const [isHovered, setIsHovered] = useState(false);
   const activeBanner = bannerData[activeIndex];
 
-  // ✅ Auto-scroll effect
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % bannerData.length);

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 export default function UIDesignTechnologies() {
   const [tools, setTools] = useState([]);
@@ -46,7 +47,7 @@ export default function UIDesignTechnologies() {
               <div
                 className={`h-[577px] p-6 flex flex-col items-center justify-start transition-all duration-300 transform hover:scale-105 z-10 bg-[#E5EBF2] hover:bg-[#335D95] text-black hover:text-white group`}
               >
-                <img src={tool.UIUXImage} alt={tool.UIUXTitle} className="w-[125px] h-[225px] mb-4" />
+                <Image width={125} height={125} src={tool.UIUXImage} alt={tool.UIUXTitle} className="w-[125px] h-[225px] mb-4" />
                 <h3 className="text-2xl font-semibold mb-6 group-hover:text-white text-[#00357A]">{tool.UIUXTitle}</h3>
                 <p className="text-xl text-center group-hover:text-white text-[#6F6F6F] leading-8"
                    style={{

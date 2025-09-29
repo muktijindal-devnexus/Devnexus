@@ -1,13 +1,17 @@
+import Image from "next/image";
+
 export default function GoodCompanySection() {
   return (
     <section className="flex flex-col lg:flex-row w-full h-auto">
       {/* Left - Image */}
       <div className="lg:w-1/2 w-full">
-        <img
+        <Image
+        width={600}
+        height={500}
           src="https://res.cloudinary.com/dt4ohfuwc/image/upload/v1750423924/WhatsApp_Image_2025-06-20_at_6.10.34_PM_ouwfpi.jpg"
           alt="Team Meeting"
           className="w-full h-full object-cover"
-        />
+        /> 
       </div>
 
       {/* Right - Text Block */}

@@ -10,7 +10,7 @@ export const metadata = {
     canonical: "https://devnexussolutions.com/ui-ux-design-services",
   },
   keywords: [
-    " UI UX design and development services",
+    " UI UX design services",
     " UI UX web development company",
     " UI UX development service provider",
     " UI UX design & development company",

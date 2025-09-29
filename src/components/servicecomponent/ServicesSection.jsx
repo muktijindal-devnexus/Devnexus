@@ -24,7 +24,7 @@ const services = [
     description:
     "Transform ideas into high-performing android & iOS applications.",
     icon: "/cdn/images/image156.svg",
-    href: "/mobile-development-services",
+    href: "/mobile-app-development-services",
   },
   {
     title: "Digital Marketing",

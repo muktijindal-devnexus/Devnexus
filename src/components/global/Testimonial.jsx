@@ -1,10 +1,20 @@
-'use client'
+
 import React from "react";
 import BentoGrid from "./BentoGrid";
 
 
 
-export const Testimonial = () => {
+export const Testimonial = async  () => {
+
+    const res = await fetch("https://backend.devnexussolutions.com/api/all-Testimonials", {
+    cache: "no-store",
+  });
+
+
+    const response = await res.json();
+  const testimonials = response?.data || [];
+
+
   return (
     <section className="bg-[#f1f4f9]">
       {/* Header */}
@@ -19,7 +29,7 @@ export const Testimonial = () => {
       </div>
 
    <div>
-    <BentoGrid />
+    <BentoGrid testimonials={testimonials} />
    </div>
     </section>
   );

@@ -70,9 +70,9 @@ const Technologies = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-4xl text-[#335D95] font-semibold">
+        <h4 className="text-4xl text-[#335D95] font-semibold">
           Technologies <span className="font-bold text-[#00357A]">We Work</span> with
-        </h2>
+        </h4>
       </motion.div>
 
       {/* Tabs */}

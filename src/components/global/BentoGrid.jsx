@@ -1,58 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-const SkeletonCard = () => (
-  <div className="bg-white rounded-2xl p-4 sm:p-6 flex flex-col justify-center items-center gap-3 sm:gap-4 shadow-lg animate-pulse h-full w-full">
-    <div className="w-[35px] h-[35px] sm:w-[45px] sm:h-[45px] bg-gray-200 rounded-full" />
-    <div className="h-4 w-3/4 bg-gray-200 rounded" />
-    <div className="h-4 w-2/3 bg-gray-200 rounded" />
-    <div className="flex items-center gap-3 sm:gap-4 pt-3 sm:pt-4 border-t border-gray-100 w-full">
-      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-200" />
-      <div className="flex-1 space-y-1">
-        <div className="h-3 bg-gray-200 rounded w-1/2" />
-        <div className="h-2 bg-gray-200 rounded w-1/3" />
-        <div className="flex gap-1">
-          {Array(5).fill(0).map((_, i) => (
-            <div key={i} className="w-3 h-3 bg-gray-200 rounded" />
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
-const BentoGrid = () => {
-  const [testimonials, setTestimonials] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchTestimonials = async () => {
-      try {
-        const res = await fetch("https://backend.devnexussolutions.com/api/all-Testimonials");
-        const data = await res.json();
-        setTestimonials(data?.data || []);
-      } catch (error) {
-        console.error("Failed to fetch testimonials:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchTestimonials();
-  }, []);
+// ✅ Remove fetching logic; it just receives props now
+const BentoGrid = ({ testimonials }) => {
+  if (!testimonials || testimonials.length < 5) return null;
 
   const container = {
     hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
+    show: { opacity: 1, transition: { staggerChildren: 0.1 } },
   };
 
   const item = {
@@ -63,7 +21,7 @@ const BentoGrid = () => {
   const renderCard = (testimonial, index) => (
     <div
       key={testimonial._id || index}
-      className="relative bg-[#00357A] rounded-2xl p-1 h-full w-full transition-all duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+      className="relative bg-[#00357A] rounded-2xl p-1 h-full w-full"
     >
       <motion.div
         variants={item}
@@ -72,14 +30,11 @@ const BentoGrid = () => {
           y: -10,
           x: index % 2 === 0 ? -6 : 6,
           rotate: index % 2 === 0 ? -4 : 4,
-          transition: {
-            duration: 0.3,
-            ease: [0.25, 0.1, 0.25, 1],
-          },
+          transition: { duration: 0.3, ease: [0.25, 0.1, 0.25, 1] },
         }}
       >
         <div className="flex justify-center">
-          <FaQuoteLeft className="text-[#00357A] text-xl w-[35px] h-[35px] sm:w-[45px] sm:h-[45px]" />
+          <FaQuoteLeft className="text-[#00357A] w-[35px] h-[35px] sm:w-[45px] sm:h-[45px]" />
         </div>
         <p className="text-gray-700 text-sm sm:text-base text-center">
           {testimonial.description || testimonial.review}
@@ -109,30 +64,6 @@ const BentoGrid = () => {
       </motion.div>
     </div>
   );
-
-  if (loading) {
-    return (
-      <div className="px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-6 gap-4 sm:gap-6 max-w-6xl w-full">
-            <div className="col-span-full sm:col-span-1 lg:col-span-2 flex flex-col gap-6">
-              <SkeletonCard />
-              <SkeletonCard />
-            </div>
-            <div className="col-span-full sm:col-span-3 lg:col-span-2 flex flex-col justify-center items-center">
-              <SkeletonCard />
-            </div>
-            <div className="col-span-full sm:col-span-1 lg:col-span-2 flex flex-col gap-6">
-              <SkeletonCard />
-              <SkeletonCard />
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (testimonials.length < 5) return null;
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-12">

@@ -1,5 +1,5 @@
 "use client";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
@@ -220,6 +220,12 @@ export default function Footer() {
               className="hover:text-gray-300 transition-colors"
             >
               <FaLinkedinIn />
+            </Link>
+                   <Link
+              href="https://www.youtube.com/@DevNexusSolutions/videos"
+              className="hover:text-gray-300 transition-colors"
+            >
+              <FaYoutube />
             </Link>
           </div>
           <h4 className="text-sm font-medium mb-3">

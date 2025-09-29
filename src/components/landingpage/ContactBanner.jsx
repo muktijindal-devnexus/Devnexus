@@ -25,9 +25,9 @@ export const Contact = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-4 flex justify-center items-center  flex-col">
-        <h2 className="text-3xl md:text-5xl font-bold text-white">
+        <h4 className="text-3xl md:text-5xl font-bold text-white">
           Let’s Connect & Build Something!
-        </h2>
+        </h4>
         <p className="mt-4 text-sm md:text-lg text-white font-semibold w-[90%] md:w-[45%] p-2 pb-6">
           Ready to take your digital presence to the next level? Together, let's design creative solutions that drive outcomes.
         </p>

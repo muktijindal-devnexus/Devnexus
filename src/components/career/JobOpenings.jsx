@@ -8,6 +8,7 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+
 const JobOpenings = () => {
   const jobPositions = [
     {
@@ -16,7 +17,17 @@ const JobOpenings = () => {
       location: "Gurgaon",
       experience: "3+ years",
       description:
-        "Responsible for managing cloud infrastructure and deployment pipelines.",
+        "We need an experienced AWS Developer (DevOps) to design, implement, and maintain secure and scalable cloud infrastructure for our customers.",
+          requirement: [
+ "Deploy, manage, and operate scalable cloud infrastructure on AWS.",
+
+"Build CI/CD pipelines and automate deployment processes.",
+
+"Monitor system performance and troubleshoot cloud-based applications.",
+
+"Collaborate with development teams to improve system reliability."
+
+  ]
     },
     {
       department: "Designing",
@@ -24,15 +35,27 @@ const JobOpenings = () => {
       location: "Gurgaon",
       experience: "Fresher",
       description:
-        "Create compelling scripts for visual storytelling and marketing videos.",
+        "We seek a Creative Video Writer to support our design and content team. You will be writing engaging scripts and storytelling ideas for marketing videos, animations, and promo campaigns.",
+          requirement: [
+    "Develop creative scripts for explainer videos, social media, and promo content.",
+    "Work with designers, editors, and marketers to create effective content.",
+    "Develop innovative video concepts based on industry trends.",
+    "Ensure content meets brand tone and message."
+  ]
     },
-    {
-      department: "Developer",
-      position: "Software Developer",
-      location: "Gurgaon",
-      experience: "2 to 5 years",
-      description: "Develop scalable web applications using modern frameworks.",
-    },
+{
+  department: "Developer",
+  position: "Software Developer",
+  location: "Gurgaon",
+  experience: "2 to 5 years",
+  description: "We are looking for skilled Software Developers who love writing scalable applications and providing high-quality software solutions.",
+  requirement: [
+    "Design, develop, and scale web and mobile applications.",
+    "Write clean, efficient, and testable code.",
+    "Work with cross-functional teams to set requirements and provide solutions.",
+    "Troubleshoot and debug applications."
+  ]
+},
     {
       department: "Sales",
       position: "Sales Executive",
@@ -40,6 +63,12 @@ const JobOpenings = () => {
       experience: "Fresher to 1 year",
       description:
         "Engage clients, generate leads and close sales effectively.",
+          requirement: [
+    "Identify leads through networking, cold calls, and internet searches.",
+    "Develop and sustain strong client relationships.",
+    "Create and present product and service presentations.",
+    "Collaborate with the team to meet monthly and quarterly sales goals."
+  ]
     },
   ];
 
@@ -143,8 +172,9 @@ const JobOpenings = () => {
 
       {/* Modal */}
       {modalContent && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center px-4">
-          <div className="bg-white rounded-lg max-w-md w-full p-6 relative">
+      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center px-4">
+
+          <div className="bg-white rounded-lg max-w-4xl w-full p-6 relative  h-[450px] overflow-y-scroll ">
             <button
               onClick={() => setModalContent(null)}
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
@@ -152,9 +182,38 @@ const JobOpenings = () => {
               <X />
             </button>
 
-            <h3 className="text-xl font-semibold text-[#00357A] mb-4">
+            <h3 className="text-2xl font-bold text-[#00357A] mb-4">
               {modalContent.job.position}
             </h3>
+
+                  <div className="mb-6 text-gray-600 space-y-1">
+        <p>
+          <span className="font-semibold">Location:</span>  {modalContent.job.location}
+        </p>
+        <p>
+          <span className="font-semibold">Experience:</span> {modalContent.job.experience}
+        </p>
+      </div>
+
+  
+          <h3 className="text-lg font-semibold text-[#00357A] mb-2">
+            Job Description
+          </h3>
+          <p>
+        {modalContent.job.description}
+          </p>
+
+ <div className="pt-4">
+  <h3 className="text-lg font-semibold text-[#00357A] mb-2">
+    Responsibilities
+  </h3>
+  <ul className="list-disc pl-5 space-y-2">
+    {modalContent.job.requirement?.map((req, idx) => (
+      <li key={idx}>{req}</li>
+    ))}
+  </ul>
+</div>
+
 
             {modalContent.type === "description" ? (
               <p className="text-gray-700">{modalContent.job.description}</p>
@@ -199,15 +258,15 @@ const JobOpenings = () => {
               //     Submit Application
               //   </button>
               // </form>
-              <div>
-                <span>
-                  To Apply Email your resume at - <br/>Email: contactus@devnexus.in
-                </span>
-                {/* Contact Us<br/><br/>
+              <div className="pt-10">
+           <h3 className="text-lg font-semibold text-[#00357A] mb-2">
+  Contact Us<br/>
+           </h3>
+              
                 <span>Email: contactus@devnexus.in</span>  <br/><br/>
                 <span>Phone: +91 9211815556 <br/><br/>
                   </span>
-                Location: 26-B, Spaze Itech Park, Sector-49, Gurgaon, 122018 */}
+                Location: 26-B, Spaze Itech Park, Sector-49, Gurgaon, 122018
               </div>
             )}
           </div>

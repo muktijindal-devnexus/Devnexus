@@ -38,9 +38,9 @@ export const Product = () => {
 
   return (
     <div className="bg-white py-10 px-4">
-      <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">
+      <h3 className="text-3xl font-bold text-center text-blue-900 mb-10">
         Projects
-      </h2>
+      </h3>
       <span className="text-[#557191] flex justify-end py-3 md:hidden">
         Tap to see more
       </span>

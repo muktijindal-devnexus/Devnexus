@@ -68,9 +68,9 @@ export const OurProcess = () => {
                   height={40}
                   className="relative bottom-4 left-[40%]"
                 />
-                <h2 className="text-xl font-semibold pb-2">
+                <h4 className="text-xl font-semibold pb-2">
                   {step.title}
-                </h2>
+                </h4>
                 <p className="text-[16px]">{step.description}</p>
               </div>
             ))}
@@ -105,9 +105,9 @@ export const OurProcess = () => {
                 key={index}
                 className="bg-white bg-opacity-90 text-black rounded-lg p-3 shadow-md text-center min-w-[230px]"
               >
-                <h2 className="text-lg font-semibold">
+                <h3 className="text-lg font-semibold">
                   {step.title}
-                </h2>
+                </h3>
               </div>
             ))}
           </div>

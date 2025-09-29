@@ -41,7 +41,7 @@ export const Navbar = () => {
             <Link href="/" className="flex items-center">
               <Image src="/cdn/images/logo.webp" width={60} height={60} alt="Logo" />
               <div>
-                <h2 className="text-sm font-bold">DevNexus Solutions</h2>
+                <h4 className="text-sm font-bold">DevNexus Solutions</h4>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>
               </div>
             </Link>

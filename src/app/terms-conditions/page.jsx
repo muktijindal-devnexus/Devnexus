@@ -1,14 +1,15 @@
 import React from "react";
 
- const TermsPage = () => {
+const TermsPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-6 py-10 text-gray-800 pt-30">
       <h1 className="text-3xl font-bold mb-2">Terms & Conditions</h1>
       <p className="text-sm text-gray-500 mb-8">Last Updated: 24-09-2025</p>
 
       <p className="mb-6">
-        Welcome to <strong>DevNexus Solutions Private Limited</strong> (“Company,” “we,” “our,” or
-        “us”). These Terms & Conditions (“Terms”) govern the use of our website{" "}
+        Welcome to <strong>DevNexus Solutions Private Limited</strong>{" "}
+        (“Company,” “we,” “our,” or “us”). These Terms & Conditions (“Terms”)
+        govern the use of our website{" "}
         <a
           href="https://devnexussolutions.com"
           target="_blank"
@@ -142,9 +143,10 @@ Email: contactus@devnexus.in | Phone: +91 9211815556`}
 const Section = ({ title, content }) => (
   <div>
     <h2 className="text-lg font-semibold mb-2">{title}</h2>
-    <p className="whitespace-pre-line leading-relaxed text-gray-700">{content}</p>
+    <p className="whitespace-pre-line leading-relaxed text-gray-700">
+      {content}
+    </p>
   </div>
 );
 
-
-export default TermsPage ;
+export default TermsPage;

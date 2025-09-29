@@ -38,11 +38,11 @@ const WhyChooseUsMobile = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-12">
+        <h4 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-12">
           What makes{" "}
           <span className="font-semibold text-blue-900">DevNexus Solutions</span> your go to{" "} <br/>
           <span className="font-semibold text-blue-900">Mobile App Development</span> Service Providers?
-        </h2>
+        </h4>
 
         <div className="grid md:grid-cols-3 gap-6">
           {features.slice(0, 3).map((feature, idx) => {

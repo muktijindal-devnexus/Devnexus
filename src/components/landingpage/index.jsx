@@ -28,7 +28,7 @@ const faqData = [
   },
   {
     question:
-      " Do you offer blockchain development solutions?",
+      " Do you offer CRM development solutions?",
     answer:
     "Yes, Devnexus Solutions specializes in custom blockchain development, helping businesses deploy secure and scalable blockchain solutions.",
       // "Digital transformation is essential for all businesses today as it enhances operational efficiency, improves the customer experience, and enables companies to make data-driven decisions. DevNexus Solutions helps your brand grow and develop through sophisticated IT services.",
@@ -62,7 +62,7 @@ const faqData = [
         {
     question: "Do you provide post-project support?",
     answer:
-    "Yes, Devnexus Solutions provides ongoing maintenance, updates, and support to ensure your web, mobile, or blockchain solution continous to operate smoothly after launch."
+    "Yes, Devnexus Solutions provides ongoing maintenance, updates, and support to ensure your web, mobile, or blockchain solution continous to operate smoothly after launched."
       // "Absolutely Yes, DevNexus Solutions collaborates with various businesses. We offer tailored digital solutions and affordable pricing structured to help startups, SMEs, and larger companies.",
   },
 

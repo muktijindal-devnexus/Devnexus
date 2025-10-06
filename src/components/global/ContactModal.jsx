@@ -1,23 +1,33 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
+import PhoneForm from "../contact/PhoneForm";
 
 export const ContactModal = ({ setShowModal, servicesDropdown }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phoneNumber: '',
-    services: '',
-    message: '',
+    name: "",
+    lastname: "",
+    email: "",
+    phoneNumber: "",
+    services: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.name.trim()) newErrors.name = 'Name is required';
-    if (!formData.email.trim()) newErrors.email = 'Email is required';
-    if (!formData.phoneNumber.trim()) newErrors.phoneNumber = 'Phone number is required';
-    if (!formData.services.trim()) newErrors.services = 'Service selection is required';
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.phoneNumber.trim())
+      newErrors.phoneNumber = "Phone number is required";
+    if (!formData.services.trim())
+      newErrors.services = "Service selection is required";
     return newErrors;
   };
 
@@ -27,14 +37,18 @@ export const ContactModal = ({ setShowModal, servicesDropdown }) => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
+      setLoading(true);
       try {
-        const response = await fetch("https://backend.devnexussolutions.com/api/contact-us", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch(
+          "https://backend.devnexussolutions.com/api/contact-us",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
         if (!response.ok) throw new Error("API request failed");
 
@@ -44,6 +58,7 @@ export const ContactModal = ({ setShowModal, servicesDropdown }) => {
 
         setFormData({
           name: "",
+          lastname: "",
           email: "",
           phoneNumber: "",
           services: "",
@@ -53,88 +68,173 @@ export const ContactModal = ({ setShowModal, servicesDropdown }) => {
       } catch (error) {
         console.error("Error submitting form:", error);
         alert("There was an error submitting the form.");
+      } finally {
+        setLoading(false);
       }
     }
   };
 
   return (
-    <div className="fixed inset-0 bg-white/30 backdrop-blur-sm flex items-center justify-center z-[9999]">
-      <div className="bg-white max-w-md w-full p-6 rounded-lg shadow-lg relative">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+      <div className="bg-white p-6 rounded-2xl shadow-lg  relative">
         <button
           onClick={() => setShowModal(false)}
-          className="absolute top-3 right-4 text-gray-600 hover:text-[#696b6f] text-2xl"
+          className="absolute top-2 right-2 text-gray-500 hover:text-black"
         >
-          &times;
+          ✖
         </button>
-        <h2 className="text-xl font-semibold mb-2">Free Consultation</h2>
-        <p className="text-sm text-gray-700 mb-4">Please fill the form and our team will get back to you.</p>
-        
-        <form className="flex flex-col gap-3" onSubmit={handleSubmit} noValidate>
-          <div>
-            <input
-              type="text"
-              placeholder="Your Name*"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="border rounded-md px-3 py-2 text-sm w-full"
-              required
-            />
-            {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
-          </div>
+        <div className=" w-full bg-[#f9f9f9] sm:py-5 sm:px-12 rounded-lg p-9 ">
+          <h2 className="text-lg sm:text-2xl font-semibold ">Get in Touch</h2>
+          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-3  pt-3">
+            Please fill out the form to help us understand the areas where you
+            require assistance.
+          </p>
 
-          <div>
-            <input
-              type="text"
-              placeholder="Your Phone No*"
-              value={formData.phoneNumber}
-              onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
-              className="border rounded-md px-3 py-2 text-sm w-full"
-              required
-            />
-            {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber}</p>}
-          </div>
+          <form onSubmit={handleSubmit} className="">
+            {/* Row 1: Name & Email */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-4">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full sm:w-1/2">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your First name*"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                />
+              </div>
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full sm:w-1/2">
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Enter your Last name*"
+                  value={formData.lastname}
+                  onChange={handleChange}
+                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 mb-3">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full ">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your Email*"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                />
+              </div>
+            </div>
 
-          <div>
-            <input
-              type="email"
-              placeholder="Your Email*"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="border rounded-md px-3 py-2 text-sm w-full"
-              required
-            />
-            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
-          </div>
+            <div className="flex flex-col gap-1">
+              {errors.name && (
+                <p className="text-red-500 text-xs sm:text-sm">{errors.name}</p>
+              )}
+              {errors.email && (
+                <p className="text-red-500 text-xs sm:text-sm">
+                  {errors.email}
+                </p>
+              )}
+            </div>
 
-          <div>
-            <select
-              value={formData.services}
-              onChange={(e) => setFormData({ ...formData, services: e.target.value })}
-              className="border rounded-md px-3 py-2 text-sm w-full text-gray-700"
-              required
-            >
-              <option value="">Select a Service</option>
-              {servicesDropdown.map((service, index) => (
-                <option key={index} value={service.name}>
-                  {service.name}
+            {/* Row 2: Country Code, Phone */}
+            <div className="flex flex-row items-center sm:flex-row gap-4 mb-4">
+              <div className="  w-40 ">
+                <PhoneForm />
+              </div>
+              <div className="border-[#828282] border rounded-xl w-full sm:w-full p-2 ">
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  placeholder="Mobile number*"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  className="w-full text-sm sm:text-[16px] py-1 rounded-md outline-none"
+                />
+              </div>
+            </div>
+
+            {errors.phoneNumber && (
+              <p className="text-red-500 text-xs sm:text-sm">
+                {errors.phoneNumber}
+              </p>
+            )}
+
+            {/* Row 3: Looking For */}
+            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:py-2.5 sm:px-3.5 text-gray-600 mb-4">
+              <select
+                name="services"
+                value={formData.services}
+                onChange={handleChange}
+                className="w-full text-sm sm:text-[16px] px-2 py-1  rounded-md outline-none "
+              >
+                <option value="" disabled hidden>
+                  Services
                 </option>
-              ))}
-            </select>
-            {errors.services && <p className="text-red-500 text-xs mt-1">{errors.services}</p>}
-          </div>
+                <option value="webDevelopment">Web Development</option>
+                <option value="mobileDevelopment">
+                  Mobile App Development
+                </option>
+                <option value="UIUX">UI/UX Design</option>
+                <option value="digitalMarketing">Digital Marketing</option>
+                <option value="BlockChain">Blockchain Development</option>
+                <option value="AITechnologies">AI Technologies</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
 
-          <textarea
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="border rounded-md px-3 py-2 text-sm w-full"
-            rows={3}
-          />
+            {errors.services && (
+              <p className="text-red-500 text-xs sm:text-sm">
+                {errors.services}
+              </p>
+            )}
 
-          <button type="submit" className="bg-[#00357A] hover:bg-[#335D95] text-white px-4 py-2 rounded-md text-sm cursor-pointer">
-            Submit
-          </button>
-        </form>
+            {/* Row 4: Message */}
+            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5 mb-4">
+              <textarea
+                name="message"
+                placeholder="Brief description of your enquiry"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none min-h-[80px]"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading} // 👈 disable during submit
+              className={`flex items-center justify-center gap-2 bg-[#002b5b] hover:bg-[#003d82] text-white py-2 px-6 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto cursor-pointer transition ${
+                loading ? "opacity-70 cursor-not-allowed" : ""
+              }`}
+            >
+              {loading && (
+                <svg
+                  className="animate-spin h-5 w-5 text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v4l3-3-3-3v4a12 12 0 00-12 12h4z"
+                  ></path>
+                </svg>
+              )}
+              {loading ? "Submitting..." : "Submit"}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

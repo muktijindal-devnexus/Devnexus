@@ -20,6 +20,8 @@ export const metadata = {
     " Social media marketing company",
     " Content marketing agency",
     " Digital advertising company",
+    "Lead Generation",
+    "Google Ads and Meta Ads"
   ],
 };
 

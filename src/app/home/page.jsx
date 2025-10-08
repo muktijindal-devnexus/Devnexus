@@ -19,53 +19,61 @@ const LandingPage = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What is digital transformation, and how does DevNexus Solutions fit in?",
+        name: "What services do you offer?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Digital transformation involves integrating digital technology into all aspects of a brand, altering operational processes and the overall customer experience. DevNexus Solutions assists companies in this transformation through various strategies, software, and automation solutions that drive growth and innovation.",
-        },
+          text: "Devnexus Solutions is a digital marketing service provider, web development, mobile app development, and blockchain development company. We offer UI/UX design, graphic design services, and custom blockchain development as well."
+        }
       },
       {
         "@type": "Question",
-        name: "What type of digital solutions can DevNexus Solutions provide?",
+        name: "Do you develop custom mobile apps for businesses?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "DevNexus Solutions offers a wide range of services. We develop web and mobile applications, providing cloud & DevOps assistance, UI/UX design, data analysis, and AI integration —all strategically crafted to accelerate your digital transformation.",
-        },
+          text: "Yes, as a mobile app development company, Devnexus Solutions designs and develops fully customized iOS and Android apps tailored to your business goals and user needs."
+        }
       },
       {
         "@type": "Question",
-        name: "Why is digital transformation important for all types of businesses today?",
+        name: "Do you offer CRM development solutions?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Digital transformation is essential for all businesses today as it enhances operational efficiency, improves the customer experience, and enables companies to make data-driven decisions. DevNexus Solutions helps your brand grow and develop through sophisticated IT services.",
-        },
+          text: "Yes, Devnexus Solutions specializes in custom blockchain development, helping businesses deploy secure and scalable blockchain solutions."
+        }
       },
       {
         "@type": "Question",
-        name: "How do our digital solutions fit with your company's objectives?",
+        name: "Can you improve my website and online presence?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "At DevNexus Solutions, our skilled team begins by learning about your brand's specific challenges and objectives. We craft custom digital solutions specifically designed for your business's targeted results, such as enhancing workflows, connecting with customers, or expanding your online presence.",
-        },
+          text: "Yes, as a web development and digital marketing company, Devnexus Solutions optimizes websites, implements SEO strategies, and runs targeted campaigns to boost visibility and generate quality leads."
+        }
       },
       {
         "@type": "Question",
-        name: "How long does a digital transformation project usually last with DevNexus Solutions?",
+        name: "Do you provide UI/UX and graphic design services?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The duration of a digital transformation project varies, influenced by its scope and the complexity of the tasks involved. Nevertheless, DevNexus Solutions employs an agile approach, focusing on iterative phases to facilitate the prompt completion and continuous enhancement of digital solutions.",
-        },
+          text: "Yes, Devnexus Solutions offers UI/UX and graphic design services that deliver visually appealing and user-friendly designs to improve engagement and strengthen brand identity."
+        }
       },
       {
         "@type": "Question",
-        name: "Is DevNexus Solutions suitable for small and medium-sized businesses?",
+        name: "How can I get started with my project?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Absolutely Yes, DevNexus Solutions collaborates with various businesses. We offer tailored digital solutions and affordable pricing structured to help startups, SMEs, and larger companies.",
-        },
+          text: "You can submit your project idea or requirements through our contact form or call us directly. We will provide a detailed plan, timeline, and roadmap to begin the project."
+        }
       },
-    ],
+      {
+        "@type": "Question",
+        name: "Are your services suitable for startups and small businesses?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, Devnexus Solutions offers affordable and scalable solutions in web development, mobile app development, and digital marketing, making us a great fit for startups and small businesses."
+        }
+      }
+    ]
   };
 
   return (

@@ -19,7 +19,7 @@ const faqData = [
     question:
       "Why Choose DevNexus Solutions for Blockchain Development?",
     answer:
-      'At DevNexus Solutions, we specialize in building robust, scalable, and secure decentralized applications tailored to the unique needs of enterprises, agencies, and startups. Our experienced blockchain professionals leverage cutting-edge technologies and industry best practices to deliver solutions that ensure data integrity, transparency, and top-tier security—empowering businesses to innovate with confidence in a decentralized world.',
+      'At DevNexus Solutions, we specialize in building robust, scalable, and secure decentralized applications tailored to the unique needs of enterprises, agencies, and startups. Our experienced blockchain professionals leverage technologies and industry best practices to deliver solutions that ensure data integrity, transparency, and top-tier security—empowering businesses to innovate with confidence in a decentralized world.',
   },
   {
     question:

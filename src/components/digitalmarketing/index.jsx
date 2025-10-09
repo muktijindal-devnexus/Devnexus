@@ -32,7 +32,7 @@ const faqData  = [
   {
     question:'. Why DevNexus Solutions Leads in Digital Marketing?',
     answer:
-    "DevNexus Solutions distinguishes itself as a top-tier digital marketing company through its results-driven approach and customized strategies tailored to each client’s unique goals. Backed by deep industry expertise and cutting-edge tools, we deliver impactful solutions that drive measurable outcomes—whether it's lead generation, increased ROI, or brand visibility. Our commitment to transparency is reflected in consistent, clear reporting and open communication throughout every stage of the marketing journey."
+    "DevNexus Solutions distinguishes itself as a top-tier digital marketing company through its results-driven approach and customized strategies tailored to each client’s unique goals. Backed by deep industry expertise and tools, we deliver impactful solutions that drive measurable outcomes—whether it's lead generation, increased ROI, or brand visibility. Our commitment to transparency is reflected in consistent, clear reporting and open communication throughout every stage of the marketing journey."
   },
   {
     question: 'Which Digital Marketing Channels Deliver the Best Results for B2B?',

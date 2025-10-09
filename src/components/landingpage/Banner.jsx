@@ -10,7 +10,7 @@ const bannerData = [
     video: "/cdn/images/Banner/Digital.mp4",
     heading: "Transforming Ideas into Digital Excellence",
     description:
-      "We craft cutting-edge digital solutions that drive growth, enhance user experience, and elevate your brand. From software development to strategic marketing, we turn your vision into reality.",
+      "We craft digital solutions that drive growth, enhance user experience, and elevate your brand. From software development to strategic marketing, we turn your vision into reality.",
   },
   {
     video: "/cdn/images/Banner/Industries.mp4",

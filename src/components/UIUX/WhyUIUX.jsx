@@ -4,7 +4,7 @@ import React from "react";
 const cards = [
   {
     id: "01",
-    title: "Cutting-Edge Technologies",
+    title: "Trending Technologies",
     description:
     "DevNexus Solutions utilizes modern technologies such as Framer, Splin, Visily, MidJounrney and Magician(Figma Plugin).",
   },

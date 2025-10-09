@@ -34,7 +34,7 @@ const ExecutionSection = () => {
       id: 6,
       title: "Android App Development",
       content:
-        "Our expert team at DevNexus Solutions delivers cutting-edge Android app development services that meets client specific needs. We have skilled developers who create scalable android applications that perform effectuality across different devices.",
+        "Our expert team at DevNexus Solutions delivers Android app development services that meets client specific needs. We have skilled developers who create scalable android applications that perform effectuality across different devices.",
     },
     {
       id: 7,

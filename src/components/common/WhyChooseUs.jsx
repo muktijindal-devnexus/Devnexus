@@ -16,7 +16,7 @@ const features = [
   },
   {
     icon: LayoutTemplate,
-    title: "Cutting-Edge Technology",
+    title: "Latest Technology",
     description:
       "We leverage the latest tools, frameworks, and industry best practices to build high-performance websites tailored to your unique brand identity and business objectives.",
   },

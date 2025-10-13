@@ -5,6 +5,7 @@ import Footer from "@/components/global/Footer";
 import { ContactForm } from "@/components/global/ContactForm";
 import ChatBot from "@/components/global/Chatboat";
 import Script from "next/script";
+import MobileFooter from "@/components/global/MobileFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,10 @@ export default function RootLayout({ children }) {
         /> */}
 
         {/* Open Graph tags for LinkedIn and Facebook */}
-        <meta property="og:title" content="DevNexus | Web Development & Digital Transformation Company" />
+        <meta
+          property="og:title"
+          content="DevNexus | Web Development & Digital Transformation Company"
+        />
         <meta
           property="og:description"
           content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
@@ -53,7 +57,10 @@ export default function RootLayout({ children }) {
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="DevNexus | Web Development & Digital Transformation Company" />
+        <meta
+          name="twitter:title"
+          content="DevNexus | Web Development & Digital Transformation Company"
+        />
         <meta
           name="twitter:description"
           content="DevNexus provides digital solutions to startups, enterprises and other type of businesses. Partner with us to unlock digital possibilities. Visit us."
@@ -91,7 +98,15 @@ export default function RootLayout({ children }) {
         {children}
         <ContactForm />
         <ChatBot />
-        <Footer />
+        {/* Desktop Footer */}
+        <div className="hidden md:block">
+          <Footer />
+        </div>
+
+        {/* Mobile Footer */}
+        <div className="block md:hidden">
+          <MobileFooter />
+        </div>
       </body>
     </html>
   );

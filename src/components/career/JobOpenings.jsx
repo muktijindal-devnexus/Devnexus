@@ -268,7 +268,15 @@ const JobOpenings = () => {
                   </span>
                 Location: 26-B, Spaze Itech Park, Sector-49, Gurgaon, 122018
               </div>
+
+              
             )}
+                 <button
+                      onClick={() => setModalApply({ type: "apply", job })}
+                      className="bg-[#335D95] text-white text-sm font-medium rounded items-center w-[40%] py-2"
+                    >
+                      Apply Now
+                    </button>
           </div>
         </div>
       )}

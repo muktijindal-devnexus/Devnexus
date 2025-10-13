@@ -35,11 +35,11 @@ export const Navbar = () => {
   return (
     <>
       <header className="fixed top-0 w-full z-50 text-white bg-[rgba(30,30,30,0.72)] backdrop-blur-md border-none cursor-pointer">
-        <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4">
+        <div className="max-w-screen-xl mx-auto flex items-center justify-between px-8 py-2">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Link href="/" className="flex items-center">
-              <Image src="/cdn/images/logo.webp" width={60} height={60} alt="Logo" />
+            <Link href="/" className="flex items-center gap-2">
+              <Image src="cdn/images/54.svg" width={60} height={40} alt="Logo" />
               <div>
                 <h4 className="text-sm font-bold">DevNexus Solutions</h4>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>

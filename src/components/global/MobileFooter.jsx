@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function Footer() {
+export default function MobileFooter() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
 
@@ -38,14 +38,14 @@ export default function Footer() {
   };
 
   return (
-    <section className="bg-[#003B80] text-white p-4 sm:p-6 md:p-8 ">
+    <section className="bg-[#003B80] text-white px-2 py-2  ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 border-b border-white/30 pb-8">
         {/* Logo and Contact Info */}
-        <div className="order-1">
+        <div className="">
           <div className="flex items-center gap-2">
-            <Link href="/" className="flex items-center gap-2 pb-2">
-              <Image
-                src="cdn/images/54.svg"
+            <Link href="/" className="flex items-center gap-2">
+                    <Image
+                src="/cdn/images/54.svg"
                 width={60}
                 height={40}
                 alt="Logo"
@@ -53,9 +53,15 @@ export default function Footer() {
               <div>
                 <h2 className="text-sm font-bold">DevNexus Solutions</h2>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>
+              
               </div>
+       
             </Link>
+               
           </div>
+          <p className="py-4 text-xs text-gray-300">
+                    Your Partner in Digital Growth, Not Just a Service Provider
+                </p>
           <div className="space-y-1 sm:space-y-1 text-sm sm:text-sm text-gray-300 sm:pl-4">
             <p>
               <span className="font-semibold text-white">Email:</span>{" "}
@@ -84,7 +90,8 @@ export default function Footer() {
           </div>
         </div>
         {/* Explore On */}
-        <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
+        <div className="grid grid-cols-2">
+   <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
           <h3 className="font-semibold text-white mb-3">Explore On</h3>
           <ul className="text-sm text-gray-300 space-y-2">
             <li>
@@ -192,6 +199,8 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        </div>
+     
 
         {/* Social & Newsletter */}
         <div className="order-2 lg:order-4">

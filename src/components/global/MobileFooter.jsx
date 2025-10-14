@@ -141,9 +141,9 @@ export default function MobileFooter() {
               </Link>
             </li>
                  <li>
-              <Link href="/terms-conditions" className="hover:text-white transition-colors">
+              {/* <Link href="/terms-conditions" className="hover:text-white transition-colors">
               Terms and Conditions
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>
@@ -204,8 +204,9 @@ export default function MobileFooter() {
 
         {/* Social & Newsletter */}
         <div className="order-2 lg:order-4">
-          <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
-          <div className="flex gap-4 mb-4 text-white text-xl">
+          <div className="flex flex-col justify-center items-center">
+  <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
+          <div className="flex gap-8 mb-4 text-white text-2xl">
             <Link
               href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
               className="hover:text-gray-300 transition-colors"
@@ -237,9 +238,12 @@ export default function MobileFooter() {
               <FaYoutube />
             </Link>
           </div>
-          <h4 className="text-sm font-medium mb-3">
+            
+          <h4 className="text-medium font-medium my-3 ">
             Subscribe us for Latest News
           </h4>
+          </div>
+      
           <div className="flex flex-col sm:flex-row items-center gap-3 ">
             <input
               type="email"
@@ -269,6 +273,9 @@ export default function MobileFooter() {
       >
         Privacy Policy
       </a>
+             <Link href="/terms-conditions" className="hover:text-white transition-colors text-xs mt-2">
+              Terms and Conditions
+              </Link>
    </div>
   
 

@@ -8,6 +8,117 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+const JobPostingForm = ({ job, onClose }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    city: "",
+    jobApplied: job.position,
+    resume: null,
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleFileChange = (e) => {
+    setFormData((prev) => ({ ...prev, resume: e.target.files[0] }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+    alert("Application Submitted!");
+    onClose(); // Close modal after submit
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <h3 className="text-2xl font-bold text-[#00357A] mb-4">{job.position}</h3>
+
+      <div>
+        <label className="block text-gray-700 font-medium mb-1">Name</label>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+          className="w-full border border-gray-300 rounded px-3 py-2"
+        />
+      </div>
+
+      <div>
+        <label className="block text-gray-700 font-medium mb-1">Email</label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+          className="w-full border border-gray-300 rounded px-3 py-2"
+        />
+      </div>
+
+      <div>
+        <label className="block text-gray-700 font-medium mb-1">Phone Number</label>
+        <input
+          type="tel"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          required
+          className="w-full border border-gray-300 rounded px-3 py-2"
+        />
+      </div>
+
+      <div>
+        <label className="block text-gray-700 font-medium mb-1">City</label>
+        <input
+          type="text"
+          name="city"
+          value={formData.city}
+          onChange={handleChange}
+          required
+          className="w-full border border-gray-300 rounded px-3 py-2"
+        />
+      </div>
+
+      <div>
+        <label className="block text-gray-700 font-medium mb-1">Job Applied</label>
+        <input
+          type="text"
+          name="jobApplied"
+          value={formData.jobApplied}
+          readOnly
+          className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-100"
+        />
+      </div>
+
+      <div>
+        <label className="block text-gray-700 font-medium mb-1">
+          Upload Resume (PDF, DOC, DOCX)
+        </label>
+        <input
+          type="file"
+          accept=".pdf,.doc,.docx"
+          onChange={handleFileChange}
+          required
+          className="w-full border border-gray-300 rounded px-3 py-2 file:py-2 file:px-4 file:bg-[#335D95] file:text-white file:rounded file:border-0 file:font-semibold"
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="w-full bg-[#335D95] text-white py-2 rounded hover:bg-[#274d7a] transition-colors"
+      >
+        Submit Application
+      </button>
+    </form>
+  );
+};
 
 const JobOpenings = () => {
   const jobPositions = [
@@ -18,16 +129,12 @@ const JobOpenings = () => {
       experience: "3+ years",
       description:
         "We need an experienced AWS Developer (DevOps) to design, implement, and maintain secure and scalable cloud infrastructure for our customers.",
-          requirement: [
- "Deploy, manage, and operate scalable cloud infrastructure on AWS.",
-
-"Build CI/CD pipelines and automate deployment processes.",
-
-"Monitor system performance and troubleshoot cloud-based applications.",
-
-"Collaborate with development teams to improve system reliability."
-
-  ]
+      requirement: [
+        "Deploy, manage, and operate scalable cloud infrastructure on AWS.",
+        "Build CI/CD pipelines and automate deployment processes.",
+        "Monitor system performance and troubleshoot cloud-based applications.",
+        "Collaborate with development teams to improve system reliability.",
+      ],
     },
     {
       department: "Designing",
@@ -36,46 +143,47 @@ const JobOpenings = () => {
       experience: "Fresher",
       description:
         "We seek a Creative Video Writer to support our design and content team. You will be writing engaging scripts and storytelling ideas for marketing videos, animations, and promo campaigns.",
-          requirement: [
-    "Develop creative scripts for explainer videos, social media, and promo content.",
-    "Work with designers, editors, and marketers to create effective content.",
-    "Develop innovative video concepts based on industry trends.",
-    "Ensure content meets brand tone and message."
-  ]
+      requirement: [
+        "Develop creative scripts for explainer videos, social media, and promo content.",
+        "Work with designers, editors, and marketers to create effective content.",
+        "Develop innovative video concepts based on industry trends.",
+        "Ensure content meets brand tone and message.",
+      ],
     },
-{
-  department: "Developer",
-  position: "Software Developer",
-  location: "Gurgaon",
-  experience: "2 to 5 years",
-  description: "We are looking for skilled Software Developers who love writing scalable applications and providing high-quality software solutions.",
-  requirement: [
-    "Design, develop, and scale web and mobile applications.",
-    "Write clean, efficient, and testable code.",
-    "Work with cross-functional teams to set requirements and provide solutions.",
-    "Troubleshoot and debug applications."
-  ]
-},
+    {
+      department: "Developer",
+      position: "Software Developer",
+      location: "Gurgaon",
+      experience: "2 to 5 years",
+      description:
+        "We are looking for skilled Software Developers who love writing scalable applications and providing high-quality software solutions.",
+      requirement: [
+        "Design, develop, and scale web and mobile applications.",
+        "Write clean, efficient, and testable code.",
+        "Work with cross-functional teams to set requirements and provide solutions.",
+        "Troubleshoot and debug applications.",
+      ],
+    },
     {
       department: "Sales",
       position: "Sales Executive",
       location: "Gurgaon",
       experience: "Fresher to 1 year",
-      description:
-        "Engage clients, generate leads and close sales effectively.",
-          requirement: [
-    "Identify leads through networking, cold calls, and internet searches.",
-    "Develop and sustain strong client relationships.",
-    "Create and present product and service presentations.",
-    "Collaborate with the team to meet monthly and quarterly sales goals."
-  ]
+      description: "Engage clients, generate leads and close sales effectively.",
+      requirement: [
+        "Identify leads through networking, cold calls, and internet searches.",
+        "Develop and sustain strong client relationships.",
+        "Create and present product and service presentations.",
+        "Collaborate with the team to meet monthly and quarterly sales goals.",
+      ],
     },
   ];
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
-  const [modalContent, setModalContent] = useState(null); // null | {type: "description" | "apply", job: object}
+  const [modalContent, setModalContent] = useState(null);
+  const [modalType, setModalType] = useState("description"); // "description" | "apply"
 
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
@@ -84,18 +192,17 @@ const JobOpenings = () => {
           Job Openings
         </h1>
 
-        {/* Navigation Arrows */}
         <div className="px-4 relative">
           <button
             ref={prevRef}
-            className="absolute sm:-left-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto left-1/4 z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
+            className="absolute sm:-left-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto left-1/4 z-10 text-[#00357A] bg-white p-3 rounded-full shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
             aria-label="Previous Slide"
           >
             <ChevronLeft size={24} />
           </button>
           <button
             ref={nextRef}
-            className="absolute sm:-right-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto right-1/4 z-10 text-[#00357A] bg-white p-3 rounded-full transition-colors shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
+            className="absolute sm:-right-10 sm:top-1/2 sm:-translate-y-1/2 bottom-[-55px] sm:bottom-auto right-1/4 z-10 text-[#00357A] bg-white p-3 rounded-full shadow-[0_4px_15px_rgba(0,53,122,0.3)]"
             aria-label="Next Slide"
           >
             <ChevronRight size={24} />
@@ -150,15 +257,21 @@ const JobOpenings = () => {
                   </div>
 
                   <div className="flex gap-4 mt-auto">
-                    {/* <button
-                      onClick={() => setModalContent({ type: "description", job })}
-                      className="bg-[#335D95] text-white text-sm rounded-sm w-full py-2"
+                    <button
+                      onClick={() => {
+                        setModalContent(job);
+                        setModalType("description");
+                      }}
+                      className="bg-[#335D95] text-white text-sm font-medium rounded w-full py-2"
                     >
                       Job Description
-                    </button> */}
+                    </button>
                     <button
-                      onClick={() => setModalContent({ type: "apply", job })}
-                      className="bg-[#335D95] text-white text-sm font-medium rounded w-full py-2"
+                      onClick={() => {
+                        setModalContent(job);
+                        setModalType("apply");
+                      }}
+                      className="bg-[#274D7A] text-white text-sm font-medium rounded w-full py-2"
                     >
                       Apply Now
                     </button>
@@ -170,11 +283,9 @@ const JobOpenings = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {modalContent && (
-      <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center px-4">
-
-          <div className="bg-white rounded-lg max-w-4xl w-full p-6 relative  h-[450px] overflow-y-scroll ">
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center px-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
             <button
               onClick={() => setModalContent(null)}
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
@@ -182,101 +293,25 @@ const JobOpenings = () => {
               <X />
             </button>
 
-            <h3 className="text-2xl font-bold text-[#00357A] mb-4">
-              {modalContent.job.position}
-            </h3>
-
-                  <div className="mb-6 text-gray-600 space-y-1">
-        <p>
-          <span className="font-semibold">Location:</span>  {modalContent.job.location}
-        </p>
-        <p>
-          <span className="font-semibold">Experience:</span> {modalContent.job.experience}
-        </p>
-      </div>
-
-  
-          <h3 className="text-lg font-semibold text-[#00357A] mb-2">
-            Job Description
-          </h3>
-          <p>
-        {modalContent.job.description}
-          </p>
-
- <div className="pt-4">
-  <h3 className="text-lg font-semibold text-[#00357A] mb-2">
-    Responsibilities
-  </h3>
-  <ul className="list-disc pl-5 space-y-2">
-    {modalContent.job.requirement?.map((req, idx) => (
-      <li key={idx}>{req}</li>
-    ))}
-  </ul>
-</div>
-
-
-            {modalContent.type === "description" ? (
-              <p className="text-gray-700">{modalContent.job.description}</p>
-            ) : (
-              // <form className="space-y-4">
-              //   <input
-              //     type="text"
-              //     placeholder="Your Name"
-              //     className="w-full border border-gray-300 rounded px-3 py-2"
-              //     required
-              //   />
-              //   <input
-              //     type="email"
-              //     placeholder="Your Email"
-              //     className="w-full border border-gray-300 rounded px-3 py-2"
-              //     required
-              //   />
-              //   <textarea
-              //     placeholder="Why are you a good fit?"
-              //     className="w-full border border-gray-300 rounded px-3 py-2"
-              //     rows="4"
-              //     required
-              //   ></textarea>
-
-              //   {/* Resume Upload */}
-              //   <div>
-              //     <label className="block mb-1 text-sm font-medium text-gray-700">
-              //       Upload Resume (PDF, DOC, DOCX)
-              //     </label>
-              //     <input
-              //       type="file"
-              //       accept=".pdf,.doc,.docx"
-              //       className="w-full border border-gray-300 rounded px-3 py-2 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-[#335D95] file:text-white"
-              //       required
-              //     />
-              //   </div>
-
-              //   <button
-              //     type="submit"
-              //     className="w-full bg-[#335D95] text-white py-2 rounded"
-              //   >
-              //     Submit Application
-              //   </button>
-              // </form>
-              <div className="pt-10">
-           <h3 className="text-lg font-semibold text-[#00357A] mb-2">
-  Contact Us<br/>
-           </h3>
-              
-                <span>Email: contactus@devnexus.in</span>  <br/><br/>
-                <span>Phone: +91 9211815556 <br/><br/>
-                  </span>
-                Location: 26-B, Spaze Itech Park, Sector-49, Gurgaon, 122018
+            {modalType === "description" ? (
+              <div>
+                <h3 className="text-2xl font-bold text-[#00357A] mb-2">
+                  {modalContent.position}
+                </h3>
+                <p className="text-gray-600 mb-4">{modalContent.description}</p>
+                <h4 className="text-lg font-semibold text-[#00357A] mb-2">Responsibilities:</h4>
+                <ul className="list-disc pl-5 space-y-1">
+                  {modalContent.requirement.map((req, idx) => (
+                    <li key={idx}>{req}</li>
+                  ))}
+                </ul>
               </div>
-
-              
+            ) : (
+              <JobPostingForm
+                job={modalContent}
+                onClose={() => setModalContent(null)}
+              />
             )}
-                 <button
-                      onClick={() => setModalApply({ type: "apply", job })}
-                      className="bg-[#335D95] text-white text-sm font-medium rounded items-center w-[40%] py-2"
-                    >
-                      Apply Now
-                    </button>
           </div>
         </div>
       )}

@@ -31,11 +31,11 @@ export default function AboutUs() {
         {/* Right: Text + Button */}
 <div className="bg-gradient-to-br from-white to-[#f8f9fd] rounded-xl sm:rounded-2xl shadow-sm sm:shadow-md p-8 sm:p-8 md:p-12 lg:p-15">
           <p className="text-lg text-[#00357A]">INNOVATE • BUILD • GROW</p>
-          <h3 className="text-4xl md:text-3xl font-semibold leading-snug mb-4  font-[Montserrat] py-6">
+          <h2 className="text-4xl md:text-3xl font-semibold leading-snug mb-4  font-[Montserrat] py-6">
             Beyond Code — Where{" "}
             <span className="text-[#00357A] font-bold">Developers </span>
             Shape <span className="text-[#00357A] font-bold">the Future. </span>
-          </h3>
+          </h2>
           <p className="text-gray-600 text-base leading-relaxed mb-6 ">
             At DevNexus Solutions, we believe in the transformative power of
             technology and the people who are building it. Our mission is to

@@ -68,9 +68,9 @@ export const OurProcess = () => {
                   height={40}
                   className="relative bottom-4 left-[40%]"
                 />
-                <h4 className="text-xl font-semibold pb-2">
+                <h2 className="text-xl font-semibold pb-2">
                   {step.title}
-                </h4>
+                </h2>
                 <p className="text-[16px]">{step.description}</p>
               </div>
             ))}

@@ -12,12 +12,12 @@ import CMSIcon from "../../../public/cdn/images/CMS.svg";
 import DevopsIcon from "../../../public/cdn/images/devops.svg";
 
 const tabs = [
-  { label: "Frontend", icon: FrontendIcon },
-  { label: "Backend", icon: BackendIcon },
-  { label: "Database", icon: DatabaseIcon },
-  { label: "UI/UX", icon: UIIcon },
-  { label: "CMS", icon: CMSIcon },
-  { label: "DevOps", icon: DevopsIcon },
+  { label: "AltFront", icon: FrontendIcon },
+  { label: "AltBackend", icon: BackendIcon },
+  { label: "AltDatabase", icon: DatabaseIcon },
+  { label: "AltUI/UX", icon: UIIcon },
+  { label: "AltCMS", icon: CMSIcon },
+  { label: "AltDevOps", icon: DevopsIcon },
 ];
 
 // Mirror Skeleton Card
@@ -70,9 +70,9 @@ const Technologies = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h4 className="text-4xl text-[#335D95] font-semibold">
+        <h2 className="text-4xl text-[#335D95] font-semibold">
           Technologies <span className="font-bold text-[#00357A]">We Work</span> with
-        </h4>
+        </h2>
       </motion.div>
 
       {/* Tabs */}

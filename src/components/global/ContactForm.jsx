@@ -210,27 +210,34 @@ const [loading, setLoading] = useState(false);
             )}
 
             {/* Row 3: Looking For */}
-            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:py-2.5 sm:px-3.5 text-gray-600 mb-4">
-              <select
-                name="services"
-                value={formData.services}
-                onChange={handleChange}
-                className="w-full text-sm sm:text-[16px] px-2 py-1  rounded-md outline-none "
-              >
-                <option value="" disabled hidden>
-                  Services
-                </option>
-                <option value="webDevelopment">Web Development</option>
-                <option value="mobileDevelopment">
-                  Mobile App Development
-                </option>
-                <option value="UIUX">UI/UX Design</option>
-                <option value="digitalMarketing">Digital Marketing</option>
-                <option value="BlockChain">Blockchain Development</option>
-                <option value="AITechnologies">AI Technologies</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
+         <div className="border-[#828282] border rounded-xl w-full p-1 sm:py-2.5 sm:px-3.5 text-gray-600 mb-4">
+  {/* Accessible label for screen readers */}
+  <label
+    htmlFor="services"
+    className="sr-only"
+  >
+    Select a Service
+  </label>
+
+  <select
+    id="services"
+    name="services"
+    value={formData.services}
+    onChange={handleChange}
+    className="w-full text-sm sm:text-[16px] px-2 py-1 rounded-md outline-none"
+  >
+    <option value="" disabled hidden>
+      Services
+    </option>
+    <option value="webDevelopment">Web Development</option>
+    <option value="mobileDevelopment">Mobile App Development</option>
+    <option value="UIUX">UI/UX Design</option>
+    <option value="digitalMarketing">Digital Marketing</option>
+    <option value="BlockChain">Blockchain Development</option>
+    <option value="AITechnologies">AI Technologies</option>
+    <option value="other">Other</option>
+  </select>
+</div>
 
             {errors.services && (
               <p className="text-red-500 text-xs sm:text-sm">

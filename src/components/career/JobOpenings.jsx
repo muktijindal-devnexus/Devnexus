@@ -8,36 +8,80 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+// -------------------------
+// Job Posting Form Component
+// -------------------------
 const JobPostingForm = ({ job, onClose }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    phoneNo: "",
     city: "",
     jobApplied: job.position,
     resume: null,
   });
 
+  const [loading, setLoading] = useState(false);
+
+  // handle text input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // handle resume file upload
   const handleFileChange = (e) => {
     setFormData((prev) => ({ ...prev, resume: e.target.files[0] }));
   };
 
-  const handleSubmit = (e) => {
+  // handle form submission
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    alert("Application Submitted!");
-    onClose(); // Close modal after submit
+
+    if (!formData.resume) {
+      alert("Please upload your resume before submitting.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phoneNo", formData.phoneNo);
+      formDataToSend.append("city", formData.city);
+      formDataToSend.append("jobApplied", formData.jobApplied);
+      formDataToSend.append("resume", formData.resume);
+
+      const response = await fetch("https://backend.devnexussolutions.com/api/apply", {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      const result = await response.json();
+      console.log("API Response:", result);
+
+      alert("Application submitted successfully!");
+      onClose();
+    } catch (error) {
+      console.error("Error submitting application:", error);
+      alert("Failed to submit. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <h3 className="text-2xl font-bold text-[#00357A] mb-4">{job.position}</h3>
+      <h3 className="text-2xl font-bold text-[#00357A] mb-4">
+        {job.position}
+      </h3>
 
+      {/* Name */}
       <div>
         <label className="block text-gray-700 font-medium mb-1">Name</label>
         <input
@@ -50,6 +94,7 @@ const JobPostingForm = ({ job, onClose }) => {
         />
       </div>
 
+      {/* Email */}
       <div>
         <label className="block text-gray-700 font-medium mb-1">Email</label>
         <input
@@ -62,18 +107,22 @@ const JobPostingForm = ({ job, onClose }) => {
         />
       </div>
 
+      {/* Phone */}
       <div>
-        <label className="block text-gray-700 font-medium mb-1">Phone Number</label>
+        <label className="block text-gray-700 font-medium mb-1">
+          Phone Number
+        </label>
         <input
           type="tel"
-          name="phone"
-          value={formData.phone}
+          name="phoneNo"
+          value={formData.phoneNo}
           onChange={handleChange}
           required
           className="w-full border border-gray-300 rounded px-3 py-2"
         />
       </div>
 
+      {/* City */}
       <div>
         <label className="block text-gray-700 font-medium mb-1">City</label>
         <input
@@ -86,8 +135,11 @@ const JobPostingForm = ({ job, onClose }) => {
         />
       </div>
 
+      {/* Job Applied */}
       <div>
-        <label className="block text-gray-700 font-medium mb-1">Job Applied</label>
+        <label className="block text-gray-700 font-medium mb-1">
+          Job Applied
+        </label>
         <input
           type="text"
           name="jobApplied"
@@ -97,6 +149,7 @@ const JobPostingForm = ({ job, onClose }) => {
         />
       </div>
 
+      {/* Resume Upload */}
       <div>
         <label className="block text-gray-700 font-medium mb-1">
           Upload Resume (PDF, DOC, DOCX)
@@ -110,16 +163,23 @@ const JobPostingForm = ({ job, onClose }) => {
         />
       </div>
 
+      {/* Submit Button */}
       <button
         type="submit"
-        className="w-full bg-[#335D95] text-white py-2 rounded hover:bg-[#274d7a] transition-colors"
+        disabled={loading}
+        className={`w-full ${
+          loading ? "bg-gray-400" : "bg-[#335D95] hover:bg-[#274d7a]"
+        } text-white py-2 rounded transition-colors`}
       >
-        Submit Application
+        {loading ? "Submitting..." : "Submit Application"}
       </button>
     </form>
   );
 };
 
+// -------------------------
+// Job Openings Section
+// -------------------------
 const JobOpenings = () => {
   const jobPositions = [
     {
@@ -181,9 +241,8 @@ const JobOpenings = () => {
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-
   const [modalContent, setModalContent] = useState(null);
-  const [modalType, setModalType] = useState("description"); // "description" | "apply"
+  const [modalType, setModalType] = useState("description");
 
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
@@ -236,22 +295,19 @@ const JobOpenings = () => {
                   </h2>
 
                   <div className="grid grid-cols-1 gap-6 my-4">
-                    <div className="flex">
-                      <p className="text-[#6F6F6F] text-xl">Position:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">
-                        {job.position}
+                    <div className="flex justify-center">
+                      <p className="text-[#6F6F6F] text-xl">
+                        <b>Position:</b> {job.position}
                       </p>
                     </div>
-                    <div className="flex">
-                      <p className="text-[#6F6F6F] text-xl">Location:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">
-                        {job.location}
+                    <div className="flex justify-center">
+                      <p className="text-[#6F6F6F] text-xl">
+                        <b>Location:</b> {job.location}
                       </p>
                     </div>
-                    <div className="flex">
-                      <p className="text-[#6F6F6F] text-xl">Experience:</p>
-                      <p className="font-medium text-[#6F6F6F] text-xl ml-1">
-                        {job.experience}
+                    <div className="flex justify-center">
+                      <p className="text-[#6F6F6F] text-xl">
+                        <b>Experience:</b> {job.experience}
                       </p>
                     </div>
                   </div>
@@ -283,6 +339,7 @@ const JobOpenings = () => {
         </div>
       </div>
 
+      {/* Modal */}
       {modalContent && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center px-4">
           <div className="bg-white rounded-lg max-w-4xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
@@ -298,9 +355,13 @@ const JobOpenings = () => {
                 <h3 className="text-2xl font-bold text-[#00357A] mb-2">
                   {modalContent.position}
                 </h3>
-                <p className="text-gray-600 mb-4">{modalContent.description}</p>
-                <h4 className="text-lg font-semibold text-[#00357A] mb-2">Responsibilities:</h4>
-                <ul className="list-disc pl-5 space-y-1">
+                <p className="text-gray-600 mb-4">
+                  {modalContent.description}
+                </p>
+                <h4 className="text-lg font-semibold text-[#00357A] mb-2">
+                  Responsibilities:
+                </h4>
+                <ul className="list-disc pl-5 space-y-1 text-gray-700">
                   {modalContent.requirement.map((req, idx) => (
                     <li key={idx}>{req}</li>
                   ))}

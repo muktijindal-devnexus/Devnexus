@@ -60,8 +60,8 @@ export const UIUXComponent = () => {
       <Banner
         image="/cdn/images/UUIX/UIUXHero.mp4"
         overlayImage
-        heading="Upgrade Your Brand with Exceptional UI/UX Design and Development Services"
-        description="At DevNexus Solutions, thoughtful design and user-based strategies enhances the user experience.Our UI/UX services are thoughtfully crafted to transform digital products into immersive, and visually compelling experiences that truly resonate with your audience."
+        heading="Upgrade Your Brand with Exceptional UI/UX Design"
+        description="Thoughtful design and user-based strategies enhances the user experience"
       />
       <StatusCard />
       <UIDesignTechnologies />

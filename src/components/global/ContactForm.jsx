@@ -134,7 +134,7 @@ const [loading, setLoading] = useState(false);
         </div>
         {/* Form Section */}
         <div className="lg:w-[55%] w-full bg-[#f9f9f9] sm:py-5 sm:px-12 rounded-lg p-4 ">
-          <h2 className="text-lg sm:text-2xl font-semibold ">Get in Touch</h2>
+          <h2 className="text-lg sm:text-2xl font-semibold ">Let's Connect</h2>
           <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-3  pt-3">
             Please fill out the form to help us understand the areas where you
             require assistance.

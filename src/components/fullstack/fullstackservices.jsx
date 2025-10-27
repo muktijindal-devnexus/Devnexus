@@ -1,18 +1,24 @@
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const services = [
-  {
-    title: 'Responsive Web Design',
-    description:
-      'We are creating websites that look stunning and function seamlessly across all devices, which ensures that the audience enjoys a better experience on desktop, tablet, and mobile.',
-    points: [
-      'Mobile-First & Cross-Browser Compatibility',
-      'Modern, Clean & Interactive UI/UX',
-      'High-Speed Performance Optimization',
-      'Brand-Consistent Visual Design',
-    ],
-  },
+{
+  title: 'Responsive Web Design',
+  description:
+    'We create websites that look stunning and function seamlessly across all devices, ensuring your audience enjoys an optimal experience on desktop, tablet, and mobile.',
+  points: [
+    'Mobile-First & Cross-Browser Compatibility',
+    <>
+      Modern, Clean & Interactive{' '}
+      <Link href="/ui-ux-design-services" className="text-[#00357A] font-bold hover:underline">
+        UI/UX
+      </Link>
+    </>,
+    'High-Speed Performance Optimization',
+    'Brand-Consistent Visual Design',
+  ],
+},
   {
     title: 'E-commerce Development',
     description:
@@ -46,18 +52,24 @@ const services = [
       'Scalable & Secure Architecture',
     ],
   },
-  {
-    title: 'Frontend Development',
-    description:
-      'Our frontend team will bring your vision to life with clean, responsive, and interactive design using the latest technologies like HTML5, CSS3, JavaScript, React, Nextjs, Typescript etc. We are developing a user-centric design that delivers a seamless experience across all types of devices. At DevNexus Solutions, we focus on performance and accessibility to ensure your website optimal functionality.',
-    points: [
-      'Responsive & Adaptive UI Design',
-      'React, Vuejs, Nextjs, Typescript, and Angular Development',
-      'Cross-browser Compatibility',
-      'Performance Optimization and SEO friendly',
-    
-    ],
-  },
+
+
+{
+  title: 'Frontend Development',
+  description:
+    'Our frontend team brings your vision to life with clean, responsive, and interactive designs using the latest technologies like HTML5, CSS3, JavaScript, React, Next.js, and TypeScript. We develop user-centric interfaces that deliver seamless experiences across all devices. At DevNexus Solutions, we focus on performance and accessibility to ensure your website functions optimally.',
+  points: [
+    'Responsive & Adaptive UI Design',
+    'React, Vue.js, Next.js, TypeScript, and Angular Development',
+    'Cross-browser Compatibility',
+    <>
+      Performance Optimization and{' '}
+      <Link href="/digital-marketing-services" className="text-[#00357A] font-bold hover:underline">
+        SEO friendly
+      </Link>
+    </>,
+  ],
+},
   {
     title: 'Backend Development',
     description:

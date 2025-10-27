@@ -1,6 +1,7 @@
 "use client";
 import PhoneForm from "@/components/contact/PhoneForm";
 import { ContactForm } from "@/components/global/ContactForm";
+import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function AutoPopup() {
@@ -108,53 +109,66 @@ export default function AutoPopup() {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-      <div className="bg-white p-6 rounded-2xl shadow-lg  relative">
+      <div className="bg-white  rounded-2xl shadow-lg  relative">
         <button
           onClick={() => setShowPopup(false)}
-          className="absolute top-2 right-2 text-gray-500 hover:text-black"
+          className="absolute top-2 right-2 bg-[#002b5b] hover:bg-[#003d82] rounded-full p-0.5 text-white"
         >
-          ✖
+          <X />
         </button>
-           <div className=" w-full bg-[#f9f9f9] sm:py-5 sm:px-12 rounded-lg p-9 ">
-          <h2 className="text-lg sm:text-2xl font-semibold ">Get in Touch</h2>
-          <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-3  pt-3">
-            Please fill out the form to help us understand the areas where you
-            require assistance.
-          </p>
+   <div
+  className="w-full bg-[#f9f9f9] h-108 overflow-y-scroll sm:py-5 sm:px-8 rounded-lg p-9"
+  style={{
+    scrollbarWidth: "none",       // Firefox
+    msOverflowStyle: "none",      // IE/Edge
+  }}
+>
+  <style jsx>{`
+    div::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+  `}</style>
+
+  <h2 className="text-lg sm:text-xl font-semibold">Let's Connect</h2>
+  <p className="text-xs sm:text-xs text-gray-600 mb-2 sm:mb-3 pt-1">
+    Please fill out the form to help us understand the areas where you
+    require assistance.
+  </p>
+
 
           <form onSubmit={handleSubmit} className="">
             {/* Row 1: Name & Email */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-4">
-              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full sm:w-1/2">
+            <div className="flex flex-col sm:flex-row gap-4 mb-2">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2 w-full sm:w-1/2">
                 <input
                   type="text"
                   name="name"
                   placeholder="Enter your First name*"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                  className="w-full outline-none bg-transparent text-sm sm:text-xs"
                 />
               </div>
-              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full sm:w-1/2">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2 w-full sm:w-1/2">
                 <input
                   type="text"
                 name="lastname"
                   placeholder="Enter your Last name*"
                   value={formData.lastname}
                   onChange={handleChange}
-                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                  className="w-full outline-none bg-transparent text-sm sm:text-xs"
                 />
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 mb-3">
-              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2.5 w-full ">
+              <div className="border-[#828282] border rounded-xl sm:rounded-lg p-2 sm:p-2 w-full ">
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your Email*"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full outline-none bg-transparent text-sm sm:text-base"
+                  className="w-full outline-none bg-transparent text-sm sm:text-xs"
                 />
               </div>
             </div>
@@ -171,7 +185,7 @@ export default function AutoPopup() {
             </div>
 
             {/* Row 2: Country Code, Phone */}
-            <div className="flex flex-row items-center sm:flex-row gap-4 mb-4">
+            <div className="flex flex-row items-center sm:flex-row gap-4 mb-2">
               <div className="  w-40 ">
                 <PhoneForm />
               </div>
@@ -182,7 +196,7 @@ export default function AutoPopup() {
                   placeholder="Mobile number*"
                   value={formData.phoneNumber}
                   onChange={handleChange}
-                  className="w-full text-sm sm:text-[16px] py-1 rounded-md outline-none"
+                  className="w-full text-sm sm:text-xs py-1 rounded-md outline-none"
                 />
               </div>
             </div>
@@ -192,12 +206,12 @@ export default function AutoPopup() {
             )}
 
             {/* Row 3: Looking For */}
-            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:py-2.5 sm:px-3.5 text-gray-600 mb-4">
+            <div className="border-[#828282] border rounded-xl w-full  p-1 sm:py-2 sm:px-2.5 text-gray-600 mb-2">
               <select
                 name="services"
                 value={formData.services}
                 onChange={handleChange}
-                className="w-full text-sm sm:text-[16px] px-2 py-1  rounded-md outline-none "
+                className="w-full text-sm sm:text-xs px-2 py-1  rounded-md outline-none "
               >
                 <option value="" disabled hidden>
                   Services
@@ -221,13 +235,13 @@ export default function AutoPopup() {
             )}
 
             {/* Row 4: Message */}
-            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5 mb-4">
+            <div className="border-[#828282] border rounded-xl p-1 sm:p-1.5 mb-2">
               <textarea
                 name="message"
                 placeholder="Brief description of your enquiry"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full text-sm sm:text-[16px] px-2 py-1 sm:py-2 rounded-md outline-none min-h-[80px]"
+                className="w-full text-sm sm:text-xs px-2 py-1 sm:py-2 rounded-md outline-none min-h-[20px]"
                 rows="3"
               ></textarea>
             </div>
@@ -235,7 +249,7 @@ export default function AutoPopup() {
             <button
               type="submit"
                 disabled={loading} // 👈 disable during submit
-              className={`flex items-center justify-center gap-2 bg-[#002b5b] hover:bg-[#003d82] text-white py-2 px-6 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto cursor-pointer transition ${
+              className={`flex items-center justify-center gap-2 bg-[#002b5b] hover:bg-[#003d82] text-white py-2 px-6 rounded-md font-medium text-sm sm:text-xs  w-full sm:w-auto cursor-pointer transition ${
                 loading ? "opacity-70 cursor-not-allowed" : ""
               }`}
             >

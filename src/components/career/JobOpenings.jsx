@@ -342,13 +342,26 @@ const JobOpenings = () => {
       {/* Modal */}
       {modalContent && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center px-4">
-          <div className="bg-white rounded-lg max-w-4xl w-full p-6 relative max-h-[90vh] overflow-y-auto">
-            <button
-              onClick={() => setModalContent(null)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
-            >
-              <X />
-            </button>
+<div
+  className="bg-white rounded-lg max-w-2xl w-full p-6 relative max-h-[80vh] overflow-y-auto"
+  style={{
+    scrollbarWidth: "none", // Firefox
+    msOverflowStyle: "none", // IE/Edge
+  }}
+>
+  <style jsx>{`
+    div::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+  `}</style>
+
+  <button
+    onClick={() => setModalContent(null)}
+    className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+  >
+    <X />
+  </button>
+
 
             {modalType === "description" ? (
               <div>

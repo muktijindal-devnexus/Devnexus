@@ -143,7 +143,7 @@ export const Navbar = () => {
               onClick={() => setShowModal(true)}
               className="bg-[#00357A] hover:bg-[#335D95] hover:cursor-pointer  text-white text-sm px-4 py-2 rounded-md hidden lg:block"
             >
-              Free Consultation
+              Get in touch
             </button>
             <button onClick={toggleMenu} className="lg:hidden text-white text-xl">
               {menuOpen ? <FaTimes /> : <FaBars />}

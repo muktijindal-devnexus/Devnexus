@@ -12,12 +12,12 @@ import CMSIcon from "../../../public/cdn/images/CMS.svg";
 import DevopsIcon from "../../../public/cdn/images/devops.svg";
 
 const tabs = [
-  { label: "AltFront", icon: FrontendIcon },
-  { label: "AltBackend", icon: BackendIcon },
-  { label: "AltDatabase", icon: DatabaseIcon },
-  { label: "AltUI/UX", icon: UIIcon },
-  { label: "AltCMS", icon: CMSIcon },
-  { label: "AltDevOps", icon: DevopsIcon },
+{ label: "Frontend", alt: "AltFront", icon: FrontendIcon },
+  { label: "Backend", alt: "AltBackend", icon: BackendIcon },
+  { label: "Database", alt: "AltDatabase", icon: DatabaseIcon },
+  { label: "UI/UX", alt: "AltUI/UX", icon: UIIcon },
+  { label: "CMS", alt: "AltCMS", icon: CMSIcon },
+  { label: "DevOps",  alt: "AltDevOps", icon: DevopsIcon },
 ];
 
 // Mirror Skeleton Card
@@ -93,7 +93,7 @@ const Technologies = () => {
                   : "bg-white text-[#335D95] hover:bg-[#E5EBF2]"
               }`}
           >
-            <Image src={tab.icon} alt={tab.label} width={16} height={16} />
+            <Image src={tab.icon} alt={tab.alt} width={16} height={16} />
             {tab.label}
           </motion.button>
         ))}

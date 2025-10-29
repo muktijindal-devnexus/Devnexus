@@ -30,8 +30,8 @@ export const BlogContent = () => {
 
   if (!blog) return <p>Loading...</p>;
   return (
-    <div className="p-6 max-w-4xl mx-auto pt-28">
-           {/* <div className="relative h-[380px] w-full mb-10">
+    <div className="p-6 max-w-5xl mx-auto pt-28">
+      {/* <div className="relative h-[380px] w-full mb-10">
                           <Image
                             src={
                               blog.featuredImage ||
@@ -43,11 +43,18 @@ export const BlogContent = () => {
   quality={100}
                           />
                         </div> */}
-      <h1 className="text-2xl font-bold mb-4">{blog.title}</h1>
+      <h1 className="text-3xl text-center font-bold mb-1 leading-12">
+        {blog.title}
+      </h1>
       <div
-        className="prose prose-lg leading-lg"
-        dangerouslySetInnerHTML={{ __html: blog.blogContent }}
+        className="prose prose-lg leading-10 text-lg px-14 pt-8"
+        dangerouslySetInnerHTML={{
+          __html: blog.blogContent.replace(
+            /<img /g,
+            '<img style="display:block; margin:20px auto; width:80%; max-width:600px;" '
+          ),
+        }}
       />
     </div>
   );
-}; 
+};

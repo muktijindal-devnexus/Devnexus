@@ -30,24 +30,29 @@ export const BlogContent = () => {
 
   if (!blog) return <p>Loading...</p>;
   return (
-    <div className="p-6 max-w-5xl mx-auto pt-28">
-      {/* <div className="relative h-[380px] w-full mb-10">
-                          <Image
-                            src={
-                              blog.featuredImage ||
-                              "https://res.cloudinary.com/dt4ohfuwc/image/upload/v1750423924/WhatsApp_Image_2025-06-20_at_6.10.34_PM_ouwfpi.jpg"
-                            }
-                            alt="hello"
-                            fill
-  className="object-cover rounded-md"
-  quality={100}
-                          />
-                        </div> */}
-      <h1 className="text-3xl text-center font-bold mb-1 leading-12">
+    <div>
+
+           <div className="relative h-[350px] w-full">
+        <Image
+          src="/blogs.png"
+          alt="Blog banner"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0  bg-opacity-50 flex items-center">
+          <h1 className="text-4xl w-[50%] font-bold leading-snug text-white ml-18 mt-10">
+            {blog.title}
+          </h1>
+        </div>
+      </div>
+    <div className="p-6 max-w-5xl mx-auto pt-8">
+ 
+      {/* <h1 className="text-3xl text-center font-bold mb-1 leading-12">
         {blog.title}
-      </h1>
+      </h1> */}
       <div
-        className="prose prose-lg leading-10 text-lg px-14 pt-8"
+        className="prose prose-lg leading-10 text-lg px-14 pt-5"
         dangerouslySetInnerHTML={{
           __html: blog.blogContent.replace(
             /<img /g,
@@ -56,5 +61,7 @@ export const BlogContent = () => {
         }}
       />
     </div>
+    </div>
+
   );
 };

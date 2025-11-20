@@ -17,7 +17,7 @@ const services = [
     description:
       "Elevate user engagement through intuitive design and seamless digital experiences.",
     icon: "/cdn/images/image157.svg",
-    href: "/uiux",
+    href: "/ui-ux-design-services",
   },
   {
     title: "Mobile App Development",

@@ -6,7 +6,7 @@ const services = [
 {
   title: 'Responsive Web Design',
   description:
-    'We create websites that look stunning and function seamlessly across all devices, ensuring your audience enjoys an optimal experience on desktop, tablet, and mobile.',
+    'We create websites that look stunning and function seamlessly across all devices. Our responsive web design services ensure an optimal experience on every screen size.',
   points: [
     'Mobile-First & Cross-Browser Compatibility',
     <>
@@ -22,7 +22,7 @@ const services = [
   {
     title: 'E-commerce Development',
     description:
-      'At DevNexus Solutions, we are building powerful, secure, and user-friendly e-commerce websites customized according to your business requirements. From product listings and shopping carts to integration of a payment gateway, our solutions are designed to deliver the best website that performs and converts. ',
+      'As part of our E-commerce Development expertise, DevNexus Solutions builds powerful, secure, and conversion-focused online stores. From product catalogs to payment gateway integration, we develop optimized storefronts that convert.',
     points: [
       'Shopify, WooCommerce, Magento & Custom Solutions',
       'Product Catalogue & Shopping Cart Integration',
@@ -33,7 +33,7 @@ const services = [
   {
     title: 'CMS Development (WordPress, Webflow & More)',
     description:
-      'We specialize in creating dynamic and easy-to-navigate websites using powerful content management systems like WordPress, Joomla etc. Our CMS solutions empower you to update the content images without much hassle and technical skills. Whether you need a website, a blog or a custom portal, DevNexus Solutions is ready to deliver the best scalable and SEO-friendly website which is tailored to your business goals.',
+      'As a modern CMS Development provider, we build dynamic, easy-to-manage websites on WordPress, Webflow, and other platforms. Our solutions are SEO-friendly, scalable, and tailored to your business goals.',
     points: [
       'Custom WordPress Development',
       'Drag & Drop Page Builders (Webflow, Elementor, etc.)',
@@ -44,7 +44,7 @@ const services = [
   {
     title: 'Custom Web Application Development',
     description:
-      'We are offering tailor-made website development services built from scratch to match your unique business requirements. Whether you need a complex application, an adminstration portal, or a multi-feature platform, our team of experts are developing scalable, secure, and high-performing websites. At DevNexus Solutions, we are focus on functionality, user experience, and long-term growth for your brand.',
+      ' We offer Custom Web Application Development tailored from scratch to match your unique business requirements. Whether you need complex systems, admin portals, or feature-rich platforms, we deliver scalable and secure custom solutions.',
     points: [
       'Custom-Coded Websites (HTML, CSS, JavaScript, PHP, Python, etc.)',
       'Web App Development',
@@ -57,7 +57,7 @@ const services = [
 {
   title: 'Frontend Development',
   description:
-    'Our frontend team brings your vision to life with clean, responsive, and interactive designs using the latest technologies like HTML5, CSS3, JavaScript, React, Next.js, and TypeScript. We develop user-centric interfaces that deliver seamless experiences across all devices. At DevNexus Solutions, we focus on performance and accessibility to ensure your website functions optimally.',
+    'Our frontend development team brings your vision to life using modern technologies like React, Next.js, Vue.js, TypeScript, Angular, and more. We deliver user-centric, responsive, and high-performance interfaces.',
   points: [
     'Responsive & Adaptive UI Design',
     'React, Vue.js, Next.js, TypeScript, and Angular Development',
@@ -73,7 +73,7 @@ const services = [
   {
     title: 'Backend Development',
     description:
-      'At DevNexus Solutions, we provide a robust, secure, and scalable backend system that powers your application. From database architecture and APIs development, our backend team ensures optimal performance and reliability.',
+      'As part of our backend development solutions, we provide robust, secure, and scalable server-side architectures that ensure peak performance.',
     points: [
       'APIs Development & Integration',
       'Database Design (SQL & NoSQL)',
@@ -84,7 +84,7 @@ const services = [
   {
     title: 'Conversion Rate Optimization (CRO)',
     description:
-      'We optimize your website design and functionality to improve conversion rates. From A/B testing to performance tracking, we help turn visitors into loyal customers.',
+      'Our Conversion Rate Optimization (CRO) services help boost conversions and improve user journeys. From A/B testing to UI improvements, we transform your site into a revenue-generating machine.',
     points: [
       'Landing Page Development',
       'UI/UX Improvements',
@@ -167,7 +167,8 @@ export const FullStackServices = () => {
       {/* Right side - Desktop only */}
       <div className="hidden md:block md:w-2/3">
         <p className="text-[18px] text-gray-700 font-medium mt-8 mb-12">
-          As a Leading Web Design and Web Development Service provider, we are providing a range of website development services-
+We provide a complete suite of web development offerings, establishing ourselves as a top web design and web development service provider delivering global-quality solutions.
+
         </p>
 
         <div className="p-6 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white max-h-[630px] lg:h-[430px] lg:p-18">

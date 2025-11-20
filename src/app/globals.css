@@ -7,7 +7,7 @@ body {
 }
 
 section {
-  user-select: none;
+  /* user-select: none; */
 
   padding: 64px;
 }

@@ -7,12 +7,12 @@ const steps = [
   {
     title: 'Discovery & Requirement Gathering',
     description:
-      "First, we begin by understanding your brand's goal, potential audience, and technical requirements to clearly define the project scope.",
+      "We begin by understanding your brand goals, target audience, and technical requirements to define a clear project scope.",
   },
   {
     title: 'Planning Strategy',
     description:
-      'Our web design and web development team creates a detailed project roadmap that includes site architecture, technology stack, timeline, and resource allocation.',
+      'Our team creates a detailed roadmap that includes site architecture, technology stack, timeline, and resource allocation — ensuring a smooth development process from start to finish.',
   },
   {
     title: 'UI/UX Design',

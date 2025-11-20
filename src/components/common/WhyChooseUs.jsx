@@ -6,44 +6,49 @@ const features = [
     icon: MonitorSmartphone,
     title: "Creative & Responsive Design",
     description:
-      "We create eye-catching, user-friendly designs that adapt seamlessly across all devices, ensuring an exceptional user experience.",
+      "We create eye-catching, user-friendly designs that adapt seamlessly across all devices, ensuring an exceptional user experience. As a responsive web design company, our focus is on delivering high-quality UI/UX that performs flawlessly on desktop, tablet, and mobile.",
   },
   {
     icon: Braces,
     title: "Clean & Scalable Code",
     description:
-      " At DevNexus Solutions, our team of experts writes efficient, well-structured code that ensures high performance and seamless scalability as your business evolves.",
+      "At DevNexus Solutions, our team writes efficient, well-structured code that ensures high performance and seamless scalability as your business grows. Whether it's frontend development, backend development, or full-stack solutions, our coding standards ensure long-term success.",
   },
   {
     icon: LayoutTemplate,
     title: "Latest Technology",
     description:
-      "We leverage the latest tools, frameworks, and industry best practices to build high-performance websites tailored to your unique brand identity and business objectives.",
+      "We leverage the latest tools, frameworks, and industry best practices to build high-performance websites tailored to your brand identity and business objectives. As an AI Overview web development company, we integrate modern technologies to help brands stay future-ready.",
   },
   {
     icon: FaProjectDiagram,
     title: "Client-Centric Approach",
     description:
-      "At DevNexus, your vision drives our strategy. We collaborate closely with you to build custom web solutions that resonate with your target audience and support your long-term goals.",
+      "At DevNexus, your vision drives our strategy. We collaborate closely with you to build custom web solutions that resonate with your audience and support your long-term goals.",
   },
   {
     icon: BanknoteArrowUp ,
     title: "Post-Launch Support & Growth",
     description:
-      "We don't stop at launch, our ongoing maintenance, analytics, and optimization services help your digital presence grow and evolve.",
+      "Our partnership continues even after launch. With ongoing support, analytics, optimization, and maintenance, we ensure your digital presence continues to grow and perform.",
   },
 ];
 
 const WhyChooseUs = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-12">
-          What makes{" "}
-          <span className="font-semibold text-blue-900">DevNexus Solutions</span> Better for
-          <span className="font-semibold text-blue-900"> Web Design and Web Development</span> Services?
+      <div className="max-w-7xl mx-auto flex flex-col justify-center items-center">
+        <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-light mb-4">
+          {" "}
+          <span className="font-semibold text-blue-900">Choose DevNexus. </span>
+          <span className="font-semibold text-blue-900">Choose Excellence.</span>
         </h2>
+<div className="w-[80%] flex justify-center items-center">
 
+        <p className="text-center text-sm sm:text-lg md:text-lg font-light mb-12">
+           DevNexus Solutions delivers modern, scalable, and high-performing digital solutions tailored for businesses worldwide. Whether you need custom web design services, responsive web design, or SEO-friendly website development, we offer comprehensive global web development solutions designed to elevate your brand.
+        </p>
+</div>
         <div className="grid md:grid-cols-3 gap-6">
           {features.slice(0, 3).map((feature, idx) => {
             const Icon = feature.icon;

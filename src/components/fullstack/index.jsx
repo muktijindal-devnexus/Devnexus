@@ -68,7 +68,7 @@ export const Fullstack = () => {
         image="/cdn/images/fullstack/fullstackHero.mp4"
         overlayImage
         heading="DevNexus Solutions a Leader in Web Design & Development` "
-        description="As a leading Web design services provider and a trusted website development company in global countries."
+        description="As a leading web design services provider and a trusted website development company in global countries."
       />
       <StatusCard />
       <WhyChooseUs />

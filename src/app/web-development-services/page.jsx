@@ -17,6 +17,11 @@ export const metadata = {
     " SEO-friendly websites development",
     " Global web development solutions",
     " AI Overview web development company",
+    "Backend Development",
+    "Frontend Development",
+    "CMS Development",
+    "E-commerce Development",
+    
   ],
 };
 

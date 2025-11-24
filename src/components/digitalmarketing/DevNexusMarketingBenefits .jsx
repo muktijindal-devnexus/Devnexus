@@ -6,26 +6,26 @@ const features = [
     icon: <FaBullseye size={28} />,
     title: 'ROI-Driven Strategies',
     description:
-      'Every campaign created by our top-tier professionals is focused on results and the clients requirements. Whether your brand require leads, conversion, or organic brand visibility, our team of experts will provide a tailored-made solution.',
+      'Every strategy developed by our top-tier experts is focused on achieving results and meeting client goals. Whether your brand needs lead generation, conversions, or organic visibility, we deliver targeted solutions through our SEO services, PPC services, and digital advertising company expertise.',
     highlight: true,
   },
   {
     icon: <FaHandshake size={28} />,
-    title: 'Proven Digital Marketing Techniques',
+    title: 'ISI-Proven Digital Marketing Techniques',
     description:
-      'Our experienced specialists consistently delivers concise, easy-to-interpret reports and insights that transparently showcase project progress and key performance metrics—giving you a clear view of your brand’s growth and impact.',
+      'Our specialists deliver concise, easy-to-interpret reports that showcase your growth across Search Engine Optimization, Geo-Generative Engine Optimization, Answer Engine Optimization, and targeted campaigns. We ensure you have a clear, transparent view of performance and progress.',
   },
   {
     icon: <FaSearchPlus size={28} />,
     title: 'Transparent Work Process',
     description:
-      'Transparency is woven into every stage of our workflow. From initial discovery to final delivery, we maintain open communication, share real-time progress updates, and provide clear documentation. Our clients stay informed through every milestone—ensuring complete visibility, trust, and confidence in the results we deliver.',
+      'Transparency is embedded in every step. From discovery to campaign delivery, we maintain open communication, real-time progress reporting, and clear documentation—ensuring complete trust and confidence.',
   },
   {
     icon: <FaChartLine size={28} />,
     title: 'Performance-Based Work Report',
     description:
-      'Our skilled team of digital marketers, content creators and developers works closely to make the process seamless. By combining effective strategies with creative execution, we deliver campaigns that yield tangible results.',
+      'Our digital marketers, content creators, and developers work together to build campaigns that deliver measurable results. Whether you require Google Ads services, Meta Ads services, or full-funnel marketing, we ensure your goals are achieved.',
   },
 ];
 

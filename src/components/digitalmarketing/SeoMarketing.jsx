@@ -7,49 +7,49 @@ const cardData = [
     icon: <FaClipboardList size={24} />,
     title: 'Understanding Your Business',
     description:
-      'At DevNexus Solutions, every business requires a comprehensive analysis. This is why our dedicated team begins with a deep understanding of your business from the scratch. These foundational steps ensures that every plan is perfectly aligned with the brands goals and potential audience.',
+      'We begin with a deep analysis of your business, audience, and goals to ensure all strategies align with your objectives.',
   },
   {
     icon: <FaLaptopCode size={24} />,
     title: 'Audience & Market Research',
     description:
-      'Every successful digital marketing campaign begins with understanding your audience and determining where your brand fits for better visibility. This step is all about collecting insights that power effective target-market campaigns. ',
+      'We analyze your target audience and market trends to create effective, insight-driven campaigns.',
   },
   {
     icon: <DraftingCompass size={24} />,
     title: 'Crafting a Data-Driven Strategy',
     description:
-      'Our team of specialists not only relies on market estimates but also develops data-driven digital marketing strategies tailored to your business objectives. All of our decisions are informed by insights developed from your analytics ecosystem and our in-depth understanding of your audience.',
+      'Our specialists build strategies based on real analytics, market insights, and your brand’s requirements across SEO, answer engine optimization, local SEO services, and paid media.',
   },
   {
     icon: <Rss size={24} />,
     title: 'Content That Connects',
     description:
-      'Content is the bridge between your brand and your audience. At DevNexus Solutions, we believe in creating content that not only informs but also inspires, engages, and drives action.',
+      'Content is central to communication. We create impactful content that informs, inspires, and converts—powered by our expertise as a content marketing agency.',
   },
     {
     icon: <FaSearch size={24} />,
     title: 'Campaign Execution & Management',
     description:
-      'At DevNexus Solutions, we are transforming strategy into action with seamless execution and proactive management. Our goal is straightforward: to ensure the digital marketing campaign delivers maximum impact within time and budget constraints.',
+      'We transform strategy into impactful action. Whether its PPC services, Google Ads, Meta Ads, or SEO services, our execution ensures maximum ROI.',
   },
     {
     icon: <KeyboardMusic size={24} />,
     title: 'Performance Tracking',
     description:
-      'At DevNexus Solutions, performance tracking is the backbone of a successful digital marketing strategy. We begin with clear goals and measurable KPIs that align with your business objectives. Using tools such as Google Analytics, Google Search Console, Meta Business Suite, and LinkedIn Analytics, we monitor performance across all channels in real-time, ensuring every campaign stays on track.',
+      'Your performance is monitored using analytics tools such as Google Analytics, Search Console, Meta Business Suite, and LinkedIn Analytics to ensure real-time optimization.',
   },
     {
     icon: <Workflow size={24} />,
     title: 'Continuous Optimization',
     description:
-      'Digital Marketing is the process of learning and improving continuously. Thats why optimization is the core of everything we do, our team keeps a close eye on the results after campaigns have been published. From testing new creative ideas, adjusting targeting parameters, and refining strategy to implement A/B testing, our teams approach is proactive and agile.',
+      'Our team continuously tests, adjusts, and optimizes campaigns—improving targeting, creatives, budgets, and strategies for better results.',
   },
     {
     icon: <Blend size={24} />,
     title: 'Transparency & Collaboration',
     description:
-    "At DevNexus Solutions, we believe in open, honest, and collaborative partnerships. We operate as an extension of your team—maintaining clear communication, sharing regular progress updates, and encouraging open dialogue at every stage. Our digital marketing experts ensure you're consistently informed, actively involved, and fully confident in the strategic direction of your campaigns.",
+    "We operate as your extended team—sharing updates, reports, and progress to keep you fully informed and confident.",
   },
  
 ];
@@ -70,11 +70,7 @@ export const SeoMarketing = () => {
           
         </h2>
         <p className="text-[18px] md:text-[20px] text-gray-700">
-          Access end-to-end SEO services through our structured and agile methodology.
-          We follow a proven, results-driven approach that encompasses everything from
-          requirement gathering and strategy design to final deployment. This
-          commitment to excellence has established us as one of India’s leading digital
-          marketing companies with a strong track record of success.
+       We follow a structured, results-driven workflow that includes data analysis, strategy, implementation, and optimization—cementing our reputation as one of India’s leading digital marketing service providers.
         </p>
       </div>
 

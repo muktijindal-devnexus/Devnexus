@@ -5,7 +5,7 @@ const services = [
   {
     title: "Search Engine Optimization (SEO)",
     description:
-      "Our tailor-made strategies are perfect for your brand. We offer a range of services, including keyword research, on-page optimization, off-page SEO, and technical SEO. Whether you are a start-up or an established business, we have solutions to meet all your business needs. ",
+      "Our customized SEO solutions include keyword research, on-page SEO, off-page optimization, technical SEO, and voice search optimization. Whether you’re a startup or an established brand, our search engine optimization approach enhances online visibility.",
     points: [
       "Keyword Research & Strategy",
       "Link Building & Authority Growth",
@@ -16,13 +16,13 @@ const services = [
   {
     title: "Pay-per-click (PPC)",
     description:
-      "DevNexus Solutions provides expert PPC services designed to maximize your online advertising ROI.  Our PPC experts focus on strategic keyword targeting, creating compelling ads, and utilizing advanced campaign management skills.  We are helping your business to reach its desired audience. Whether you want to boost website traffic, generate leads, or increase ROI, DevNexus Solutions ensures that your PPC campaigns are cost-effective.",
+      "DevNexus Solutions offers result-oriented PPC services to maximize your advertising ROI. With smart keyword targeting, compelling ads, and data-driven optimization, we help your brand reach the right audience through Google Ads services and paid advertising strategies.",
     points: [],
   },
   {
     title: "Social Media Marketing (SMM)",
     description:
-      "DexNexus Solutions delivers expert Social Media Marketing services that help businesses build a strong online presence and engage effectively with their potential audience. From strategy development and campaign management to tracking insights for performance, we have a tailor-made system for every specific brand.",
+      "As a top social media marketing company, we help brands build strong visibility and create meaningful audience engagement. Our strategic approach, combined with analytics-driven insights, supports long-term growth.",
     points: [
       "Content Creation & Scheduling",
       "Audience Engagement",
@@ -30,15 +30,15 @@ const services = [
     ],
   },
   {
-    title: "Meta Ads",
+    title: "Meta Ads Services",
     description:
-      "DevNexus Solutions offers expert Meta Ads Services to help businesses reach a broader audience and generate high-quality leads. We have a team of experts ready to create effective and highly visual ad campaigns tailored to your business needs.",
+      "We provide high-impact Meta Ads services to help brands reach broader audiences, generate leads, and boost conversions using advanced targeting and visually appealing creatives.",
     points: ["Ad Campaign Setup", "Audience Targeting", "A/B Testing"],
   },
   {
     title: "Email Marketing",
     description:
-      "We help you craft effective email campaigns that nurture leads and retain customers with engaging content and automated flows.",
+      "We craft email campaigns that nurture leads, retain customers, and boost conversions.",
     points: [
       "Newsletter Design",
       "Automation Workflows",
@@ -48,13 +48,13 @@ const services = [
   {
     title: "Content Marketing",
     description:
-      "We deliver high-quality, SEO-optimized content to boost your brands visibility and establish authority in your niche.",
+      "As a trusted content marketing agency, we deliver SEO-optimized, high-quality content that boosts brand authority and visibility.",
     points: ["Blog Writing", "SEO Copywriting", "Content Strategy"],
   },
   {
     title: "Conversion Rate Optimization (CRO)",
     description:
-      "We analyze user behavior and optimize your website's layout, CTAs, and funnels to convert more visitors into customers.",
+      "We turn more visitors into customers by improving your website’s UX, layouts, CTAs, and funnels.",
     points: [
       "A/B Testing",
       "Heatmaps & Analytics",
@@ -157,8 +157,7 @@ export const DigitalMarketingServices = () => {
       {/* Desktop - Right Column */}
       <div className="hidden md:block md:w-2/3 space-y-4">
         <p className="text-[18px] text-gray-700 font-medium my-8">
-          As a leading Digital Marketing Company, we provide a wide range of
-          Digital Marketing Services according to your business goals.
+As a leading digital marketing company, we deliver a full range of digital marketing services tailored to your business goals.
         </p>
 
         <div className="p-8 border border-[#cce] rounded-lg shadow-md space-y-4 bg-white min-h-[420px]">

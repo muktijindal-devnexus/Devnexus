@@ -73,7 +73,7 @@ export const DigitalMarketing = () => {
       <SeoMarketing />
        <Slider
           title="Driving Brand Excellence"
-          subtitle="We deliver Global IT Services to businesses ranging from startups to global enterprises"
+          subtitle="We deliver global IT and digital marketing services to startups, small businesses, and enterprises worldwide"
           brands={brandLogos}
         />  
      

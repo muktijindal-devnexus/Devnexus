@@ -96,7 +96,7 @@ const DigitalMarketingPage = () => {
         <Banner
           image="/cdn/images/digital/digital.mp4"
           overlayImage
-          heading=" Digital Marketing Services To Boost Your Business Growth "
+          heading=" Digital Marketing Services Boost Your Business Growth "
           description="Let the right digital marketing company uplift your web traffic, boost brand visibility, and generate more leads and sales for your business with powerful digital marketing services."
         />
         <DigitalMarketing />

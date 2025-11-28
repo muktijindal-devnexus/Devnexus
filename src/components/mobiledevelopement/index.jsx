@@ -30,35 +30,67 @@ const brandLogos = [
 ];
 
 const faqData = [
+  // --- Your New 6 Mobile App FAQs ---
   {
-    question: "What types of mobile applications do we develop?",
+    question: "Why should I develop a mobile app for my business?",
     answer:
-      "At DevNexus Solutions, we are developing a wide range of mobile applications which are tailored to your business needs. Our expertise includes native app development , cross-functional app developement, progresive web app development, e-commerce web app development.",
+      "A mobile app boosts customer engagement, enhances brand visibility, and increases revenue. DevNexus Solutions builds customized, high-performance apps aligned with your business goals.",
+  },
+  {
+    question: "What benefits will I get from a mobile app?",
+    answer:
+      "You get direct customer access, better engagement, improved user experience, and business growth. DevNexus Solutions ensures your app becomes a powerful digital asset.",
+  },
+  {
+    question: "Can you develop apps for both Android and iOS?",
+    answer:
+      "Yes. DevNexus Solutions builds native, hybrid, and cross-platform apps optimized for performance across all devices using technologies like Swift, Kotlin, Flutter, and React Native.",
+  },
+  {
+    question: "How long does app development take?",
+    answer:
+      "Most mobile apps take 4–10 weeks based on features, design complexity, and integrations. DevNexus Solutions provides clear timelines and transparent development phases.",
+  },
+  {
+    question: "Can you improve or update my existing app?",
+    answer:
+      "Yes. We upgrade existing apps with new features, UI/UX enhancements, bug fixes, performance optimization, and compatibility updates for the latest OS versions.",
+  },
+  {
+    question: "Do you provide support after app launch?",
+    answer:
+      "Yes. DevNexus Solutions provides ongoing maintenance, updates, security checks, performance monitoring, and feature enhancements to keep your app running smoothly.",
+  },
+
+  // --- Your Existing FAQs (Cleaned & Improved) ---
+  {
+    question: "What types of mobile applications do you develop?",
+    answer:
+      "We build a wide range of mobile applications including native apps, cross-platform apps, progressive web apps, e-commerce apps, and business workflow applications—tailored to your specific needs.",
   },
   {
     question:
-      "Do we provide post-launch support for mobile app development services?",
+      "Do you provide post-launch support for mobile app development services?",
     answer:
-      "Yes, we are providing post-launch app services and comprehensive post-launch support as a part of our mobile app development services. Once your app goes live we will continue to work with you to ensure app functionality. This includes bug fixes, regular updates to keep your application active, monitor the performance, and user enhancements. ",
+      "Yes. We offer complete post-launch support including bug fixes, performance monitoring, feature enhancements, security updates, and OS compatibility updates to ensure your app stays stable and up to date.",
   },
   {
-    question:
-      "What type of technologies do we use for Android app development?",
+    question: "What technologies do you use for Android app development?",
     answer:
-      "We are using the latest and most reliable technologies for Android app development. Our major tech stack includes JAVA for native Android development. For cross-platform needs, we also leverage Flutter and React Native, which allow faster development across all devices. ",
+      "For Android development we use Kotlin and Java for native apps. For cross-platform solutions, we use Flutter and React Native to build apps that run efficiently on both Android and iOS.",
   },
   {
-    question:
-      "What programming languages do we use for iOS Mobile app development?",
+    question: "What programming languages do you use for iOS app development?",
     answer:
-      "For iOS mobile app development, we are primarily focused on Swift (Apple's modern and powerful programming language), which is specifically designed for iOS, macOS, and watchOS. For legacy projects or working with existing codebases, we are also using objective-C.",
+      "We use Swift—Apple’s modern language—for most iOS apps. For older or existing codebases, we also support Objective-C development and updates.",
   },
   {
     question: "Can you update or fix an existing iOS app?",
     answer:
-      "Whether your app needs a performance upgrade, bug fixes, UI/UX changes, or compatibility updates for the latest iOS version, we are here to help you.",
+      "Yes. Whether your app needs performance improvements, bug fixes, UI/UX updates, or compatibility adjustments for the latest iOS version, we can help improve and optimize it.",
   },
 ];
+
 
 
 export const MobileDevelopment = () => {

@@ -27,42 +27,50 @@ const MobileDevelopmentpage = () => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What types of mobile applications do we develop?",
+        name: "Why should I develop a mobile app for my business?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "At DevNexus Solutions, we are developing a wide range of mobile applications which are tailored to your business needs. Our expertise includes native app development, cross-functional app development, progressive web app development, e-commerce web app development.",
+          text: "A mobile app improves customer engagement, brand visibility, and revenue. DevNexus Solutions builds apps tailored to your goals.",
         },
       },
       {
         "@type": "Question",
-        name: "Do we provide post-launch support for mobile app development services?",
+        name: "What benefits will I get from a mobile app?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, we are providing post-launch app services and comprehensive post-launch support as a part of our mobile app development services. Once your app goes live we will continue to work with you to ensure app functionality. This includes bug fixes, regular updates to keep your application active, monitor the performance, and user enhancements.",
+          text: " You get direct customer access, better engagement, seamless user experience, and business growth with DevNexus Solutions.",
         },
       },
       {
         "@type": "Question",
-        name: "What type of technologies do we use for Android app development?",
+        name: " Can you develop apps for both Android and iOS?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We are using the latest and most reliable technologies for Android app development. Our major tech stack includes JAVA for native Android development. For cross-platform needs, we also leverage Flutter and React Native, which allow faster development across all devices.",
+          text: " Yes, DevNexus Solutions builds native, hybrid, and cross-platform apps optimized for performance on all devices.",
         },
       },
       {
         "@type": "Question",
-        name: "What programming languages do we use for iOS Mobile app development?",
+        name: "How long does app development take?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "For iOS mobile app development, we are primarily focused on Swift (Apple's modern and powerful programming language), which is specifically designed for iOS, macOS, and watchOS. For legacy projects or working with existing codebases, we are also using Objective-C.",
+          text: "Most apps take 4–10 weeks depending on features and complexity. DevNexus Solutions provides clear project timelines.",
         },
       },
       {
         "@type": "Question",
-        name: "Can you update or fix an existing iOS app?",
+        name: "Can you improve or update my existing app?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Whether your app needs a performance upgrade, bug fixes, UI/UX changes, or compatibility updates for the latest iOS version, we are here to help you.",
+          text: " Yes, DevNexus Solutions upgrades existing apps with new features, better UI/UX, and performance improvements.",
+        },
+      },
+            {
+        "@type": "Question",
+        name: "Do you provide support after app launch?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, DevNexus Solutions offers maintenance, updates, and security checks to keep your app running smoothly.",
         },
       },
     ],

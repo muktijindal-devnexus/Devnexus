@@ -21,31 +21,64 @@ import ProcessSteps from "./ProcessSteps";
 import { FullStackServices } from "./fullstackservices";
 
 const faqData = [
+
+  {
+    question: "Why should I use web development services?",
+    answer:
+      "A professional website improves credibility, attracts customers, and strengthens online presence. DevNexus Solutions builds high-performing websites designed to grow your business.",
+  },
+  {
+    question: "What benefits will I get from web development?",
+    answer:
+      "You receive responsive, secure, fast-loading websites with better user experience and higher conversion rates. DevNexus Solutions ensures every site is built to maximize performance.",
+  },
+  {
+    question: "How long does it take to build a website?",
+    answer:
+      "Most websites take 2–6 weeks depending on complexity, content, and features. DevNexus Solutions provides transparent timelines for every project stage.",
+  },
+  {
+    question: "Do you provide custom website designs?",
+    answer:
+      "Yes. DevNexus Solutions offers fully custom or template-based designs tailored to your brand identity, target audience, and business goals.",
+  },
+  {
+    question: "Will my website be mobile-friendly and SEO-optimized?",
+    answer:
+      "Absolutely. Every website we build is responsive, fast, SEO-ready, and follows modern UI/UX standards to help you rank higher on search engines.",
+  },
+  {
+    question: "Do you provide maintenance after the website is live?",
+    answer:
+      "Yes. DevNexus Solutions offers ongoing maintenance, security monitoring, backups, updates, and support to keep your website running smoothly.",
+  },
+
+  // --- Your Existing Web Dev FAQs (Cleaned & Improved) ---
   {
     question:
       "What domains of business does DevNexus Solutions provide digital solutions to?",
     answer:
-      'We offer web design and development services to businesses of all types that need a digital presence, including real estate, construction, services, food and beverages, public sector, education, healthcare, travel, banking, fintech, and more.',
+      "We provide web design and development solutions for real estate, construction, food and beverages, healthcare, education, public sector, travel, banking, fintech, services, and more—any business that needs a strong digital presence.",
+  },
+  {
+    question: "What tech stacks do you offer for your web development services?",
+    answer:
+      "Our team works with modern and flexible technologies including MERN stack (Node, React), Next.js, TypeScript, React Native, Flutter, WordPress/PHP, Python, HTML5/CSS3, Tailwind CSS, Modular CSS, Redux, and more.",
   },
   {
     question:
-      "What tech stacks do you offer for your web development services?",
+      "How do you ensure that your web development matches the latest market demands?",
     answer:
-      "The team is technology-agnostic and can adapt to any modern web development framework, including the MERN stack (Node, React), Nextjs, Typescript, React Native, Flutter, WordPress (and PHP), Python, HTML5/CSS3, Tailwind CSS, Modular CSS, Redux and more.",
+      "We build websites following modern Web 2.0 standards with W3C compliance, SEO-friendly architecture, advanced UI/UX design, cross-browser compatibility, responsive layouts, strong QA testing, authentication, performance optimization, and scalability best practices.",
   },
   {
     question:
-      "How do you ensure that the developments you make are aligned with latest's market demands?",
+      "What platforms do you use for communication and project management?",
     answer:
-      "We are experts at designing and developing websites according to the latest Web 2.0 Standards with W3C compliance for SEO friendliness, high quality UI/UX design, cross-browser compatibility, responsive design, QA and testing, authentication and authorization, performance, capabilities, and scalability to enhance your business.",
+      "We communicate via Slack, WhatsApp, Email, Google Meet, Zoom, and phone. For project management, we use Jira or any tool preferred by the client.",
   },
-  {
-    question: "What platforms do you use for communication and project management?",
-    answer:
-      "We use Slack, WhatsApp, Email, Phone, Google Meet, Zoom, and other platforms to communicate with clients and internally as required. For project management, we use modern platforms such as Jira, or any platform our clients prefer.",
-  },
-
 ];
+
 
 const brandLogos = [
   Brand3.src,

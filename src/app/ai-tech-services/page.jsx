@@ -1,6 +1,6 @@
-import { AiTech } from '@/components/ai'
-import Head from 'next/head';
-import React from 'react';
+import { AiTech } from "@/components/ai";
+import Head from "next/head";
+import React from "react";
 
 export const metadata = {
   title: "AI Development & Technology Services | DevNexus Solutions",
@@ -20,7 +20,6 @@ export const metadata = {
   ],
 };
 
-
 const AiTechpage = () => {
   return (
     <>
@@ -35,49 +34,57 @@ const AiTechpage = () => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              "mainEntity": [
+              mainEntity: [
                 {
                   "@type": "Question",
-                  "name": "How Can AI Chatbot Development Services Benefit Your Business?",
-                  "acceptedAnswer": {
+                  name: "Why should I use AI services like chatbots or API integration?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": ""
-                  }
+                    text: "AI chatbots and API integrations automate routine tasks, improve customer support, and streamline business operations. DevNexus Solutions provides tailored AI solutions that enhance efficiency and deliver better customer experiences.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "Where Can AI Chatbots Be Deployed?",
-                  "acceptedAnswer": {
+                  name: "What benefits will I get from AI API integration and AI solutions?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": ""
-                  }
+                    text: "You get seamless data flow, smarter decision-making, personalized user experiences, and faster operational workflows. DevNexus Solutions helps businesses unlock the full potential of intelligent automation.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "How Do You Ensure AI Development Services Align with My Business Needs?",
-                  "acceptedAnswer": {
+                  name: "How long will it take to see results from AI services?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": ""
-                  }
+                    text: "Automation and workflow improvements can be immediate. For measurable performance insights and ROI, most businesses see results within a few weeks of implementing DevNexus Solutions’ AI systems.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "What Is the Typical Timeline for AI Development Project?",
-                  "acceptedAnswer": {
+                  name: "Why is AI important for modern businesses?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "The timeline for AI development projects varies based on complexity, scope, and integration requirements. Smaller projects—such as chatbot development or basic automation—can take 2 to 6 weeks, while larger, enterprise-grade solutions involving custom models, data pipelines, and system integration may span 3 to 6 months or more. A thorough discovery phase helps define realistic milestones and ensures timely delivery."
-                  }
+                    text: "AI reduces manual effort, minimizes errors, accelerates operational speed, and improves customer interactions. DevNexus Solutions leverages advanced AI tools to help your business stay competitive in a fast-evolving digital landscape.",
+                  },
                 },
                 {
                   "@type": "Question",
-                  "name": "How Do You Handle Data Privacy and Security in AI Projects?",
-                  "acceptedAnswer": {
+                  name: "Can AI services improve customer support for my business?",
+                  acceptedAnswer: {
                     "@type": "Answer",
-                    "text": "At DevNexus Solutions, we prioritize data privacy and security at every stage of AI development. Our team follows industry best practices and regulatory standards to safeguard sensitive information—implementing robust encryption, access controls, and anonymization techniques. From data collection to model deployment, we ensure data integrity, confidentiality, and compliance, empowering clients with secure, trustworthy AI solutions."
-                  }
-                }
-              ]
-            })
+                    text: "Yes. AI-powered chatbots provide instant 24/7 support, handle FAQs, resolve issues, and improve customer engagement. DevNexus Solutions builds intelligent support systems that elevate your customer experience.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can AI and API integrations scale with my growing business?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Absolutely. DevNexus Solutions builds scalable AI systems and integrations designed to grow with your data, customer base, and long-term business requirements.",
+                  },
+                },
+              ],
+            }),
           }}
         />
       </Head>

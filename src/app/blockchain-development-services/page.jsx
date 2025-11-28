@@ -30,62 +30,71 @@ const BlockchainPage = () => {
         <link rel="canonical" href={metadata.alternates.canonical} />
                 <meta name="keywords" content={metadata.keywords.join(", ")} />
         
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "What Businesses Can Benefit from Blockchain?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Blockchain technology is rapidly emerging as a transformative force across a wide range of industries. Sectors such as finance, healthcare, government services, supply chain management, real estate, politics, and gaming stand to gain significantly by adopting blockchain to improve security, transparency, automation, and operational efficiency.For businesses that rely on secure transactions, decentralized applications (dApps), or smart contracts, integrating blockchain solutions presents a timely and strategic advantage. Now is an opportune moment for forward-thinking organizations to embrace blockchain development and stay ahead of the curve."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Why Choose DevNexus Solutions for Blockchain Development?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "At DevNexus Solutions, we specialize in building robust, scalable, and secure decentralized applications tailored to the unique needs of enterprises, agencies, and startups. Our experienced blockchain professionals leverage technologies and industry best practices to deliver solutions that ensure data integrity, transparency, and top-tier security—empowering businesses to innovate with confidence in a decentralized world."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What Are the Benefits of Blockchain for Your Business?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Blockchain technology offers transformative advantages across industries by enhancing security, reducing fraud, and automating processes. Its decentralized architecture ensures data integrity and transparency, while eliminating intermediaries to reduce operational costs. With tamper-proof records and real-time traceability, blockchain empowers businesses to build trust, streamline workflows, and adapt to evolving digital demands."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can Blockchain Be Integrated with My Existing Business or Website?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Yes—at DevNexus Solutions, we seamlessly integrate blockchain technology into your existing systems using APIs and middleware solutions. This integration does not disrupt your current operations; instead, it enhances them by improving security, data integrity, and operational efficiency. Whether you're looking to enable smart contracts, secure transactions, or decentralized data management, our approach ensures a smooth transition into the blockchain ecosystem."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Is Blockchain Development Dependent on the Existing Tech Stack?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text":
-                      "Yes—blockchain integration depends heavily on your current tech stack. Compatibility with existing languages, databases, and APIs determines how efficiently components like smart contracts, wallets, or ledgers can be embedded. The right middleware ensures blockchain enhances functionality without disrupting your system."
-                  }
-                }
-              ]
-            }),
-          }}
-        />
+     <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is blockchain development, and how can it help my business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Blockchain development creates secure, decentralized solutions that improve data protection and transparency. DevNexus Solutions builds blockchain-based systems that enhance trust and strengthen your digital operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can blockchain improve efficiency in my business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Blockchain automates processes, eliminates intermediaries, and ensures accurate, tamper-proof records. DevNexus Solutions helps businesses streamline workflows and increase operational efficiency with blockchain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you create smart contracts or decentralized apps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. DevNexus Solutions develops smart contracts and decentralized applications (dApps) tailored to your business needs, enabling secure and automated digital transactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries can benefit from blockchain development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Industries such as finance, supply chain, healthcare, logistics, and e-commerce benefit greatly from blockchain. DevNexus Solutions creates custom blockchain solutions for diverse industry needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is blockchain technology safe and reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Absolutely. Blockchain ensures data immutability, fraud prevention, and highly secure transactions. DevNexus Solutions implements advanced security protocols to deliver robust and trustworthy blockchain systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can blockchain integrate with my existing systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes. DevNexus Solutions integrates blockchain with your existing software through APIs and middleware, enhancing transparency, accountability, and operational efficiency without disrupting current operations."
+          }
+        }
+      ]
+    })
+  }}
+/>
       </Head>
 
       <div>

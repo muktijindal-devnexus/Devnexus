@@ -33,26 +33,37 @@ const brandLogos = [
 
 const faqData = [
   {
-    question: "Why is a UI/UX designer important for your business?",
+    question: "Why is UI/UX design important for product development?",
     answer:
-      "A UI/UX designer plays an important role in shaping how users feel and observe your website, app or other digital products. They ensure that every interface is not only visually engaging but also intuitive, accessible, and user-centric.",
+      "Good UI/UX enhances usability, engagement, and customer satisfaction. DevNexus Solutions creates intuitive, user-friendly designs that delight users and improve product adoption.",
   },
   {
-    question: "Will you be involved in the UI/UX design process?",
+    question: "What benefits will I get from UI/UX design?",
     answer:
-      "At every step of the design process, your insights and feedbacks will play a vital role. From wireframing to prototyping, we are working collaboratively with you to ensure that work quality of the end product is not compromised and product aligns with your brand goals and user needs. ",
+      "You get clear navigation, visually appealing interfaces, improved user flow, and higher conversions. DevNexus Solutions ensures every design improves both experience and performance.",
   },
   {
-    question: "How is your UI/UX design process structured?",
+    question: "Can you design for both websites and apps?",
     answer:
-    "At DevNexus Solutions, our UI/UX design process is user-centric and crafted to deliver a seamless digital experience. We begin with in-depth discovery and research to understand your brand vision and target audience.  We define user personas and map their journeys to identify pain points and opportunities. Next, we move into wireframing to establish layout and flow, followed by iterative prototyping to refine interaction and design logic. Once the user flow is finalized, we craft visually compelling, high-fidelity designs that align with your brand identity. Testing is conducted at every phase to ensure usability, performance, and continuous refinement."
+      "Yes. DevNexus Solutions designs responsive, user-friendly interfaces for websites, mobile apps, dashboards, SaaS products, and enterprise systems.",
   },
   {
-    question: "Do you redesign existing websites/apps?",
+    question: "How long does UI/UX design take?",
     answer:
-      "Yes, we are offering UI/UX redesign services and on the basis of feedback and analytics to improve usability. Whether your current design looks outdated or does not convert well, our team of experts will start analysing its performance, user feedback and problem points.",
+      "Most UI/UX design projects take 1–3 weeks depending on the number of screens and overall complexity. DevNexus Solutions ensures timely and smooth delivery.",
+  },
+  {
+    question: "Do you redesign existing interfaces?",
+    answer:
+      "Yes. DevNexus Solutions redesigns outdated or low-performing interfaces to improve usability, visual appeal, conversions, and overall user engagement.",
+  },
+  {
+    question: "Will I receive editable design files?",
+    answer:
+      "Yes. DevNexus Solutions provides fully editable Figma or Adobe XD files for easy implementation and future updates.",
   },
 ];
+
 
 export const UIUXComponent = () => {
   return (

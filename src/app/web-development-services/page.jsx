@@ -33,38 +33,56 @@ const Fullstackpage = () => {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What domains of business does DevNexus Solutions provide digital solutions to?",
+        "name": " Why should I use web development services?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text":
-            "We offer web design and development services to businesses of all types that need a digital presence, including real estate, construction, services, food and beverages, public sector, education, healthcare, travel, banking, fintech, and more.",
+            " A professional website improves credibility, attracts customers, and increases online presence. DevNexus Solutions builds websites that grow your business.",
         },
       },
       {
         "@type": "Question",
-        "name": "What tech stacks do you offer for your web development services?",
+        "name": "What benefits will I get from web development?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text":
-            "The team is technology-agnostic and can adapt to any modern web development framework, including the MERN stack (Node, React), Nextjs, Typescript, React Native, Flutter, WordPress (and PHP), Python, HTML5/CSS3, Tailwind CSS, Modular CSS, Redux and more.",
+            " You get responsive, secure, fast-loading websites, better user experience, and higher conversion rates with DevNexus Solutions.",
         },
       },
       {
         "@type": "Question",
-        "name": "How do you ensure that the developments you make are aligned with latest's market demands?",
+        "name": " How long does it take to build a website?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text":
-            "We are experts at designing and developing websites according to the latest Web 2.0 Standards with W3C compliance for SEO friendliness, high quality UI/UX design, cross-browser compatibility, responsive design, QA and testing, authentication and authorization, performance, capabilities, and scalability to enhance your business.",
+            " Most websites take 2–6 weeks, depending on complexity. DevNexus Solutions provides clear timelines for every project.",
         },
       },
       {
         "@type": "Question",
-        "name": "What platforms do you use for communication and project management?",
+        "name": "Do you provide custom website designs?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text":
-            "We use Slack, WhatsApp, Email, Phone, Google Meet, Zoom, and other platforms to communicate with clients and internally as required. For project management, we use modern platforms such as Jira, or any platform our clients prefer.",
+            " Yes, DevNexus Solutions creates fully custom or template-based designs tailored to your brand and business goals.",
+        },
+      },
+        {
+        "@type": "Question",
+        "name": "Will my website be mobile-friendly and SEO-optimized?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "Absolutely. DevNexus Solutions ensures all websites are responsive, fast, and SEO-ready for higher search rankings.",
+        },
+      },
+         {
+        "@type": "Question",
+        "name": "Do you provide maintenance after the website is live?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            " Yes, DevNexus Solutions offers ongoing updates, backups, and security monitoring to keep your website running smoothly.",
         },
       },
     ],

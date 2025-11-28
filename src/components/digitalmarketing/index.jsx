@@ -18,37 +18,39 @@ import StatusCard from "../common/Status";
 import FaqSection from "../global/FaqSection";
 import { DigitalMarketingServices } from "./DigitalMarketingServices ";
 
-const faqData  = [
+const faqData = [
   {
-    question: 'Why Businesses Need Digital Marketing Services?',
+    question: "Why should I use digital marketing for my business?",
     answer:
-    "In today’s highly competitive, digitally driven landscape, every business aims to expand its reach and dominate its market niche. Digital marketing plays a pivotal role in achieving this by enhancing online visibility, generating high-quality leads, and delivering measurable, cost-effective results. With most consumers now engaging online, digital strategies also enable businesses to stay agile, quickly adapting to emerging market trends and consumer behaviors.",
+      "Digital marketing increases online visibility, attracts targeted customers, and grows revenue. DevNexus Solutions helps businesses reach their audience effectively.",
   },
   {
-    question: ' How Much Does It Cost to Hire a Digital Marketing Agency Near Me?',
+    question: "What benefits will I get from digital marketing services?",
     answer:
-    "The cost of hiring a digital marketing agency can vary significantly based on your specific business goals, the scope of services required, and the level of expertise you’re seeking. Factors such as campaign complexity, target audience, duration, and platform choice all contribute to the overall investment, making it essential to align the budget with measurable outcomes and long-term strategy.",
+      "You get more traffic, higher engagement, lead generation, better brand recognition, and measurable growth with DevNexus Solutions.",
   },
   {
-    question:'. Why DevNexus Solutions Leads in Digital Marketing?',
+    question: "How long does it take to see results from digital marketing?",
     answer:
-    "DevNexus Solutions distinguishes itself as a top-tier digital marketing company through its results-driven approach and customized strategies tailored to each client’s unique goals. Backed by deep industry expertise and tools, we deliver impactful solutions that drive measurable outcomes—whether it's lead generation, increased ROI, or brand visibility. Our commitment to transparency is reflected in consistent, clear reporting and open communication throughout every stage of the marketing journey."
+      "Results vary by strategy, but most clients see measurable improvements in 3–6 months with consistent campaigns by DevNexus Solutions.",
   },
   {
-    question: 'Which Digital Marketing Channels Deliver the Best Results for B2B?',
+    question: "Which digital marketing strategies are best for my business?",
     answer:
-      'For B2B companies, the most effective digital marketing strategies are those that support longer sales cycles and nurture high-value leads. Key result-oriented channels include LinkedIn marketing, search engine optimization (SEO), pay-per-click (PPC) advertising, Meta (Facebook) ads, email marketing, content creation, and video marketing—each playing a vital role in building trust, driving engagement, and accelerating conversions in the B2B space.',
+      "DevNexus Solutions customizes strategies using SEO, social media, PPC, content marketing, and email campaigns based on your business goals.",
   },
   {
-    question: 'Ready to Market Your Business? Let’s Get Started.?',
+    question: "Why is digital marketing important for growing my business?",
     answer:
-    "At DevNexus Solutions, we begin by understanding the core of your business—your industry, marketing objectives, target milestones, and available budget. From there, we craft a custom marketing roadmap aligned with your unique goals.Depending on your business model, your ideal strategy may include:– Comprehensive social media campaigns to grow brand presence– Website UX enhancements to boost conversions– Link building and reputation management for long-term SEO gains – Paid advertising strategies (especially for e-commerce) to accelerate visibility and results Whether you're looking to start small or go all-in, we’ll tailor a marketing solution that fits your ambition and scales with your growth",
+      "It builds online presence, attracts potential customers, and drives sales. DevNexus Solutions ensures your business stays competitive digitally.",
   },
-    {
-    question: 'How Much Does It Cost to Hire a Digital Marketing Agency?',
-    answer:  'The cost of hiring a digital marketing agency can vary significantly based on your business goals, target markets, and the range of services required. At DevNexus Solutions, our monthly service plans start at $400 and can go up to $5,000, excluding ad spend. For clients seeking greater value and consistency, we also offer discounted packages on 3 to 6-month commitments, ensuring strategic continuity and cost-effectiveness.'
-    },
+  {
+    question: "Can digital marketing work for small businesses or startups?",
+    answer:
+      "Yes, DevNexus Solutions provides tailored, cost-effective strategies that deliver maximum ROI for small businesses and startups.",
+  },
 ];
+
 
 
 const brandLogos = [

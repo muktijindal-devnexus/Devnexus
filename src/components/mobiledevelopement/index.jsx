@@ -63,32 +63,6 @@ const faqData = [
   },
 
   // --- Your Existing FAQs (Cleaned & Improved) ---
-  {
-    question: "What types of mobile applications do you develop?",
-    answer:
-      "We build a wide range of mobile applications including native apps, cross-platform apps, progressive web apps, e-commerce apps, and business workflow applications—tailored to your specific needs.",
-  },
-  {
-    question:
-      "Do you provide post-launch support for mobile app development services?",
-    answer:
-      "Yes. We offer complete post-launch support including bug fixes, performance monitoring, feature enhancements, security updates, and OS compatibility updates to ensure your app stays stable and up to date.",
-  },
-  {
-    question: "What technologies do you use for Android app development?",
-    answer:
-      "For Android development we use Kotlin and Java for native apps. For cross-platform solutions, we use Flutter and React Native to build apps that run efficiently on both Android and iOS.",
-  },
-  {
-    question: "What programming languages do you use for iOS app development?",
-    answer:
-      "We use Swift—Apple’s modern language—for most iOS apps. For older or existing codebases, we also support Objective-C development and updates.",
-  },
-  {
-    question: "Can you update or fix an existing iOS app?",
-    answer:
-      "Yes. Whether your app needs performance improvements, bug fixes, UI/UX updates, or compatibility adjustments for the latest iOS version, we can help improve and optimize it.",
-  },
 ];
 
 

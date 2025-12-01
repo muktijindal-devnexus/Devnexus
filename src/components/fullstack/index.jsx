@@ -54,29 +54,7 @@ const faqData = [
   },
 
   // --- Your Existing Web Dev FAQs (Cleaned & Improved) ---
-  {
-    question:
-      "What domains of business does DevNexus Solutions provide digital solutions to?",
-    answer:
-      "We provide web design and development solutions for real estate, construction, food and beverages, healthcare, education, public sector, travel, banking, fintech, services, and more—any business that needs a strong digital presence.",
-  },
-  {
-    question: "What tech stacks do you offer for your web development services?",
-    answer:
-      "Our team works with modern and flexible technologies including MERN stack (Node, React), Next.js, TypeScript, React Native, Flutter, WordPress/PHP, Python, HTML5/CSS3, Tailwind CSS, Modular CSS, Redux, and more.",
-  },
-  {
-    question:
-      "How do you ensure that your web development matches the latest market demands?",
-    answer:
-      "We build websites following modern Web 2.0 standards with W3C compliance, SEO-friendly architecture, advanced UI/UX design, cross-browser compatibility, responsive layouts, strong QA testing, authentication, performance optimization, and scalability best practices.",
-  },
-  {
-    question:
-      "What platforms do you use for communication and project management?",
-    answer:
-      "We communicate via Slack, WhatsApp, Email, Google Meet, Zoom, and phone. For project management, we use Jira or any tool preferred by the client.",
-  },
+
 ];
 
 

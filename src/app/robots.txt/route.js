@@ -1,29 +1,34 @@
 export async function GET() {
   const content = `
 User-agent: *
-Disallow: /login/
+Disallow: /user-login/
 Disallow: /register/
-Disallow: /user/
-User-agent: GPTBot
-Allow: /    GPTBot
-User-agent: PerplexityBot
-Allow: /    claude-web
-User-agent: Google-Extended
-Allow: /    ChatGPT-User
-User-agent: ChatGPT-User
-Allow: /    ChatGPT
-User-agent: DeepSeekBot
-Allow: /    DeepSeekBot
-User-agent: ClaudeBot
-Allow: /    ClaudeBot
+Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: DeepSeekBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
 
 Sitemap: https://devnexussolutions.com/sitemap.xml
 `;
 
   return new Response(content.trim(), {
     headers: {
-      'Content-Type': 'text/plain',
+      "Content-Type": "text/plain",
     },
   });
 }

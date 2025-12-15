@@ -5,34 +5,57 @@ import { useState } from "react";
 const steps = [
   {
     number: "01",
-    title: "Custom Blockchain Development",
+    title: "Hybrid Blockchain Development Services",
     description:
-      "Build your blockchain solution from scratch. At DevNexus Solutions, our strategic thinkers, design, develop, and deploy private and public blockchain networks with custom consensus algorithms and smart contract functionality.",
+      "We build powerful hybrid blockchain solutions that combine the security of private networks with the transparency of public chains. Our hybrid architecture allows enterprises to customize access levels, optimize data control, and achieve high performance while maintaining decentralization where needed.",
   },
   {
     number: "02",
-    title: "Smart Contract Development",
+    title: "Public Blockchain Development Company",
     description:
-      "Our Blockchain App Development team is automating transactions and business processes with self-executing smart contracts. At DevNexus Solutions, we develop secure and efficient smart contracts for various blockchain technologies including Ethereum, Binance Smart Chain, Polygon, and others.",
+      "DevNexus Solutions provides full-cycle public blockchain development, helping businesses leverage open, trustless, and transparent networks. Our team builds decentralized platforms using leading chains like Ethereum, Solana, Polygon, Avalanche, and BNB Chain, ensuring maximum scalability and user trust.",
   },
   {
     number: "03",
-    title: "Decentralized Application (dApp) Development",
+    title: "Private Blockchain Development Company",
     description:
-    "We specialize in designing and developing intuitive decentralized applications (dApps) across industries such as finance, gaming, healthcare, and more. Our expert team ensures a seamless and secure user experience by leveraging the full potential of blockchain technology.",
+    "For businesses demanding enhanced privacy and controlled access, we offer advanced private blockchain development services. From supply chain operations to enterprise-level data management, we design secure, permissioned networks tailored to your workflow and compliance requirements.",
   },
   {
     number: "04",
-    title: "NFT Marketplace Development",
+    title: "Smart Contract Development",
     description:
-      "Launch your own NFT marketplace with secure trading and wallet integration. We are offering custom features for art, gaming, and metaverse platforms.",
+    "Our expert developers create audit-ready, self-executing smart contracts that automate business processes with complete accuracy and trust. We build secure, optimized smart contracts for multiple blockchain ecosystems, ensuring smooth, tamper-proof transactions and workflows.",
   },
   {
     number: "05",
-    title: "Crypto Wallet Development",
+    title: "dApp Development Services",
     description:
-      "At DevNexus Solutions, we are creating secure, multi-currency crypto wallets with various features, biometric security, and seamless integration with dApps and other apps.",
+    "We design and develop high-performance decentralized applications (dApps) for industries like finance, gaming, logistics, real estate, and healthcare. Our solutions focus on intuitive UI/UX, fast transactions, and secure architecture to deliver a seamless decentralized user experience.",
+    
   },
+    {
+    number: "06",
+    title: "NFT Marketplace Development Company",
+    description:
+    "Launch a fully customized NFT marketplace with advanced trading features, integrated wallets, auction modules, royalty management, and multi-chain support. Whether for art, gaming assets, collectibles, or metaverse items — we build scalable, secure NFT platforms tailored to your business model.",
+    
+  },
+  //     {
+  //   number: "07",
+  //   title: "Crypto Wallet App Development",
+  //   description:
+  //   "Our team develops highly secure crypto wallet applications with multi-currency support, biometric authentication, private key management, QR-based transactions, and dApp integration. We build custodial and non-custodial wallets for mobile, desktop, and web platforms.",
+    
+  // },
+  //  {
+  //   number: "07",
+  //   title: "Blockchain App Development",
+  //   description:
+  //   "From concept to deployment, we offer end-to-end blockchain app development services that align with your business goals. We create scalable decentralized solutions with modern architectures, secure APIs, and seamless integration across existing systems.",
+    
+  // },
+
 ];
 
 const BlockchainServices = () => {
@@ -55,9 +78,7 @@ const BlockchainServices = () => {
         Our Blockchain Development Services
       </h2>
       <p className="text-[16px] text-gray-600 mb-15 max-w-2xl">
-        At DevNexus Solutions we are following a systematic and collaborative
-        approach to deliver the most securable, scalable and blockchain aligned
-        solutions.
+     At DevNexus Solutions, we deliver secure, scalable, and business-ready blockchain solutions designed for modern enterprises. With a strategic and collaborative approach, we help startups and companies build decentralized ecosystems that drive transparency, automation, and digital trust.
       </p>
 
       <div className="flex flex-col md:flex-row gap-18">

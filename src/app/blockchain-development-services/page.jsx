@@ -11,12 +11,13 @@ export const metadata = {
   },
   keywords: [
     " Hybrid Blockchain development services",
+    "Smart Contract Development",
     " Public Blockchain development company",
     " dApp development services",
     " Private Blockchain development company",
     " NFT marketplace development company",
     " Crypto wallet app development company",
-    " Digital solutions provider company",
+    "Blockchain App development",
   ],
 };
 

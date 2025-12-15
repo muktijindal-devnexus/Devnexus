@@ -3,15 +3,15 @@ import Link from "next/link";
 const milestones = [
   {
     number: "01.",
-    text: "By 2030, blockchain projections are expected to reach US$53,182.9 million with a compound annual growth rate (CAGR) of over 90%.",
+    text: " Enhance Security, Transparency, and Trust with Immutable Ledgers",
   },
   {
     number: "02.",
-    text: "Business value is expected to reach $3.1 trillion in 2030.",
+    text: " Drive Efficiency and Cut Costs with Smart Contract Automation",
   },
   {
     number: "03.",
-    text: "The anticipated number of users in the blockchain market is projected to reach 1 billion by 2030.",
+    text: "Enable New Business Models and Competitive Advantage",
   },
 ];
 
@@ -22,7 +22,7 @@ const BlockchainMilestones = () => {
         {/* Left Content */}
         <div className="md:w-2/3">
           <h2 className="text-2xl md:text-3xl font-bold text-[#00357A] mb-6">
-            Blockchain’s Path to 2030 - Key Milestones
+           Blockchain’s Impact on Business & Technology
           </h2>
           <ul className="space-y-5">
             {milestones.map((item, idx) => (

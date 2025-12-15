@@ -8,6 +8,7 @@ import BlockchainPlatforms from "./BlockchainPlatforms";
 // import BlockchainDeveplopemnt from "./BlockchainDevelopment";
 import FaqSection from "../global/FaqSection";
 import IndustriesWeServe from "./IndustriesWeServe";
+import BlockchainApp from "./BlockchainApp";
 
 const faqData = [
   {
@@ -55,6 +56,7 @@ export const Blockchain = () => {
       <StatusCard />
       <BlockchainServices />
       <BlockchainMilestones />
+      <BlockchainApp />
       <BlockchainPlatforms />
       {/* <BlockchainDeveplopemnt /> */}
       <IndustriesWeServe />

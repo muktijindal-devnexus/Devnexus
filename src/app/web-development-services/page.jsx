@@ -26,7 +26,7 @@ keywords: [
   "website development company",
   "web application development",
   "Web design services provider",
-  "Website development company in India",
+  "Website development company",
   "Custom web design services",
   "Responsive web design company",
   "SEO-friendly websites development",

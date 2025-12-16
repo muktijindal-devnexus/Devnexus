@@ -13,7 +13,7 @@ keywords: [
 
   "app development",
   "mobile app development",
-  "app developers near me",
+  "app developers",
   "app development company",
   "mobile app developers",
   "app development service",
@@ -23,7 +23,7 @@ keywords: [
   "Enterprise app solutions",
   "iOS development company",
   "Android app development company",
-  "Digital solutions company near me"
+  "Digital solutions company"
 ]
 
 };

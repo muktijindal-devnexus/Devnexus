@@ -9,15 +9,23 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/mobile-app-development-services",
   },
-  keywords: [
-    " Mobile app development company",
-    " Mobile development services",
-    " Custom mobile apps developer",
-    " Enterprise app solutions",
-    " iOS development company",
-    " Android app development company",
-    " Digital solutions company near me",
-  ],
+keywords: [
+
+  "app development",
+  "mobile app development",
+  "app developers near me",
+  "app development company",
+  "mobile app developers",
+  "app development service",
+  "Mobile app development company",
+  "Mobile development services",
+  "Custom mobile apps developer",
+  "Enterprise app solutions",
+  "iOS development company",
+  "Android app development company",
+  "Digital solutions company near me"
+]
+
 };
 
 const MobileDevelopmentpage = () => {

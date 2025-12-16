@@ -9,20 +9,35 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/web-development-services",
   },
-  keywords: [
-    " Web design services provider",
-    " Website development company in India",
-    " Custom web design services",
-    " Responsive web design company",
-    " SEO-friendly websites development",
-    " Global web development solutions",
-    " AI Overview web development company",
-    "Backend Development",
-    "Frontend Development",
-    "CMS Development",
-    "E-commerce Development",
-    
-  ],
+keywords: [
+  // Core Web Keywords
+  "web development",
+  "digital solutions",
+  "web design",
+  "web development services",
+  "web development company",
+  "web design services",
+  "web design company",
+  "web solutions",
+  "responsive web design",
+  "website development",
+  "web development agency",
+  "responsive design",
+  "website development company",
+  "web application development",
+  "Web design services provider",
+  "Website development company in India",
+  "Custom web design services",
+  "Responsive web design company",
+  "SEO-friendly websites development",
+  "Global web development solutions",
+  "AI overview web development company",
+  "Frontend Development",
+  "Backend Development",
+  "CMS Development",
+  "E-commerce Development"
+]
+
 };
 
 

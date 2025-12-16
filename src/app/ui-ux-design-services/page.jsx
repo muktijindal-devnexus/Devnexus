@@ -9,13 +9,22 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/ui-ux-design-services",
   },
-  keywords: [
-    " UI UX design services",
-    " UI UX web development company",
-    " UI UX development service provider",
-    " UI UX design & development company",
-    " UI UX design development company in India",
-  ],
+keywords: [
+
+  "ui ux designing",
+  "user interface design",
+  "ux design and ui design",
+  "digital marketing ux design",
+  "mobile app interface design",
+  "web user interface design",
+  "user interface",
+  "UI UX design services",
+  "UI UX web development company",
+  "UI UX development service provider",
+  "UI UX design & development company",
+  "UI UX design development company in India"
+]
+
 };
 
 

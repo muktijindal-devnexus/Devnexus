@@ -12,18 +12,18 @@ export const metadata = {
 keywords: [
 
   "app development",
-  "mobile app development",
-  "app developers",
-  "app development company",
-  "mobile app developers",
-  "app development service",
-  "Mobile app development company",
-  "Mobile development services",
-  "Custom mobile apps developer",
-  "Enterprise app solutions",
-  "iOS development company",
-  "Android app development company",
-  "Digital solutions company"
+  " mobile app development",
+  " app developers",
+  " app development company",
+  " mobile app developers",
+  " app development service",
+  " Mobile app development company",
+  " Mobile development services",
+  " Custom mobile apps developer",
+  " Enterprise app solutions",
+  " iOS development company",
+  " Android app development company",
+  " Digital solutions company"
 ]
 
 };

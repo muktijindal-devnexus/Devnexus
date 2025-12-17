@@ -78,7 +78,7 @@ export const Fullstack = () => {
       <Banner
         image="/cdn/images/fullstack/fullstackHero.mp4"
         overlayImage
-        heading="DevNexus Solutions a Leader in Web Design & Development` "
+        heading="DevNexus Solutions a Leader in Web Design & Development "
         description="As a leading web design services provider and a trusted website development company in India."
       />
       <StatusCard />

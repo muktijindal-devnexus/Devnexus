@@ -1,5 +1,14 @@
 import React from "react";
 
+export const metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Read the Terms & Conditions of DevNexus Solutions to understand our service policies, client responsibilities, payments, ownership rights, and legal guidelines.",
+  alternates: {
+    canonical: "https://devnexussolutions.com/terms-conditions",
+  },
+};
+
 const TermsPage = () => {
   return (
     <div className="max-w-4xl mx-auto px-6 py-10 text-gray-800 pt-30">

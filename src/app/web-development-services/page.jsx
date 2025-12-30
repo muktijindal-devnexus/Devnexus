@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Fullstack } from '@/components/fullstack';
 
 export const metadata = {
-  title: "Web Development services - DevNexus Solutions",
+  title: "DevNexus Solutions - Web Development Services",
   description:
     "Get expert web design and App development services, and build fast, responsive and. Providing custom digital solutions to global businesses.",
   alternates: {

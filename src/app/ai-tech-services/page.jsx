@@ -3,7 +3,7 @@ import Head from "next/head";
 import React from "react";
 
 export const metadata = {
-  title: "AI Development & Technology Services | DevNexus Solutions",
+  title: "AI Development & Technology Services",
   description:
     "Drive innovation with AI development services from DevNexus Solutions. From ML & NLP to GPT-powered chatbots & automation — transform your business.",
   alternates: {

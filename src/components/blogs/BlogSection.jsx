@@ -17,7 +17,7 @@ export default function BlogSection() {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => { 
     const fetchBlogs = async () => {
       try {
         const res = await fetch(

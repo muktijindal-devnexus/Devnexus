@@ -2,7 +2,7 @@ import { AboutComponent } from '@/components/about'
 import React from 'react'
 
 export const metadata = {
-  title: "About Us - DevNexus Solutions",
+  title: "About Us",
   description: "DevNexus Solutions is a certified Digital Transformaiton Consultant. Our team of experts loves to create smart ideas. Contact us now. ",
   alternates: {
     canonical: "https://devnexussolutions.com/aboutus",

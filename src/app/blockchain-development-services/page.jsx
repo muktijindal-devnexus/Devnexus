@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Blockchain } from '@/components/blockchain';
 
 export const metadata = {
-  title: "Custom Blockchain Development Services | DevNexus Solutions",
+  title: "DevNexus Solutions | Custom Blockchain Development Services",
   description:
     "DevNexus Solutions offers custom & public blockchain development services. From smart contracts to dApps, we create secure, scalable decentralized solutions globally.",
   alternates: {

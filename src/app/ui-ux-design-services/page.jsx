@@ -2,7 +2,7 @@ import React from "react";
 import { UIUXComponent } from "@/components/UIUX";
 
 export const metadata = {
-  title: "UI/UX Design and Development Services - DevNexus Solutions",
+  title: "UI/UX Design and Development Services",
   description:
     "Transform your online presence with expert web, mobile, and UI/UX design services. Unlock new digital growth for your business with DevNexus solutions.",
   alternates: {

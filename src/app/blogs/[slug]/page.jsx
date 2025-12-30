@@ -10,14 +10,13 @@ const slugify = (text) =>
     .replace(/-+/g, "-");
 
 export async function generateMetadata({ params }) {
-  const slug = params?.slug ?? "";
-  
+
   return {
     title: "Blog - DevNexus Solutions",
     description:
       "DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience.",
     alternates: {
-      canonical: `https://devnexussolutions.com/blogs/${slug}`,
+      canonical: `https://devnexussolutions.com/blogs/${params}`,
     },
   };
 }

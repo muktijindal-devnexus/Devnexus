@@ -39,7 +39,7 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/cdn/images/logo.svg" width={60} height={40} alt="Logo" />
+              <Image src="/cdn/images/logo.svg" width={60} height={36} alt="Logo" />
               <div>
                 <h4 className="text-sm font-bold">DevNexus Solutions</h4>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>

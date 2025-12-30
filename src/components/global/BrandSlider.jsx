@@ -6,6 +6,7 @@ import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/free-mode";
+import Image from "next/image";
 
 // Skeleton Brand Loader
 const BrandSkeleton = () => (
@@ -118,9 +119,11 @@ export default function BrandSlider() {
           <Swiper {...commonSwiperProps} className="mt-8 md:mt-12 z-10 relative">
             {[...sliderImages, ...sliderImages].map((brand, i) => (
               <SwiperSlide key={`top-${i}`}>
-                <img
+                <Image
                   src={brand?.textImage1}
                   alt={`Brand ${i}`}
+                  width={100}
+                  height={10}
                   className="h-12 md:h-16 w-auto object-contain mx-auto"
                 />
               </SwiperSlide>
@@ -131,7 +134,9 @@ export default function BrandSlider() {
           <Swiper {...commonSwiperProps} dir="rtl" className="mt-4 md:mt-2 z-10 relative">
             {[...sliderImages2, ...sliderImages2].map((brand, i) => (
               <SwiperSlide key={`bottom-${i}`}>
-                <img
+                <Image
+                width={200}
+                height={20}
                   src={brand?.textImage2}
                   alt={`Brand ${i}`}
                   className="h-12 md:h-16 w-auto object-contain mx-auto mt-[30px] md:mt-[60px]"

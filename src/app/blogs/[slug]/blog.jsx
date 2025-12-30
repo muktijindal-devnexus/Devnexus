@@ -31,7 +31,7 @@ export const BlogContent = () => {
         );
 
         setBlog(found);
-        setSidebarPosts(allBlogs.slice(0, 5)); // latest 5 posts
+        setSidebarPosts(allBlogs.slice(0, 7)); // latest 5 posts
       } catch (err) {
         console.error("Error fetching blogs", err);
       } finally {
@@ -68,7 +68,7 @@ export const BlogContent = () => {
       <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10">
         {/* Left: Blog Content */}
         <div className="w-full md:w-3/4">
-          <h1 className="text-3xl text-center font-bold mb-4">
+          <h1 className="text-3xl px-14 font-bold mb-4">
             {blog.title}
           </h1>
 

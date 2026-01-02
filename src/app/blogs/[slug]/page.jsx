@@ -1,18 +1,28 @@
+import { notFound } from "next/navigation";
 import { BlogContent } from "./blog";
 
 export async function generateMetadata({ params }) {
-  // ✅ params ko await karo
-  const resolvedParams = await params;
-  const slug = resolvedParams?.slug;
+  const slug = params?.slug;
 
-  console.log("SLUG FROM METADATA:", slug);
+  if (!slug) {
+    return {
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
 
   return {
-    title: "Blog - DevNexus Solutions",
+    title: `${slug.replace(/-/g, " ")} | DevNexus Solutions`,
     description:
-      "DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience.",
+      "Explore insights on AI-powered web development trends for 2026 by DevNexus Solutions.",
     alternates: {
       canonical: `https://devnexussolutions.com/blogs/${slug}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }

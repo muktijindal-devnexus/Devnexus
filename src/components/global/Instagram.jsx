@@ -31,9 +31,16 @@ export default function InstagramCarousel() {
         <h2 className="text-2xl md:text-3xl font-semibold text-center text-[#00357A] ">
          Connect with Us !
         </h2>
-        <Link href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3">
-          <FaInstagram className="text-4xl mt-3 text-[#E1306C]" />
-        </Link>
+      <Link
+  href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
+  aria-label="DevNexus Solutions on Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-gray-300 transition-colors"
+>
+  <FaInstagram />
+</Link>
+
       </div>
 
       {/* Custom arrows */}

@@ -161,9 +161,12 @@ export default function MobileFooter() {
               </Link>
             </li>
             <li>
-              <a href="/ui-ux-design-services" className="hover:text-white transition-colors">
+              <Link
+                href="/ui-ux-design-services"
+                className="hover:text-white transition-colors"
+              >
                 UI/UX Design
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -207,36 +210,52 @@ export default function MobileFooter() {
           <div className="flex flex-col justify-center items-center">
   <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
           <div className="flex gap-8 mb-4 text-white text-2xl">
-            <Link
-              href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
-              className="hover:text-gray-300 transition-colors"
-            >
-              <FaInstagram />
-            </Link>
-            <Link
-              href="https://www.facebook.com/share/1Dsa49Kxrr/"
-              className="hover:text-gray-300 transition-colors"
-            >
-              <FaFacebookF />
-            </Link>
-            <Link
-              href="https://x.com/DevNexusSol?t=YV_XZosMLVwNo6W0SvuB9Q&s=08"
-              className="hover:text-gray-300 transition-colors"
-            >
-              <FaXTwitter />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/company/devnexus-solutions/"
-              className="hover:text-gray-300 transition-colors"
-            >
-              <FaLinkedinIn />
-            </Link>
-                   <Link
-              href="https://www.youtube.com/@DevNexusSolutions/videos"
-              className="hover:text-gray-300 transition-colors"
-            >
-              <FaYoutube />
-            </Link>
+        <Link
+  href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
+  aria-label="DevNexus Solutions on Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-gray-300 transition-colors"
+>
+  <FaInstagram />
+</Link>
+
+           <Link
+  href="https://www.facebook.com/share/1Dsa49Kxrr/"
+  aria-label="DevNexus Solutions on Facebook"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaFacebookF />
+</Link>
+
+    <Link
+  href="https://x.com/DevNexusSol"
+  aria-label="DevNexus Solutions on Twitter X"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaXTwitter />
+</Link>
+
+        <Link
+  href="https://www.linkedin.com/company/devnexus-solutions/"
+  aria-label="DevNexus Solutions on LinkedIn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaLinkedinIn />
+</Link>
+
+               <Link
+  href="https://www.youtube.com/@DevNexusSolutions/videos"
+  aria-label="DevNexus Solutions on YouTube"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaYoutube />
+</Link>
+
           </div>
             
           <h4 className="text-medium font-medium my-3 ">

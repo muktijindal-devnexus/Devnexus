@@ -154,9 +154,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <a href="/ui-ux-design-services" className="hover:text-white transition-colors">
+              <Link
+                href="/ui-ux-design-services"
+                className="hover:text-white transition-colors"
+              >
                 UI/UX Design
-              </a>
+              </Link>
             </li>
             <li>
               <Link

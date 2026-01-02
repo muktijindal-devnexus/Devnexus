@@ -1,26 +1,19 @@
-import { notFound } from "next/navigation";
 import { BlogContent } from "./blog";
 
 export async function generateMetadata({ params }) {
-  const slug = params?.slug;
+  // ✅ params ko await karo
+  const resolvedParams = await params;
+  const slug = resolvedParams?.slug;
 
-  if (!slug) {
-    return {
-      robots: {
-        index: false,
-        follow: false,
-      },
-    };
-  }
 
   return {
-    title: `${slug.replace(/-/g, " ")} | DevNexus Solutions`,
+    title: "Blog - DevNexus Solutions",
     description:
-      "Explore insights on AI-powered web development trends for 2026 by DevNexus Solutions.",
+      "DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience.",
     alternates: {
       canonical: `https://devnexussolutions.com/blogs/${slug}`,
     },
-    robots: {
+      robots: {
       index: true,
       follow: true,
     },

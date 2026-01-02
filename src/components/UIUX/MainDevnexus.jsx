@@ -47,9 +47,9 @@ export const MainDevnexus = () => {
     <div className="flex flex-col lg:flex-row items-center justify-center py-8 px-4 sm:py-10 md:py-12 bg-white">
       {/* Left section */}
       <div className="bg-[#2e5c9a] text-white p-6 sm:p-8 lg:px-12 lg:py-20 rounded-xl lg:rounded-r-2xl w-full lg:w-1/2">
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 leading-snug">
+        <p className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4 leading-snug">
       What makes DevNexus Solutions an ideal UI UX Design company for your business?
-        </h2>
+        </p>
         <p className="text-normal sm:text-sm lg:text-base leading-relaxed">
 DevNexus Solutions delivers intuitive, brand-aligned UI/UX designs that drive user engagement and business growth. Our user-first approach ensures every interaction is purposeful, seamless, and conversion-ready.
         </p>

@@ -247,9 +247,9 @@ const JobOpenings = () => {
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-8xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#00357A] mb-6 text-center">
+        <h3 className="text-3xl md:text-4xl font-bold text-[#00357A] mb-6 text-center">
           Job Openings
-        </h1>
+        </h3>
 
         <div className="px-4 relative">
           <button

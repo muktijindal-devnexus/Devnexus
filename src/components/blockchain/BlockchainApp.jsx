@@ -48,9 +48,9 @@ export default function BlockchainApp() {
 
         {/* LEFT */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-semibold mb-6">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-6">
             Blockchain App Services
-          </h1>
+          </h2>
 
           <p className="text-gray-700 leading-6 mb-10">
             Blockchain is reshaping businesses by boosting transparency,

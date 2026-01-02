@@ -32,11 +32,11 @@ const features = [
 export const DevNexusMarketingBenefits = () => {
   return (
     <section className="px-6 md:px-16 py-12 space-y-10">
-      <h2 className="text-2xl md:text-3xl font-light text-center text-[#335D95]">
+      <p className="text-2xl md:text-3xl font-light text-center text-[#335D95]">
         What Makes <span className="font-bold text-[#00357A]">DevNexus Solutions</span>  the No. 1 choice for {' '}
         <br />
         <span className="font-bold text-[#00357A]">Digital Marketing Services?</span>
-      </h2>
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {features.map((feature, idx) => (

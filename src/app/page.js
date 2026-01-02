@@ -6,24 +6,26 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/",
   },
-    keywords: [
-    " Digital marketing services provider",
+  keywords: [
+    " Digital marketing services",
     " Web development company",
     " App development company",
-    " Blockchain development company",
+    " Blockchain development",
     " Graphic Design Services",
     " Mobile app development company",
-    " Blockchain development",
     " Custom blockchain development",
-    " UI/UX design company",
+    "Google Ads services",
+    "Digital marketing agency",
+    " SEO services",
+    " UI UX design",
   ],
 };
 
 
 export default function Home() {
   return (
-   <div className="bg-[#F5F5F5]">
-   <LandingPage />
-   </div>
+    <div className="bg-[#F5F5F5]">
+      <LandingPage />
+    </div>
   );
 }

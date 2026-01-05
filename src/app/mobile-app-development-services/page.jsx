@@ -9,6 +9,14 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/mobile-app-development-services",
   },
+   openGraph: {
+      title: "Mobile App Development Services | DevNexus Solutions",
+       description: "Boost your business with custom mobile app development services from DevNexus Solutions. We build secure, scalable, and user-friendly apps globally.",
+      url: "https://devnexussolutions.com/mobile-app-development-services",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 keywords: [
 
   "app development",

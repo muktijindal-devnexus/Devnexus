@@ -10,6 +10,15 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/blogs",
   },
+    openGraph: {
+      title: "Blog - DevNexus Solutions",
+      description:
+        "DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience.",
+      url: url,
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 };
 
 

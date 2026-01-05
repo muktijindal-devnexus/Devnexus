@@ -25,6 +25,15 @@ export const metadata = {
     "Lead Generation",
     "Google Ads and Meta Ads",
   ],
+   openGraph: {
+      title: "AI Digital Marketing Services | SEO, AEO, Local GEO.",
+       description:
+        "Grow with AI-driven SEO, PPC & content marketing. Optimize for AEO & target local GEO customers. Smarter strategies, real business growth with DevNexus Solutions.",
+      url: "https://devnexussolutions.com/digital-marketing-services",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 };
 
 const DigitalMarketingPage = () => {

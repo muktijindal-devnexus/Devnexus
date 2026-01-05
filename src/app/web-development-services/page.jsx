@@ -9,6 +9,16 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/web-development-services",
   },
+
+   openGraph: {
+      title: "Web Development Services - DevNexus Solutions",
+       description: "Get expert web design and App development services, and build fast, responsive and. Providing custom digital solutions to global businesses.",
+      url: "https://devnexussolutions.com/web-development-services",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
+
 keywords: [
   // Core Web Keywords
   "web development",

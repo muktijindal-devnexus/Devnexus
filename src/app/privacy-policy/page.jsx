@@ -8,6 +8,14 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/privacy-policy",
   },
+   openGraph: {
+      title: "Privacy Policy | DevNexus Solutions",
+       description: "Read DevNexus Solutions’ Privacy Policy to learn how we collect, use, store, and protect your personal information when you use our website and services.",
+      url: "https://devnexussolutions.com/privacy-policy",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 };
 
 const PrivacyPolicy = () => {

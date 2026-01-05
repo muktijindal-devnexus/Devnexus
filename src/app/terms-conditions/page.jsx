@@ -7,6 +7,14 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/terms-conditions",
   },
+   openGraph: {
+      title: "Terms & Conditions - DevNexus Solutions",
+       description: "Read the Terms & Conditions of DevNexus Solutions to understand our service policies, client responsibilities, payments, ownership rights, and legal guidelines.",
+      url: "https://devnexussolutions.com/terms-conditions",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 };
 
 const TermsPage = () => {

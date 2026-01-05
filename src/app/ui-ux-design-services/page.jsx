@@ -8,6 +8,14 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/ui-ux-design-services",
   },
+      openGraph: {
+      title: "UI/UX Design and Development Services - DevNexus Solutions",
+       description: "Transform your online presence with expert web, mobile, and UI/UX design services. Unlock new digital growth for your business with DevNexus solutions.",
+      url: "https://devnexussolutions.com/ui-ux-design-services",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
   keywords: [
     " ui ux designing",
     " user interface design",

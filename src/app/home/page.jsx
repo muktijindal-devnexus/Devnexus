@@ -10,6 +10,14 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/",
   },
+   openGraph: {
+      title: "DevNexus Solutions | Digital Transformation Consultant",
+       description: "DevNexus provides digital solutions to startups, enterprises and other types of businesses. Partner with us to unlock digital possibilities. Visit us.",
+      url: "https://devnexussolutions.com/",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 };
 
 const LandingPage = () => {

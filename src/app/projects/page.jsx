@@ -8,6 +8,14 @@ export const metadata = {
   alternates: {
     canonical: "https://devnexussolutions.com/projects",
   },
+   openGraph: {
+      title: "Our Projects & Portfolio",
+       description: "Explore the portfolio of DevNexus Solutions featuring our latest web, mobile, and digital projects. See how we help businesses build scalable and impactful solutions.",
+      url: "https://devnexussolutions.com/projects",
+      siteName: "DevNexus Solutions",
+      type: "article",
+      locale: "en_IN",
+    },
 };
 
 const Portfoliopage = () => {

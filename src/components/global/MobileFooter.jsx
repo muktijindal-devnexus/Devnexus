@@ -44,7 +44,7 @@ export default function MobileFooter() {
         <div className="">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-                    <Image
+              <Image
                 src="/cdn/images/logo.svg"
                 width={60}
                 height={40}
@@ -53,15 +53,15 @@ export default function MobileFooter() {
               <div>
                 <h2 className="text-sm font-bold">DevNexus Solutions</h2>
                 <p className="text-xs text-gray-300">INNOVATE • BUILD • GROW</p>
-              
+
               </div>
-       
+
             </Link>
-               
+
           </div>
           <p className="py-4 text-xs text-gray-300">
-                    Your Partner in Digital Growth, Not Just a Service Provider
-                </p>
+            Your Partner in Digital Growth, Not Just a Service Provider
+          </p>
           <div className="space-y-1 sm:space-y-1 text-sm sm:text-sm text-gray-300 sm:pl-4">
             <p>
               <span className="font-semibold text-white">Email:</span>{" "}
@@ -91,178 +91,178 @@ export default function MobileFooter() {
         </div>
         {/* Explore On */}
         <div className="grid grid-cols-2">
-   <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
-          <h3 className="font-semibold text-white mb-3">Explore On</h3>
-          <ul className="text-sm text-gray-300 space-y-2">
-            <li>
-              <Link href="/" className="hover:text-white transition-colors">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/aboutus" className="hover:text-white transition-colors">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/ourteam" className="hover:text-white transition-colors">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/services"
-                className="hover:text-white transition-colors"
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className="hover:text-white transition-colors"
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/career" className="hover:text-white transition-colors">
-                Career
-              </Link>
-            </li>
-            <li>
-              <Link href="/blogs" className="hover:text-white transition-colors">
-                Blogs
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-white transition-colors">
-                Contact
-              </Link>
-            </li>
-                 <li>
-              {/* <Link href="/terms-conditions" className="hover:text-white transition-colors">
+          <div className="order-3 lg:order-2 sm:pl-4 md:pl-8 lg:pl-20">
+            <h3 className="font-semibold text-white mb-3">Explore On</h3>
+            <ul className="text-sm text-gray-300 space-y-2">
+              <li>
+                <Link href="/" className="hover:text-white transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/aboutus" className="hover:text-white transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/ourteam" className="hover:text-white transition-colors">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="hover:text-white transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects"
+                  className="hover:text-white transition-colors"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link href="/career" className="hover:text-white transition-colors">
+                  Career
+                </Link>
+              </li>
+              <li>
+                <Link href="/blogs" className="hover:text-white transition-colors">
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                {/* <Link href="/terms-conditions" className="hover:text-white transition-colors">
               Terms and Conditions
               </Link> */}
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+
+          {/* Our Services */}
+          <div className="order-4 lg:order-3">
+            <h3 className="font-semibold text-white mb-3">Our Services</h3>
+            <ul className="text-sm text-gray-300 space-y-2">
+              <li>
+                <Link
+                  href="/web-development-services"
+                  className="hover:text-white transition-colors"
+                >
+                  Web Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ui-ux-design-services"
+                  className="hover:text-white transition-colors"
+                >
+                  UI/UX Design
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/mobile-app-development-services"
+                  className="hover:text-white transition-colors"
+                >
+                  Mobile App Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/digital-marketing-services"
+                  className="hover:text-white transition-colors"
+                >
+                  Digital Marketing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blockchain-development-services"
+                  className="hover:text-white transition-colors"
+                >
+                  Blockchain Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ai-tech-services"
+                  className="hover:text-white transition-colors"
+                >
+                  AI Technologies
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        {/* Our Services */}
-        <div className="order-4 lg:order-3">
-          <h3 className="font-semibold text-white mb-3">Our Services</h3>
-          <ul className="text-sm text-gray-300 space-y-2">
-            <li>
-              <Link
-                href="/web-development-services"
-                className="hover:text-white transition-colors"
-              >
-                Web Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/ui-ux-design-services"
-                className="hover:text-white transition-colors"
-              >
-                UI/UX Design
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/mobile-app-development-services"
-                className="hover:text-white transition-colors"
-              >
-                Mobile App Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/digital-marketing-services"
-                className="hover:text-white transition-colors"
-              >
-                Digital Marketing
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/blockchain-development-services"
-                className="hover:text-white transition-colors"
-              >
-                Blockchain Development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/ai-tech-services"
-                className="hover:text-white transition-colors"
-              >
-                AI Technologies
-              </Link>
-            </li>
-          </ul>
-        </div>
-        </div>
-     
 
         {/* Social & Newsletter */}
         <div className="order-2 lg:order-4">
           <div className="flex flex-col justify-center items-center">
-  <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
-          <div className="flex gap-8 mb-4 text-white text-2xl">
-        <Link
-  href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
-  aria-label="DevNexus Solutions on Instagram"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-gray-300 transition-colors"
->
-  <FaInstagram />
-</Link>
+            <h3 className="font-semibold text-white mb-3">Join Our Community</h3>
+            <div className="flex gap-8 mb-4 text-white text-2xl">
+              <Link
+                href="https://www.instagram.com/devnexussolutions?igsh=NXUycjU4MHBpNDk3"
+                aria-label="DevNexus Solutions on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300 transition-colors"
+              >
+                <FaInstagram />
+              </Link>
 
-           <Link
-  href="https://www.facebook.com/share/1Dsa49Kxrr/"
-  aria-label="DevNexus Solutions on Facebook"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaFacebookF />
-</Link>
+              <Link
+                href="https://www.facebook.com/share/1Dsa49Kxrr/"
+                aria-label="DevNexus Solutions on Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF />
+              </Link>
 
-    <Link
-  href="https://x.com/DevNexusSol"
-  aria-label="DevNexus Solutions on Twitter X"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaXTwitter />
-</Link>
+              <Link
+                href="https://x.com/DevNexusSol"
+                aria-label="DevNexus Solutions on Twitter X"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaXTwitter />
+              </Link>
 
-        <Link
-  href="https://www.linkedin.com/company/devnexus-solutions/"
-  aria-label="DevNexus Solutions on LinkedIn"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaLinkedinIn />
-</Link>
+              <Link
+                href="https://www.linkedin.com/company/devnexus-solutions/"
+                aria-label="DevNexus Solutions on LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </Link>
 
-               <Link
-  href="https://www.youtube.com/@DevNexusSolutions/videos"
-  aria-label="DevNexus Solutions on YouTube"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaYoutube />
-</Link>
+              <Link
+                href="https://www.youtube.com/@DevNexusSolutions/videos"
+                aria-label="DevNexus Solutions on YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube />
+              </Link>
 
+            </div>
+
+            <h4 className="text-medium font-medium my-3 ">
+              Subscribe us for Latest News
+            </h4>
           </div>
-            
-          <h4 className="text-medium font-medium my-3 ">
-            Subscribe us for Latest News
-          </h4>
-          </div>
-      
+
           <div className="flex flex-col sm:flex-row items-center gap-3 ">
             <input
               type="email"
@@ -282,21 +282,21 @@ export default function MobileFooter() {
         </div>
       </div>
 
-   <div className="flex flex-col justify-center items-center">
-    <p className="text-center text-xs text- mt-6">
-        Copyright © 2025 DevNexus Solutions | All Rights Reserved.
-      </p>
-         <a
-        href="/privacy-policy"
-        className="hover:text-white transition-colors text-center text-xs text-white mt-2"
-      >
-        Privacy Policy
-      </a>
-             <Link href="/terms-conditions" className="hover:text-white transition-colors text-xs mt-2">
-              Terms and Conditions
-              </Link>
-   </div>
-  
+      <div className="flex flex-col justify-center items-center">
+        <p className="text-center text-xs text- mt-6">
+          Copyright © 2025 DevNexus Solutions | All Rights Reserved.
+        </p>
+        <a
+          href="/privacy-policy"
+          className="hover:text-white transition-colors text-center text-xs text-white mt-2"
+        >
+          Privacy Policy
+        </a>
+        <Link href="/terms-conditions" className="hover:text-white transition-colors text-xs mt-2">
+          Terms and Conditions
+        </Link>
+      </div>
+
 
       {/* <div className="pt-2">
         <a href="//www.dmca.com/Protection/Status.aspx?ID=b07cf681-1e6f-46f9-8992-50d8d54d14b9" title="DMCA.com Protection Status">

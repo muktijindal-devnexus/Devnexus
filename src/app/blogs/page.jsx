@@ -14,7 +14,7 @@ export const metadata = {
       title: "Blog - DevNexus Solutions",
       description:
         "DevNexus Solutions has worked with top clients to grow their brands and reach their desired audience.",
-      url: url,
+      url: "https://devnexussolutions.com/blogs",
       siteName: "DevNexus Solutions",
       type: "article",
       locale: "en_IN",

@@ -88,6 +88,9 @@ const AiTechpage = () => {
           }}
         />
       </Head>
+      <h1>
+        fhudhgdfgAI Development & Technology Services
+      </h1>
       <AiTech />
     </>
   );

@@ -88,7 +88,6 @@ const AiTechpage = () => {
           }}
         />
       </Head>
-      ckjfdh
       <AiTech />
     </>
   );

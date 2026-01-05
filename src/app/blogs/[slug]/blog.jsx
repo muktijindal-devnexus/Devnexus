@@ -41,7 +41,7 @@ export const BlogContent = () => {
 
     fetchBlogs();
   }, [slug]);
-
+  
   if (loading) return <p className="text-center py-20">Loading...</p>;
 
   if (!blog) return <p className="text-center py-20">Blog not found</p>;
@@ -58,9 +58,9 @@ export const BlogContent = () => {
           priority
         />
         <div className="absolute inset-0 bg-opacity-50 flex items-center">
-          <h1 className="text-4xl w-[50%] font-bold leading-snug text-white ml-18 mt-10">
+          <h2 className="text-4xl w-[50%] font-bold leading-snug text-white ml-18 mt-10">
             {blog.title}
-          </h1>
+          </h2>
         </div>
       </div>
 
